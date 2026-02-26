@@ -178,7 +178,7 @@ export async function POST(request: NextRequest) {
       'website-lead',
       getSourceTag(data.source),
       ...getPropertyTags(data),
-    ].filter(Boolean);
+    ].filter((t): t is string => Boolean(t));
 
     for (const tag of tags) {
       try {
