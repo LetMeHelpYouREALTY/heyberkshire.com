@@ -5,7 +5,7 @@
  * Works across multiple instances (stateless, cloud-based).
  */
 
-import { Ratelimit } from '@upstash/ratelimit';
+import { Ratelimit, type Duration } from '@upstash/ratelimit';
 import { Redis } from '@upstash/redis';
 
 // Initialize Redis client (uses env vars automatically)
@@ -156,7 +156,7 @@ export async function checkRateLimit(
  */
 export function createRateLimiter(config: {
   requests: number;
-  window: string;
+  window: Duration;
   prefix: string;
 }) {
   if (!redis) return null;
