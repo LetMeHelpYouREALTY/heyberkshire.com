@@ -110,6 +110,8 @@ ENV/
 *.p12
 secrets.json
 credentials.json
+# MCP config may contain Notion integration token — use .cursor/mcp.json.example as template
+.cursor/mcp.json
 
 # ===================
 # Sentry
