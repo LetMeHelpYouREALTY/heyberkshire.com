@@ -119,7 +119,7 @@ export class ClaudeClient {
 
     // Add system prompt with cache control if caching is enabled
     if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
-      messageParams.system = [
+      (messageParams as Record<string, unknown>).system = [
         {
           type: 'text',
           text: request.systemPrompt,
@@ -187,7 +187,7 @@ export class ClaudeClient {
     };
 
     if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
-      messageParams.system = [
+      (messageParams as Record<string, unknown>).system = [
         {
           type: 'text',
           text: request.systemPrompt,
