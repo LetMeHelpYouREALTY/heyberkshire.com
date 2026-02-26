@@ -128,11 +128,11 @@ export class ClaudeCache {
     const maxSize = 100; // Keep max 100 entries in memory
 
     // Remove expired entries
-    for (const [key, entry] of this.memoryCache.entries()) {
+    Array.from(this.memoryCache.entries()).forEach(([key, entry]) => {
       if (now - entry.timestamp > this.config.ttl * 1000) {
         this.memoryCache.delete(key);
       }
-    }
+    });
 
     // Remove oldest entries if cache is too large
     if (this.memoryCache.size > maxSize) {
