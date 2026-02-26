@@ -325,11 +325,11 @@ export class FollowUpBossClient {
   }
 
   private clearCache(prefix: string): void {
-    for (const key of this.cache.keys()) {
+    Array.from(this.cache.keys()).forEach(key => {
       if (key.startsWith(prefix)) {
         this.cache.delete(key);
       }
-    }
+    });
   }
 
   private sleep(ms: number): Promise<void> {

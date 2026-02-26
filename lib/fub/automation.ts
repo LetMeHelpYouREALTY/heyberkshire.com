@@ -223,11 +223,11 @@ export class FUBAutomation {
     }
 
     // Find email duplicates
-    for (const [email, group] of emailGroups.entries()) {
+    Array.from(emailGroups.entries()).forEach(([email, group]) => {
       if (group.length > 1) {
         duplicates.push({ email, people: group });
       }
-    }
+    });
 
     // Group by phone
     const phoneGroups = new Map<string, FUBPerson[]>();
@@ -242,9 +242,8 @@ export class FUBAutomation {
     }
 
     // Find phone duplicates
-    for (const [phone, group] of phoneGroups.entries()) {
+    Array.from(phoneGroups.entries()).forEach(([phone, group]) => {
       if (group.length > 1) {
-        // Check if not already in duplicates
         const existingDup = duplicates.find(d => 
           d.people.some(p => group.some(g => g.id === p.id))
         );
@@ -252,7 +251,7 @@ export class FUBAutomation {
           duplicates.push({ phone, people: group });
         }
       }
-    }
+    });
 
     return duplicates;
   }

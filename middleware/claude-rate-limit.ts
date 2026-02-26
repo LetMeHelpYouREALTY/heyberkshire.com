@@ -87,23 +87,23 @@ class RateLimitStore {
     const now = Date.now();
     const oneHourAgo = now - 3600000;
 
-    for (const [clientId, timestamps] of this.requests.entries()) {
+    Array.from(this.requests.entries()).forEach(([clientId, timestamps]) => {
       const recent = timestamps.filter(t => t > oneHourAgo);
       if (recent.length === 0) {
         this.requests.delete(clientId);
       } else {
         this.requests.set(clientId, recent);
       }
-    }
+    });
 
-    for (const [clientId, timestamps] of this.tokens.entries()) {
+    Array.from(this.tokens.entries()).forEach(([clientId, timestamps]) => {
       const recent = timestamps.filter(t => t > oneHourAgo);
       if (recent.length === 0) {
         this.tokens.delete(clientId);
       } else {
         this.tokens.set(clientId, recent);
       }
-    }
+    });
   }
 }
 
