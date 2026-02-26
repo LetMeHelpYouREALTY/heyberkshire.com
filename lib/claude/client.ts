@@ -117,15 +117,12 @@ export class ClaudeClient {
       })),
     };
 
-    // Add system prompt with cache control if caching is enabled
+    // Add system prompt with cache control if caching is enabled (API supports cache_control; SDK types may lag)
     if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
-      messageParams.system = [
-        {
-          type: 'text',
-          text: request.systemPrompt,
-          cache_control: { type: 'ephemeral' },
-        },
+      const systemWithCache = [
+        { type: 'text' as const, text: request.systemPrompt, cache_control: { type: 'ephemeral' as const } },
       ];
+      messageParams.system = systemWithCache as Parameters<Anthropic['messages']['create']>[0]['system'];
     } else if (request.systemPrompt) {
       messageParams.system = request.systemPrompt;
     }
@@ -187,13 +184,10 @@ export class ClaudeClient {
     };
 
     if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
-      messageParams.system = [
-        {
-          type: 'text',
-          text: request.systemPrompt,
-          cache_control: { type: 'ephemeral' },
-        },
+      const systemWithCache = [
+        { type: 'text' as const, text: request.systemPrompt, cache_control: { type: 'ephemeral' as const } },
       ];
+      messageParams.system = systemWithCache as Parameters<Anthropic['messages']['create']>[0]['system'];
     } else if (request.systemPrompt) {
       messageParams.system = request.systemPrompt;
     }

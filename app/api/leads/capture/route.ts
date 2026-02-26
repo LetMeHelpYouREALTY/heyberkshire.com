@@ -181,6 +181,7 @@ export async function POST(request: NextRequest) {
     ].filter(Boolean);
 
     for (const tag of tags) {
+      if (typeof tag !== 'string') continue;
       try {
         await fub.addTag(person.id, tag);
       } catch (error) {

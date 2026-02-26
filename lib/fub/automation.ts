@@ -223,7 +223,7 @@ export class FUBAutomation {
     }
 
     // Find email duplicates
-    for (const [email, group] of emailGroups.entries()) {
+    for (const [email, group] of Array.from(emailGroups.entries())) {
       if (group.length > 1) {
         duplicates.push({ email, people: group });
       }
@@ -242,7 +242,7 @@ export class FUBAutomation {
     }
 
     // Find phone duplicates
-    for (const [phone, group] of phoneGroups.entries()) {
+    for (const [phone, group] of Array.from(phoneGroups.entries())) {
       if (group.length > 1) {
         // Check if not already in duplicates
         const existingDup = duplicates.find(d => 

@@ -154,6 +154,8 @@ export async function checkRateLimit(
  *   prefix: 'custom-endpoint'
  * })
  */
+type Duration = Parameters<typeof Ratelimit.slidingWindow>[1];
+
 export function createRateLimiter(config: {
   requests: number;
   window: string;
@@ -163,7 +165,7 @@ export function createRateLimiter(config: {
 
   return new Ratelimit({
     redis,
-    limiter: Ratelimit.slidingWindow(config.requests, config.window),
+    limiter: Ratelimit.slidingWindow(config.requests, config.window as Duration),
     analytics: true,
     prefix: `@heyberkshire/${config.prefix}`,
   });

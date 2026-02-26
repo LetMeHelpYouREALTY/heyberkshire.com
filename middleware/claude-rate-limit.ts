@@ -87,7 +87,7 @@ class RateLimitStore {
     const now = Date.now();
     const oneHourAgo = now - 3600000;
 
-    for (const [clientId, timestamps] of this.requests.entries()) {
+    for (const [clientId, timestamps] of Array.from(this.requests.entries())) {
       const recent = timestamps.filter(t => t > oneHourAgo);
       if (recent.length === 0) {
         this.requests.delete(clientId);
@@ -96,7 +96,7 @@ class RateLimitStore {
       }
     }
 
-    for (const [clientId, timestamps] of this.tokens.entries()) {
+    for (const [clientId, timestamps] of Array.from(this.tokens.entries())) {
       const recent = timestamps.filter(t => t > oneHourAgo);
       if (recent.length === 0) {
         this.tokens.delete(clientId);
