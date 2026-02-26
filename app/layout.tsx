@@ -14,16 +14,17 @@ import {
   generateWebSiteSchema,
   combineSchemas,
 } from "@/lib/schema";
+import { siteConfig } from "@/lib/site-config";
 
 const title = "Berkshire Hathaway HomeServices Las Vegas | Dr. Jan Duffy, REALTOR®";
 const description =
   "Looking for a Berkshire Hathaway HomeServices agent in Las Vegas? Dr. Jan Duffy with BHHS Nevada Properties offers expert real estate services—backed by Warren Buffett's legacy of trust.";
-const url = "https://heyberkshire.com";
+const url = siteConfig.url;
 
 export const metadata: Metadata = {
   title: {
     default: title,
-    template: "%s | Berkshire Hathaway HomeServices Nevada Properties",
+    template: `%s | ${siteConfig.brandLine}`,
   },
   description,
   metadataBase: new URL(url),
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: "HeyBerkshire - Berkshire Hathaway HomeServices Nevada Properties",
+    siteName: `HeyBerkshire - ${siteConfig.brandLine}`,
     type: "website",
     locale: "en_US",
   },

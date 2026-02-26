@@ -4,6 +4,10 @@
 export const siteConfig = {
   name: "HeyBerkshire",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
+  tagline: "Private Client Real Estate Advisory",
+  /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory */
+  brandLine:
+    "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
   url: "https://heyberkshire.com",
