@@ -7,10 +7,53 @@ import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
+import { getFaqsForDomain } from "@/lib/faq-config";
+
+// Maps pageType → human-readable FAQ section title/subtitle
+const FAQ_SECTION_COPY: Record<
+  string,
+  { title: string; subtitle: string }
+> = {
+  community: {
+    title: "Community Real Estate FAQ",
+    subtitle: "Common questions from buyers and sellers in this neighborhood",
+  },
+  luxury: {
+    title: "Luxury Las Vegas Real Estate FAQ",
+    subtitle: "What high-end buyers and sellers ask Dr. Jan most",
+  },
+  "55plus": {
+    title: "55+ Community FAQ",
+    subtitle: "Everything active-adult buyers need to know before moving",
+  },
+  search: {
+    title: "Las Vegas Home Search FAQ",
+    subtitle: "Straight answers from a 30-year Las Vegas market expert",
+  },
+  lifestyle: {
+    title: "Moving to Las Vegas FAQ",
+    subtitle: "What relocating buyers ask Dr. Jan most often",
+  },
+  investment: {
+    title: "Las Vegas Investment Property FAQ",
+    subtitle: "Numbers, strategy, and market insight for investors",
+  },
+};
 
 export default async function Home() {
   const config = await getPageDomainConfig();
 
+  // ── Domain-aware FAQs ────────────────────────────────────────────────────
+  const faqs = getFaqsForDomain(config.pageType, config.domain);
+  const faqCopy = FAQ_SECTION_COPY[config.pageType] ?? FAQ_SECTION_COPY["search"];
+
+  // Personalise the FAQ title with the neighborhood name for community/55+ pages
+  const faqTitle =
+    config.pageType === "community" || config.pageType === "55plus"
+      ? `${config.neighborhood} FAQ`
+      : faqCopy.title;
+
+  // ── Schema: RealEstateAgent ──────────────────────────────────────────────
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
@@ -31,11 +74,29 @@ export default async function Home() {
     },
   };
 
+  // ── Schema: FAQPage ──────────────────────────────────────────────────────
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
       <main>
@@ -149,7 +210,13 @@ export default async function Home() {
         <RealScoutListings />
         <WhyChooseUs />
         <ReviewsSection />
-        <FAQSection />
+
+        {/* Domain-Aware FAQ with FAQPage schema already injected above */}
+        <FAQSection
+          faqs={faqs}
+          title={faqTitle}
+          subtitle={faqCopy.subtitle}
+        />
 
         {/* Domain-Specific CTA */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
