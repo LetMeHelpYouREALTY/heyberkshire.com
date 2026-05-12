@@ -1,290 +1,172 @@
 import Navbar from "@/components/layouts/Navbar";
-import HeroSection from "@/components/sections/HeroSection";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
-import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
-import type { Metadata } from "next";
-import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
+import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
+import { getPageDomainConfig } from "@/lib/get-domain-config";
 
-export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Las Vegas | Dr. Jan Duffy, REALTOR®",
-  description:
-    "Looking for a Berkshire Hathaway HomeServices agent in Las Vegas? Dr. Jan Duffy with BHHS Nevada Properties offers expert real estate services—backed by Warren Buffett's legacy of trust. Call (702) 500-1942.",
-  keywords: [
-    "Berkshire Hathaway HomeServices",
-    "Berkshire Hathaway HomeServices Nevada Properties",
-    "BHHS Las Vegas",
-    "Dr. Jan Duffy realtor",
-    "Las Vegas real estate agent",
-  ],
-};
+export default async function Home() {
+  const config = await getPageDomainConfig();
 
-// Organization Schema
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-  url: "https://heyberkshire.com",
-  telephone: "+17025001942",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
-    addressRegion: "NV",
-    postalCode: "89134",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "200",
-  },
-};
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
+    url: `https://${config.domain !== "default" ? config.domain : "heyberkshire.com"}`,
+    telephone: "+17022221964",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
+      addressLocality: "Las Vegas",
+      addressRegion: "NV",
+      postalCode: "89134",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "200",
+    },
+  };
 
-// FAQ Schema for SEO
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Why should I choose a Berkshire Hathaway HomeServices agent in Las Vegas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What areas does Berkshire Hathaway HomeServices Nevada Properties serve?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "BHHS Nevada Properties serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and all Henderson communities.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I contact Dr. Jan Duffy at Berkshire Hathaway HomeServices?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "You can reach Dr. Jan Duffy at (702) 500-1942 or email homes@heyberkshire.com. Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does Berkshire Hathaway HomeServices help with new construction homes?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes! BHHS agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the current Las Vegas real estate market like in 2026?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of January 2026, the Las Vegas median home price is $450,000 (+4.2% YoY), with homes selling in an average of 28 days. Henderson's median is slightly higher at $485,000. The market remains competitive but balanced.",
-      },
-    },
-  ],
-};
-
-export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <Navbar />
       <main>
-        <HeroSection />
+        {/* Domain-Aware Hero */}
+        <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url('/Image/hero_bg_1.jpg')" }}
+          />
+          <div className="relative z-10 container mx-auto px-4 text-center">
+            {config.ctaBadge && (
+              <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">
+                {config.ctaBadge}
+              </span>
+            )}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              {config.heroHeadline}
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
+              {config.heroSubheadline}
+            </p>
 
-        {/* Berkshire Hathaway Value Proposition Section */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                Why Choose Berkshire Hathaway HomeServices?
-              </h2>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
-                backed by a name synonymous with trust, ethical standards, and financial
-                strength—the same principles that built Warren Buffett's empire.
-              </p>
+            {/* RealScout Search Widget */}
+            <div className="mb-8 flex justify-center">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `<realscout-simple-search agent-encoded-id="${config.realscoutAgentId}"></realscout-simple-search>`,
+                }}
+              />
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center p-6">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Trusted Brand</h3>
-                <p className="text-slate-600 text-sm">
-                  Backed by Warren Buffett's Berkshire Hathaway Inc.—unmatched financial stability
-                </p>
+            {/* Trust Indicators */}
+            <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-white">500+</span>
+                <span>Families Helped</span>
               </div>
-              <div className="text-center p-6">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Global Network</h3>
-                <p className="text-slate-600 text-sm">
-                  50,000+ agents worldwide for seamless referrals and relocations
-                </p>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-white">30+ Years</span>
+                <span>Las Vegas Experience</span>
               </div>
-              <div className="text-center p-6">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <TrendingUp className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Market Expertise</h3>
-                <p className="text-slate-600 text-sm">
-                  Serving Las Vegas since 2008, $127M+ in closed transactions
-                </p>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-white">4.9★</span>
+                <span>Client Rating</span>
               </div>
-              <div className="text-center p-6">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <HomeIcon className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Full Service</h3>
-                <p className="text-slate-600 text-sm">
-                  Buying, selling, luxury, investment, relocation—we do it all
-                </p>
-              </div>
-            </div>
-
-            {/* Expert Quote */}
-            <div className="max-w-3xl mx-auto mt-12 bg-slate-50 rounded-lg p-8">
-              <blockquote className="text-lg text-slate-700 italic mb-4">
-                "When clients ask why they should choose a Berkshire Hathaway HomeServices agent, I
-                tell them: you're not just getting me—you're getting a global network of 50,000
-                agents, world-class marketing, and a brand that's synonymous with trust."
-              </blockquote>
-              <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
-              </cite>
             </div>
           </div>
         </section>
 
-        {/* Market Stats Section */}
-        <section className="py-16 bg-slate-900 text-white">
+        {/* Value Proposition */}
+        <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Las Vegas Real Estate Market | January 2026
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Why Work With Dr. Jan Duffy?
               </h2>
-              <p className="text-slate-300">
-                Current market data from Berkshire Hathaway HomeServices Nevada Properties
+              <p className="text-lg text-slate-600">
+                Berkshire Hathaway HomeServices Nevada Properties — the most trusted name in Las Vegas real estate.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">$450K</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-                <div className="text-green-400 text-sm">+4.2% YoY</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">28</div>
-                <div className="text-slate-300 text-sm">Avg Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">4,850</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">2.1</div>
-                <div className="text-slate-300 text-sm">Months Inventory</div>
-              </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {[
+                { icon: Shield, title: "Trusted Brand", desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity" },
+                { icon: Users, title: "50K+ Network", desc: "Global referral network for seamless moves to or from any market" },
+                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood since 2008" },
+                { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
+              ].map(({ icon: Icon, title, desc }) => (
+                <div key={title} className="text-center p-6">
+                  <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <Icon className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <h3 className="font-bold text-lg mb-2">{title}</h3>
+                  <p className="text-slate-600 text-sm">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Market Stats */}
+        <section className="py-16 bg-slate-900 text-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-3">
+                {config.neighborhood} Real Estate Market
+              </h2>
+              <p className="text-slate-400">Current data — updated regularly</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              {[
+                { value: "$450K", label: "Median Price", sub: "+4.2% YoY" },
+                { value: "28", label: "Avg Days on Market", sub: "" },
+                { value: "4,850", label: "Active Listings", sub: "" },
+                { value: "2.1", label: "Months Inventory", sub: "" },
+              ].map(({ value, label, sub }) => (
+                <div key={label} className="text-center">
+                  <div className="text-4xl font-bold text-blue-400 mb-1">{value}</div>
+                  <div className="text-slate-300 text-sm">{label}</div>
+                  {sub && <div className="text-green-400 text-xs mt-1">{sub}</div>}
+                </div>
+              ))}
             </div>
             <div className="text-center mt-8">
-              <Link
-                href="/market-report"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors"
-              >
-                View Full Market Report
+              <Link href="/market-report" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors">
+                Full Market Report
               </Link>
             </div>
           </div>
         </section>
 
         <RealScoutListings />
-
-        {/* Neighborhoods Section */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Las Vegas Neighborhoods We Serve
-              </h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Berkshire Hathaway HomeServices Nevada Properties covers all of Southern Nevada
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              {[
-                { name: "Summerlin", price: "$625K", slug: "summerlin" },
-                { name: "Henderson", price: "$485K", slug: "henderson" },
-                { name: "Green Valley", price: "$520K", slug: "green-valley" },
-                { name: "The Ridges", price: "$2.5M", slug: "the-ridges" },
-                { name: "Southern Highlands", price: "$750K", slug: "southern-highlands" },
-                { name: "North Las Vegas", price: "$385K", slug: "north-las-vegas" },
-                { name: "Skye Canyon", price: "$550K", slug: "skye-canyon" },
-                { name: "Centennial Hills", price: "$495K", slug: "centennial-hills" },
-                { name: "Inspirada", price: "$525K", slug: "inspirada" },
-                { name: "Mountains Edge", price: "$475K", slug: "mountains-edge" },
-              ].map((area) => (
-                <Link
-                  key={area.slug}
-                  href={`/neighborhoods/${area.slug}`}
-                  className="bg-slate-50 hover:bg-blue-50 rounded-lg p-4 text-center transition-colors group"
-                >
-                  <h3 className="font-semibold text-slate-900 group-hover:text-blue-600">
-                    {area.name}
-                  </h3>
-                  <p className="text-sm text-slate-500">From {area.price}</p>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-8">
-              <Link
-                href="/neighborhoods"
-                className="text-blue-600 hover:text-blue-700 font-semibold"
-              >
-                View All Neighborhoods →
-              </Link>
-            </div>
-          </div>
-        </section>
-
         <WhyChooseUs />
         <ReviewsSection />
         <FAQSection />
 
-        {/* CTA Section */}
+        {/* Domain-Specific CTA */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work with Berkshire Hathaway HomeServices?
+              {config.ctaHeadline}
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Whether you're buying, selling, or investing in Las Vegas real estate, Dr. Jan Duffy
-              is here to help.
+              {config.ctaSubheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17022221964"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call 702-222-1964
               </a>
               <Link
                 href="/contact"
@@ -294,17 +176,10 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-              Properties
+              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
             </p>
           </div>
         </section>
-
-        {/* Last Updated */}
-        <div className="bg-slate-100 py-4 text-center text-sm text-slate-500">
-          Last Updated: January 2026 | HeyBerkshire.com - Berkshire Hathaway HomeServices Nevada
-          Properties
-        </div>
       </main>
       <Footer />
     </>
