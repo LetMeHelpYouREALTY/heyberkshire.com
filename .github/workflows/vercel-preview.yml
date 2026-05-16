@@ -20,7 +20,7 @@ jobs:
       preview-url: ${{ steps.deploy.outputs.url }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -94,7 +94,7 @@ jobs:
     if: needs.deploy-preview.outputs.preview-url != ''
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Wait for deployment
         run: sleep 30
