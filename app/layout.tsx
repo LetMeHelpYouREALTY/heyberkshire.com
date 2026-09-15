@@ -3,7 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { headers } from "next/headers";
 import { getDomainConfig } from "@/lib/domain-config";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import GlobalHeroBanner from "@/components/layout/GlobalHeroBanner";
 
