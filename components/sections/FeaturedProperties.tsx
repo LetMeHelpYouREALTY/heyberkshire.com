@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bed, Bath, Square, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { mediaUrl } from "@/lib/media";
 
 interface Property {
   id: number;
@@ -20,7 +21,7 @@ const PropertyCard = ({ property }: { property: Property }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
     <div className="relative h-48 md:h-64">
       <Image
-        src={property.image}
+        src={mediaUrl(property.image)}
         alt={property.name}
         fill
         className="object-cover"
@@ -43,7 +44,9 @@ const PropertyCard = ({ property }: { property: Property }) => (
         </div>
         <div className="flex items-center gap-1">
           <Square className="h-4 w-4 text-blue-600" />
-          <span className="text-sm">{property.squareFeet.toLocaleString()} sq ft</span>
+          <span className="text-sm">
+            {property.squareFeet.toLocaleString()} sq ft
+          </span>
         </div>
       </div>
       <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
@@ -58,30 +61,30 @@ const PropertyCard = ({ property }: { property: Property }) => (
 const properties: Property[] = [
   {
     id: 1,
-    name: "Modern Luxury Home",
+    name: "Summerlin homes near Red Rock",
     location: "Summerlin, Las Vegas, NV",
-    price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
+    price: "From $625K median",
+    image: "/images/neighborhoods/summerlin-red-rock.jpg",
     bedrooms: 4,
     bathrooms: 3,
     squareFeet: 3200,
   },
   {
     id: 2,
-    name: "Spacious Family Home",
+    name: "Henderson parks and trails",
     location: "Henderson, NV",
-    price: "$625,000",
-    image: "/Image/hero_bg_2.jpg",
+    price: "From $485K median",
+    image: "/images/neighborhoods/henderson-parks.jpg",
     bedrooms: 3,
     bathrooms: 2,
     squareFeet: 2400,
   },
   {
     id: 3,
-    name: "Elegant Estate",
+    name: "Green Valley mature-tree streets",
     location: "Green Valley, Henderson, NV",
-    price: "$1,200,000",
-    image: "/Image/hero_bg_3.jpg",
+    price: "From $520K median",
+    image: "/images/neighborhoods/green-valley-mature-trees.jpg",
     bedrooms: 5,
     bathrooms: 4,
     squareFeet: 4500,
@@ -102,7 +105,13 @@ export default function FeaturedProperties() {
             </p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0">
-            <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer">View All Properties</a>
+            <a
+              href="http://drjanduffy.realscout.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View All Properties
+            </a>
           </Button>
         </div>
 

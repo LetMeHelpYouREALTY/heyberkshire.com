@@ -7,7 +7,9 @@ compatibility_date = "2026-02-13"
 compatibility_flags = ["nodejs_compat"]
 
 # Account details
-account_id = ""  # Add your Cloudflare account ID
+# Images account ID: 2cc579c1ec9e426ed585e933ebf4753b (hosted Images via imagedelivery.net).
+# Do not deploy this Worker onto heyberkshire.com/* — production origin is Vercel (gray-cloud DNS).
+account_id = ""
 workers_dev = true
 
 # Build configuration

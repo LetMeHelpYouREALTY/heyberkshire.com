@@ -22,7 +22,11 @@ interface SchemaScriptProps {
  * Server component for injecting JSON-LD structured data
  * Can accept either a single schema or multiple schemas
  */
-export default function SchemaScript({ schema, schemas, id }: SchemaScriptProps) {
+export default function SchemaScript({
+  schema,
+  schemas,
+  id,
+}: SchemaScriptProps) {
   // Determine the final schema to render
   let finalSchema: Record<string, unknown>;
 
@@ -102,7 +106,6 @@ export function FAQSchema({
  */
 export function ReviewSchema({
   reviews,
-  aggregateRating,
 }: {
   reviews?: Array<{
     author: string;
@@ -110,10 +113,6 @@ export function ReviewSchema({
     text: string;
     date?: string;
   }>;
-  aggregateRating?: {
-    ratingValue: number;
-    reviewCount: number;
-  };
 }) {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -121,16 +120,6 @@ export function ReviewSchema({
     "@id": "https://heyberkshire.com#organization",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   };
-
-  if (aggregateRating) {
-    schema.aggregateRating = {
-      "@type": "AggregateRating",
-      ratingValue: aggregateRating.ratingValue.toString(),
-      reviewCount: aggregateRating.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    };
-  }
 
   if (reviews && reviews.length > 0) {
     schema.review = reviews.map((review) => ({

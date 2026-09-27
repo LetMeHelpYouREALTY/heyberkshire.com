@@ -1,60 +1,55 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import CtaActions from "@/components/sections/CtaActions";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import ExpertQuote from "@/components/sections/ExpertQuote";
+import HeadingPhoto from "@/components/sections/HeadingPhoto";
+import LeftoverBand from "@/components/sections/LeftoverBand";
+import { nap } from "@/lib/contact";
 
-export const metadata: Metadata = {
-  title: 'Security Policy',
-  description: 'Security policy and responsible disclosure information for heyberkshire.com',
+export const metadata: Metadata = pageMetadata({
+  path: "/security-policy",
+  title: "Security Policy",
+  description:
+    "Security policy and responsible disclosure information for heyberkshire.com",
   robots: {
     index: true,
     follow: true,
   },
-}
+});
 
 export default function SecurityPolicyPage() {
   return (
-    <div className="min-h-screen bg-white py-12">
+    <div id="main-content" className="min-h-screen bg-white py-12">
       <div className="container mx-auto max-w-4xl px-4">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
+        <HeadingPhoto path="/security-policy" />
 
         <div className="prose prose-lg max-w-none">
-          {/* Overview */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Our Commitment to Security
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              At Berkshire Hathaway HomeServices Nevada Properties, we take the security
-              of our systems and the privacy of our clients seriously. This page outlines
-              our security practices and provides information for security researchers.
-            </p>
-          </section>
+          <LeftoverBand path="/security-policy" />
 
-          {/* Reporting Vulnerabilities */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Reporting Security Vulnerabilities
-            </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              If you've discovered a security vulnerability, we appreciate your help in
-              disclosing it to us responsibly.
-            </p>
-            
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
               <h3 className="font-semibold text-blue-900 mb-3">
                 How to Report
               </h3>
               <ul className="space-y-2 text-blue-800">
                 <li>
-                  <strong>Email:</strong>{' '}
-                  <a href="mailto:security@heyberkshire.com" className="underline">
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:security@heyberkshire.com"
+                    className="underline"
+                  >
                     security@heyberkshire.com
                   </a>
                 </li>
                 <li>
-                  <strong>Phone:</strong>{' '}
-                  <a href="tel:+17025001942" className="underline">
-                    (702) 500-1942
+                  <strong>Phone:</strong>{" "}
+                  <a href="tel:+17022221964" className="underline">
+                    (702) 222-1964
                   </a>
                 </li>
                 <li>
@@ -75,11 +70,10 @@ export default function SecurityPolicyPage() {
             </ul>
           </section>
 
+          <LeftoverBand path="/security-policy" slot={1} />
+
           {/* Security Measures */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Security Measures in Place
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-gray-900 mb-2">
@@ -135,13 +129,13 @@ export default function SecurityPolicyPage() {
             </div>
           </section>
 
+          <LeftoverBand path="/security-policy" slot={2} />
+
           {/* Third-Party Services */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Third-Party Services
-            </h2>
             <p className="text-gray-700 mb-4">
-              We use trusted third-party services to provide the best experience:
+              Vendors named on this URL. Keys and wire instructions stay at
+              Suite 100:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
               <li>
@@ -170,36 +164,18 @@ export default function SecurityPolicyPage() {
               </li>
             </ul>
             <p className="text-gray-700 mt-4">
-              Each service maintains its own security practices and compliance certifications.
+              Each service maintains its own security practices and compliance
+              certifications.
             </p>
           </section>
 
-          {/* Responsible Disclosure */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Responsible Disclosure Policy
-            </h2>
-            <div className="bg-green-50 border-l-4 border-green-500 p-6">
-              <h3 className="font-semibold text-green-900 mb-3">
-                We Promise
-              </h3>
-              <ul className="text-green-800 space-y-2">
-                <li>✅ We will respond within 48 hours</li>
-                <li>✅ We will keep you updated on our progress</li>
-                <li>✅ We will credit you for the discovery (if desired)</li>
-                <li>✅ We will not take legal action against good-faith researchers</li>
-                <li>✅ We will work with you to understand and resolve the issue</li>
-              </ul>
-            </div>
-          </section>
+          <LeftoverBand path="/security-policy" slot={3} />
 
           {/* Out of Scope */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Out of Scope
-            </h2>
             <p className="text-gray-700 mb-4">
-              Please do not report the following (not considered vulnerabilities):
+              Please do not report the following (not considered
+              vulnerabilities):
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
               <li>Publicly accessible information (e.g., property listings)</li>
@@ -213,14 +189,14 @@ export default function SecurityPolicyPage() {
 
           {/* Security Best Practices */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Your Security
-            </h2>
             <p className="text-gray-700 mb-4">
               To protect your information when using our site:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Ensure you're on the correct domain: <strong>heyberkshire.com</strong></li>
+              <li>
+                Ensure you're on the correct domain:{" "}
+                <strong>heyberkshire.com</strong>
+              </li>
               <li>Look for the padlock icon (HTTPS)</li>
               <li>Don't share sensitive information via email</li>
               <li>Use strong, unique passwords if creating an account</li>
@@ -231,11 +207,8 @@ export default function SecurityPolicyPage() {
 
           {/* Contact */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Questions?
-            </h2>
             <p className="text-gray-700 mb-4">
-              For general questions about our security practices:
+              For general questions about lockbox access and this URL:
             </p>
             <div className="bg-gray-100 p-6 rounded-lg">
               <p className="mb-2">
@@ -245,17 +218,32 @@ export default function SecurityPolicyPage() {
                 Berkshire Hathaway HomeServices Nevada Properties
               </p>
               <p className="mb-2">
-                Email:{' '}
-                <a href="mailto:info@heyberkshire.com" className="text-blue-600 underline">
-                  info@heyberkshire.com
+                Email:{" "}
+                <a
+                  href={`mailto:${nap.email}`}
+                  className="text-blue-600 underline"
+                >
+                  {nap.email}
                 </a>
               </p>
               <p>
-                Phone:{' '}
-                <a href="tel:+17025001942" className="text-blue-600 underline">
-                  (702) 500-1942
+                Phone:{" "}
+                <a href="tel:+17022221964" className="text-blue-600 underline">
+                  (702) 222-1964
                 </a>
               </p>
+              <address className="not-italic mt-4 text-gray-700">
+                Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada
+                Properties
+                <br />
+                9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134
+              </address>
+            </div>
+            <div className="mt-8">
+              <CtaActions variant="onLight" />
+              <OfficeProximity path="/security-policy" />
+              <UniqueInterior path="/security-policy" />
+              <ExpertQuote path="/security-policy" />
             </div>
           </section>
 
@@ -271,5 +259,5 @@ export default function SecurityPolicyPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

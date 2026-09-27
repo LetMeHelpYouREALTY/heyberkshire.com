@@ -1,28 +1,29 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
-  Phone,
-  Building2,
-  Shield,
-  DollarSign,
   Clock,
   CheckCircle,
   AlertTriangle,
-  Home as HomeIcon,
   MapPin,
   Calendar,
-  Users,
-  FileText,
-  HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import CtaActions from "@/components/sections/CtaActions";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import ExpertQuote from "@/components/sections/ExpertQuote";
+import HeadingPhoto from "@/components/sections/HeadingPhoto";
+import IntentFaqs from "@/components/sections/IntentFaqs";
+import LeftoverBand from "@/components/sections/LeftoverBand";
+import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
-export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+export const metadata: Metadata = pageMetadata({
+  path: "/new-construction",
+  title:
+    "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
   description:
-    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 500-1942.",
+    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices new construction Las Vegas",
     "new homes Las Vegas",
@@ -32,62 +33,7 @@ export const metadata: Metadata = {
     "Lennar Las Vegas",
     "KB Home Las Vegas",
   ],
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Is buyer representation really free for new construction?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, 100% free to buyers. The builder pays the buyer's agent commission (typically 2-3%) as part of their marketing budget. You pay nothing extra, and you get professional representation to protect your interests.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Why do I need an agent when buying new construction?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Builder sales reps work for the builder, not you. A BHHS agent reviews contracts (often 50+ pages), negotiates upgrades and incentives, monitors construction quality, and ensures deadlines are met. Without representation, you're negotiating against experienced professionals alone.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do I have to register Dr. Jan Duffy as my agent on the first visit?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, most builders require your agent to accompany you or be registered on your FIRST visit. If you visit alone and sign the guest registry, you may forfeit your right to free representation. Call (702) 500-1942 to register Dr. Jan Duffy as your buyer's agent before visiting any model home.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What builder incentives are currently available?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages. Incentives change monthly. Dr. Jan tracks current offers across all builders.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I negotiate on new construction pricing?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Base prices are typically firm, but everything else is negotiable—upgrades, lot premiums, closing costs, and design center selections. A BHHS agent knows which builders negotiate and how to maximize your leverage, especially on standing inventory.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Should I use the builder's preferred lender?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Builder lenders often offer significant incentives ($10K-$30K) to use their services. Dr. Jan helps you compare: sometimes the incentive outweighs slightly higher rates, sometimes it doesn't. We ensure you make an informed decision.",
-      },
-    },
-  ],
-};
+});
 
 const builders = [
   {
@@ -99,12 +45,13 @@ const builders = [
       "Henderson (Inspirada, Lake Las Vegas)",
       "The Ridges",
     ],
-    currentIncentives: "Up to $50K in design studio credits on select inventory",
+    currentIncentives:
+      "Up to $50K in design studio credits on select inventory",
     incentiveDeadline: "February 28, 2026",
     highlights: [
       "Luxury finishes standard",
       "Highly customizable floor plans",
-      "Premier locations",
+      "Mesa Ridge, Reverence, Inspirada",
     ],
   },
   {
@@ -117,7 +64,8 @@ const builders = [
       "North Las Vegas (Valley Vista)",
       "Southwest (Skye Hills)",
     ],
-    currentIncentives: "4.99% rate buydown + $25K toward closing with Lennar Mortgage",
+    currentIncentives:
+      "4.99% rate buydown + $25K toward closing with Lennar Mortgage",
     incentiveDeadline: "January 31, 2026",
     highlights: [
       "Everything's Included® packages",
@@ -134,12 +82,13 @@ const builders = [
       "Southwest Las Vegas",
       "Henderson",
     ],
-    currentIncentives: "Up to 6% closing cost credit + free premium lot on select homes",
+    currentIncentives:
+      "Up to 6% closing cost credit + free premium lot on select homes",
     incentiveDeadline: "February 15, 2026",
     highlights: [
       "Built to Order™ customization",
       "Energy-efficient construction",
-      "First-time buyer friendly",
+      "Built to Order rows in North Las Vegas",
     ],
   },
   {
@@ -180,12 +129,9 @@ const builders = [
     name: "Richmond American",
     segment: "Entry-Level to Mid-Range",
     priceRange: "$380,000 - $700,000",
-    communities: [
-      "North Las Vegas",
-      "Henderson",
-      "Southwest Las Vegas",
-    ],
-    currentIncentives: "Up to $15K HomeGallery credit + 5.25% rate with preferred lender",
+    communities: ["North Las Vegas", "Henderson", "Southwest Las Vegas"],
+    currentIncentives:
+      "Up to $15K HomeGallery credit + 5.25% rate with preferred lender",
     incentiveDeadline: "February 28, 2026",
     highlights: [
       "PersonalizedSM options",
@@ -197,10 +143,7 @@ const builders = [
     name: "Shea Homes",
     segment: "55+ & Luxury",
     priceRange: "$500,000 - $1,100,000",
-    communities: [
-      "Trilogy at Summerlin (55+)",
-      "Trilogy at Inspirada (55+)",
-    ],
+    communities: ["Trilogy at Summerlin (55+)", "Trilogy at Inspirada (55+)"],
     currentIncentives: "Resort membership included + up to $40K in upgrades",
     incentiveDeadline: "Ongoing",
     highlights: [
@@ -213,11 +156,7 @@ const builders = [
     name: "Century Communities",
     segment: "Entry-Level",
     priceRange: "$320,000 - $550,000",
-    communities: [
-      "North Las Vegas",
-      "Southwest Las Vegas",
-      "Pahrump",
-    ],
+    communities: ["North Las Vegas", "Southwest Las Vegas", "Pahrump"],
     currentIncentives: "Up to 5% closing costs + appliance package",
     incentiveDeadline: "January 31, 2026",
     highlights: [
@@ -231,24 +170,8 @@ const builders = [
 export default function NewConstructionPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Navbar />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <div className="max-w-6xl mx-auto mb-6">
-            <nav className="text-sm text-slate-500">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-              {" / "}
-              <Link href="/services" className="hover:text-blue-600">Services</Link>
-              {" / "}
-              <span className="text-slate-900">New Construction</span>
-            </nav>
-          </div>
-
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -257,11 +180,14 @@ export default function NewConstructionPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Berkshire Hathaway HomeServices New Construction Las Vegas
             </h1>
+            <HeadingPhoto path="/new-construction" />
+
             <p className="text-xl text-slate-600 mb-8">
-              Your complete buyer's guide to new homes in Las Vegas. Free representation,
-              expert contract review, and insider knowledge of builder incentives.
+              Your complete buyer's guide to new homes in Las Vegas. Free
+              representation, expert contract review, and insider knowledge of
+              builder incentives.
             </p>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-left max-w-2xl mx-auto">
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-left max-w-2xl mx-auto mb-8">
               <div className="flex items-start">
                 <AlertTriangle className="h-6 w-6 text-amber-600 mr-3 flex-shrink-0 mt-1" />
                 <div>
@@ -269,78 +195,34 @@ export default function NewConstructionPage() {
                     Important: Register Dr. Jan Duffy as Your Agent FIRST
                   </h3>
                   <p className="text-amber-800 text-sm">
-                    Most builders require agent registration on your <strong>first visit</strong>.
-                    Call <a href="tel:+17025001942" className="font-bold underline">(702) 500-1942</a> to 
-                    register Dr. Jan Duffy as your buyer's agent before visiting any model home—or you 
-                    may lose your right to free professional representation.
+                    Most builders require agent registration on your{" "}
+                    <strong>first visit</strong>. Call{" "}
+                    <a href="tel:+17022221964" className="font-bold underline">
+                      (702) 222-1964
+                    </a>{" "}
+                    to register Dr. Jan Duffy as your buyer's agent before
+                    visiting any model home—or you may lose your right to free
+                    professional representation.
                   </p>
                 </div>
               </div>
+            </div>
+            <CtaActions
+              variant="onLight"
+              bookLabel="Register Before You Tour"
+            />
+            <OfficeProximity path="/new-construction" />
+            <UniqueInterior path="/new-construction" />
+
+            <div className="mt-8 max-w-xl mx-auto">
+              <p className="text-sm font-semibold text-slate-700 mb-3">
+                Search live MLS inventory
+              </p>
+              <RealScoutSearch />
             </div>
           </div>
 
-          {/* Why Free Representation */}
-          <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              Why Use a BHHS Agent for New Construction?
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="flex items-start">
-                <div className="bg-blue-500 p-2 rounded-full mr-4 flex-shrink-0">
-                  <DollarSign className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">100% Free to You</h3>
-                  <p className="text-blue-100">
-                    Builders pay the buyer's agent commission (2-3%) as part of their marketing
-                    budget. You get professional representation at zero cost.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-blue-500 p-2 rounded-full mr-4 flex-shrink-0">
-                  <FileText className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Contract Review</h3>
-                  <p className="text-blue-100">
-                    Builder contracts are 50+ pages of legal language favoring the builder.
-                    Dr. Jan reviews every clause and explains your rights.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-blue-500 p-2 rounded-full mr-4 flex-shrink-0">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Your Advocate</h3>
-                  <p className="text-blue-100">
-                    The builder's sales rep works for the builder. You deserve someone who works
-                    exclusively for YOUR interests—negotiating, monitoring, and protecting you.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="bg-blue-500 p-2 rounded-full mr-4 flex-shrink-0">
-                  <Building2 className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Construction Oversight</h3>
-                  <p className="text-blue-100">
-                    We schedule walkthroughs at framing, pre-drywall, and final stages. Problems
-                    caught early are fixed—problems missed become your problems.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="text-center">
-              <p className="text-xl font-semibold text-blue-100">
-                "Why would you negotiate against professionals without professional help—
-                especially when that help is free?"
-              </p>
-            </div>
-          </section>
+          <LeftoverBand path="/new-construction" />
 
           {/* Current Incentives Alert */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -356,39 +238,50 @@ export default function NewConstructionPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">4.99%</div>
-                  <div className="text-slate-700 font-medium">Rate Buydowns</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">
+                    4.99%
+                  </div>
+                  <div className="text-slate-700 font-medium">
+                    Rate Buydowns
+                  </div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Multiple builders offering sub-5% rates with preferred lenders
+                    Multiple builders offering sub-5% rates with preferred
+                    lenders
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">$50K+</div>
-                  <div className="text-slate-700 font-medium">Upgrade Credits</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">
+                    $50K+
+                  </div>
+                  <div className="text-slate-700 font-medium">
+                    Upgrade Credits
+                  </div>
                   <div className="text-slate-500 text-sm mt-1">
                     Design center and premium options at no additional cost
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">6%</div>
-                  <div className="text-slate-700 font-medium">Closing Cost Credits</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">
+                    6%
+                  </div>
+                  <div className="text-slate-700 font-medium">
+                    Closing Cost Credits
+                  </div>
                   <div className="text-slate-500 text-sm mt-1">
                     Significant credits to offset buyer closing costs
                   </div>
                 </div>
               </div>
               <p className="text-center text-slate-600 mt-6">
-                Incentives change frequently. Contact Dr. Jan Duffy for current offers specific
-                to your preferred communities.
+                Incentives change frequently. Contact Dr. Jan Duffy for current
+                offers specific to your preferred communities.
               </p>
             </div>
           </section>
 
           {/* Builders Grid */}
+          <LeftoverBand path="/new-construction" slot={1} />
           <section className="mb-16 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Las Vegas New Home Builders
-            </h2>
             <div className="grid lg:grid-cols-2 gap-6">
               {builders.map((builder) => (
                 <div
@@ -398,10 +291,14 @@ export default function NewConstructionPage() {
                   <div className="bg-slate-900 text-white p-5 flex justify-between items-center">
                     <div>
                       <h3 className="text-xl font-bold">{builder.name}</h3>
-                      <span className="text-slate-400 text-sm">{builder.segment}</span>
+                      <span className="text-slate-400 text-sm">
+                        {builder.segment}
+                      </span>
                     </div>
                     <div className="text-right">
-                      <div className="text-blue-400 font-bold">{builder.priceRange}</div>
+                      <div className="text-blue-400 font-bold">
+                        {builder.priceRange}
+                      </div>
                     </div>
                   </div>
                   <div className="p-5">
@@ -449,10 +346,8 @@ export default function NewConstructionPage() {
           </section>
 
           {/* The Process */}
+          <LeftoverBand path="/new-construction" slot={2} />
           <section className="mb-16 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              New Construction Buying Process with BHHS
-            </h2>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
@@ -464,11 +359,15 @@ export default function NewConstructionPage() {
                   </h3>
                   <p className="text-slate-600">
                     Call{" "}
-                    <a href="tel:+17025001942" className="text-blue-600 font-semibold hover:underline">
-                      (702) 500-1942
+                    <a
+                      href="tel:+17022221964"
+                      className="text-blue-600 font-semibold hover:underline"
+                    >
+                      (702) 222-1964
                     </a>{" "}
-                    to register Dr. Jan Duffy as your buyer's agent before any builder visits. We'll 
-                    discuss your needs, budget, and preferred locations, then accompany you to model homes.
+                    to register Dr. Jan Duffy as your buyer's agent before any
+                    builder visits. We'll discuss your needs, budget, and
+                    preferred locations, then accompany you to model homes.
                   </p>
                 </div>
               </div>
@@ -481,9 +380,9 @@ export default function NewConstructionPage() {
                     Explore Communities & Compare Builders
                   </h3>
                   <p className="text-slate-600">
-                    Tour model homes, review floor plans, and understand what's included vs.
-                    upgrades. Dr. Jan provides objective comparisons—no builder pays us more than
-                    another.
+                    Tour model homes, review floor plans, and understand what's
+                    included vs. upgrades. Dr. Jan provides objective
+                    comparisons—no builder pays us more than another.
                   </p>
                 </div>
               </div>
@@ -496,9 +395,9 @@ export default function NewConstructionPage() {
                     Negotiate Contract & Design Center Selections
                   </h3>
                   <p className="text-slate-600">
-                    We review the purchase agreement, negotiate upgrades and incentives, and guide
-                    you through design center selections. Many buyers overspend here—we help you
-                    prioritize.
+                    We review the purchase agreement, negotiate upgrades and
+                    incentives, and guide you through design center selections.
+                    Many buyers overspend here—we help you prioritize.
                   </p>
                 </div>
               </div>
@@ -511,8 +410,9 @@ export default function NewConstructionPage() {
                     Monitor Construction & Conduct Walkthroughs
                   </h3>
                   <p className="text-slate-600">
-                    We schedule walkthroughs at key stages: framing, pre-drywall (when systems are
-                    visible), and final. Issues caught early are fixed properly.
+                    We schedule walkthroughs at key stages: framing, pre-drywall
+                    (when systems are visible), and final. Issues caught early
+                    are fixed properly.
                   </p>
                 </div>
               </div>
@@ -525,117 +425,21 @@ export default function NewConstructionPage() {
                     Final Walkthrough & Closing
                   </h3>
                   <p className="text-slate-600">
-                    Comprehensive final inspection with punch list creation. We ensure everything
-                    promised is delivered before you take possession of your new home.
+                    Comprehensive final inspection with punch list creation. We
+                    ensure everything promised is delivered before you take
+                    possession of your new home.
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Expert Quote */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
-              <blockquote className="text-lg text-slate-700 italic mb-4">
-                "I've seen buyers leave $30,000 on the table because they didn't know what to ask
-                for. Builders expect negotiation—their sales managers have authority to approve
-                upgrades and credits. As your <strong>Berkshire Hathaway HomeServices</strong>
-                agent, I know exactly which incentives are available, which upgrades add value, and
-                which builder promises are legally binding. This representation costs you nothing
-                and can save you tens of thousands."
-              </blockquote>
-              <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
-              </cite>
-            </div>
-          </section>
-
-          {/* FAQ Section */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              New Construction FAQs
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  Is buyer representation really free for new construction?
-                </h3>
-                <p className="text-slate-600">
-                  Yes, 100% free to buyers. The builder pays the buyer's agent commission (typically
-                  2-3%) as part of their marketing budget. You pay nothing extra, and you get
-                  professional representation to protect your interests.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  Why do I need an agent when buying new construction?
-                </h3>
-                <p className="text-slate-600">
-                  Builder sales reps work for the builder, not you. A BHHS agent reviews contracts
-                  (often 50+ pages), negotiates upgrades and incentives, monitors construction
-                  quality, and ensures deadlines are met. Without representation, you're negotiating
-                  against experienced professionals alone.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  Do I have to register Dr. Jan Duffy as my agent on the first visit?
-                </h3>
-                <p className="text-slate-600">
-                  Yes, most builders require your agent to accompany you or be registered on your
-                  FIRST visit. If you visit alone and sign the guest registry, you may forfeit your
-                  right to free representation. Call{" "}
-                  <a href="tel:+17025001942" className="text-blue-600 font-semibold hover:underline">
-                    (702) 500-1942
-                  </a>{" "}
-                  to register Dr. Jan Duffy as your buyer's agent before visiting any model home.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  What builder incentives are currently available?
-                </h3>
-                <p className="text-slate-600">
-                  As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns
-                  (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages.
-                  Incentives change monthly. Dr. Jan tracks current offers across all builders.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  Can I negotiate on new construction pricing?
-                </h3>
-                <p className="text-slate-600">
-                  Base prices are typically firm, but everything else is negotiable—upgrades, lot
-                  premiums, closing costs, and design center selections. A BHHS agent knows which
-                  builders negotiate and how to maximize your leverage, especially on standing
-                  inventory.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                  <HelpCircle className="h-5 w-5 text-blue-600 mr-2" />
-                  Should I use the builder's preferred lender?
-                </h3>
-                <p className="text-slate-600">
-                  Builder lenders often offer significant incentives ($10K-$30K) to use their
-                  services. Dr. Jan helps you compare: sometimes the incentive outweighs slightly
-                  higher rates, sometimes it doesn't. We ensure you make an informed decision.
-                </p>
-              </div>
-            </div>
-          </section>
+          <ExpertQuote path="/new-construction" />
+          <IntentFaqs path="/new-construction" />
 
           {/* What We Negotiate */}
+          <LeftoverBand path="/new-construction" slot={3} />
           <section className="mb-16 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              What Dr. Jan Negotiates for New Construction Buyers
-            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 "Closing cost credits",
@@ -651,7 +455,10 @@ export default function NewConstructionPage() {
                 "Garage upgrades",
                 "Smart home packages",
               ].map((item) => (
-                <div key={item} className="flex items-center bg-white border border-slate-200 rounded-lg p-4">
+                <div
+                  key={item}
+                  className="flex items-center bg-white border border-slate-200 rounded-lg p-4"
+                >
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
                   <span className="text-slate-700">{item}</span>
                 </div>
@@ -662,31 +469,17 @@ export default function NewConstructionPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Tour New Construction?
+              Register Dr. Jan at Suite 100 before any Skye Canyon or Inspirada
+              model
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Call <strong>(702) 500-1942</strong> to register Dr. Jan Duffy as your buyer's agent 
-              <strong> before</strong> visiting any model home—or you may lose your right to free 
-              professional representation. Current incentive information available.
+              Call <strong>(702) 222-1964</strong> to register Dr. Jan Duffy as
+              your buyer's agent
+              <strong> before</strong> visiting any model home—or you may lose
+              your right to free professional representation. Current incentive
+              information available.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+17025001942"
-                className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-blue-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-400 transition-colors"
-              >
-                Request Builder Info
-              </Link>
-            </div>
-            <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
+            <CtaActions variant="onDark" />
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
@@ -694,7 +487,6 @@ export default function NewConstructionPage() {
         </div>
       </main>
       <RealScoutListings />
-      <Footer />
     </>
   );
 }

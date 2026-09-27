@@ -1,5 +1,3 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
@@ -15,11 +13,23 @@ import {
   Heart,
 } from "lucide-react";
 import type { Metadata } from "next";
+import CtaActions from "@/components/sections/CtaActions";
+import HeadingPhoto from "@/components/sections/HeadingPhoto";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import LeftoverBand from "@/components/sections/LeftoverBand";
+import FiftyFiveFaqs from "@/components/sections/FiftyFiveFaqs";
+import ExpertQuote from "@/components/sections/ExpertQuote";
+import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
+import RealScoutSearch from "@/components/realscout/RealScoutSearch";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
+export const metadata: Metadata = pageMetadata({
+  path: "/55-plus-communities/trilogy-summerlin",
+  title:
+    "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
   description:
-    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 500-1942.",
+    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
   keywords: [
     "Trilogy at Summerlin homes for sale",
     "Trilogy Summerlin Las Vegas",
@@ -34,7 +44,7 @@ export const metadata: Metadata = {
       "Where resort living meets 55+ community. Farm-to-table dining, spa, contemporary homes. From $500K. Dr. Jan Duffy, BHHS.",
     type: "website",
   },
-};
+});
 
 const communitySchema = {
   "@context": "https://schema.org",
@@ -62,24 +72,8 @@ export default function TrilogySummerlinPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(communitySchema) }}
       />
-      <Navbar />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <div className="max-w-6xl mx-auto mb-6">
-            <nav className="text-sm text-slate-500">
-              <Link href="/" className="hover:text-blue-600">
-                Home
-              </Link>
-              {" / "}
-              <Link href="/55-plus-communities" className="hover:text-blue-600">
-                55+ Communities
-              </Link>
-              {" / "}
-              <span className="text-slate-900">Trilogy at Summerlin</span>
-            </nav>
-          </div>
-
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-rose-100 text-rose-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -89,16 +83,30 @@ export default function TrilogySummerlinPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Trilogy at Summerlin
             </h1>
+            <HeadingPhoto path="/55-plus-communities/trilogy-summerlin" />
+
             <p className="text-xl text-slate-600">
               Where five-star resort living meets 55+ community. Farm-to-table
               dining, world-class spa, and contemporary homes.
             </p>
+            <div className="mt-8">
+              <CtaActions variant="onLight" />
+            </div>
+            <div className="mt-8 max-w-xl mx-auto text-left">
+              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">
+                Search live MLS inventory
+              </p>
+              <RealScoutSearch />
+            </div>
           </div>
+          <OfficeProximity path="/55-plus-communities/trilogy-summerlin" />
+          <UniqueInterior path="/55-plus-communities/trilogy-summerlin" />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              Trilogy at Summerlin at a Glance
+              800+ Shea Homes, $250–$350 HOA, $500K–$1.1M Band — Stats Before
+              the Clubhouse
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
@@ -126,138 +134,15 @@ export default function TrilogySummerlinPage() {
             </div>
           </section>
 
-          {/* About */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <div className="prose prose-lg max-w-none text-slate-700">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                About Trilogy at Summerlin
-              </h2>
-              <p>
-                <strong>Trilogy at Summerlin</strong> redefines what a 55+
-                community can be. Developed by Shea Homes, Trilogy brings a
-                resort hospitality approach to active adult living—think
-                boutique hotel amenities in a residential community setting.
-              </p>
-              <p>
-                The centerpiece is the stunning clubhouse featuring an on-site
-                farm-to-table restaurant (residents dine, not just grab coffee),
-                a full-service spa and wellness center, state-of-the-art fitness
-                facilities, and indoor/outdoor event spaces. The homes
-                themselves feature contemporary architecture with open floor
-                plans, designer finishes, and modern smart home technology.
-              </p>
-              <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                serves discerning buyers seeking luxury 55+ options. Dr. Jan
-                Duffy understands why buyers choose Trilogy's resort experience
-                over traditional active adult communities.
-              </p>
-            </div>
-          </section>
+          <LeftoverBand path="/55-plus-communities/trilogy-summerlin" />
 
-          {/* Resort Experience */}
-          <section className="mb-16 max-w-5xl mx-auto">
-            <div className="bg-gradient-to-r from-rose-50 to-pink-50 border-l-4 border-rose-500 rounded-r-xl p-8">
-              <div className="flex items-start">
-                <Star className="h-8 w-8 text-rose-600 mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">
-                    The Trilogy Difference: Resort-Style Living
-                  </h3>
-                  <p className="text-slate-700 mb-4">
-                    Trilogy isn't just a 55+ community with a nice clubhouse—it's
-                    a resort experience you happen to live in. The difference is
-                    in the details.
-                  </p>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="bg-white rounded-lg p-4 text-center">
-                      <UtensilsCrossed className="h-6 w-6 text-rose-600 mx-auto mb-2" />
-                      <div className="font-bold text-slate-900 text-sm">
-                        Farm-to-Table Restaurant
-                      </div>
-                      <div className="text-xs text-slate-600">
-                        Full-service dining, not a snack bar
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 text-center">
-                      <Sparkles className="h-6 w-6 text-rose-600 mx-auto mb-2" />
-                      <div className="font-bold text-slate-900 text-sm">
-                        Full-Service Spa
-                      </div>
-                      <div className="text-xs text-slate-600">
-                        Treatments, not just a hot tub
-                      </div>
-                    </div>
-                    <div className="bg-white rounded-lg p-4 text-center">
-                      <HomeIcon className="h-6 w-6 text-rose-600 mx-auto mb-2" />
-                      <div className="font-bold text-slate-900 text-sm">
-                        Contemporary Homes
-                      </div>
-                      <div className="text-xs text-slate-600">
-                        Designer finishes throughout
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Amenities */}
-          <section className="mb-16 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Luxury Amenities
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white border border-slate-200 rounded-xl p-6">
-                <div className="bg-rose-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <UtensilsCrossed className="h-6 w-6 text-rose-600" />
-                </div>
-                <h3 className="font-bold text-slate-900 mb-2">
-                  Farm-to-Table Dining
-                </h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• On-site restaurant</li>
-                  <li>• Chef-prepared meals</li>
-                  <li>• Indoor & patio seating</li>
-                  <li>• Full bar & wine selection</li>
-                </ul>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-xl p-6">
-                <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <Sparkles className="h-6 w-6 text-purple-600" />
-                </div>
-                <h3 className="font-bold text-slate-900 mb-2">
-                  Spa & Wellness Center
-                </h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• Full-service spa treatments</li>
-                  <li>• Massage & facials</li>
-                  <li>• Wellness programs</li>
-                  <li>• Relaxation lounges</li>
-                </ul>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-xl p-6">
-                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <Dumbbell className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-slate-900 mb-2">
-                  Fitness & Recreation
-                </h3>
-                <ul className="text-slate-600 text-sm space-y-1">
-                  <li>• State-of-the-art fitness center</li>
-                  <li>• Resort-style pool</li>
-                  <li>• Tennis & pickleball</li>
-                  <li>• Movement studio</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+          <FiftyFiveAmenities path="/55-plus-communities/trilogy-summerlin" />
 
           {/* Home Features */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
-              Contemporary Home Designs
+              Open plans and first-floor primaries — walk one Shea row from
+              Suite 100
             </h2>
             <p className="text-lg text-slate-600 text-center mb-8 max-w-3xl mx-auto">
               Trilogy homes break the mold of traditional 55+ construction with
@@ -314,109 +199,24 @@ export default function TrilogySummerlinPage() {
           </section>
 
           {/* Why Choose Trilogy */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Why Buyers Choose Trilogy at Summerlin
-            </h2>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-slate-900">
-                    True resort lifestyle, not just amenities
-                  </strong>
-                  <p className="text-slate-600 text-sm">
-                    On-site restaurant, full-service spa, and hospitality-trained
-                    staff create a resort experience
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-slate-900">
-                    Contemporary homes, not dated designs
-                  </strong>
-                  <p className="text-slate-600 text-sm">
-                    Modern architecture with open floor plans and designer
-                    finishes—a departure from traditional 55+ construction
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-slate-900">
-                    Boutique community size
-                  </strong>
-                  <p className="text-slate-600 text-sm">
-                    800+ homes—large enough for vibrant programming, small enough
-                    for genuine community
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-slate-900">
-                    Premium Summerlin location
-                  </strong>
-                  <p className="text-slate-600 text-sm">
-                    Near Downtown Summerlin, Red Rock Canyon, and top golf
-                    courses—the best of Las Vegas at your doorstep
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <ExpertQuote path="/55-plus-communities/trilogy-summerlin" />
 
-          {/* Expert Quote */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
-              <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Trilogy at Summerlin is for buyers who want more than a 55+
-                community—they want a lifestyle. The on-site restaurant, spa, and
-                contemporary homes create an experience you simply can't find
-                elsewhere. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent serving
-                luxury 55+ buyers, I recommend Trilogy to those who appreciate
-                quality and won't settle for ordinary."
-              </blockquote>
-              <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
-              </cite>
-            </div>
-          </section>
+          <FiftyFiveFaqs path="/55-plus-communities/trilogy-summerlin" />
 
           {/* CTA */}
           <section className="text-center bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Experience Luxury 55+ Living
+              Walk the Trilogy clubhouse pool 12–18 minutes from Suite 100
             </h2>
             <p className="text-xl text-rose-100 mb-8">
-              Discover why Trilogy at Summerlin sets the standard for resort-style
-              55+ living. Private tours available with Dr. Jan Duffy.
+              Clubhouse, spa, and Shea plan rows sit 12–18 minutes from 9406 W
+              Lake Mead Blvd. Register before walking models. Call (702)
+              222-1964.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <a
-                href="tel:+17025001942"
-                className="inline-flex items-center justify-center bg-white text-rose-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-rose-50 transition-colors"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-rose-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-rose-400 transition-colors"
-              >
-                Schedule a Tour
-              </Link>
-            </div>
+            <CtaActions variant="onDark" />
             <p className="text-rose-200">
-              Here to make your transition smooth, Dr. Jan{" "}
-              <span role="img" aria-label="sunshine">
-                ☀️
-              </span>
+              Clubhouse, spa, and Shea plans are 12–18 minutes from the Lake
+              Mead Blvd office.
             </p>
           </section>
         </div>
@@ -425,7 +225,6 @@ export default function TrilogySummerlinPage() {
         </div>
       </main>
       <RealScoutListings />
-      <Footer />
     </>
   );
 }

@@ -11,7 +11,10 @@ export async function POST(request: NextRequest) {
     const { prompt, conversation = [] } = await request.json();
 
     if (!prompt) {
-      return NextResponse.json({ error: "Prompt is required" }, { status: 400 });
+      return NextResponse.json(
+        { error: "Prompt is required" },
+        { status: 400 },
+      );
     }
 
     if (!process.env.OPENROUTER_API_KEY) {
@@ -26,7 +29,7 @@ export async function POST(request: NextRequest) {
       {
         role: "system",
         content:
-          "You are a friendly real estate assistant for Dr. Jan Duffy, a licensed realtor with Berkshire Hathaway HomeServices Nevada Properties. You specialize in Las Vegas and Henderson real estate. Be concise, warm, helpful, and professional. Always mention that users can contact Dr. Jan Duffy at (702) 500-1942 for personalized assistance.",
+          "You are a professional real estate assistant for Dr. Jan Duffy, a licensed realtor with Berkshire Hathaway HomeServices Nevada Properties. You specialize in Las Vegas and Henderson real estate. Be concise, warm, helpful, and professional. Mention that users can call or text Dr. Jan Duffy at (702) 222-1964. Never use Fair Housing proxies such as safe neighborhood, good schools, or family-friendly; describe square footage, amenities, school names, and commute times instead.",
       },
       ...conversation,
       {
