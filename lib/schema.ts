@@ -6,6 +6,7 @@
  * @see https://developers.google.com/search/docs/appearance/structured-data
  */
 
+import { SITE_URL } from "./contact";
 import { siteConfig, agentInfo, officeInfo } from "./site-config";
 
 // ============================================================================
@@ -61,7 +62,7 @@ export interface SeniorCommunityData {
 // Constants
 // ============================================================================
 
-const BASE_URL = siteConfig.url;
+const BASE_URL = SITE_URL;
 
 // Social media profiles (to be updated with actual URLs)
 export const socialProfiles = {
@@ -195,14 +196,15 @@ export function generateRealEstateAgentSchema() {
 /**
  * Generate Organization schema for BHHS brand
  */
-export function generateOrganizationSchema() {
+export function generateOrganizationSchema(siteUrl: string = SITE_URL) {
+  const base = siteUrl.replace(/\/$/, "");
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": `${BASE_URL}#parent-organization`,
+    "@id": `${base}#parent-organization`,
     name: "Berkshire Hathaway HomeServices Nevada Properties",
     url: "https://www.bfrre.com",
-    logo: `${BASE_URL}/favicon-32x32.png`,
+    logo: `${base}/favicon-32x32.png`,
     parentOrganization: {
       "@type": "Organization",
       name: "Berkshire Hathaway HomeServices",
@@ -238,22 +240,23 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 /**
  * Generate WebSite schema with search action
  */
-export function generateWebSiteSchema() {
+export function generateWebSiteSchema(siteUrl: string = SITE_URL) {
+  const base = siteUrl.replace(/\/$/, "");
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": `${BASE_URL}#website`,
+    "@id": `${base}#website`,
     name: siteConfig.name,
-    url: BASE_URL,
+    url: base,
     description: siteConfig.description,
     publisher: {
-      "@id": `${BASE_URL}#organization`,
+      "@id": `${base}#organization`,
     },
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${BASE_URL}/listings?q={search_term_string}`,
+        urlTemplate: `${base}/listings?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },

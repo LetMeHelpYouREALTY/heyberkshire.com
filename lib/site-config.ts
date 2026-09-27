@@ -10,7 +10,7 @@ export const siteConfig = {
     "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
-  url: "https://heyberkshire.com",
+  url: "https://www.heyberkshire.com",
   description:
     "Expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
 };

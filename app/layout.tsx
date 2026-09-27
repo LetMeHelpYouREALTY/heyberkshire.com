@@ -57,17 +57,19 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const siteSchemas = combineSchemas(
-  generateLocalBusinessSchema(),
-  generateOrganizationSchema(),
-  generateWebSiteSchema(),
-);
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const domain = headers().get("x-domain") || "";
+  const siteUrl = resolveSiteUrl(domain);
+  const siteSchemas = combineSchemas(
+    generateLocalBusinessSchema(siteUrl),
+    generateOrganizationSchema(siteUrl),
+    generateWebSiteSchema(siteUrl),
+  );
+
   return (
     <html lang="en" className={GeistSans.className}>
       <head>

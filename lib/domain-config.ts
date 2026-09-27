@@ -745,46 +745,6 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaHeadline: "Work With Dr. Jan Duffy",
     ctaSubheadline: "Call or text (702) 222-1964 — I answer my own phone.",
   },
-  "vegashomeagents.com": {
-    domain: "vegashomeagents.com",
-    neighborhood: "Las Vegas",
-    tagline: "Las Vegas Home Agents — Dr. Jan Duffy",
-    description:
-      "Las Vegas home agents led by Dr. Jan Duffy — MLS search, valuations, and contract strategy.",
-    heroHeadline: "Las Vegas Home Agents",
-    heroSubheadline:
-      "Local agents with desk support at 9406 W Lake Mead Blvd, Suite 100.",
-    keywords: [
-      "Las Vegas home agents",
-      "Las Vegas real estate agents",
-      "Vegas home agents",
-    ],
-    pageType: "search",
-    realscoutAgentId: REALSCOUT_AGENT_ID,
-    ctaBadge: "Agent Desk",
-    ctaHeadline: "Connect With the Desk",
-    ctaSubheadline: "Call (702) 222-1964 for buyer or seller representation.",
-  },
-  "emersonestateshomes.com": {
-    domain: "emersonestateshomes.com",
-    neighborhood: "Emerson Estates",
-    tagline: "Emerson Estates Homes for Sale",
-    description:
-      "Emerson Estates homes for sale in Las Vegas. Dr. Jan Duffy, neighborhood listing specialist.",
-    heroHeadline: "Emerson Estates Homes for Sale",
-    heroSubheadline:
-      "Search current Emerson Estates listings with local contract support.",
-    keywords: [
-      "Emerson Estates homes",
-      "Emerson Estates Las Vegas",
-      "Emerson Estates real estate",
-    ],
-    pageType: "community",
-    realscoutAgentId: REALSCOUT_AGENT_ID,
-    ctaBadge: "Emerson Estates",
-    ctaHeadline: "Tour Emerson Estates Listings",
-    ctaSubheadline: "Call (702) 222-1964 to schedule showings this week.",
-  },
   "askdrjanduffy.com": {
     domain: "askdrjanduffy.com",
     neighborhood: "Las Vegas",
@@ -805,27 +765,6 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaHeadline: "Get a Straight Answer",
     ctaSubheadline:
       "Call or text (702) 222-1964 with your question — no call center.",
-  },
-  "justcallchance.com": {
-    domain: "justcallchance.com",
-    neighborhood: "Las Vegas",
-    tagline: "Just Call Chance — Las Vegas Real Estate",
-    description:
-      "Las Vegas real estate with Chance — contact the desk for the verified tracking line.",
-    heroHeadline: "Just Call Chance",
-    heroSubheadline:
-      "Las Vegas buyer and seller representation — use the site CTA line once provisioned in Vercel.",
-    keywords: [
-      "Just Call Chance",
-      "Las Vegas real estate Chance",
-      "call Chance realtor Las Vegas",
-    ],
-    pageType: "search",
-    realscoutAgentId: REALSCOUT_AGENT_ID,
-    ctaBadge: "Las Vegas Team",
-    ctaHeadline: "Reach the Desk",
-    ctaSubheadline:
-      "Use the verified phone constant for this host once set in Vercel env.",
   },
 };
 

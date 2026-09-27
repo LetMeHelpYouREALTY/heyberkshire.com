@@ -8,6 +8,9 @@
  */
 
 import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
+import { headers } from "next/headers";
+import { absoluteUrl } from "@/lib/seo";
+import { resolveSiteUrl } from "@/lib/contact";
 
 interface SchemaScriptProps {
   /** Single schema object */
@@ -54,11 +57,12 @@ export default function SchemaScript({
  * Helper component for breadcrumb schema
  * Commonly used across all pages
  */
-export function BreadcrumbSchema({
+export async function BreadcrumbSchema({
   items,
 }: {
   items: Array<{ name: string; url: string }>;
 }) {
+  const domain = headers().get("x-domain") || "";
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -68,7 +72,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith("http")
         ? item.url
-        : `https://heyberkshire.com${item.url}`,
+        : absoluteUrl(item.url, domain),
     })),
   };
 
@@ -104,7 +108,7 @@ export function FAQSchema({
  * Helper component for Review/Rating schema
  * Used on pages with testimonials
  */
-export function ReviewSchema({
+export async function ReviewSchema({
   reviews,
 }: {
   reviews?: Array<{
@@ -114,10 +118,12 @@ export function ReviewSchema({
     date?: string;
   }>;
 }) {
+  const domain = headers().get("x-domain") || "";
+  const siteUrl = resolveSiteUrl(domain);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://heyberkshire.com#organization",
+    "@id": `${siteUrl}#organization`,
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   };
 
@@ -145,7 +151,7 @@ export function ReviewSchema({
 /**
  * Helper component for Place/Neighborhood schema
  */
-export function NeighborhoodSchema({
+export async function NeighborhoodSchema({
   name,
   description,
   slug,
@@ -160,10 +166,12 @@ export function NeighborhoodSchema({
   longitude?: number;
   containedIn?: string;
 }) {
+  const domain = headers().get("x-domain") || "";
+  const siteUrl = resolveSiteUrl(domain);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://heyberkshire.com/neighborhoods/${slug}#place`,
+    "@id": `${siteUrl}/neighborhoods/${slug}#place`,
     name: `${name}, Las Vegas`,
     description,
     address: {

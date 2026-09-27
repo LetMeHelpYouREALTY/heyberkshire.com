@@ -28,7 +28,7 @@ import FiftyFiveFaqs from "@/components/sections/FiftyFiveFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import LeftoverBand from "@/components/sections/LeftoverBand";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities",
@@ -63,7 +63,7 @@ const localBusinessSchema = {
   description:
     "55+ community specialist helping active adults find their perfect Las Vegas retirement home",
   telephone: "(702) 222-1964",
-  url: "https://heyberkshire.com/55-plus-communities",
+  url: absoluteUrl("/55-plus-communities"),
   areaServed: {
     "@type": "City",
     name: "Las Vegas",
