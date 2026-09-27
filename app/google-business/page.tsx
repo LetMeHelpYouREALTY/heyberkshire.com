@@ -40,7 +40,6 @@ export const metadata: Metadata = pageMetadata({
     title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     description:
       "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
-    url: "https://heyberkshire.com/google-business",
     type: "profile",
   },
 });

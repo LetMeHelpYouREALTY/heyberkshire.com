@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, absoluteUrl } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
 import OfficeProximity from "@/components/sections/OfficeProximity";
 import UniqueInterior from "@/components/sections/UniqueInterior";
@@ -46,13 +46,13 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy",
-  image: "https://heyberkshire.com/images/dr-jan-duffy.jpg",
+  image: absoluteUrl("/images/dr-jan-duffy.jpg"),
   jobTitle: "REALTOR®",
   description:
     "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
   telephone: "+17025001942",
   email: "homes@heyberkshire.com",
-  url: "https://heyberkshire.com/about",
+  url: absoluteUrl("/about"),
   worksFor: {
     "@type": "RealEstateAgent",
     name: "Berkshire Hathaway HomeServices Nevada Properties",

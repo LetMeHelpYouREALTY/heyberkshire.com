@@ -1,6 +1,8 @@
 // Google Business Profile Schema Data
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
+import { HEYBERKSHIRE_CANONICAL, SITE_URL } from "./contact";
+
 export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
@@ -16,7 +18,7 @@ export const businessInfo = {
     tel: "+17025001942",
   },
   email: "homes@heyberkshire.com",
-  url: "https://heyberkshire.com",
+  url: HEYBERKSHIRE_CANONICAL,
 
   // Business Details
   license: "S.0197614.LLC",
@@ -240,19 +242,22 @@ export const gbpFAQs = [
 ];
 
 // Generate LocalBusiness Schema
-export function generateLocalBusinessSchema() {
+export function generateLocalBusinessSchema(
+  siteUrl: string = SITE_URL,
+): Record<string, unknown> {
+  const origin = siteUrl.replace(/\/$/, "");
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://heyberkshire.com/#organization",
+    "@id": `${origin}/#organization`,
     name: businessInfo.name,
     image: [
-      "https://heyberkshire.com/images/dr-jan-duffy.jpg",
-      "https://heyberkshire.com/images/hero/office-lake-mead-blvd.jpg",
-      "https://heyberkshire.com/images/hero/west-las-vegas-office-exterior.jpg",
+      `${origin}/images/dr-jan-duffy.jpg`,
+      `${origin}/images/hero/office-lake-mead-blvd.jpg`,
+      `${origin}/images/hero/west-las-vegas-office-exterior.jpg`,
     ],
-    logo: "https://heyberkshire.com/images/dr-jan-duffy.jpg",
-    url: businessInfo.url,
+    logo: `${origin}/images/dr-jan-duffy.jpg`,
+    url: origin,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,
     priceRange: businessInfo.priceRange,

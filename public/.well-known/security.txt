@@ -2,8 +2,8 @@ Contact: mailto:security@heyberkshire.com
 Contact: tel:+1-702-500-1942
 Expires: 2027-02-13T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://heyberkshire.com/.well-known/security.txt
-Policy: https://heyberkshire.com/security-policy
+Canonical: https://www.heyberkshire.com/.well-known/security.txt
+Policy: https://www.heyberkshire.com/security-policy
 
 Acknowledgments: We appreciate responsible disclosure of security vulnerabilities.
 

@@ -4,7 +4,13 @@
  * Office/GBP NAP: (702) 500-1942 — footer schema and Google Business match.
  */
 
-const HEYBERKSHIRE_FALLBACK = "https://heyberkshire.com";
+/** Canonical production origin for heyberkshire (www, not apex). */
+export const HEYBERKSHIRE_CANONICAL = "https://www.heyberkshire.com";
+
+/** Normalized hostname → canonical origin (when env is unset). */
+export const HOST_CANONICAL_ORIGINS: Record<string, string> = {
+  "heyberkshire.com": HEYBERKSHIRE_CANONICAL,
+};
 
 export function normalizeHostname(hostname: string): string {
   return hostname
@@ -13,23 +19,28 @@ export function normalizeHostname(hostname: string): string {
     .toLowerCase();
 }
 
-/** Site origin for canonical/og:url — request host first; env for local/preview; heyberkshire fallback last. */
+/**
+ * Site origin for canonical, og:url, and JSON-LD.
+ * 1) NEXT_PUBLIC_SITE_URL when set
+ * 2) Host map (heyberkshire → www) or https://{host} for other live domains
+ * 3) HeyBerkshire www fallback (never bare apex)
+ */
 export function resolveSiteUrl(hostname?: string | null): string {
-  const clean = normalizeHostname(hostname ?? "");
-
-  if (clean && clean !== "localhost" && !clean.endsWith(".vercel.app")) {
-    return `https://${clean}`;
-  }
-
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
   if (fromEnv) return fromEnv;
 
-  return HEYBERKSHIRE_FALLBACK;
+  const clean = normalizeHostname(hostname ?? "");
+  if (clean && clean !== "localhost" && !clean.endsWith(".vercel.app")) {
+    return HOST_CANONICAL_ORIGINS[clean] ?? `https://${clean}`;
+  }
+
+  return HEYBERKSHIRE_CANONICAL;
 }
 
 /** Build-time default for sitemap/robots; set NEXT_PUBLIC_SITE_URL on each Vercel project. */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? HEYBERKSHIRE_FALLBACK;
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+  HEYBERKSHIRE_CANONICAL;
 
 export const ctaPhone = {
   display: "(702) 222-1964",

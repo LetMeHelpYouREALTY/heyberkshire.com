@@ -20,7 +20,7 @@ Allow: /contact/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://heyberkshire.com/sitemap.xml
+Sitemap: https://www.heyberkshire.com/sitemap.xml
 
 # Crawl-delay for aggressive bots (optional)
 User-agent: AhrefsBot

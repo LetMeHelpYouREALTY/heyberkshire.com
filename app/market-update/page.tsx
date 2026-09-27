@@ -8,7 +8,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import SupportFaqs from "@/components/sections/SupportFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/market-update",
@@ -45,7 +45,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "Berkshire Hathaway HomeServices Nevada Properties",
-    url: "https://heyberkshire.com",
+    url: absoluteUrl("/"),
   },
 };
 

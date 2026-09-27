@@ -9,7 +9,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, absoluteUrl } from "@/lib/seo";
 import { nap } from "@/lib/contact";
 import CtaActions from "@/components/sections/CtaActions";
 import OfficeProximity from "@/components/sections/OfficeProximity";
@@ -40,7 +40,7 @@ const realEstateAgentSchema = {
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   telephone: "+17025001942",
-  url: "https://heyberkshire.com/buyers/california-relocator",
+  url: absoluteUrl("/buyers/california-relocator"),
   address: {
     "@type": "PostalAddress",
     streetAddress: "9406 W Lake Mead Blvd, Suite 100",
