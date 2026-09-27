@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   Phone,
-  Mail, 
-  Award, 
-  Users, 
-  Home, 
-  TrendingUp, 
+  Mail,
+  Award,
+  Users,
+  Home,
+  TrendingUp,
   MapPin,
   Shield,
   Star,
@@ -114,16 +114,16 @@ export default function AboutPage() {
             </h1>
             <HeadingPhoto path="/about" />
             <p className="text-xl text-slate-600">
-              Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most
-              trusted name in real estate. Whether you're buying, selling, investing, or 
-              relocating, you'll receive expert guidance with integrity and professionalism.
+              Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the
+              most trusted name in real estate. Whether you're buying, selling,
+              investing, or relocating, you'll receive expert guidance with
+              integrity and professionalism.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Consultation" />
-          <OfficeProximity path="/about" />
-          <UniqueInterior path="/about" />
-          <ExpertQuote path="/about" />
-
+              <OfficeProximity path="/about" />
+              <UniqueInterior path="/about" />
+              <ExpertQuote path="/about" />
             </div>
           </div>
 
@@ -131,44 +131,57 @@ export default function AboutPage() {
           <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
-<p className="text-lg text-blue-600 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                  Dr. Jan Duffy
+                </h2>
+                <p className="text-lg text-blue-600 mb-6">
                   REALTOR® | License S.0197614.LLC
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with <strong>Berkshire Hathaway HomeServices</strong>,
-                    you're choosing a legacy of trust, integrity, and excellence. I'm proud to
-                    represent this iconic brand in the Las Vegas real estate market, bringing 
-                    world-class resources and local expertise to every client I serve.
+                    When you choose to work with{" "}
+                    <strong>Berkshire Hathaway HomeServices</strong>, you're
+                    choosing a legacy of trust, integrity, and excellence. I'm
+                    proud to represent this iconic brand in the Las Vegas real
+                    estate market, bringing world-class resources and local
+                    expertise to every client I serve.
                   </p>
                   <p>
                     Since 2008, I've closed $127 million in transactions and
-                    helped hundreds of buyers and sellers find the right home in Las Vegas, Henderson,
-                    Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
-                    new construction, investment real estate, 55+ active adult communities, and 
-                    relocations—particularly for California buyers seeking Nevada's tax advantages.
+                    helped hundreds of buyers and sellers find the right home in
+                    Las Vegas, Henderson, Summerlin, and throughout Southern
+                    Nevada. My expertise spans luxury properties, new
+                    construction, investment real estate, 55+ active adult
+                    communities, and relocations—particularly for California
+                    buyers seeking Nevada's tax advantages.
                   </p>
                   <p>
-                    What sets <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                    apart? We're backed by Warren Buffett's Berkshire Hathaway Inc.—a name synonymous
-                    with financial strength and ethical standards. When you're making the biggest
-                    financial decision of your life, that trust matters. You deserve an agent who 
-                    puts your interests first, provides honest advice, and has the resources to 
-                    deliver exceptional results.
+                    What sets{" "}
+                    <strong>
+                      Berkshire Hathaway HomeServices Nevada Properties
+                    </strong>{" "}
+                    apart? We're backed by Warren Buffett's Berkshire Hathaway
+                    Inc.—a name synonymous with financial strength and ethical
+                    standards. When you're making the biggest financial decision
+                    of your life, that trust matters. You deserve an agent who
+                    puts your interests first, provides honest advice, and has
+                    the resources to deliver exceptional results.
                   </p>
                   <p>
-                    Files start at Suite 100. Square-footage tours, listing APNs, 55+ occupancy
-                    packets, and California inbound nets get the same dated CMA. Real estate is a
-                    walkthrough and a number, not a caption.
+                    Files start at Suite 100. Square-footage tours, listing
+                    APNs, 55+ occupancy packets, and California inbound nets get
+                    the same dated CMA. Real estate is a walkthrough and a
+                    number, not a caption.
                   </p>
                 </div>
 
                 {/* Contact Info */}
                 <div className="bg-slate-50 rounded-lg p-6 mb-8">
-                  <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h3>
-<div className="space-y-3">
+                  <h3 className="font-bold text-slate-900 mb-4">
+                    Contact Dr. Jan Duffy
+                  </h3>
+                  <div className="space-y-3">
                     <a
                       href="tel:+17022221964"
                       className="flex items-center text-slate-700 hover:text-blue-600"
@@ -186,7 +199,8 @@ export default function AboutPage() {
                     <div className="flex items-start text-slate-700">
                       <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-0.5" />
                       <address className="not-italic">
-                        9406 W Lake Mead Blvd, Suite 100<br />
+                        9406 W Lake Mead Blvd, Suite 100
+                        <br />
                         Las Vegas, NV 89134
                       </address>
                     </div>
@@ -223,7 +237,6 @@ export default function AboutPage() {
                     </a>
                   </div>
                 </div>
-
               </div>
 
               {/* Stats & Credentials */}
@@ -242,19 +255,29 @@ export default function AboutPage() {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
-                    <div className="text-sm text-slate-600">Serving Las Vegas</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">
+                      Since 2008
+                    </div>
+                    <div className="text-sm text-slate-600">
+                      Serving Las Vegas
+                    </div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">
+                      $127M+
+                    </div>
                     <div className="text-sm text-slate-600">Volume Closed</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">
+                      500+
+                    </div>
                     <div className="text-sm text-slate-600">Transactions</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">4.9★</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">
+                      4.9★
+                    </div>
                     <div className="text-sm text-slate-600">Client Rating</div>
                   </div>
                 </div>
@@ -263,19 +286,33 @@ export default function AboutPage() {
                 <div className="bg-white border border-slate-200 rounded-lg p-6">
                   <h3 className="font-bold text-slate-900 mb-4">Quick Links</h3>
                   <div className="space-y-2">
-                    <Link href="/buyers" className="flex items-center text-slate-700 hover:text-blue-600">
+                    <Link
+                      href="/buyers"
+                      className="flex items-center text-slate-700 hover:text-blue-600"
+                    >
                       <ArrowRight className="h-4 w-4 mr-2 text-blue-600" />
                       Home Buying Guide
                     </Link>
-                    <Link href="/sellers" className="flex items-center text-slate-700 hover:text-blue-600">
+                    <Link
+                      href="/sellers"
+                      className="flex items-center text-slate-700 hover:text-blue-600"
+                    >
                       <ArrowRight className="h-4 w-4 mr-2 text-blue-600" />
                       Selling Your Home
                     </Link>
-                    <Link href="/home-valuation" className="flex items-center text-slate-700 hover:text-blue-600">
+                    <Link
+                      href="/home-valuation"
+                      className="flex items-center text-slate-700 hover:text-blue-600"
+                    >
                       <ArrowRight className="h-4 w-4 mr-2 text-blue-600" />
                       Free Home Valuation
                     </Link>
-                    <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-700 hover:text-blue-600">
+                    <a
+                      href="http://drjanduffy.realscout.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-slate-700 hover:text-blue-600"
+                    >
                       <ArrowRight className="h-4 w-4 mr-2 text-blue-600" />
                       Browse Listings
                     </a>
@@ -295,36 +332,46 @@ export default function AboutPage() {
               License S.0197614.LLC on the card at 9406 W Lake Mead Blvd
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Berkshire Hathaway HomeServices Nevada Properties holds the desk. Appointments start
-              at Suite 100. Call or text (702) 222-1964. The office line on Google is (702) 500-1942.
+              Berkshire Hathaway HomeServices Nevada Properties holds the desk.
+              Appointments start at Suite 100. Call or text (702) 222-1964. The
+              office line on Google is (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Award className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">BHHS Nevada Properties on the paperwork</h3>
+                <h3 className="font-bold text-xl mb-2">
+                  BHHS Nevada Properties on the paperwork
+                </h3>
                 <p className="text-slate-300 text-sm">
-                  The brokerage on the contract is Berkshire Hathaway HomeServices Nevada Properties,
-                  not a slogan. Suite 100 is the Maps pin.
+                  The brokerage on the contract is Berkshire Hathaway
+                  HomeServices Nevada Properties, not a slogan. Suite 100 is the
+                  Maps pin.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Users className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">West Coast sale timed against a Las Vegas purchase</h3>
+                <h3 className="font-bold text-xl mb-2">
+                  West Coast sale timed against a Las Vegas purchase
+                </h3>
                 <p className="text-slate-300 text-sm">
-                  50,000+ BHHS agents for a California listing referral paired with a Suite 100 buyer file.
+                  50,000+ BHHS agents for a California listing referral paired
+                  with a Suite 100 buyer file.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Shield className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">No-pressure consult, then a dated tour block</h3>
+                <h3 className="font-bold text-xl mb-2">
+                  No-pressure consult, then a dated tour block
+                </h3>
                 <p className="text-slate-300 text-sm">
-                  We review HOA packets and commute minutes at the desk before we drive. Call (702) 222-1964.
+                  We review HOA packets and commute minutes at the desk before
+                  we drive. Call (702) 222-1964.
                 </p>
               </div>
             </div>
@@ -341,16 +388,21 @@ export default function AboutPage() {
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              The Ridges, Summerlin, Henderson, NLV — commute minutes from Suite 100
+              The Ridges, Summerlin, Henderson, NLV — commute minutes from Suite
+              100
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Files start at 9406 W Lake Mead Blvd, Suite 100. Summerlin is 10–15 minutes.
-              The Ridges gate is 15–20. Henderson is 25–35 via I-215 east. North Las Vegas
-              new construction is a separate afternoon. Call (702) 222-1964.
+              Files start at 9406 W Lake Mead Blvd, Suite 100. Summerlin is
+              10–15 minutes. The Ridges gate is 15–20. Henderson is 25–35 via
+              I-215 east. North Las Vegas new construction is a separate
+              afternoon. Call (702) 222-1964.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {areasServed.map((area) => (
-                <div key={area} className="bg-slate-50 rounded-lg p-4 text-center hover:bg-blue-50 transition-colors">
+                <div
+                  key={area}
+                  className="bg-slate-50 rounded-lg p-4 text-center hover:bg-blue-50 transition-colors"
+                >
                   <Home className="h-5 w-5 mx-auto mb-2 text-blue-600" />
                   <span className="text-slate-700 font-medium">{area}</span>
                 </div>
@@ -361,7 +413,8 @@ export default function AboutPage() {
                 href="/neighborhoods"
                 className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center"
               >
-                Explore All Neighborhoods <ArrowRight className="h-4 w-4 ml-2" />
+                Explore All Neighborhoods{" "}
+                <ArrowRight className="h-4 w-4 ml-2" />
               </Link>
             </div>
           </section>
@@ -372,8 +425,9 @@ export default function AboutPage() {
               Dated files and Google Reviews — 4.9 on the Suite 100 pin
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              With a 4.9-star rating and hundreds of satisfied clients, Dr. Jan has built a 
-              reputation for excellence, integrity, and personalized service.
+              With a 4.9-star rating and hundreds of satisfied clients, Dr. Jan
+              has built a reputation for excellence, integrity, and personalized
+              service.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -385,11 +439,14 @@ export default function AboutPage() {
                   <Star className="h-5 w-5 text-yellow-400" />
                 </div>
                 <p className="text-slate-600 italic mb-3">
-                  "Dr. Jan made our California to Las Vegas relocation seamless. She understood 
-                  exactly what we were looking for and found us the perfect home in Summerlin. 
-                  Her knowledge of the market is exceptional."
+                  "Dr. Jan made our California to Las Vegas relocation seamless.
+                  She understood exactly what we were looking for and found us
+                  the perfect home in Summerlin. Her knowledge of the market is
+                  exceptional."
                 </p>
-                <p className="text-slate-900 font-semibold">— Michael & Sarah T., Summerlin</p>
+                <p className="text-slate-900 font-semibold">
+                  — Michael & Sarah T., Summerlin
+                </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <div className="flex items-center mb-3">
@@ -400,22 +457,26 @@ export default function AboutPage() {
                   <Star className="h-5 w-5 text-yellow-400" />
                 </div>
                 <p className="text-slate-600 italic mb-3">
-                  "As first-time home buyers, we were nervous about the process. Dr. Jan walked 
-                  us through every step, explained everything clearly, and helped us get a great 
-                  deal. Highly recommend!"
+                  "As first-time home buyers, we were nervous about the process.
+                  Dr. Jan walked us through every step, explained everything
+                  clearly, and helped us get a great deal. Highly recommend!"
                 </p>
-                <p className="text-slate-900 font-semibold">— Jennifer & David K., Henderson</p>
+                <p className="text-slate-900 font-semibold">
+                  — Jennifer & David K., Henderson
+                </p>
               </div>
             </div>
           </section>
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Book Suite 100 — license S.0197614.LLC is on the card</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Book Suite 100 — license S.0197614.LLC is on the card
+            </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Questions about buying or selling in Las Vegas? Call or text Dr. Jan Duffy today 
-              for a free consultation. Whether you're ready to start your search or just exploring 
-              options, she's here to help.
+              Questions about buying or selling in Las Vegas? Call or text Dr.
+              Jan Duffy today for a free consultation. Whether you're ready to
+              start your search or just exploring options, she's here to help.
             </p>
             <CtaActions variant="onDark" />
           </section>

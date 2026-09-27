@@ -31,10 +31,12 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <h2 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h2>
+            <h2 className="font-bold text-xl mb-4">
+              Berkshire Hathaway HomeServices
+            </h2>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties — Dr. Jan Duffy, REALTOR®. Buying, selling, and relocating in Las
-              Vegas, Henderson, and Summerlin.
+              Nevada Properties — Dr. Jan Duffy, REALTOR®. Buying, selling, and
+              relocating in Las Vegas, Henderson, and Summerlin.
             </p>
             <address className="not-italic text-slate-300 text-sm mb-4">
               {nap.street}
@@ -111,11 +113,20 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "/buyers", label: "Home Buying" },
-                { href: "/buyers/california-relocator", label: "California Relocators" },
-                { href: "/buyers/first-time-buyers", label: "First-Time Buyers" },
+                {
+                  href: "/buyers/california-relocator",
+                  label: "California Relocators",
+                },
+                {
+                  href: "/buyers/first-time-buyers",
+                  label: "First-Time Buyers",
+                },
                 { href: "/sellers", label: "Home Selling" },
                 { href: "/home-valuation", label: "Free Home Valuation" },
-                { href: "/investment-properties", label: "Investment Properties" },
+                {
+                  href: "/investment-properties",
+                  label: "Investment Properties",
+                },
                 { href: "/relocation", label: "Relocation" },
                 { href: "/faq", label: "Real Estate FAQ" },
               ].map((link) => (
@@ -135,7 +146,10 @@ export default function Footer() {
             <h2 className="font-bold text-lg mb-4">Contact Dr. Jan Duffy</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <MapPin
+                  className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
                 <a
                   href={maps.placeUrl}
                   target="_blank"
@@ -148,7 +162,10 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" aria-hidden="true" />
+                <Phone
+                  className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <a
                   href={ctaPhone.href}
                   className="text-slate-300 hover:text-white transition-colors text-sm font-semibold"
@@ -160,7 +177,10 @@ export default function Footer() {
                 Office (GBP): {officePhone.display}
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" aria-hidden="true" />
+                <Mail
+                  className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <a
                   href={nap.emailHref}
                   className="text-slate-300 hover:text-white transition-colors text-sm"
@@ -169,10 +189,16 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start">
-                <Clock className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <Clock
+                  className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
                 <ul className="text-slate-300 text-sm space-y-0.5">
                   {businessHours.map((row) => (
-                    <li key={row.day} className="flex justify-between gap-4 tabular-nums">
+                    <li
+                      key={row.day}
+                      className="flex justify-between gap-4 tabular-nums"
+                    >
                       <span>{row.day}</span>
                       <span className="text-slate-400">{row.label}</span>
                     </li>
@@ -225,10 +251,16 @@ export default function Footer() {
               © {currentYear} {nap.brokerage}. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
+              <Link
+                href="/faq"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
                 FAQ
               </Link>
-              <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
+              <Link
+                href="/contact"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
                 Contact
               </Link>
               <Link
@@ -237,7 +269,10 @@ export default function Footer() {
               >
                 Security Policy
               </Link>
-              <Link href="/sitemap.xml" className="text-slate-400 hover:text-white transition-colors">
+              <Link
+                href="/sitemap.xml"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
                 Sitemap
               </Link>
             </div>
@@ -246,7 +281,8 @@ export default function Footer() {
             {nap.shortName}, REALTOR® | License {nap.license} | {nap.brokerage}
           </p>
           <p className="text-slate-500 text-xs mt-2 text-center">
-            {nap.fullAddress} · Office {officePhone.display} · Call or text {ctaPhone.display}
+            {nap.fullAddress} · Office {officePhone.display} · Call or text{" "}
+            {ctaPhone.display}
           </p>
           <MlsDisclaimer className="mt-4 text-center max-w-4xl mx-auto text-slate-600" />
           <p className="text-slate-600 text-xs mt-3 text-center">

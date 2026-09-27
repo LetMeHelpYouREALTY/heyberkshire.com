@@ -33,7 +33,7 @@ const forbidden = [
 
 describe("processSteps", () => {
   const entries = Object.entries(processSteps).flatMap(([path, slots]) =>
-    slots.map((copy, slot) => ({ path, slot, copy }))
+    slots.map((copy, slot) => ({ path, slot, copy })),
   );
 
   it("covers the leftover Trusted Brand and process chassis paths", () => {
@@ -55,7 +55,7 @@ describe("processSteps", () => {
 
   it("keeps every step title unique across paths", () => {
     const titles = entries.flatMap((entry) =>
-      entry.copy.steps.map((step) => step.title)
+      entry.copy.steps.map((step) => step.title),
     );
     expect(new Set(titles).size).toBe(titles.length);
   });
@@ -91,7 +91,11 @@ describe("processSteps", () => {
         quotePhotoForPath(path).src,
       ];
       if (path === "/buyers") used.push(buyerFaqPhotoForPath(path).src);
-      if (path === "/listings" || path === "/contact" || path.startsWith("/why-berkshire")) {
+      if (
+        path === "/listings" ||
+        path === "/contact" ||
+        path.startsWith("/why-berkshire")
+      ) {
         used.push(supportFaqPhotoForPath(path).src);
       }
       if (path.startsWith("/luxury-homes")) {
@@ -109,11 +113,11 @@ describe("processSteps", () => {
 
   it("registers process stills in occupiedHeadingStills so quotes skip them", () => {
     for (const { path, slot } of entries) {
-      expect(occupiedHeadingStills(path).has(processPhotoForPath(path, slot).src)).toBe(
-        true
-      );
+      expect(
+        occupiedHeadingStills(path).has(processPhotoForPath(path, slot).src),
+      ).toBe(true);
       expect(quotePhotoForPath(path).src).not.toBe(
-        processPhotoForPath(path, slot).src
+        processPhotoForPath(path, slot).src,
       );
     }
   });

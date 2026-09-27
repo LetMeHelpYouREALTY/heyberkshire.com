@@ -30,7 +30,6 @@ import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities",
   title:
@@ -56,7 +55,6 @@ export const metadata: Metadata = pageMetadata({
     type: "website",
   },
 });
-
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -242,11 +240,13 @@ export default function FiftyFiveCommunitiesPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero Section */}
+          {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Sun className="h-4 w-4 mr-2" />
@@ -263,9 +263,8 @@ export default function FiftyFiveCommunitiesPage() {
               <strong>Dr. Duffy specializes in active adult living</strong>
             </p>
             <CtaActions variant="onLight" />
-          <OfficeProximity path="/55-plus-communities" />
-          <UniqueInterior path="/55-plus-communities" />
-
+            <OfficeProximity path="/55-plus-communities" />
+            <UniqueInterior path="/55-plus-communities" />
           </div>
 
           <LeftoverBand path="/55-plus-communities" />
@@ -278,20 +277,24 @@ export default function FiftyFiveCommunitiesPage() {
                 <Users className="h-8 w-8 text-blue-600 mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">
-                    HOPA 80/20 occupancy — packet at Suite 100 before any clubhouse
+                    HOPA 80/20 occupancy — packet at Suite 100 before any
+                    clubhouse
                   </h3>
                   <div className="text-slate-700 space-y-3">
                     <p>
-                      <strong>Federal HOPA:</strong> At least 80% of occupied units must have one
-                      resident 55 or older. Individual HOAs can be stricter. We read the packet at
-                      9406 W Lake Mead Blvd before we drive.
+                      <strong>Federal HOPA:</strong> At least 80% of occupied
+                      units must have one resident 55 or older. Individual HOAs
+                      can be stricter. We read the packet at 9406 W Lake Mead
+                      Blvd before we drive.
                     </p>
                     <p>
-                      <strong>Co-occupant rules:</strong> Minimum ages for a co-occupant vary by
-                      campus (often 40–45). Confirm in writing. Call (702) 222-1964.
+                      <strong>Co-occupant rules:</strong> Minimum ages for a
+                      co-occupant vary by campus (often 40–45). Confirm in
+                      writing. Call (702) 222-1964.
                     </p>
                     <p className="text-blue-800 font-medium">
-                      Sun City Summerlin is 10–15 minutes. Anthem campuses are 30–35. Pick one clock.
+                      Sun City Summerlin is 10–15 minutes. Anthem campuses are
+                      30–35. Pick one clock.
                     </p>
                   </div>
                 </div>
@@ -315,7 +318,9 @@ export default function FiftyFiveCommunitiesPage() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <p className="text-slate-600 mb-4">{community.description}</p>
+                    <p className="text-slate-600 mb-4">
+                      {community.description}
+                    </p>
 
                     {/* Key Amenities */}
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -407,9 +412,11 @@ export default function FiftyFiveCommunitiesPage() {
           <ExpertQuote path="/55-plus-communities" />
           <FiftyFiveFaqs path="/55-plus-communities" />
 
-
           {/* Why BHHS */}
-          <section className="mb-16 max-w-4xl mx-auto" data-fifty-five-why="/55-plus-communities">
+          <section
+            className="mb-16 max-w-4xl mx-auto"
+            data-fifty-five-why="/55-plus-communities"
+          >
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
               HOA packets at Suite 100 before any 55+ clubhouse drive
             </h2>
@@ -420,11 +427,13 @@ export default function FiftyFiveCommunitiesPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">
-                    Age-qualification packets and HOA reserves — read at Suite 100
+                    Age-qualification packets and HOA reserves — read at Suite
+                    100
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Occupancy rules, guest ages, and HOA reserve lines are reviewed at 9406 W Lake
-                    Mead Blvd before any clubhouse. Call (702) 222-1964.
+                    Occupancy rules, guest ages, and HOA reserve lines are
+                    reviewed at 9406 W Lake Mead Blvd before any clubhouse. Call
+                    (702) 222-1964.
                   </p>
                 </div>
               </div>
@@ -434,11 +443,13 @@ export default function FiftyFiveCommunitiesPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">
-                    Out-of-state occupancy packet, then one rec campus from Suite 100
+                    Out-of-state occupancy packet, then one rec campus from
+                    Suite 100
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Virtual tours and BHHS destination intros start at 9406 W Lake Mead Blvd. We
-                    do not stack a Summerlin 55+ morning with a Henderson 55+ drive.
+                    Virtual tours and BHHS destination intros start at 9406 W
+                    Lake Mead Blvd. We do not stack a Summerlin 55+ morning with
+                    a Henderson 55+ drive.
                   </p>
                 </div>
               </div>
@@ -451,8 +462,9 @@ export default function FiftyFiveCommunitiesPage() {
                     Occupancy rules in writing before any clubhouse
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    The Berkshire Hathaway name is on the paperwork at 9406 W Lake Mead Blvd,
-                    Suite 100. We review age-qualification and guest rules before the drive.
+                    The Berkshire Hathaway name is on the paperwork at 9406 W
+                    Lake Mead Blvd, Suite 100. We review age-qualification and
+                    guest rules before the drive.
                   </p>
                 </div>
               </div>
@@ -465,9 +477,10 @@ export default function FiftyFiveCommunitiesPage() {
                     One campus per afternoon — occupancy packet before the drive
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    We review HOA occupancy and guest rules at 9406 W Lake Mead Blvd, Suite 100,
-                    then tour one rec building. Call (702) 222-1964. We do not stack Summerlin and
-                    Henderson 55+ on the same morning.
+                    We review HOA occupancy and guest rules at 9406 W Lake Mead
+                    Blvd, Suite 100, then tour one rec building. Call (702)
+                    222-1964. We do not stack Summerlin and Henderson 55+ on the
+                    same morning.
                   </p>
                 </div>
               </div>
@@ -477,15 +490,17 @@ export default function FiftyFiveCommunitiesPage() {
           {/* Final CTA */}
           <section className="text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Compare two 55+ campuses from Suite 100 — west first, Henderson second
+              Compare two 55+ campuses from Suite 100 — west first, Henderson
+              second
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Sun City Summerlin is 10–15 minutes. Anthem campuses are 30–35. Call (702) 222-1964 with occupancy questions before we drive.
+              Sun City Summerlin is 10–15 minutes. Anthem campuses are 30–35.
+              Call (702) 222-1964 with occupancy questions before we drive.
             </p>
             <CtaActions variant="onDark" />
             <p className="mt-4 text-blue-300 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties · 9406 W Lake Mead Blvd, Suite 100,
-              Las Vegas, NV 89134
+              Berkshire Hathaway HomeServices Nevada Properties · 9406 W Lake
+              Mead Blvd, Suite 100, Las Vegas, NV 89134
             </p>
           </section>
         </div>

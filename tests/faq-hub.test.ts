@@ -38,7 +38,7 @@ describe("faqHubCategories", () => {
 
   it("keeps every FAQ question unique on the hub", () => {
     const questions = faqHubCategories.flatMap((category) =>
-      category.items.map((item) => item.q)
+      category.items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
@@ -57,7 +57,7 @@ describe("faqHubCategories", () => {
       h3PhotoForPath("/faq").src,
     ];
     const srcs = faqHubCategories.map(
-      (category) => faqHubPhotoForCategory(category.id).src
+      (category) => faqHubPhotoForCategory(category.id).src,
     );
     expect(new Set(srcs).size).toBe(srcs.length);
     for (const src of srcs) {

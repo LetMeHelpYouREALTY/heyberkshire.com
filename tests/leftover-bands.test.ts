@@ -35,7 +35,7 @@ const forbidden = [
 
 describe("leftoverBands", () => {
   const entries = Object.entries(leftoverBands).flatMap(([path, slots]) =>
-    slots.map((copy, slot) => ({ path, slot, copy }))
+    slots.map((copy, slot) => ({ path, slot, copy })),
   );
 
   it("covers leftover slogan H2 chassis paths", () => {
@@ -177,10 +177,10 @@ describe("leftoverBands", () => {
   it("registers leftover stills in occupiedHeadingStills so quotes skip them", () => {
     for (const { path, slot } of entries) {
       expect(
-        occupiedHeadingStills(path).has(leftoverPhotoForPath(path, slot).src)
+        occupiedHeadingStills(path).has(leftoverPhotoForPath(path, slot).src),
       ).toBe(true);
       expect(quotePhotoForPath(path).src).not.toBe(
-        leftoverPhotoForPath(path, slot).src
+        leftoverPhotoForPath(path, slot).src,
       );
     }
   });

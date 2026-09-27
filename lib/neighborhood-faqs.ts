@@ -13,7 +13,12 @@ export type NeighborhoodFaqItem = {
 
 export type NeighborhoodFaqCopy = {
   h2: string;
-  items: [NeighborhoodFaqItem, NeighborhoodFaqItem, NeighborhoodFaqItem, NeighborhoodFaqItem];
+  items: [
+    NeighborhoodFaqItem,
+    NeighborhoodFaqItem,
+    NeighborhoodFaqItem,
+    NeighborhoodFaqItem,
+  ];
 };
 
 export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {

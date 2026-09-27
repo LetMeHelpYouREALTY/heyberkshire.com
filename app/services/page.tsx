@@ -43,17 +43,20 @@ const buyerTypes = [
   {
     title: "California Relocators",
     href: "/buyers/california-relocator",
-    description: "Moving from CA? Save on state income tax and enjoy 40-60% lower home prices.",
+    description:
+      "Moving from CA? Save on state income tax and enjoy 40-60% lower home prices.",
   },
   {
     title: "First-Time Home Buyers",
     href: "/buyers/first-time-buyers",
-    description: "FHA, VA, down payment assistance, and step-by-step guidance for your first purchase.",
+    description:
+      "FHA, VA, down payment assistance, and step-by-step guidance for your first purchase.",
   },
   {
     title: "Luxury Home Buyers",
     href: "/buyers/luxury-homes-las-vegas",
-    description: "Guard-gated estates, Strip views, custom builds, and discrete representation.",
+    description:
+      "Guard-gated estates, Strip views, custom builds, and discrete representation.",
   },
 ];
 
@@ -61,22 +64,26 @@ const sellerTypes = [
   {
     title: "Move-Up Sellers",
     href: "/sellers/move-up",
-    description: "Coordinate the sale and the next purchase from Suite 100 so dates do not collide.",
+    description:
+      "Coordinate the sale and the next purchase from Suite 100 so dates do not collide.",
   },
   {
     title: "Downsizing Sellers",
     href: "/sellers/downsizing",
-    description: "Extract equity and transition to low-maintenance living in 55+ communities.",
+    description:
+      "Extract equity and transition to low-maintenance living in 55+ communities.",
   },
   {
     title: "Divorce & Probate Sales",
     href: "/sellers/divorce-probate",
-    description: "Sensitive situations handled with discretion, fairness, and legal coordination.",
+    description:
+      "Sensitive situations handled with discretion, fairness, and legal coordination.",
   },
   {
     title: "Relocation Sellers",
     href: "/sellers/relocation",
-    description: "Selling from out of state? Remote coordination with BHHS network support.",
+    description:
+      "Selling from out of state? Remote coordination with BHHS network support.",
   },
 ];
 
@@ -100,10 +107,12 @@ export default function ServicesPage() {
             <HeadingPhoto path="/services" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from Dr. Jan Duffy, backed by the most trusted
-              name in the business—<strong>Berkshire Hathaway HomeServices</strong>. Whether you're 
-              buying your first home, selling a luxury estate, or relocating from California, 
-              you'll receive expert guidance every step of the way.
+              Comprehensive real estate solutions from Dr. Jan Duffy, backed by
+              the most trusted name in the business—
+              <strong>Berkshire Hathaway HomeServices</strong>. Whether you're
+              buying your first home, selling a luxury estate, or relocating
+              from California, you'll receive expert guidance every step of the
+              way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
@@ -121,10 +130,9 @@ export default function ServicesPage() {
             </div>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/services" />
-          <UniqueInterior path="/services" />
-          <ExpertQuote path="/services" />
-
+              <OfficeProximity path="/services" />
+              <UniqueInterior path="/services" />
+              <ExpertQuote path="/services" />
             </div>
           </div>
 
@@ -135,12 +143,14 @@ export default function ServicesPage() {
           {/* Buyer Types */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              California inbound, first purchase, or Ridges gate — pick the buyer URL
+              California inbound, first purchase, or Ridges gate — pick the
+              buyer URL
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               /buyers/california-relocator, /buyers/first-time-buyers, and
-              /buyers/luxury-homes-las-vegas are separate clocks from Suite 100. We do not stack
-              a Henderson luxury afternoon with a first-purchase FHA briefing. Call (702) 222-1964.
+              /buyers/luxury-homes-las-vegas are separate clocks from Suite 100.
+              We do not stack a Henderson luxury afternoon with a first-purchase
+              FHA briefing. Call (702) 222-1964.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {buyerTypes.map((type) => (
@@ -152,7 +162,9 @@ export default function ServicesPage() {
                   <h3 className="font-bold text-slate-900 mb-2 group-hover:text-blue-600">
                     {type.title}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-3">{type.description}</p>
+                  <p className="text-slate-600 text-sm mb-3">
+                    {type.description}
+                  </p>
                   <span className="text-blue-600 text-sm font-semibold flex items-center">
                     Learn More <ArrowRight className="h-4 w-4 ml-1" />
                   </span>
@@ -164,12 +176,14 @@ export default function ServicesPage() {
           {/* Seller Types */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Move-up, downsize, probate, or out-of-state listing — open the matching seller page
+              Move-up, downsize, probate, or out-of-state listing — open the
+              matching seller page
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              /sellers/move-up, /sellers/downsizing, /sellers/divorce-probate, and
-              /sellers/relocation start with dates at 9406 W Lake Mead Blvd, Suite 100. The MLS
-              remarks wait until the occupancy and next-address clock is written. Call (702) 222-1964.
+              /sellers/move-up, /sellers/downsizing, /sellers/divorce-probate,
+              and /sellers/relocation start with dates at 9406 W Lake Mead Blvd,
+              Suite 100. The MLS remarks wait until the occupancy and
+              next-address clock is written. Call (702) 222-1964.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {sellerTypes.map((type) => (
@@ -181,8 +195,12 @@ export default function ServicesPage() {
                   <h3 className="font-bold text-slate-900 mb-2 group-hover:text-blue-600 text-sm">
                     {type.title}
                   </h3>
-                  <p className="text-slate-600 text-xs mb-2">{type.description}</p>
-                  <span className="text-blue-600 text-xs font-semibold">Learn More →</span>
+                  <p className="text-slate-600 text-xs mb-2">
+                    {type.description}
+                  </p>
+                  <span className="text-blue-600 text-xs font-semibold">
+                    Learn More →
+                  </span>
                 </Link>
               ))}
             </div>
@@ -193,18 +211,23 @@ export default function ServicesPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Pick buying, selling, or relocation — then we time the first loop</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Pick buying, selling, or relocation — then we time the first loop
+            </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy for a free consultation about any of our real estate services. 
-              Whether you're buying, selling, investing, or relocating, you'll receive expert 
-              guidance backed by Berkshire Hathaway HomeServices.
+              Contact Dr. Jan Duffy for a free consultation about any of our
+              real estate services. Whether you're buying, selling, investing,
+              or relocating, you'll receive expert guidance backed by Berkshire
+              Hathaway HomeServices.
             </p>
             <CtaActions variant="onDark" />
           </section>
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

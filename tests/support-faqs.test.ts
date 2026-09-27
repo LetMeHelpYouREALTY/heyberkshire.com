@@ -34,7 +34,7 @@ describe("supportFaqs", () => {
         "/market-report",
         "/market-insights",
         "/market-update",
-      ])
+      ]),
     );
   });
 
@@ -45,20 +45,20 @@ describe("supportFaqs", () => {
 
   it("keeps every FAQ question unique across support pages", () => {
     const questions = paths.flatMap((path) =>
-      supportFaqs[path].items.map((item) => item.q)
+      supportFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use swapped generic market or contact templates", () => {
     const questions = paths.flatMap((path) =>
-      supportFaqs[path].items.map((item) => item.q.toLowerCase())
+      supportFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.startsWith("is now a good time to buy")).toBe(false);
-      expect(q.startsWith("what should i expect during my first consultation")).toBe(
-        false
-      );
+      expect(
+        q.startsWith("what should i expect during my first consultation"),
+      ).toBe(false);
       expect(q.includes("best time of year to buy")).toBe(false);
     }
   });

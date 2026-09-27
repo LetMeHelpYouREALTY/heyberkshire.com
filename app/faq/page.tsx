@@ -46,7 +46,7 @@ const pageSchemas = combineSchemas(
     url: "/faq",
     dateModified: "2026-09-15",
   }),
-  generateFAQSchema(faqHubAllItems)
+  generateFAQSchema(faqHubAllItems),
 );
 
 export default function FAQPage() {
@@ -72,10 +72,9 @@ export default function FAQPage() {
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/faq" />
-          <UniqueInterior path="/faq" />
-          <ExpertQuote path="/faq" />
-
+              <OfficeProximity path="/faq" />
+              <UniqueInterior path="/faq" />
+              <ExpertQuote path="/faq" />
             </div>
           </div>
 
@@ -85,7 +84,9 @@ export default function FAQPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

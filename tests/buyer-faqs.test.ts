@@ -31,20 +31,20 @@ describe("buyerFaqs", () => {
 
   it("keeps every FAQ question unique across buyer pages", () => {
     const questions = paths.flatMap((path) =>
-      buyerFaqs[path].items.map((item) => item.q)
+      buyerFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use swapped down-payment or neighborhood-preference templates", () => {
     const questions = paths.flatMap((path) =>
-      buyerFaqs[path].items.map((item) => item.q.toLowerCase())
+      buyerFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.startsWith("how much do i need for a down payment")).toBe(false);
-      expect(q.startsWith("what neighborhoods do california relocators prefer")).toBe(
-        false
-      );
+      expect(
+        q.startsWith("what neighborhoods do california relocators prefer"),
+      ).toBe(false);
     }
   });
 

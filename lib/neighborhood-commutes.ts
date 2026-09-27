@@ -67,7 +67,8 @@ export const neighborhoodCommutes: Record<string, NeighborhoodCommuteCopy> = {
       },
       {
         pin: "Harry Reid International (LAS)",
-        typical: "About 20 min off-peak / 30–45 min rush from central Summerlin",
+        typical:
+          "About 20 min off-peak / 30–45 min rush from central Summerlin",
         why: "15 miles on the prior Summerlin table; we re-time the listing, not the ZIP",
       },
     ],

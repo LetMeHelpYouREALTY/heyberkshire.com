@@ -183,7 +183,12 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       "2,800+ Homes, $140–$175 HOA, $280K–$550K Band",
       "Aliante Casino, I-215, and Harry Reid International (LAS)",
     ],
-    banned: ["same lifestyle", ">About Sun City Aliante<", ">Location Advantages<", "at a Glance"],
+    banned: [
+      "same lifestyle",
+      ">About Sun City Aliante<",
+      ">Location Advantages<",
+      "at a Glance",
+    ],
   },
   {
     file: "app/about/page.tsx",
@@ -272,7 +277,11 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       "2,000-acre Henderson campus",
       '<LeftoverBand path="/neighborhoods/inspirada" />',
     ],
-    banned: ["feel like a vacation", "engaged lifestyle", "Resort-style living"],
+    banned: [
+      "feel like a vacation",
+      "engaged lifestyle",
+      "Resort-style living",
+    ],
   },
   {
     file: "app/neighborhoods/mountains-edge/page.tsx",
@@ -527,10 +536,7 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       '<LeftoverBand path="/neighborhoods" />',
       '<LeftoverBand path="/neighborhoods" slot={1} />',
     ],
-    banned: [
-      ">Compare Valley Neighborhoods<",
-      ">Neighborhood Services<",
-    ],
+    banned: [">Compare Valley Neighborhoods<", ">Neighborhood Services<"],
   },
   {
     file: "app/buyers/page.tsx",
@@ -549,7 +555,11 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       "7,700+ Homes, $155–$195 HOA, $320K–$850K Band",
       "Highlands, Sun Terrace, Eagle Crest, and Palm Valley",
     ],
-    banned: [">About Sun City Summerlin<", "at a Glance", ">Sun City Summerlin Neighborhoods<"],
+    banned: [
+      ">About Sun City Summerlin<",
+      "at a Glance",
+      ">Sun City Summerlin Neighborhoods<",
+    ],
   },
   {
     file: "app/55-plus-communities/trilogy-summerlin/page.tsx",
@@ -558,7 +568,11 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       "800+ Shea Homes, $250–$350 HOA, $500K–$1.1M Band",
       "Open plans and first-floor primaries",
     ],
-    banned: [">About Trilogy at Summerlin<", "at a Glance", ">Contemporary Home Designs<"],
+    banned: [
+      ">About Trilogy at Summerlin<",
+      "at a Glance",
+      ">Contemporary Home Designs<",
+    ],
   },
   {
     file: "app/55-plus-communities/heritage-stonebridge/page.tsx",
@@ -567,7 +581,11 @@ const pages: { file: string; needles: string[]; banned: string[] }[] = [
       "1,100+ Homes, $175–$220 HOA, $400K–$750K Band",
       "Downtown Summerlin retail, 12–18 minutes",
     ],
-    banned: [">About Heritage at Stonebridge<", "at a Glance", ">Premium Summerlin Location<"],
+    banned: [
+      ">About Heritage at Stonebridge<",
+      "at a Glance",
+      ">Premium Summerlin Location<",
+    ],
   },
   {
     file: "app/55-plus-communities/solera-anthem/page.tsx",

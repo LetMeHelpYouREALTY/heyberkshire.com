@@ -37,8 +37,12 @@ describe("neighborhoodLifestyles", () => {
 
   it("keeps H2s distinct from UniqueInterior H2/H3", () => {
     for (const path of paths) {
-      expect(neighborhoodLifestyles[path].h2).not.toBe(uniqueInteriors[path].h2);
-      expect(neighborhoodLifestyles[path].h2).not.toBe(uniqueInteriors[path].h3);
+      expect(neighborhoodLifestyles[path].h2).not.toBe(
+        uniqueInteriors[path].h2,
+      );
+      expect(neighborhoodLifestyles[path].h2).not.toBe(
+        uniqueInteriors[path].h3,
+      );
     }
   });
 

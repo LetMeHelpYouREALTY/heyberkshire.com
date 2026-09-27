@@ -131,7 +131,10 @@ export default function AIChatWidget() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4" aria-live="polite">
+          <div
+            className="flex-1 overflow-y-auto p-4 space-y-4"
+            aria-live="polite"
+          >
             {messages.map((message, index) => (
               <div
                 key={index}
@@ -146,7 +149,9 @@ export default function AIChatWidget() {
                       : "bg-slate-100 text-slate-900"
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  <p className="text-sm whitespace-pre-wrap">
+                    {message.content}
+                  </p>
                 </div>
               </div>
             ))}

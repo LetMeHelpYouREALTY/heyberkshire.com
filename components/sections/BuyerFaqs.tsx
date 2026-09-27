@@ -16,7 +16,7 @@ export default function BuyerFaqs({ path }: BuyerFaqsProps) {
   if (!copy) return null;
 
   const schema = generateFAQSchema(
-    copy.items.map((item) => ({ question: item.q, answer: item.a }))
+    copy.items.map((item) => ({ question: item.q, answer: item.a })),
   );
 
   return (

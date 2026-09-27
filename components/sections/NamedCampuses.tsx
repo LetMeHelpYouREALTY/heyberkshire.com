@@ -31,8 +31,8 @@ export default function NamedCampuses({ path }: NamedCampusesProps) {
           ))}
         </ul>
         <p className="text-slate-600 text-sm">
-          Street-level assignment is not the same on every block. Confirm the listing
-          address at{" "}
+          Street-level assignment is not the same on every block. Confirm the
+          listing address at{" "}
           <a
             href="https://www.ccsd.net/zoning"
             className="text-blue-700 underline"
@@ -41,7 +41,8 @@ export default function NamedCampuses({ path }: NamedCampusesProps) {
           >
             CCSD Zoning Search
           </a>
-          . Call or text {ctaPhone.display} and we will map drive time from {nap.fullAddress}.
+          . Call or text {ctaPhone.display} and we will map drive time from{" "}
+          {nap.fullAddress}.
         </p>
       </div>
     </div>

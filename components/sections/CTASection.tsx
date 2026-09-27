@@ -12,12 +12,16 @@ export default function CTASection() {
             Ready to Find Your Next Home?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Get expert guidance from Dr. Jan Duffy. Call or text {ctaPhone.display} — she answers
-            her own phone.
+            Get expert guidance from Dr. Jan Duffy. Call or text{" "}
+            {ctaPhone.display} — she answers her own phone.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+            <Button
+              asChild
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-blue-50"
+            >
               <Link href="/listings" className="flex items-center gap-2">
                 <Home className="h-5 w-5" aria-hidden="true" />
                 Browse Las Vegas Homes

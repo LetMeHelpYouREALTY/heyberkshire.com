@@ -18,10 +18,14 @@ export default function CalendlyWidget({
   useEffect(() => {
     // Ensure Calendly script is loaded and widget is initialized
     const initWidget = () => {
-      if (typeof window !== "undefined" && (window as any).Calendly && widgetRef.current) {
+      if (
+        typeof window !== "undefined" &&
+        (window as any).Calendly &&
+        widgetRef.current
+      ) {
         // Clear any existing content
         widgetRef.current.innerHTML = "";
-        
+
         // Create the widget div
         const widgetDiv = document.createElement("div");
         widgetDiv.className = "calendly-inline-widget";
@@ -29,9 +33,9 @@ export default function CalendlyWidget({
         widgetDiv.style.minWidth = minWidth;
         widgetDiv.style.height = height;
         widgetDiv.style.width = "100%";
-        
+
         widgetRef.current.appendChild(widgetDiv);
-        
+
         // Initialize the widget
         (window as any).Calendly.initInlineWidget({
           url: url,
@@ -57,10 +61,5 @@ export default function CalendlyWidget({
     }
   }, [url, minWidth, height]);
 
-  return (
-    <div 
-      ref={widgetRef} 
-      style={{ minWidth, height, width: "100%" }}
-    />
-  );
+  return <div ref={widgetRef} style={{ minWidth, height, width: "100%" }} />;
 }

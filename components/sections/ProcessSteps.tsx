@@ -27,7 +27,9 @@ export default function ProcessSteps({ path, slot = 0 }: ProcessStepsProps) {
         photo={processPhotoForPath(path, slot)}
         priority
       />
-      <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">{copy.body}</p>
+      <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
+        {copy.body}
+      </p>
       <div className="space-y-6">
         {copy.steps.map((step, index) => (
           <div
@@ -40,7 +42,9 @@ export default function ProcessSteps({ path, slot = 0 }: ProcessStepsProps) {
               </span>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                {step.title}
+              </h3>
               <p className="text-slate-600">{step.body}</p>
             </div>
           </div>

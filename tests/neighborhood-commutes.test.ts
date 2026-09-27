@@ -34,7 +34,7 @@ describe("neighborhoodCommutes", () => {
         "/neighborhoods/inspirada",
         "/neighborhoods/north-las-vegas",
         "/neighborhoods/mountains-edge",
-      ])
+      ]),
     );
   });
 

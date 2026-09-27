@@ -33,18 +33,18 @@ describe("neighborhoodFaqs", () => {
 
   it("keeps every FAQ question unique across neighborhood pages", () => {
     const questions = paths.flatMap((path) =>
-      neighborhoodFaqs[path].items.map((item) => item.q)
+      neighborhoodFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use the city-swapped median-price question template", () => {
     const questions = paths.flatMap((path) =>
-      neighborhoodFaqs[path].items.map((item) => item.q.toLowerCase())
+      neighborhoodFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.startsWith("what is the current median home price in")).toBe(
-        false
+        false,
       );
     }
   });

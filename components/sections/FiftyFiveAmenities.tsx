@@ -13,7 +13,10 @@ export default function FiftyFiveAmenities({ path }: FiftyFiveAmenitiesProps) {
   if (!copy) return null;
 
   return (
-    <section className="mb-16 max-w-5xl mx-auto" data-fifty-five-amenities={path}>
+    <section
+      className="mb-16 max-w-5xl mx-auto"
+      data-fifty-five-amenities={path}
+    >
       <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
         {copy.h2}
       </h2>

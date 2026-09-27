@@ -1,6 +1,6 @@
 /**
  * Claude Prompt Templates - Optimized for Caching
- * 
+ *
  * Best practices:
  * - Keep cacheable content at the beginning
  * - Use consistent system prompts across requests
@@ -297,11 +297,14 @@ For complex questions or when you're unsure, always recommend speaking directly 
  */
 export function createCachedPrompt(
   template: PromptTemplate,
-  userMessage: string
-): { systemPrompt: string; messages: Array<{ role: 'user'; content: string }> } {
+  userMessage: string,
+): {
+  systemPrompt: string;
+  messages: Array<{ role: "user"; content: string }>;
+} {
   return {
     systemPrompt: template.system,
-    messages: [{ role: 'user', content: userMessage }],
+    messages: [{ role: "user", content: userMessage }],
   };
 }
 
@@ -318,20 +321,23 @@ export function estimateTokens(text: string): number {
  */
 export function calculateCacheSavings(
   systemPromptTokens: number,
-  requestsPerDay: number
+  requestsPerDay: number,
 ): { monthlySavings: number; description: string } {
   // Pricing (per million tokens)
-  const inputPrice = 3.00;
-  const cacheReadPrice = 0.30;
+  const inputPrice = 3.0;
+  const cacheReadPrice = 0.3;
   const cacheWritePrice = 3.75;
 
   // Without caching
-  const withoutCaching = (systemPromptTokens / 1_000_000) * inputPrice * requestsPerDay * 30;
+  const withoutCaching =
+    (systemPromptTokens / 1_000_000) * inputPrice * requestsPerDay * 30;
 
   // With caching (first request writes, rest read from cache)
   const withCaching =
     (systemPromptTokens / 1_000_000) * cacheWritePrice + // First request
-    (systemPromptTokens / 1_000_000) * cacheReadPrice * (requestsPerDay * 30 - 1); // Rest
+    (systemPromptTokens / 1_000_000) *
+      cacheReadPrice *
+      (requestsPerDay * 30 - 1); // Rest
 
   const savings = withoutCaching - withCaching;
   const savingsPercent = (savings / withoutCaching) * 100;

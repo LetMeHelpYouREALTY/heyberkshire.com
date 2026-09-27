@@ -23,10 +23,10 @@ import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/sun-city-aliante",
-  title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
+  title:
+    "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
   description:
     "Sun City Aliante - the most affordable Sun City in Las Vegas. Homes from $280K-$550K with full amenities. 18-hole golf course, pools, fitness center. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
   keywords: [
@@ -73,7 +73,7 @@ export default function SunCityAliantePage() {
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero */}
+          {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <DollarSign className="h-4 w-4 mr-2" />
@@ -85,27 +85,29 @@ export default function SunCityAliantePage() {
             <HeadingPhoto path="/55-plus-communities/sun-city-aliante" />
 
             <p className="text-xl text-slate-600">
-              Full Sun City amenities at the best value. Golf, pools, fitness, and
-              100+ clubs—from $280K.
+              Full Sun City amenities at the best value. Golf, pools, fitness,
+              and 100+ clubs—from $280K.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
             </div>
             <div className="mt-8 max-w-xl mx-auto text-left">
-              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">Search live MLS inventory</p>
+              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">
+                Search live MLS inventory
+              </p>
               <RealScoutSearch />
             </div>
           </div>
           <OfficeProximity path="/55-plus-communities/sun-city-aliante" />
           <UniqueInterior path="/55-plus-communities/sun-city-aliante" />
 
-
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              2,800+ Homes, $140–$175 HOA, $280K–$550K Band — Stats Before the North Loop
+              2,800+ Homes, $140–$175 HOA, $280K–$550K Band — Stats Before the
+              North Loop
             </h2>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-400 mb-1">
                   $280K-$550K
@@ -123,7 +125,9 @@ export default function SunCityAliantePage() {
                 <div className="text-slate-300 text-sm">Homes</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">55+</div>
+                <div className="text-3xl font-bold text-green-400 mb-1">
+                  55+
+                </div>
                 <div className="text-slate-300 text-sm">Age Requirement</div>
               </div>
             </div>
@@ -136,7 +140,8 @@ export default function SunCityAliantePage() {
           {/* Location Benefits */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
-              Aliante Casino, I-215, and Harry Reid International (LAS) from this North Campus
+              Aliante Casino, I-215, and Harry Reid International (LAS) from
+              this North Campus
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-slate-200">
@@ -147,8 +152,8 @@ export default function SunCityAliantePage() {
                       Easy Freeway Access
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      Direct access to I-215 and US-95. Downtown Las Vegas and the
-                      Strip are just 20-25 minutes away.
+                      Direct access to I-215 and US-95. Downtown Las Vegas and
+                      the Strip are just 20-25 minutes away.
                     </p>
                   </div>
                 </div>
@@ -161,8 +166,8 @@ export default function SunCityAliantePage() {
                       Aliante Casino & Hotel
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      Walking distance to Aliante Casino with dining, entertainment,
-                      and movie theater.
+                      Walking distance to Aliante Casino with dining,
+                      entertainment, and movie theater.
                     </p>
                   </div>
                 </div>
@@ -175,8 +180,8 @@ export default function SunCityAliantePage() {
                       Lower Property Taxes
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      North Las Vegas offers some of the lowest property tax rates
-                      in the valley.
+                      North Las Vegas offers some of the lowest property tax
+                      rates in the valley.
                     </p>
                   </div>
                 </div>
@@ -203,18 +208,20 @@ export default function SunCityAliantePage() {
 
           <FiftyFiveFaqs path="/55-plus-communities/sun-city-aliante" />
 
-
           {/* CTA */}
           <section className="text-center bg-green-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Sun City Aliante rec sits on the north loop with North Vista Hospital
+              Sun City Aliante rec sits on the north loop with North Vista
+              Hospital
             </h2>
             <p className="text-xl text-green-100 mb-8">
-              See Sun City Aliante's course, rec campus, and HOA dues on a 20–25 minute north loop.
+              See Sun City Aliante's course, rec campus, and HOA dues on a 20–25
+              minute north loop.
             </p>
             <CtaActions variant="onDark" />
             <p className="text-green-200">
-              Aliante 55+ and the adjoining retail strip fit one north-valley tour from the office.
+              Aliante 55+ and the adjoining retail strip fit one north-valley
+              tour from the office.
             </p>
           </section>
         </div>

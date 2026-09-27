@@ -10,7 +10,10 @@ type FaqAccordionProps = {
   className?: string;
 };
 
-export default function FaqAccordion({ items, className = "" }: FaqAccordionProps) {
+export default function FaqAccordion({
+  items,
+  className = "",
+}: FaqAccordionProps) {
   return (
     <div className={`space-y-4 ${className}`.trim()}>
       {items.map((faq) => {

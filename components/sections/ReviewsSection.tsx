@@ -69,12 +69,17 @@ export default function ReviewsSection({
     >
       <div className="container mx-auto px-4">
         {showHeading ? (
-        <div className="text-center mb-12">
-          <h2 id="reviews-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            {title}
-          </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
-        </div>
+          <div className="text-center mb-12">
+            <h2
+              id="reviews-heading"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4"
+            >
+              {title}
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              {subtitle}
+            </p>
+          </div>
         ) : null}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -95,22 +100,31 @@ export default function ReviewsSection({
                     />
                   ) : (
                     <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                      <span className="text-slate-400 text-sm">{review.name[0]}</span>
+                      <span className="text-slate-400 text-sm">
+                        {review.name[0]}
+                      </span>
                     </div>
                   )}
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-bold text-slate-900 truncate">{review.name}</h3>
+                  <h3 className="font-bold text-slate-900 truncate">
+                    {review.name}
+                  </h3>
                   <p className="text-sm text-slate-600">{review.location}</p>
                 </div>
               </div>
 
-              <div className="flex items-center mb-4" aria-label={`${review.rating} out of 5 stars`}>
+              <div
+                className="flex items-center mb-4"
+                aria-label={`${review.rating} out of 5 stars`}
+              >
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
                     className={`h-5 w-5 ${
-                      i < review.rating ? "text-yellow-400 fill-yellow-400" : "text-slate-300"
+                      i < review.rating
+                        ? "text-yellow-400 fill-yellow-400"
+                        : "text-slate-300"
                     }`}
                     aria-hidden="true"
                   />
@@ -118,8 +132,13 @@ export default function ReviewsSection({
               </div>
 
               <div className="relative">
-                <Quote className="absolute -top-2 -left-2 h-8 w-8 text-blue-100" aria-hidden="true" />
-                <p className="text-slate-700 relative z-10 pl-4">{review.text}</p>
+                <Quote
+                  className="absolute -top-2 -left-2 h-8 w-8 text-blue-100"
+                  aria-hidden="true"
+                />
+                <p className="text-slate-700 relative z-10 pl-4">
+                  {review.text}
+                </p>
               </div>
             </article>
           ))}
@@ -133,7 +152,10 @@ export default function ReviewsSection({
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold min-h-[44px]"
           >
             View Google Reviews
-            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
+            <Star
+              className="h-5 w-5 fill-yellow-400 text-yellow-400"
+              aria-hidden="true"
+            />
           </a>
         </div>
       </div>

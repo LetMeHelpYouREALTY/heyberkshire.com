@@ -1,6 +1,14 @@
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
-import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone } from "lucide-react";
+import {
+  TrendingUp,
+  TrendingDown,
+  Home,
+  Calendar,
+  DollarSign,
+  BarChart,
+  Phone,
+} from "lucide-react";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -13,7 +21,8 @@ import LeftoverBand from "@/components/sections/LeftoverBand";
 
 export const metadata: Metadata = pageMetadata({
   path: "/market-report",
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title:
+    "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
   description:
     "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
   keywords: [
@@ -67,21 +76,23 @@ export default function MarketReportPage() {
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/market-report" />
-          <UniqueInterior path="/market-report" />
-          <ExpertQuote path="/market-report" />
-
+              <OfficeProximity path="/market-report" />
+              <UniqueInterior path="/market-report" />
+              <ExpertQuote path="/market-report" />
             </div>
           </div>
 
           {/* Key Stats Overview */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              January 2026: $450K median, 28 DOM, 4,850 listings, 2.1 months inventory
+              January 2026: $450K median, 28 DOM, 4,850 listings, 2.1 months
+              inventory
             </h2>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">$450,000</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+                  $450,000
+                </div>
                 <div className="text-slate-300 text-sm">Median Home Price</div>
                 <div className="flex items-center justify-center mt-1 text-green-400 text-sm">
                   <TrendingUp className="h-4 w-4 mr-1" />
@@ -89,7 +100,9 @@ export default function MarketReportPage() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">28</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+                  28
+                </div>
                 <div className="text-slate-300 text-sm">Days on Market</div>
                 <div className="flex items-center justify-center mt-1 text-green-400 text-sm">
                   <TrendingDown className="h-4 w-4 mr-1" />
@@ -97,14 +110,18 @@ export default function MarketReportPage() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">4,850</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+                  4,850
+                </div>
                 <div className="text-slate-300 text-sm">Active Listings</div>
                 <div className="flex items-center justify-center mt-1 text-yellow-400 text-sm">
                   +12% YoY
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">2.1</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+                  2.1
+                </div>
                 <div className="text-slate-300 text-sm">Months Inventory</div>
                 <div className="flex items-center justify-center mt-1 text-slate-400 text-sm">
                   Seller's Market
@@ -153,7 +170,8 @@ export default function MarketReportPage() {
           {/* Market Trends */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              California inbound, builder credits, $1M+ streets — apply at Suite 100
+              California inbound, builder credits, $1M+ streets — apply at Suite
+              100
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
@@ -162,8 +180,9 @@ export default function MarketReportPage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">California Migration</h3>
                 <p className="text-slate-600 text-sm">
-                  Continued influx of California buyers seeking affordability and no state income
-                  tax. Summerlin and Henderson remain top destinations.
+                  Continued influx of California buyers seeking affordability
+                  and no state income tax. Summerlin and Henderson remain top
+                  destinations.
                 </p>
               </div>
               <div className="text-center">
@@ -172,8 +191,9 @@ export default function MarketReportPage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">New Construction</h3>
                 <p className="text-slate-600 text-sm">
-                  Builders offering significant incentives including rate buydowns, closing cost
-                  credits, and upgrades. Great time for new home buyers.
+                  Builders offering significant incentives including rate
+                  buydowns, closing cost credits, and upgrades. Great time for
+                  new home buyers.
                 </p>
               </div>
               <div className="text-center">
@@ -182,8 +202,8 @@ export default function MarketReportPage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Luxury Strength</h3>
                 <p className="text-slate-600 text-sm">
-                  The $1M+ segment showing strongest appreciation at 8.5% YoY. The Ridges and
-                  Southern Highlands leading the luxury market.
+                  The $1M+ segment showing strongest appreciation at 8.5% YoY.
+                  The Ridges and Southern Highlands leading the luxury market.
                 </p>
               </div>
             </div>
@@ -197,15 +217,18 @@ export default function MarketReportPage() {
               Bring your APN to Suite 100 for a ZIP-level CMA
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Want to know what these numbers mean for your specific neighborhood or situation? Dr.
-              Jan Duffy provides free market consultations.
+              Want to know what these numbers mean for your specific
+              neighborhood or situation? Dr. Jan Duffy provides free market
+              consultations.
             </p>
             <CtaActions variant="onDark" />
           </section>
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

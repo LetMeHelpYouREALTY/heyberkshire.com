@@ -23,7 +23,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const handlePointerDown = (event: MouseEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(event.target as Node)
+      ) {
         setIsServicesOpen(false);
       }
     };
@@ -90,7 +93,10 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-5" aria-label="Primary">
+          <nav
+            className="hidden lg:flex items-center space-x-5"
+            aria-label="Primary"
+          >
             {mainNavLinks.map((link) => (
               <Link
                 key={link.href}
@@ -155,7 +161,10 @@ export default function Navbar() {
 
           <div className="lg:hidden flex items-center gap-3">
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
-              <a href={ctaPhone.href} aria-label={`Call Dr. Jan Duffy at ${ctaPhone.display}`}>
+              <a
+                href={ctaPhone.href}
+                aria-label={`Call Dr. Jan Duffy at ${ctaPhone.display}`}
+              >
                 <Phone className="h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
@@ -211,8 +220,14 @@ export default function Navbar() {
               </div>
 
               <div className="pt-4">
-                <Button asChild className="bg-blue-600 hover:bg-blue-700 w-full">
-                  <a href={ctaPhone.href} className="flex items-center justify-center gap-2">
+                <Button
+                  asChild
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                >
+                  <a
+                    href={ctaPhone.href}
+                    className="flex items-center justify-center gap-2"
+                  >
                     <Phone className="h-4 w-4" aria-hidden="true" />
                     Call Dr. Jan: {ctaPhone.display}
                   </a>

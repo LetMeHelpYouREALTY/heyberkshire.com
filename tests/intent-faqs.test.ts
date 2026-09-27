@@ -32,19 +32,19 @@ describe("intentFaqs", () => {
 
   it("keeps every FAQ question unique across intent pages", () => {
     const questions = paths.flatMap((path) =>
-      intentFaqs[path].items.map((item) => item.q)
+      intentFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use swapped best-area or Zestimate-only templates", () => {
     const questions = paths.flatMap((path) =>
-      intentFaqs[path].items.map((item) => item.q.toLowerCase())
+      intentFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.includes("best area for investment")).toBe(false);
       expect(q.startsWith("how accurate are online home value estimates")).toBe(
-        false
+        false,
       );
     }
   });

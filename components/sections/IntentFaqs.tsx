@@ -16,7 +16,7 @@ export default function IntentFaqs({ path }: IntentFaqsProps) {
   if (!copy) return null;
 
   const schema = generateFAQSchema(
-    copy.items.map((item) => ({ question: item.q, answer: item.a }))
+    copy.items.map((item) => ({ question: item.q, answer: item.a })),
   );
 
   return (

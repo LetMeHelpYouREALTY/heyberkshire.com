@@ -12,7 +12,14 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 
-import { ctaPhone, officePhone, nap, maps, googleReviewsUrl, hoursSummary } from "@/lib/contact";
+import {
+  ctaPhone,
+  officePhone,
+  nap,
+  maps,
+  googleReviewsUrl,
+  hoursSummary,
+} from "@/lib/contact";
 
 export const metadata: Metadata = pageMetadata({
   path: "/contact",
@@ -68,14 +75,13 @@ export default function ContactPage() {
 
             <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
               Questions about Las Vegas real estate? Your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> expert is here to help. 
-              Schedule an appointment or reach out directly.
+              <strong>Berkshire Hathaway HomeServices</strong> expert is here to
+              help. Schedule an appointment or reach out directly.
             </p>
             <CtaActions variant="onLight" bookLabel="Book a Consultation" />
-          <OfficeProximity path="/contact" />
-          <UniqueInterior path="/contact" />
-          <ExpertQuote path="/contact" />
-
+            <OfficeProximity path="/contact" />
+            <UniqueInterior path="/contact" />
+            <ExpertQuote path="/contact" />
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -88,7 +94,9 @@ export default function ContactPage() {
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
                   <Phone className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Phone (Call or Text)</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">
+                      Phone (Call or Text)
+                    </h3>
                     <a
                       href={ctaPhone.href}
                       className="text-2xl font-bold text-blue-600 hover:text-blue-700"
@@ -100,7 +108,10 @@ export default function ContactPage() {
                     </p>
                     <p className="text-sm text-slate-600 mt-2">
                       Office / Google Business:{" "}
-                      <a href={officePhone.href} className="font-semibold text-blue-600 hover:text-blue-700">
+                      <a
+                        href={officePhone.href}
+                        className="font-semibold text-blue-600 hover:text-blue-700"
+                      >
                         {officePhone.display}
                       </a>
                     </p>
@@ -126,11 +137,16 @@ export default function ContactPage() {
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
                   <MapPin className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Office Address</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">
+                      Office Address
+                    </h3>
                     <address className="not-italic text-slate-700">
-                      Berkshire Hathaway HomeServices<br />
-                      Nevada Properties<br />
-                      9406 W Lake Mead Blvd, Suite 100<br />
+                      Berkshire Hathaway HomeServices
+                      <br />
+                      Nevada Properties
+                      <br />
+                      9406 W Lake Mead Blvd, Suite 100
+                      <br />
                       Las Vegas, NV 89134
                     </address>
                   </div>
@@ -139,7 +155,9 @@ export default function ContactPage() {
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
                   <Clock className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Office Hours</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">
+                      Office Hours
+                    </h3>
                     <p className="text-slate-700">{hoursSummary}</p>
                     <p className="text-sm text-slate-500 mt-1">
                       Available by appointment outside posted hours
@@ -162,7 +180,7 @@ export default function ContactPage() {
                   className="w-full"
                 />
               </div>
-              
+
               {/* Map Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <a
@@ -188,9 +206,12 @@ export default function ContactPage() {
               {/* Credentials */}
               <div className="p-4 bg-blue-50 rounded-lg">
                 <p className="text-sm text-slate-700">
-                  <strong>{nap.shortName}, REALTOR®</strong><br />
-                  License {nap.license}<br />
-                  {nap.brokerage}<br />
+                  <strong>{nap.shortName}, REALTOR®</strong>
+                  <br />
+                  License {nap.license}
+                  <br />
+                  {nap.brokerage}
+                  <br />
                   {nap.fullAddress}
                 </p>
               </div>
@@ -198,13 +219,18 @@ export default function ContactPage() {
 
             {/* Schedule Appointment - Calendly Widget */}
             <div>
-              <div id="schedule" className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+              <div
+                id="schedule"
+                className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm"
+              >
                 <div className="bg-blue-600 text-white p-6 text-center">
                   <Calendar className="h-10 w-10 mx-auto mb-3" />
-                  <h2 className="text-2xl font-bold mb-2">Book Calendly for Suite 100, a phone consult, or a showing</h2>
+                  <h2 className="text-2xl font-bold mb-2">
+                    Book Calendly for Suite 100, a phone consult, or a showing
+                  </h2>
                   <p className="text-blue-100">
-                    Book a time that works for you—phone consultation, property showing, 
-                    or in-person meeting at our office.
+                    Book a time that works for you—phone consultation, property
+                    showing, or in-person meeting at our office.
                   </p>
                 </div>
                 <CalendlyWidget height="600px" />
@@ -220,8 +246,9 @@ export default function ContactPage() {
               ZIPs we time from 9406 W Lake Mead Blvd
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Summerlin is 10–15 minutes. Henderson and Green Valley are 25–35. Southern Highlands
-              is 25–35 via I-15. Call (702) 222-1964. We will not tour twelve ZIPs in one afternoon.
+              Summerlin is 10–15 minutes. Henderson and Green Valley are 25–35.
+              Southern Highlands is 25–35 via I-15. Call (702) 222-1964. We will
+              not tour twelve ZIPs in one afternoon.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
@@ -238,8 +265,13 @@ export default function ContactPage() {
                 "Mountains Edge",
                 "Spring Valley",
               ].map((area) => (
-                <div key={area} className="bg-slate-50 rounded-lg p-3 text-center hover:bg-blue-50 transition-colors">
-                  <span className="text-slate-700 font-medium text-sm">{area}</span>
+                <div
+                  key={area}
+                  className="bg-slate-50 rounded-lg p-3 text-center hover:bg-blue-50 transition-colors"
+                >
+                  <span className="text-slate-700 font-medium text-sm">
+                    {area}
+                  </span>
                 </div>
               ))}
             </div>
@@ -251,7 +283,9 @@ export default function ContactPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

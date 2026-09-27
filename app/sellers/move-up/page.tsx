@@ -19,7 +19,6 @@ import SellerFaqs from "@/components/sections/SellerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/move-up",
   title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
@@ -39,7 +38,7 @@ export default function MoveUpSellerPage() {
     <>
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero */}
+          {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <TrendingUp className="h-4 w-4 mr-2" />
@@ -51,12 +50,12 @@ export default function MoveUpSellerPage() {
             <HeadingPhoto path="/sellers/move-up" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Your home's equity unlocks your dream home. Let's make the upgrade seamless.
+              Your home's equity unlocks your dream home. Let's make the upgrade
+              seamless.
             </p>
             <CtaActions variant="onLight" />
-          <OfficeProximity path="/sellers/move-up" />
-          <UniqueInterior path="/sellers/move-up" />
-
+            <OfficeProximity path="/sellers/move-up" />
+            <UniqueInterior path="/sellers/move-up" />
           </div>
 
           <LeftoverBand path="/sellers/move-up" />
@@ -73,10 +72,13 @@ export default function MoveUpSellerPage() {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="font-bold text-slate-900 mb-1">Centennial Hills → Summerlin</h3>
+                  <h3 className="font-bold text-slate-900 mb-1">
+                    Centennial Hills → Summerlin
+                  </h3>
                   <p className="text-slate-600 text-sm">
-                    Upgrade from $450K starter to $650K+ in Downtown Summerlin. Palo Verde High
-                    School commute, walkable amenities, Red Rock views.
+                    Upgrade from $450K starter to $650K+ in Downtown Summerlin.
+                    Palo Verde High School commute, walkable amenities, Red Rock
+                    views.
                   </p>
                 </div>
                 <ArrowRight className="h-6 w-6 text-blue-600 flex-shrink-0 ml-4" />
@@ -89,10 +91,13 @@ export default function MoveUpSellerPage() {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="font-bold text-slate-900 mb-1">Green Valley → MacDonald Ranch</h3>
+                  <h3 className="font-bold text-slate-900 mb-1">
+                    Green Valley → MacDonald Ranch
+                  </h3>
                   <p className="text-slate-600 text-sm">
-                    Move from Green Valley ($520K) to MacDonald Ranch / luxury Henderson ($800K+).
-                    Larger lots, custom features, mountain views.
+                    Move from Green Valley ($520K) to MacDonald Ranch / luxury
+                    Henderson ($800K+). Larger lots, custom features, mountain
+                    views.
                   </p>
                 </div>
                 <ArrowRight className="h-6 w-6 text-green-600 flex-shrink-0 ml-4" />
@@ -105,10 +110,13 @@ export default function MoveUpSellerPage() {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="font-bold text-slate-900 mb-1">Inspirada → Southern Highlands</h3>
+                  <h3 className="font-bold text-slate-900 mb-1">
+                    Inspirada → Southern Highlands
+                  </h3>
                   <p className="text-slate-600 text-sm">
-                    Inspirada (~$525K published January 2026) to Southern Highlands (~$750K+).
-                    Guard-gated streets and Robert Trent Jones Jr. card 74.1 / 140. Confirm the week you tour.
+                    Inspirada (~$525K published January 2026) to Southern
+                    Highlands (~$750K+). Guard-gated streets and Robert Trent
+                    Jones Jr. card 74.1 / 140. Confirm the week you tour.
                   </p>
                 </div>
                 <ArrowRight className="h-6 w-6 text-purple-600 flex-shrink-0 ml-4" />
@@ -178,11 +186,12 @@ export default function MoveUpSellerPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700 mb-8">
               <p>
-                The biggest concern move-up buyers have is timing. What happens if you sell before
-                finding your next home? What if you find your dream home but can't sell in time?
-                <strong> Berkshire Hathaway HomeServices</strong> agents like Dr. Jan Duffy have
-                strategies for every scenario, ensuring you never end up homeless or paying two
-                mortgages unnecessarily.
+                The biggest concern move-up buyers have is timing. What happens
+                if you sell before finding your next home? What if you find your
+                dream home but can't sell in time?
+                <strong> Berkshire Hathaway HomeServices</strong> agents like
+                Dr. Jan Duffy have strategies for every scenario, ensuring you
+                never end up homeless or paying two mortgages unnecessarily.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -190,48 +199,68 @@ export default function MoveUpSellerPage() {
                 <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <span className="text-blue-600 font-bold text-xl">1</span>
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Sell First, Then Buy</h3>
+                <h3 className="font-bold text-slate-900 mb-2">
+                  Sell First, Then Buy
+                </h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  The safest approach: sell your home, secure your equity, then purchase with
-                  confidence and negotiating power.
+                  The safest approach: sell your home, secure your equity, then
+                  purchase with confidence and negotiating power.
                 </p>
                 <div className="text-sm">
                   <p className="text-green-600 font-medium">Best for:</p>
-                  <p className="text-slate-500">Risk-averse buyers; competitive purchase markets</p>
+                  <p className="text-slate-500">
+                    Risk-averse buyers; competitive purchase markets
+                  </p>
                   <p className="text-amber-600 font-medium mt-2">Consider:</p>
-                  <p className="text-slate-500">May need temporary housing; rent-back negotiation possible</p>
+                  <p className="text-slate-500">
+                    May need temporary housing; rent-back negotiation possible
+                  </p>
                 </div>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6">
                 <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <span className="text-green-600 font-bold text-xl">2</span>
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Buy First, Then Sell</h3>
+                <h3 className="font-bold text-slate-900 mb-2">
+                  Buy First, Then Sell
+                </h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Lock in your dream home before listing. Requires bridge financing or sufficient
-                  reserves to carry two properties temporarily.
+                  Lock in your dream home before listing. Requires bridge
+                  financing or sufficient reserves to carry two properties
+                  temporarily.
                 </p>
                 <div className="text-sm">
                   <p className="text-green-600 font-medium">Best for:</p>
-                  <p className="text-slate-500">Buyers with strong equity or savings; hot seller's markets</p>
+                  <p className="text-slate-500">
+                    Buyers with strong equity or savings; hot seller's markets
+                  </p>
                   <p className="text-amber-600 font-medium mt-2">Consider:</p>
-                  <p className="text-slate-500">Bridge loan costs; carrying costs if sale delays</p>
+                  <p className="text-slate-500">
+                    Bridge loan costs; carrying costs if sale delays
+                  </p>
                 </div>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6">
                 <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <span className="text-purple-600 font-bold text-xl">3</span>
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Simultaneous Close</h3>
+                <h3 className="font-bold text-slate-900 mb-2">
+                  Simultaneous Close
+                </h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Sell and buy on the same day. Requires precise coordination and contingency
-                  management, but eliminates double-moving and temporary housing.
+                  Sell and buy on the same day. Requires precise coordination
+                  and contingency management, but eliminates double-moving and
+                  temporary housing.
                 </p>
                 <div className="text-sm">
                   <p className="text-green-600 font-medium">Best for:</p>
-                  <p className="text-slate-500">Experienced buyers; balanced markets; strong coordination</p>
+                  <p className="text-slate-500">
+                    Experienced buyers; balanced markets; strong coordination
+                  </p>
                   <p className="text-amber-600 font-medium mt-2">Consider:</p>
-                  <p className="text-slate-500">Higher stress; requires flexible closing dates</p>
+                  <p className="text-slate-500">
+                    Higher stress; requires flexible closing dates
+                  </p>
                 </div>
               </div>
             </div>
@@ -242,45 +271,51 @@ export default function MoveUpSellerPage() {
           {/* Financing Options */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <p className="text-slate-300 text-center mb-8 max-w-3xl mx-auto">
-              Understanding your financing options is crucial for a successful move-up transaction.
-              Dr. Jan works with trusted local lenders who specialize in helping Las Vegas homeowners
-              leverage their equity into their next home.
+              Understanding your financing options is crucial for a successful
+              move-up transaction. Dr. Jan works with trusted local lenders who
+              specialize in helping Las Vegas homeowners leverage their equity
+              into their next home.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/10 rounded-xl p-6">
                 <DollarSign className="h-8 w-8 text-green-400 mb-4" />
                 <h3 className="font-bold text-lg mb-2">Bridge Loans</h3>
                 <p className="text-slate-300 text-sm">
-                  Short-term financing that lets you use your current home's equity as a down payment
-                  before selling. Typically 6-12 month terms with interest-only payments. Rates are
-                  higher than traditional mortgages but provide flexibility.
+                  Short-term financing that lets you use your current home's
+                  equity as a down payment before selling. Typically 6-12 month
+                  terms with interest-only payments. Rates are higher than
+                  traditional mortgages but provide flexibility.
                 </p>
               </div>
               <div className="bg-white/10 rounded-xl p-6">
                 <DollarSign className="h-8 w-8 text-blue-400 mb-4" />
-                <h3 className="font-bold text-lg mb-2">Home Equity Line of Credit (HELOC)</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  Home Equity Line of Credit (HELOC)
+                </h3>
                 <p className="text-slate-300 text-sm">
-                  Access your equity before selling to fund your down payment. Must be established
-                  in advance (typically 30-45 days). Lower rates than bridge loans but requires
-                  planning ahead.
+                  Access your equity before selling to fund your down payment.
+                  Must be established in advance (typically 30-45 days). Lower
+                  rates than bridge loans but requires planning ahead.
                 </p>
               </div>
               <div className="bg-white/10 rounded-xl p-6">
                 <Shield className="h-8 w-8 text-purple-400 mb-4" />
                 <h3 className="font-bold text-lg mb-2">Sale Contingency</h3>
                 <p className="text-slate-300 text-sm">
-                  Make your purchase offer contingent on selling your current home. Less common in
-                  competitive markets, but can work with motivated sellers or longer closing windows.
-                  Dr. Jan knows how to structure these offers effectively.
+                  Make your purchase offer contingent on selling your current
+                  home. Less common in competitive markets, but can work with
+                  motivated sellers or longer closing windows. Dr. Jan knows how
+                  to structure these offers effectively.
                 </p>
               </div>
               <div className="bg-white/10 rounded-xl p-6">
                 <Calendar className="h-8 w-8 text-amber-400 mb-4" />
                 <h3 className="font-bold text-lg mb-2">Rent-Back Agreement</h3>
                 <p className="text-slate-300 text-sm">
-                  Sell your home but remain as a renter for 30-60 days while you close on your new
-                  property. Provides breathing room without needing temporary housing. Common and
-                  often negotiable in today's market.
+                  Sell your home but remain as a renter for 30-60 days while you
+                  close on your new property. Provides breathing room without
+                  needing temporary housing. Common and often negotiable in
+                  today's market.
                 </p>
               </div>
             </div>
@@ -289,20 +324,22 @@ export default function MoveUpSellerPage() {
           <ExpertQuote path="/sellers/move-up" />
           <SellerFaqs path="/sellers/move-up" />
 
-
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               January 2026 CMA on this APN at Suite 100, not a slogan
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Get a free equity analysis and see what your next home could look like.
-              Dr. Jan will show you the numbers and create a strategic plan.
+              Get a free equity analysis and see what your next home could look
+              like. Dr. Jan will show you the numbers and create a strategic
+              plan.
             </p>
             <CtaActions variant="onDark" />
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

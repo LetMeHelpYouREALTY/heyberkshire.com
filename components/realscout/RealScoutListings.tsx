@@ -7,7 +7,10 @@ import { realscout } from "@/lib/contact";
 
 export default function RealScoutListings() {
   return (
-    <section className="py-16 md:py-24 bg-slate-50" aria-labelledby="featured-properties-heading">
+    <section
+      className="py-16 md:py-24 bg-slate-50"
+      aria-labelledby="featured-properties-heading"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
           <div>

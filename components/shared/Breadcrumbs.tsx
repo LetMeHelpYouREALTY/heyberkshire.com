@@ -20,7 +20,10 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
             return (
-              <li key={`${item.name}-${index}`} className="flex items-center gap-1">
+              <li
+                key={`${item.name}-${index}`}
+                className="flex items-center gap-1"
+              >
                 {index > 0 && (
                   <span aria-hidden="true" className="text-slate-400">
                     /

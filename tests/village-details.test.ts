@@ -38,7 +38,7 @@ const forbidden = [
 
 describe("villageDetails", () => {
   const entries = Object.entries(villageDetails).flatMap(([path, slots]) =>
-    slots.map((copy, slot) => ({ path, slot, copy }))
+    slots.map((copy, slot) => ({ path, slot, copy })),
   );
 
   it("covers the leftover village H3 chassis paths", () => {
@@ -114,8 +114,8 @@ describe("villageDetails", () => {
   });
 
   it("keeps detail stills unique across leftover village slots", () => {
-    const srcs = entries.map(({ path, slot }) =>
-      villageDetailPhotoForPath(path, slot).src
+    const srcs = entries.map(
+      ({ path, slot }) => villageDetailPhotoForPath(path, slot).src,
     );
     expect(new Set(srcs).size).toBe(srcs.length);
   });

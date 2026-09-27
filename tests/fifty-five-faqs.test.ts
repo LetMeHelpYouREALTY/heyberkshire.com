@@ -32,14 +32,14 @@ describe("fiftyFiveFaqs", () => {
 
   it("keeps every FAQ question unique across 55+ pages", () => {
     const questions = paths.flatMap((path) =>
-      fiftyFiveFaqs[path].items.map((item) => item.q)
+      fiftyFiveFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use the campus-swapped price-range question template", () => {
     const questions = paths.flatMap((path) =>
-      fiftyFiveFaqs[path].items.map((item) => item.q.toLowerCase())
+      fiftyFiveFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.startsWith("what is the price range at")).toBe(false);

@@ -16,15 +16,15 @@ export default function NeighborhoodFaqs({ path }: NeighborhoodFaqsProps) {
   if (!copy) return null;
 
   const schema = generateFAQSchema(
-    copy.items.map((item) => ({ question: item.q, answer: item.a }))
+    copy.items.map((item) => ({ question: item.q, answer: item.a })),
   );
 
   return (
-    <section
-      className="mb-16 max-w-4xl mx-auto"
-      data-neighborhood-faqs={path}
-    >
-      <SchemaScript schema={schema} id={`faq-schema-${path.replace(/\W+/g, "-")}`} />
+    <section className="mb-16 max-w-4xl mx-auto" data-neighborhood-faqs={path}>
+      <SchemaScript
+        schema={schema}
+        id={`faq-schema-${path.replace(/\W+/g, "-")}`}
+      />
       <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
         {copy.h2}
       </h2>

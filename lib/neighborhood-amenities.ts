@@ -13,7 +13,11 @@ export type NeighborhoodAmenityPin = {
 export type NeighborhoodAmenityCopy = {
   h3: string;
   body: string;
-  pins: [NeighborhoodAmenityPin, NeighborhoodAmenityPin, NeighborhoodAmenityPin];
+  pins: [
+    NeighborhoodAmenityPin,
+    NeighborhoodAmenityPin,
+    NeighborhoodAmenityPin,
+  ];
 };
 
 export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {

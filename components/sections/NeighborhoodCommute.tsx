@@ -7,7 +7,9 @@ type NeighborhoodCommuteProps = {
   path: string;
 };
 
-export default function NeighborhoodCommute({ path }: NeighborhoodCommuteProps) {
+export default function NeighborhoodCommute({
+  path,
+}: NeighborhoodCommuteProps) {
   const copy = neighborhoodCommutes[path];
   if (!copy) return null;
 
@@ -43,17 +45,21 @@ export default function NeighborhoodCommute({ path }: NeighborhoodCommuteProps) 
                   <td className="px-4 py-3 text-sm font-medium text-slate-900">
                     {row.pin}
                   </td>
-                  <td className="px-4 py-3 text-sm text-slate-700">{row.typical}</td>
-                  <td className="px-4 py-3 text-sm text-slate-600">{row.why}</td>
+                  <td className="px-4 py-3 text-sm text-slate-700">
+                    {row.typical}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-slate-600">
+                    {row.why}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className="text-slate-600 text-sm">
-          These are typical ranges already published for this village, not a live
-          ETA. Call or text {ctaPhone.display} and we will re-time the listing
-          street from {nap.fullAddress} before we leave.
+          These are typical ranges already published for this village, not a
+          live ETA. Call or text {ctaPhone.display} and we will re-time the
+          listing street from {nap.fullAddress} before we leave.
         </p>
       </div>
     </div>

@@ -14,7 +14,12 @@ export type FiftyFiveFaqItem = {
 
 export type FiftyFiveFaqCopy = {
   h2: string;
-  items: [FiftyFiveFaqItem, FiftyFiveFaqItem, FiftyFiveFaqItem, FiftyFiveFaqItem];
+  items: [
+    FiftyFiveFaqItem,
+    FiftyFiveFaqItem,
+    FiftyFiveFaqItem,
+    FiftyFiveFaqItem,
+  ];
 };
 
 export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {

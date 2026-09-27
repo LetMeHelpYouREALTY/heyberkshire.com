@@ -138,7 +138,15 @@ export function generateRealEstateAgentSchema() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
         opens: "08:00",
         closes: "20:00",
       },
@@ -281,7 +289,7 @@ export function generateAggregateRatingSchema(
   ratingValue: number,
   reviewCount: number,
   bestRating = 5,
-  worstRating = 1
+  worstRating = 1,
 ) {
   return {
     "@type": "AggregateRating",
@@ -314,7 +322,8 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
         worstRating: "1",
       },
       reviewBody: review.reviewBody,
-      datePublished: review.datePublished || new Date().toISOString().split("T")[0],
+      datePublished:
+        review.datePublished || new Date().toISOString().split("T")[0],
     })),
   };
 }
@@ -453,7 +462,9 @@ export function generateRealEstateListingSchema(listing: {
     "@type": "RealEstateListing",
     name: listing.name,
     description: listing.description,
-    url: listing.url.startsWith("http") ? listing.url : `${BASE_URL}${listing.url}`,
+    url: listing.url.startsWith("http")
+      ? listing.url
+      : `${BASE_URL}${listing.url}`,
     offers: {
       "@type": "Offer",
       price: listing.price,
@@ -479,7 +490,7 @@ export function generateRealEstateListingSchema(listing: {
     ...(listing.images &&
       listing.images.length > 0 && {
         image: listing.images.map((img) =>
-          img.startsWith("http") ? img : `${BASE_URL}${img}`
+          img.startsWith("http") ? img : `${BASE_URL}${img}`,
         ),
       }),
   };
@@ -503,11 +514,18 @@ export function generateServiceSchema(service: {
     "@type": "Service",
     name: service.name,
     description: service.description,
-    url: service.url.startsWith("http") ? service.url : `${BASE_URL}${service.url}`,
+    url: service.url.startsWith("http")
+      ? service.url
+      : `${BASE_URL}${service.url}`,
     provider: {
       "@id": `${BASE_URL}#organization`,
     },
-    areaServed: service.areaServed || ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
+    areaServed: service.areaServed || [
+      "Las Vegas",
+      "Henderson",
+      "Summerlin",
+      "North Las Vegas",
+    ],
     serviceType: "Real Estate Services",
   };
 }

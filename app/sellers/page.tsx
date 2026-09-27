@@ -24,7 +24,6 @@ import SellerFaqs from "@/components/sections/SellerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/sellers",
   title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
@@ -89,50 +88,72 @@ export default function SellersPage() {
             <HeadingPhoto path="/sellers" />
 
             <p className="text-xl text-slate-600 mb-8">
-              When you list with <strong>Berkshire Hathaway HomeServices</strong>, you get
-              world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy 
-              has been serving Las Vegas since 2008—helping sellers achieve top-dollar results 
-              with proven marketing strategies and skilled negotiation.
+              When you list with{" "}
+              <strong>Berkshire Hathaway HomeServices</strong>, you get
+              world-class marketing, expert pricing, and a name that buyers
+              trust. Dr. Jan Duffy has been serving Las Vegas since 2008—helping
+              sellers achieve top-dollar results with proven marketing
+              strategies and skilled negotiation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Home Valuation</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> World-Class Marketing</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Expert Negotiation</span>
+              <span className="flex items-center">
+                <CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free
+                Home Valuation
+              </span>
+              <span className="flex items-center">
+                <CheckCircle className="h-4 w-4 text-green-500 mr-1" />{" "}
+                World-Class Marketing
+              </span>
+              <span className="flex items-center">
+                <CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Expert
+                Negotiation
+              </span>
             </div>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/sellers" />
-          <UniqueInterior path="/sellers" />
-
+              <OfficeProximity path="/sellers" />
+              <UniqueInterior path="/sellers" />
             </div>
           </div>
 
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-center">
-              January 2026: $450K median, 28 DOM, 2.1 months inventory — not your APN
+              January 2026: $450K median, 28 DOM, 2.1 months inventory — not
+              your APN
             </h2>
-<p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas housing market remains favorable for sellers with low inventory and 
-              steady demand. Well-priced homes are selling quickly, and appreciation continues 
-              to outpace national averages. Here's what sellers need to know about current conditions.
+            <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
+              The Las Vegas housing market remains favorable for sellers with
+              low inventory and steady demand. Well-priced homes are selling
+              quickly, and appreciation continues to outpace national averages.
+              Here's what sellers need to know about current conditions.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.2%</div>
-                <div className="text-slate-300 text-sm">Year-Over-Year Appreciation</div>
+                <div className="text-3xl font-bold text-green-400 mb-1">
+                  +4.2%
+                </div>
+                <div className="text-slate-300 text-sm">
+                  Year-Over-Year Appreciation
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">28 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
+                <div className="text-slate-300 text-sm">
+                  Avg. Days on Market
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">2.1 Mo</div>
-                <div className="text-slate-300 text-sm">Inventory (Seller's Market)</div>
+                <div className="text-slate-300 text-sm">
+                  Inventory (Seller's Market)
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">98.5%</div>
-                <div className="text-slate-300 text-sm">List-to-Sale Price Ratio</div>
+                <div className="text-slate-300 text-sm">
+                  List-to-Sale Price Ratio
+                </div>
               </div>
             </div>
           </section>
@@ -150,7 +171,10 @@ export default function SellersPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {includedServices.map((item) => (
-                <div key={item} className="flex items-center bg-white p-4 rounded-lg border border-slate-200">
+                <div
+                  key={item}
+                  className="flex items-center bg-white p-4 rounded-lg border border-slate-200"
+                >
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
                   <span className="text-slate-700 text-sm">{item}</span>
                 </div>
@@ -170,21 +194,26 @@ export default function SellersPage() {
           </section>
           <SellerFaqs path="/sellers" />
 
-
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Bring the address to Suite 100 for a January 2026 comp, not a portal guess</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Bring the address to Suite 100 for a January 2026 comp, not a
+              portal guess
+            </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Schedule a free listing consultation with Dr. Jan Duffy and discover what your home
-              could sell for with Berkshire Hathaway HomeServices. No obligation, no pressure—just 
-              honest advice and expert analysis.
+              Schedule a free listing consultation with Dr. Jan Duffy and
+              discover what your home could sell for with Berkshire Hathaway
+              HomeServices. No obligation, no pressure—just honest advice and
+              expert analysis.
             </p>
             <CtaActions variant="onDark" />
           </section>
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

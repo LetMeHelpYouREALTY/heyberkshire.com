@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
 import OfficeProximity from "@/components/sections/OfficeProximity";
@@ -10,13 +10,14 @@ import { nap } from "@/lib/contact";
 
 export const metadata: Metadata = pageMetadata({
   path: "/security-policy",
-  title: 'Security Policy',
-  description: 'Security policy and responsible disclosure information for heyberkshire.com',
+  title: "Security Policy",
+  description:
+    "Security policy and responsible disclosure information for heyberkshire.com",
   robots: {
     index: true,
     follow: true,
   },
-})
+});
 
 export default function SecurityPolicyPage() {
   return (
@@ -25,8 +26,7 @@ export default function SecurityPolicyPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
-            <HeadingPhoto path="/security-policy" />
-
+        <HeadingPhoto path="/security-policy" />
 
         <div className="prose prose-lg max-w-none">
           <LeftoverBand path="/security-policy" />
@@ -38,13 +38,16 @@ export default function SecurityPolicyPage() {
               </h3>
               <ul className="space-y-2 text-blue-800">
                 <li>
-                  <strong>Email:</strong>{' '}
-                  <a href="mailto:security@heyberkshire.com" className="underline">
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:security@heyberkshire.com"
+                    className="underline"
+                  >
                     security@heyberkshire.com
                   </a>
                 </li>
                 <li>
-                  <strong>Phone:</strong>{' '}
+                  <strong>Phone:</strong>{" "}
                   <a href="tel:+17022221964" className="underline">
                     (702) 222-1964
                   </a>
@@ -131,7 +134,8 @@ export default function SecurityPolicyPage() {
           {/* Third-Party Services */}
           <section className="mb-12">
             <p className="text-gray-700 mb-4">
-              Vendors named on this URL. Keys and wire instructions stay at Suite 100:
+              Vendors named on this URL. Keys and wire instructions stay at
+              Suite 100:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
               <li>
@@ -160,7 +164,8 @@ export default function SecurityPolicyPage() {
               </li>
             </ul>
             <p className="text-gray-700 mt-4">
-              Each service maintains its own security practices and compliance certifications.
+              Each service maintains its own security practices and compliance
+              certifications.
             </p>
           </section>
 
@@ -169,7 +174,8 @@ export default function SecurityPolicyPage() {
           {/* Out of Scope */}
           <section className="mb-12">
             <p className="text-gray-700 mb-4">
-              Please do not report the following (not considered vulnerabilities):
+              Please do not report the following (not considered
+              vulnerabilities):
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
               <li>Publicly accessible information (e.g., property listings)</li>
@@ -187,7 +193,10 @@ export default function SecurityPolicyPage() {
               To protect your information when using our site:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Ensure you're on the correct domain: <strong>heyberkshire.com</strong></li>
+              <li>
+                Ensure you're on the correct domain:{" "}
+                <strong>heyberkshire.com</strong>
+              </li>
               <li>Look for the padlock icon (HTTPS)</li>
               <li>Don't share sensitive information via email</li>
               <li>Use strong, unique passwords if creating an account</li>
@@ -209,29 +218,32 @@ export default function SecurityPolicyPage() {
                 Berkshire Hathaway HomeServices Nevada Properties
               </p>
               <p className="mb-2">
-                Email:{' '}
-                <a href={`mailto:${nap.email}`} className="text-blue-600 underline">
+                Email:{" "}
+                <a
+                  href={`mailto:${nap.email}`}
+                  className="text-blue-600 underline"
+                >
                   {nap.email}
                 </a>
               </p>
               <p>
-                Phone:{' '}
+                Phone:{" "}
                 <a href="tel:+17022221964" className="text-blue-600 underline">
                   (702) 222-1964
                 </a>
               </p>
               <address className="not-italic mt-4 text-gray-700">
-                Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada Properties
+                Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada
+                Properties
                 <br />
                 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134
               </address>
             </div>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/security-policy" />
-          <UniqueInterior path="/security-policy" />
-          <ExpertQuote path="/security-policy" />
-
+              <OfficeProximity path="/security-policy" />
+              <UniqueInterior path="/security-policy" />
+              <ExpertQuote path="/security-policy" />
             </div>
           </section>
 
@@ -247,5 +259,5 @@ export default function SecurityPolicyPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

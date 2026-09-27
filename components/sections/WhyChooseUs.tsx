@@ -15,17 +15,20 @@ const features = [
   {
     icon: TrendingUp,
     title: "Las Vegas Market Data",
-    description: "Neighborhood-level pricing, days on market, and comps — not generic metro averages.",
+    description:
+      "Neighborhood-level pricing, days on market, and comps — not generic metro averages.",
   },
   {
     icon: Users,
     title: "Direct Access to Dr. Jan",
-    description: "Call or text (702) 222-1964. No call center, no assistant queue.",
+    description:
+      "Call or text (702) 222-1964. No call center, no assistant queue.",
   },
   {
     icon: Award,
     title: "$127M+ Closed",
-    description: "500+ transactions since 2008 across Las Vegas, Henderson, and Summerlin.",
+    description:
+      "500+ transactions since 2008 across Las Vegas, Henderson, and Summerlin.",
   },
   {
     icon: Clock,
@@ -35,7 +38,8 @@ const features = [
   {
     icon: Home,
     title: "Buy, Sell, Relocate",
-    description: "One agent for first homes, luxury, 55+, new construction, and investment.",
+    description:
+      "One agent for first homes, luxury, 55+, new construction, and investment.",
   },
 ];
 
@@ -52,12 +56,14 @@ export default function WhyChooseUs() {
             id="why-choose-heading"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 scroll-mt-32"
           >
-            Start at 9406 W Lake Mead Blvd — then we drive Summerlin or Henderson
+            Start at 9406 W Lake Mead Blvd — then we drive Summerlin or
+            Henderson
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Berkshire Hathaway HomeServices Nevada Properties,
-            Suite 100. We sequence the tour from this desk — not a call center.
+            Appointments start at Berkshire Hathaway HomeServices Nevada
+            Properties, Suite 100. We sequence the tour from this desk — not a
+            call center.
           </p>
         </div>
 
@@ -72,7 +78,9 @@ export default function WhyChooseUs() {
                 <div className="bg-blue-100 rounded-full p-4 mb-4">
                   <Icon className="h-8 w-8 text-blue-600" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  {feature.title}
+                </h3>
                 <p className="text-slate-600">{feature.description}</p>
               </div>
             );
@@ -83,7 +91,10 @@ export default function WhyChooseUs() {
         </p>
         <CtaActions variant="onLight" />
         <div className="text-center mt-10">
-          <Link href="/about" className="inline-flex text-blue-600 hover:text-blue-800 font-semibold">
+          <Link
+            href="/about"
+            className="inline-flex text-blue-600 hover:text-blue-800 font-semibold"
+          >
             Meet Dr. Jan Duffy →
           </Link>
         </div>

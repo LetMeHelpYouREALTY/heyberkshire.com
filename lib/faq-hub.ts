@@ -143,5 +143,5 @@ export const faqHubCategories: FaqHubCategory[] = [
 ];
 
 export const faqHubAllItems = faqHubCategories.flatMap((category) =>
-  category.items.map((item) => ({ question: item.q, answer: item.a }))
+  category.items.map((item) => ({ question: item.q, answer: item.a })),
 );

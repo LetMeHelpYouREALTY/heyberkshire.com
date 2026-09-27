@@ -18,10 +18,12 @@ export default function Error({
   return (
     <main id="main-content" className="pb-16 min-h-[70vh] flex items-center">
       <div className="container mx-auto px-4 text-center max-w-2xl">
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">Something Went Wrong</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          Something Went Wrong
+        </h1>
         <p className="text-slate-600 mb-8">
-          Refresh the page, or call Dr. Jan Duffy at {ctaPhone.display} and we will help you
-          directly.
+          Refresh the page, or call Dr. Jan Duffy at {ctaPhone.display} and we
+          will help you directly.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button

@@ -1,6 +1,6 @@
 /**
  * Anthropic Claude API Client - Optimized
- * 
+ *
  * Features:
  * - Prompt caching (90% cost reduction, 85% latency reduction)
  * - Rate limiting with token bucket algorithm
@@ -10,7 +10,7 @@
  * - Type-safe API
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+import Anthropic from "@anthropic-ai/sdk";
 
 export interface ClaudeConfig {
   apiKey: string;
@@ -21,7 +21,7 @@ export interface ClaudeConfig {
 }
 
 export interface ClaudeMessage {
-  role: 'user' | 'assistant';
+  role: "user" | "assistant";
   content: string;
 }
 
@@ -61,16 +61,16 @@ export class ClaudeClient {
 
   // Pricing per million tokens (as of 2026)
   private static readonly PRICING = {
-    'claude-3-5-sonnet-20241022': {
-      input: 3.00,           // $3 per million input tokens
-      output: 15.00,         // $15 per million output tokens
-      cacheWrite: 3.75,      // 125% of input price
-      cacheRead: 0.30,       // 10% of input price
+    "claude-3-5-sonnet-20241022": {
+      input: 3.0, // $3 per million input tokens
+      output: 15.0, // $15 per million output tokens
+      cacheWrite: 3.75, // 125% of input price
+      cacheRead: 0.3, // 10% of input price
     },
-    'claude-3-5-haiku-20241022': {
-      input: 0.80,
-      output: 4.00,
-      cacheWrite: 1.00,
+    "claude-3-5-haiku-20241022": {
+      input: 0.8,
+      output: 4.0,
+      cacheWrite: 1.0,
       cacheRead: 0.08,
     },
   };
@@ -101,8 +101,8 @@ export class ClaudeClient {
    * Send a message to Claude with automatic optimization
    */
   async sendMessage(request: ClaudeRequest): Promise<ClaudeResponse> {
-    const model = request.model || 'claude-3-5-sonnet-20241022';
-    
+    const model = request.model || "claude-3-5-sonnet-20241022";
+
     // Check rate limits
     await this.rateLimiter.checkLimit();
 
@@ -111,19 +111,23 @@ export class ClaudeClient {
       model,
       max_tokens: request.maxTokens || 4096,
       temperature: request.temperature ?? 1.0,
-      messages: request.messages.map(msg => ({
+      messages: request.messages.map((msg) => ({
         role: msg.role,
         content: msg.content,
       })),
     };
 
     // Add system prompt with cache control if caching is enabled
-    if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
+    if (
+      request.systemPrompt &&
+      this.config.enableCaching &&
+      request.enableCache !== false
+    ) {
       (messageParams as unknown as Record<string, unknown>).system = [
         {
-          type: 'text',
+          type: "text",
           text: request.systemPrompt,
-          cache_control: { type: 'ephemeral' },
+          cache_control: { type: "ephemeral" },
         },
       ];
     } else if (request.systemPrompt) {
@@ -142,22 +146,24 @@ export class ClaudeClient {
       }
 
       return {
-        content: response.content[0].type === 'text' ? response.content[0].text : '',
+        content:
+          response.content[0].type === "text" ? response.content[0].text : "",
         usage: {
           inputTokens: response.usage.input_tokens,
           outputTokens: response.usage.output_tokens,
-          cacheCreationInputTokens: (response.usage as any).cache_creation_input_tokens,
+          cacheCreationInputTokens: (response.usage as any)
+            .cache_creation_input_tokens,
           cacheReadInputTokens: (response.usage as any).cache_read_input_tokens,
         },
         cost,
         model: response.model,
-        stopReason: response.stop_reason || 'unknown',
+        stopReason: response.stop_reason || "unknown",
       };
     } catch (error) {
       if (error instanceof Anthropic.APIError) {
         if (error.status === 429) {
           // Rate limit exceeded - wait and retry
-          const retryAfter = parseInt(error.headers?.['retry-after'] || '60');
+          const retryAfter = parseInt(error.headers?.["retry-after"] || "60");
           await this.sleep(retryAfter * 1000);
           return this.sendMessage(request);
         }
@@ -170,28 +176,34 @@ export class ClaudeClient {
   /**
    * Stream a response from Claude
    */
-  async *streamMessage(request: ClaudeRequest): AsyncGenerator<string, void, unknown> {
-    const model = request.model || 'claude-3-5-sonnet-20241022';
-    
+  async *streamMessage(
+    request: ClaudeRequest,
+  ): AsyncGenerator<string, void, unknown> {
+    const model = request.model || "claude-3-5-sonnet-20241022";
+
     await this.rateLimiter.checkLimit();
 
     const messageParams: Anthropic.MessageCreateParams = {
       model,
       max_tokens: request.maxTokens || 4096,
       temperature: request.temperature ?? 1.0,
-      messages: request.messages.map(msg => ({
+      messages: request.messages.map((msg) => ({
         role: msg.role,
         content: msg.content,
       })),
       stream: true,
     };
 
-    if (request.systemPrompt && this.config.enableCaching && request.enableCache !== false) {
+    if (
+      request.systemPrompt &&
+      this.config.enableCaching &&
+      request.enableCache !== false
+    ) {
       (messageParams as unknown as Record<string, unknown>).system = [
         {
-          type: 'text',
+          type: "text",
           text: request.systemPrompt,
-          cache_control: { type: 'ephemeral' },
+          cache_control: { type: "ephemeral" },
         },
       ];
     } else if (request.systemPrompt) {
@@ -201,7 +213,10 @@ export class ClaudeClient {
     const stream = await this.client.messages.create(messageParams);
 
     for await (const event of stream) {
-      if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+      if (
+        event.type === "content_block_delta" &&
+        event.delta.type === "text_delta"
+      ) {
         yield event.delta.text;
       }
     }
@@ -210,24 +225,27 @@ export class ClaudeClient {
   /**
    * Calculate cost based on token usage
    */
-  private calculateCost(model: string, usage: any): ClaudeResponse['cost'] {
-    const pricing = ClaudeClient.PRICING[model as keyof typeof ClaudeClient.PRICING];
+  private calculateCost(model: string, usage: any): ClaudeResponse["cost"] {
+    const pricing =
+      ClaudeClient.PRICING[model as keyof typeof ClaudeClient.PRICING];
     if (!pricing) {
       throw new Error(`Unknown model pricing: ${model}`);
     }
 
     const inputCost = (usage.input_tokens / 1_000_000) * pricing.input;
     const outputCost = (usage.output_tokens / 1_000_000) * pricing.output;
-    
+
     let cacheWriteCost = 0;
     let cacheReadCost = 0;
 
     if (usage.cache_creation_input_tokens) {
-      cacheWriteCost = (usage.cache_creation_input_tokens / 1_000_000) * pricing.cacheWrite;
+      cacheWriteCost =
+        (usage.cache_creation_input_tokens / 1_000_000) * pricing.cacheWrite;
     }
 
     if (usage.cache_read_input_tokens) {
-      cacheReadCost = (usage.cache_read_input_tokens / 1_000_000) * pricing.cacheRead;
+      cacheReadCost =
+        (usage.cache_read_input_tokens / 1_000_000) * pricing.cacheRead;
     }
 
     return {
@@ -254,7 +272,7 @@ export class ClaudeClient {
   }
 
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
 
@@ -262,9 +280,10 @@ export class ClaudeClient {
  * Cost Tracker - Monitor API usage costs
  */
 class CostTracker {
-  private requests: Array<{ timestamp: number; cost: ClaudeResponse['cost'] }> = [];
+  private requests: Array<{ timestamp: number; cost: ClaudeResponse["cost"] }> =
+    [];
 
-  addRequest(cost: ClaudeResponse['cost']) {
+  addRequest(cost: ClaudeResponse["cost"]) {
     this.requests.push({
       timestamp: Date.now(),
       cost,
@@ -273,8 +292,12 @@ class CostTracker {
 
   getStats() {
     const now = Date.now();
-    const last24h = this.requests.filter(r => now - r.timestamp < 24 * 60 * 60 * 1000);
-    const last7d = this.requests.filter(r => now - r.timestamp < 7 * 24 * 60 * 60 * 1000);
+    const last24h = this.requests.filter(
+      (r) => now - r.timestamp < 24 * 60 * 60 * 1000,
+    );
+    const last7d = this.requests.filter(
+      (r) => now - r.timestamp < 7 * 24 * 60 * 60 * 1000,
+    );
 
     return {
       total: {
@@ -332,12 +355,12 @@ class RateLimiter {
     const now = Date.now();
     const timePassed = now - this.lastRefill;
     const tokensToAdd = (timePassed / 60000) * this.config.requestsPerMinute;
-    
+
     this.requestTokens = Math.min(
       this.tokenBucketSize,
-      this.requestTokens + tokensToAdd
+      this.requestTokens + tokensToAdd,
     );
-    
+
     this.lastRefill = now;
   }
 
@@ -347,6 +370,6 @@ class RateLimiter {
   }
 
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }

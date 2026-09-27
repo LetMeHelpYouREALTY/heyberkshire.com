@@ -10,10 +10,10 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/market-update",
-  title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+  title:
+    "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
   description:
     "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 222-1964.",
   keywords: [
@@ -58,7 +58,7 @@ export default function MarketUpdatePage() {
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Header */}
+          {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-12">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Calendar className="h-4 w-4 mr-2" />
@@ -78,10 +78,9 @@ export default function MarketUpdatePage() {
             </div>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/market-update" />
-          <UniqueInterior path="/market-update" />
-          <ExpertQuote path="/market-update" />
-
+              <OfficeProximity path="/market-update" />
+              <UniqueInterior path="/market-update" />
+              <ExpertQuote path="/market-update" />
             </div>
           </div>
 
@@ -99,7 +98,8 @@ export default function MarketUpdatePage() {
               Price this week against your APN at Suite 100
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              $452,500 median is a snapshot. Call (702) 222-1964. Bring the address to 9406 W Lake Mead Blvd.
+              $452,500 median is a snapshot. Call (702) 222-1964. Bring the
+              address to 9406 W Lake Mead Blvd.
             </p>
             <CtaActions variant="onDark" />
           </section>
@@ -110,8 +110,8 @@ export default function MarketUpdatePage() {
               Monday briefing from 9406 W Lake Mead Blvd — not a valley blast
             </h3>
             <p className="text-slate-600 mb-6">
-              Join 2,500+ Las Vegas homeowners and investors who receive Dr. Jan's weekly market
-              analysis every Monday morning.
+              Join 2,500+ Las Vegas homeowners and investors who receive Dr.
+              Jan's weekly market analysis every Monday morning.
             </p>
             <div className="flex gap-2 max-w-md mx-auto">
               <input

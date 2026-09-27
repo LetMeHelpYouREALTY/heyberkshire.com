@@ -32,14 +32,14 @@ describe("sellerFaqs", () => {
 
   it("keeps every FAQ question unique across seller pages", () => {
     const questions = paths.flatMap((path) =>
-      sellerFaqs[path].items.map((item) => item.q)
+      sellerFaqs[path].items.map((item) => item.q),
     );
     expect(new Set(questions).size).toBe(questions.length);
   });
 
   it("does not use the swapped days-on-market selling template", () => {
     const questions = paths.flatMap((path) =>
-      sellerFaqs[path].items.map((item) => item.q.toLowerCase())
+      sellerFaqs[path].items.map((item) => item.q.toLowerCase()),
     );
     for (const q of questions) {
       expect(q.startsWith("how long will it take to sell")).toBe(false);

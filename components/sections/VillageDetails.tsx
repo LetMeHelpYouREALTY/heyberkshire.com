@@ -8,7 +8,10 @@ type VillageDetailsProps = {
   slot?: number;
 };
 
-export default function VillageDetails({ path, slot = 0 }: VillageDetailsProps) {
+export default function VillageDetails({
+  path,
+  slot = 0,
+}: VillageDetailsProps) {
   const copy = villageDetails[path]?.[slot];
   if (!copy) return null;
 
@@ -29,7 +32,10 @@ export default function VillageDetails({ path, slot = 0 }: VillageDetailsProps) 
       <p className="text-slate-700 mb-4">{copy.body}</p>
       <div className="grid md:grid-cols-2 gap-4">
         {copy.pins.map((pin) => (
-          <div key={pin.name} className="bg-white border border-slate-200 rounded-xl p-5">
+          <div
+            key={pin.name}
+            className="bg-white border border-slate-200 rounded-xl p-5"
+          >
             <h4 className="font-bold text-slate-900 mb-2">{pin.name}</h4>
             <p className="text-slate-600 text-sm">{pin.note}</p>
           </div>

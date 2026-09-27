@@ -24,10 +24,10 @@ import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/solera-anthem",
-  title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
+  title:
+    "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
   description:
     "Solera at Anthem - guard-gated 55+ community in Henderson with about 1,200 homes. Homes from $380K-$650K. Lower HOA fees, staffed gate. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
   keywords: [
@@ -74,7 +74,7 @@ export default function SoleraAnthemPage() {
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero */}
+          {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Heart className="h-4 w-4 mr-2" />
@@ -92,20 +92,22 @@ export default function SoleraAnthemPage() {
               <CtaActions variant="onLight" />
             </div>
             <div className="mt-8 max-w-xl mx-auto text-left">
-              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">Search live MLS inventory</p>
+              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">
+                Search live MLS inventory
+              </p>
               <RealScoutSearch />
             </div>
           </div>
           <OfficeProximity path="/55-plus-communities/solera-anthem" />
           <UniqueInterior path="/55-plus-communities/solera-anthem" />
 
-
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              1,200+ Homes, $170–$210 HOA, $380K–$650K Band — Stats Before the Henderson Drive
+              1,200+ Homes, $170–$210 HOA, $380K–$650K Band — Stats Before the
+              Henderson Drive
             </h2>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-teal-400 mb-1">
                   $380K-$650K
@@ -149,8 +151,9 @@ export default function SoleraAnthemPage() {
                       Guard-Gated Access
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      Solera at Anthem is a smaller 55+ community with a staffed gate, HOA-maintained
-                      streets, and a short drive to Anthem Center recreation.
+                      Solera at Anthem is a smaller 55+ community with a staffed
+                      gate, HOA-maintained streets, and a short drive to Anthem
+                      Center recreation.
                     </p>
                   </div>
                 </div>
@@ -163,8 +166,9 @@ export default function SoleraAnthemPage() {
                       Anthem Master-Planned Community
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      Located inside the Anthem master-planned streets in Henderson.
-                      Mountain and desert views. 30–35 minutes from Suite 100.
+                      Located inside the Anthem master-planned streets in
+                      Henderson. Mountain and desert views. 30–35 minutes from
+                      Suite 100.
                     </p>
                   </div>
                 </div>
@@ -205,19 +209,20 @@ export default function SoleraAnthemPage() {
 
           <FiftyFiveFaqs path="/55-plus-communities/solera-anthem" />
 
-
           {/* CTA */}
           <section className="text-center bg-teal-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Tour Solera's 1,200-home campus with nearby Anthem parks
             </h2>
             <p className="text-xl text-teal-100 mb-8">
-              Discover why Solera at Anthem offers a staffed gate and boutique clubhouse
-              that 7,000-home campuses do not. Tour with Dr. Jan Duffy.
+              Discover why Solera at Anthem offers a staffed gate and boutique
+              clubhouse that 7,000-home campuses do not. Tour with Dr. Jan
+              Duffy.
             </p>
             <CtaActions variant="onDark" />
             <p className="text-teal-200">
-              Solera tours run with Anthem parks on a 30–35 minute Henderson block from the office.
+              Solera tours run with Anthem parks on a 30–35 minute Henderson
+              block from the office.
             </p>
           </section>
         </div>

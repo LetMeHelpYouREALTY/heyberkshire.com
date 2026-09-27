@@ -11,7 +11,10 @@ export async function POST(request: NextRequest) {
     const { prompt, conversation = [] } = await request.json();
 
     if (!prompt) {
-      return NextResponse.json({ error: "Prompt is required" }, { status: 400 });
+      return NextResponse.json(
+        { error: "Prompt is required" },
+        { status: 400 },
+      );
     }
 
     if (!process.env.OPENROUTER_API_KEY) {

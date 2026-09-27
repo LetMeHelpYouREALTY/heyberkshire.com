@@ -19,10 +19,10 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import BuyerFaqs from "@/components/sections/BuyerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/california-relocator",
-  title: "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
+  title:
+    "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
   description:
     "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 222-1964.",
   keywords: [
@@ -34,7 +34,6 @@ export const metadata: Metadata = pageMetadata({
     "Berkshire Hathaway HomeServices relocation",
   ],
 });
-
 
 const realEstateAgentSchema = {
   "@context": "https://schema.org",
@@ -58,18 +57,21 @@ export default function CaliforniaRelocatorPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(realEstateAgentSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(realEstateAgentSchema),
+        }}
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero */}
+          {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Sun className="h-4 w-4 mr-2" />
               37% of Las Vegas Buyers Are From California
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Relocating from California?<br />
+              Relocating from California?
+              <br />
               <span className="text-blue-600">Welcome Home to Las Vegas</span>
             </h1>
             <HeadingPhoto path="/buyers/california-relocator" />
@@ -78,9 +80,8 @@ export default function CaliforniaRelocatorPage() {
               Zero state income tax. 40-60% lower home prices. Same sunshine.
             </p>
             <CtaActions variant="onLight" />
-          <OfficeProximity path="/buyers/california-relocator" />
-          <UniqueInterior path="/buyers/california-relocator" />
-
+            <OfficeProximity path="/buyers/california-relocator" />
+            <UniqueInterior path="/buyers/california-relocator" />
           </div>
 
           <LeftoverBand path="/buyers/california-relocator" />
@@ -91,22 +92,32 @@ export default function CaliforniaRelocatorPage() {
               <div className="text-center bg-white/10 rounded-xl p-6">
                 <div className="text-4xl font-bold mb-2">0%</div>
                 <div className="text-green-100">Nevada State Income Tax</div>
-                <div className="text-sm text-green-200 mt-2">vs. CA 9.3%-13.3%</div>
+                <div className="text-sm text-green-200 mt-2">
+                  vs. CA 9.3%-13.3%
+                </div>
               </div>
               <div className="text-center bg-white/10 rounded-xl p-6">
                 <div className="text-4xl font-bold mb-2">40-60%</div>
-                <div className="text-green-100">Lower published home prices</div>
-                <div className="text-sm text-green-200 mt-2">January 2026 valley median $450K</div>
+                <div className="text-green-100">
+                  Lower published home prices
+                </div>
+                <div className="text-sm text-green-200 mt-2">
+                  January 2026 valley median $450K
+                </div>
               </div>
               <div className="text-center bg-white/10 rounded-xl p-6">
                 <div className="text-4xl font-bold mb-2">$150K+</div>
                 <div className="text-green-100">5-Year Savings</div>
-                <div className="text-sm text-green-200 mt-2">$200K income example</div>
+                <div className="text-sm text-green-200 mt-2">
+                  $200K income example
+                </div>
               </div>
             </div>
             <div className="text-center">
               <p className="text-green-100 text-lg">
-                A California household earning $250,000/year saves <strong>$25,000+ annually</strong> in state income tax alone by moving to Nevada.
+                A California household earning $250,000/year saves{" "}
+                <strong>$25,000+ annually</strong> in state income tax alone by
+                moving to Nevada.
               </p>
             </div>
           </section>
@@ -119,7 +130,9 @@ export default function CaliforniaRelocatorPage() {
               <div className="bg-red-50 border border-red-200 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="h-6 w-6 text-red-600 mr-2" />
-                  <h3 className="font-bold text-lg text-red-900">In California</h3>
+                  <h3 className="font-bold text-lg text-red-900">
+                    In California
+                  </h3>
                 </div>
                 <ul className="space-y-3 text-red-800">
                   <li className="flex items-start">
@@ -139,7 +152,9 @@ export default function CaliforniaRelocatorPage() {
               <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <MapPin className="h-6 w-6 text-green-600 mr-2" />
-                  <h3 className="font-bold text-lg text-green-900">In Las Vegas</h3>
+                  <h3 className="font-bold text-lg text-green-900">
+                    In Las Vegas
+                  </h3>
                 </div>
                 <ul className="space-y-3 text-green-800">
                   <li className="flex items-start">
@@ -171,11 +186,13 @@ export default function CaliforniaRelocatorPage() {
                 </div>
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
-                    Master-planned streets with Palo Verde High School commute mapped by address,
-                    Downtown Summerlin shopping, and Red Rock Canyon trailheads.
+                    Master-planned streets with Palo Verde High School commute
+                    mapped by address, Downtown Summerlin shopping, and Red Rock
+                    Canyon trailheads.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
-                    <strong>Best for:</strong> Buyers from Orange County, coastal CA
+                    <strong>Best for:</strong> Buyers from Orange County,
+                    coastal CA
                   </div>
                   <ul className="text-sm space-y-1 text-slate-700">
                     <li className="flex items-center">
@@ -208,10 +225,12 @@ export default function CaliforniaRelocatorPage() {
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
                     Henderson sits on a tech corridor. Google's data center,
-                    parks, recreation campuses, and Inspirada's 2,000-acre town center.
+                    parks, recreation campuses, and Inspirada's 2,000-acre town
+                    center.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
-                    <strong>Best for:</strong> Tech workers, Inspirada new construction, San Diego relocators
+                    <strong>Best for:</strong> Tech workers, Inspirada new
+                    construction, San Diego relocators
                   </div>
                   <ul className="text-sm space-y-1 text-slate-700">
                     <li className="flex items-center">
@@ -243,11 +262,12 @@ export default function CaliforniaRelocatorPage() {
                 </div>
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
-                    Guard-gated lots with Strip or Red Rock views,
-                    custom home sites, and a gate list from Suite 100.
+                    Guard-gated lots with Strip or Red Rock views, custom home
+                    sites, and a gate list from Suite 100.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
-                    <strong>Best for:</strong> Beverly Hills/Newport Beach luxury buyers
+                    <strong>Best for:</strong> Beverly Hills/Newport Beach
+                    luxury buyers
                   </div>
                   <ul className="text-sm space-y-1 text-slate-700">
                     <li className="flex items-center">
@@ -278,52 +298,68 @@ export default function CaliforniaRelocatorPage() {
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center mb-6">
               <Briefcase className="h-8 w-8 text-blue-600 mr-3" />
-              <h2 className="text-3xl font-bold text-slate-900">Keep the California paycheck — run Nevada tax math at Suite 100</h2>
+              <h2 className="text-3xl font-bold text-slate-900">
+                Keep the California paycheck — run Nevada tax math at Suite 100
+              </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <p className="text-slate-700 mb-4">
-                  Keep your California salary, lose the California taxes. Thousands of tech workers,
-                  executives, and entrepreneurs have discovered that Las Vegas offers the perfect
-                  remote work base:
+                  Keep your California salary, lose the California taxes.
+                  Thousands of tech workers, executives, and entrepreneurs have
+                  discovered that Las Vegas offers the perfect remote work base:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <TrendingUp className="h-5 w-5 text-green-600 mr-2 mt-1 flex-shrink-0" />
-                    <span><strong>Same income, lower costs:</strong> Keep your Bay Area salary while paying Nevada prices</span>
+                    <span>
+                      <strong>Same income, lower costs:</strong> Keep your Bay
+                      Area salary while paying Nevada prices
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <Plane className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
-                    <span><strong>Easy travel:</strong> Direct flights to SFO, LAX, SJC for when you need to be in-office</span>
+                    <span>
+                      <strong>Easy travel:</strong> Direct flights to SFO, LAX,
+                      SJC for when you need to be in-office
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <Sun className="h-5 w-5 text-amber-500 mr-2 mt-1 flex-shrink-0" />
-                    <span><strong>Named amenities:</strong> Golf at 2pm, hike Red Rock after work, Downtown Summerlin dining</span>
+                    <span>
+                      <strong>Named amenities:</strong> Golf at 2pm, hike Red
+                      Rock after work, Downtown Summerlin dining
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="bg-white rounded-xl p-6 border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-4">Henderson Tech Corridor</h3>
+                <h3 className="font-bold text-slate-900 mb-4">
+                  Henderson Tech Corridor
+                </h3>
                 <p className="text-slate-600 mb-4">
-                  Google's $600M data center. Amazon Web Services. Switch Supernap. Henderson is
-                  becoming a tech hub, with companies citing zero corporate
-                  income tax and commute minutes to Harry Reid International (LAS).
+                  Google's $600M data center. Amazon Web Services. Switch
+                  Supernap. Henderson is becoming a tech hub, with companies
+                  citing zero corporate income tax and commute minutes to Harry
+                  Reid International (LAS).
                 </p>
                 <p className="text-sm text-slate-500">
-                  Many California tech workers find themselves with <em>more</em> local job options
-                  after moving to Vegas than they expected.
+                  Many California tech workers find themselves with{" "}
+                  <em>more</em> local job options after moving to Vegas than
+                  they expected.
                 </p>
               </div>
             </div>
           </section>
           <BuyerFaqs path="/buyers/california-relocator" />
 
-
           <ExpertQuote path="/buyers/california-relocator" />
 
           <LeftoverBand path="/buyers/california-relocator" slot={3} />
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

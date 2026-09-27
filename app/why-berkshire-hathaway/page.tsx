@@ -10,7 +10,6 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/why-berkshire-hathaway",
   title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
@@ -61,16 +60,17 @@ export default function WhyBerkshireHathawayPage() {
             <HeadingPhoto path="/why-berkshire-hathaway" />
 
             <p className="text-xl text-slate-600 leading-relaxed">
-              When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
-              backed by a name synonymous with trust, ethical standards, and financial strength—the
-              same principles that built Warren Buffett's empire.
+              When you work with a{" "}
+              <strong>Berkshire Hathaway HomeServices</strong> agent, you're
+              backed by a name synonymous with trust, ethical standards, and
+              financial strength—the same principles that built Warren Buffett's
+              empire.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
-          <OfficeProximity path="/why-berkshire-hathaway" />
-          <UniqueInterior path="/why-berkshire-hathaway" />
-          <ExpertQuote path="/why-berkshire-hathaway" />
-
+              <OfficeProximity path="/why-berkshire-hathaway" />
+              <UniqueInterior path="/why-berkshire-hathaway" />
+              <ExpertQuote path="/why-berkshire-hathaway" />
             </div>
           </div>
 
@@ -81,7 +81,8 @@ export default function WhyBerkshireHathawayPage() {
           {/* Stats Section */}
           <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              50,000 agents, $138B 2024 volume — then ask what Suite 100 puts on YOUR file
+              50,000 agents, $138B 2024 volume — then ask what Suite 100 puts on
+              YOUR file
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
@@ -89,16 +90,22 @@ export default function WhyBerkshireHathawayPage() {
                 <div className="text-blue-200">Agents Worldwide</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">1,500+</div>
+                <div className="text-4xl md:text-5xl font-bold mb-2">
+                  1,500+
+                </div>
                 <div className="text-blue-200">Offices Globally</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">$138B+</div>
+                <div className="text-4xl md:text-5xl font-bold mb-2">
+                  $138B+
+                </div>
                 <div className="text-blue-200">Sales Volume (2024)</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold mb-2">#1</div>
-                <div className="text-blue-200">Parent: Berkshire Hathaway Inc.</div>
+                <div className="text-blue-200">
+                  Parent: Berkshire Hathaway Inc.
+                </div>
               </div>
             </div>
           </section>
@@ -110,17 +117,21 @@ export default function WhyBerkshireHathawayPage() {
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ask who photographs, who writes remarks, who negotiates — then sign
+              Ask who photographs, who writes remarks, who negotiates — then
+              sign
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Call (702) 222-1964. License S.0197614.LLC. Suite 100 on W Lake Mead Blvd.
+              Call (702) 222-1964. License S.0197614.LLC. Suite 100 on W Lake
+              Mead Blvd.
             </p>
             <CtaActions variant="onDark" />
           </section>
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">
+          Last Updated: January 2026
+        </div>
       </main>
       <RealScoutListings />
     </>

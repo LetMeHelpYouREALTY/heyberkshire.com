@@ -24,10 +24,10 @@ import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 import { pageMetadata } from "@/lib/seo";
 
-
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/trilogy-summerlin",
-  title: "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
+  title:
+    "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
   description:
     "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
   keywords: [
@@ -74,7 +74,7 @@ export default function TrilogySummerlinPage() {
       />
       <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-{/* Hero */}
+          {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-rose-100 text-rose-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Sparkles className="h-4 w-4 mr-2" />
@@ -93,20 +93,22 @@ export default function TrilogySummerlinPage() {
               <CtaActions variant="onLight" />
             </div>
             <div className="mt-8 max-w-xl mx-auto text-left">
-              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">Search live MLS inventory</p>
+              <p className="text-sm font-semibold text-slate-700 mb-3 text-center">
+                Search live MLS inventory
+              </p>
               <RealScoutSearch />
             </div>
           </div>
           <OfficeProximity path="/55-plus-communities/trilogy-summerlin" />
           <UniqueInterior path="/55-plus-communities/trilogy-summerlin" />
 
-
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 text-center">
-              800+ Shea Homes, $250–$350 HOA, $500K–$1.1M Band — Stats Before the Clubhouse
+              800+ Shea Homes, $250–$350 HOA, $500K–$1.1M Band — Stats Before
+              the Clubhouse
             </h2>
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-rose-400 mb-1">
                   $500K-$1.1M
@@ -139,7 +141,8 @@ export default function TrilogySummerlinPage() {
           {/* Home Features */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
-              Open plans and first-floor primaries — walk one Shea row from Suite 100
+              Open plans and first-floor primaries — walk one Shea row from
+              Suite 100
             </h2>
             <p className="text-lg text-slate-600 text-center mb-8 max-w-3xl mx-auto">
               Trilogy homes break the mold of traditional 55+ construction with
@@ -200,18 +203,20 @@ export default function TrilogySummerlinPage() {
 
           <FiftyFiveFaqs path="/55-plus-communities/trilogy-summerlin" />
 
-
           {/* CTA */}
           <section className="text-center bg-gradient-to-r from-rose-600 to-pink-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Walk the Trilogy clubhouse pool 12–18 minutes from Suite 100
             </h2>
             <p className="text-xl text-rose-100 mb-8">
-              Clubhouse, spa, and Shea plan rows sit 12–18 minutes from 9406 W Lake Mead Blvd. Register before walking models. Call (702) 222-1964.
+              Clubhouse, spa, and Shea plan rows sit 12–18 minutes from 9406 W
+              Lake Mead Blvd. Register before walking models. Call (702)
+              222-1964.
             </p>
             <CtaActions variant="onDark" />
             <p className="text-rose-200">
-              Clubhouse, spa, and Shea plans are 12–18 minutes from the Lake Mead Blvd office.
+              Clubhouse, spa, and Shea plans are 12–18 minutes from the Lake
+              Mead Blvd office.
             </p>
           </section>
         </div>

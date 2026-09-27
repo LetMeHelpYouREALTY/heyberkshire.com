@@ -36,7 +36,13 @@ Call Dr. Jan Duffy at (702) 500-1942 for a free market analysis of your home or 
       url: "https://heyberkshire.com/home-valuation",
     },
     publishDate: "2026-01-20",
-    keywords: ["Las Vegas real estate", "Henderson homes", "Summerlin", "55+ communities", "market update"],
+    keywords: [
+      "Las Vegas real estate",
+      "Henderson homes",
+      "Summerlin",
+      "55+ communities",
+      "market update",
+    ],
   },
   {
     id: "california-relocation",
@@ -57,7 +63,13 @@ Call (702) 500-1942 for a free California equity comparison.`,
       url: "https://heyberkshire.com/buyers/california-relocator",
     },
     publishDate: "2026-01-13",
-    keywords: ["California relocation", "Las Vegas", "no state income tax", "Summerlin", "The Ridges"],
+    keywords: [
+      "California relocation",
+      "Las Vegas",
+      "no state income tax",
+      "Summerlin",
+      "The Ridges",
+    ],
   },
   {
     id: "55-plus-spotlight",
@@ -78,7 +90,13 @@ Schedule a community tour: (702) 500-1942`,
       url: "https://heyberkshire.com/55-plus-communities",
     },
     publishDate: "2026-01-06",
-    keywords: ["55+ communities", "Sun City Summerlin", "Sun City Anthem", "Del Webb", "active adult"],
+    keywords: [
+      "55+ communities",
+      "Sun City Summerlin",
+      "Sun City Anthem",
+      "Del Webb",
+      "active adult",
+    ],
   },
   {
     id: "first-time-buyer",
@@ -104,7 +122,13 @@ Call (702) 500-1942 to start your homeownership journey.`,
       url: "https://heyberkshire.com/buyers/first-time-buyers",
     },
     publishDate: "2025-12-30",
-    keywords: ["first-time buyer", "down payment assistance", "FHA", "VA loan", "Las Vegas"],
+    keywords: [
+      "first-time buyer",
+      "down payment assistance",
+      "FHA",
+      "VA loan",
+      "Las Vegas",
+    ],
   },
   {
     id: "seller-tips",
@@ -129,7 +153,13 @@ Get a free home valuation from Dr. Jan Duffy: (702) 500-1942`,
       url: "https://heyberkshire.com/home-valuation",
     },
     publishDate: "2025-12-23",
-    keywords: ["sell home Las Vegas", "home valuation", "listing agent", "Summerlin", "Henderson"],
+    keywords: [
+      "sell home Las Vegas",
+      "home valuation",
+      "listing agent",
+      "Summerlin",
+      "Henderson",
+    ],
   },
   {
     id: "luxury-homes",
@@ -154,14 +184,23 @@ Confidential luxury home search: (702) 500-1942`,
       url: "https://heyberkshire.com/buyers/luxury-homes-las-vegas",
     },
     publishDate: "2025-12-16",
-    keywords: ["luxury homes Las Vegas", "The Ridges", "MacDonald Highlands", "high-rise condos"],
+    keywords: [
+      "luxury homes Las Vegas",
+      "The Ridges",
+      "MacDonald Highlands",
+      "high-rise condos",
+    ],
   },
 ];
 
 // Review Response Templates
 // Respond promptly and in depth using who/what/when/where/why
 export const reviewResponseTemplates = {
-  fiveStarBuyer: (clientName: string, neighborhood: string, details: string) => `
+  fiveStarBuyer: (
+    clientName: string,
+    neighborhood: string,
+    details: string,
+  ) => `
 Thank you so much, ${clientName}! It was truly a pleasure helping you find your perfect home in ${neighborhood}. ${details}
 
 Working with buyers who know what they want makes my job a joy. I'm always here if you have questions about your new home or need recommendations for local services.
@@ -171,7 +210,11 @@ Welcome to the neighborhood! 🏠
 - Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
 `,
 
-  fiveStarSeller: (clientName: string, neighborhood: string, details: string) => `
+  fiveStarSeller: (
+    clientName: string,
+    neighborhood: string,
+    details: string,
+  ) => `
 Thank you for the kind words, ${clientName}! Selling your ${neighborhood} home was a great experience, and I'm thrilled we were able to ${details}.
 
 The Las Vegas market is competitive, but with the right pricing strategy and marketing, we got you excellent results. Wishing you all the best in your next chapter!
@@ -202,32 +245,76 @@ Real estate transactions can be complex, and I'm committed to learning from ever
 export const citationSources = {
   // Tier 1: Major aggregators
   tier1: [
-    { name: "Google Business Profile", url: "https://business.google.com", priority: "critical" },
-    { name: "Bing Places", url: "https://www.bingplaces.com", priority: "high" },
-    { name: "Apple Maps", url: "https://mapsconnect.apple.com", priority: "high" },
+    {
+      name: "Google Business Profile",
+      url: "https://business.google.com",
+      priority: "critical",
+    },
+    {
+      name: "Bing Places",
+      url: "https://www.bingplaces.com",
+      priority: "high",
+    },
+    {
+      name: "Apple Maps",
+      url: "https://mapsconnect.apple.com",
+      priority: "high",
+    },
     { name: "Yelp", url: "https://biz.yelp.com", priority: "high" },
   ],
   // Tier 2: Real estate specific
   tier2: [
-    { name: "Realtor.com", url: "https://www.realtor.com/realestateagents", priority: "critical" },
-    { name: "Zillow", url: "https://www.zillow.com/agent-finder", priority: "critical" },
+    {
+      name: "Realtor.com",
+      url: "https://www.realtor.com/realestateagents",
+      priority: "critical",
+    },
+    {
+      name: "Zillow",
+      url: "https://www.zillow.com/agent-finder",
+      priority: "critical",
+    },
     { name: "Homes.com", url: "https://www.homes.com", priority: "high" },
     { name: "Trulia", url: "https://www.trulia.com", priority: "high" },
     { name: "Redfin", url: "https://www.redfin.com", priority: "medium" },
   ],
   // Tier 3: Local Nevada/Las Vegas directories
   tier3: [
-    { name: "Nevada Real Estate Division", url: "https://red.nv.gov", priority: "high" },
-    { name: "Las Vegas Chamber of Commerce", url: "https://www.lvchamber.com", priority: "medium" },
-    { name: "Henderson Chamber of Commerce", url: "https://www.hendersonchamber.com", priority: "medium" },
-    { name: "Vegas.com Business Directory", url: "https://www.vegas.com", priority: "low" },
+    {
+      name: "Nevada Real Estate Division",
+      url: "https://red.nv.gov",
+      priority: "high",
+    },
+    {
+      name: "Las Vegas Chamber of Commerce",
+      url: "https://www.lvchamber.com",
+      priority: "medium",
+    },
+    {
+      name: "Henderson Chamber of Commerce",
+      url: "https://www.hendersonchamber.com",
+      priority: "medium",
+    },
+    {
+      name: "Vegas.com Business Directory",
+      url: "https://www.vegas.com",
+      priority: "low",
+    },
   ],
   // Tier 4: General business directories
   tier4: [
-    { name: "Facebook Business", url: "https://www.facebook.com/business", priority: "high" },
+    {
+      name: "Facebook Business",
+      url: "https://www.facebook.com/business",
+      priority: "high",
+    },
     { name: "LinkedIn", url: "https://www.linkedin.com", priority: "high" },
     { name: "BBB", url: "https://www.bbb.org", priority: "medium" },
-    { name: "Yellow Pages", url: "https://www.yellowpages.com", priority: "low" },
+    {
+      name: "Yellow Pages",
+      url: "https://www.yellowpages.com",
+      priority: "low",
+    },
   ],
 };
 
@@ -236,31 +323,56 @@ export const photoCategories = [
   {
     category: "Office & Team",
     description: "Exterior office, interior, team photos",
-    examples: ["Office exterior", "Reception area", "Dr. Jan headshot", "Team photo"],
+    examples: [
+      "Office exterior",
+      "Reception area",
+      "Dr. Jan headshot",
+      "Team photo",
+    ],
     count: "5-10 photos",
   },
   {
     category: "Neighborhoods",
     description: "Local area photos showing geography expertise",
-    examples: ["Summerlin views", "Henderson parks", "Las Vegas Strip", "Red Rock Canyon"],
+    examples: [
+      "Summerlin views",
+      "Henderson parks",
+      "Las Vegas Strip",
+      "Red Rock Canyon",
+    ],
     count: "10-15 photos",
   },
   {
     category: "Listings & Closings",
     description: "Active listings, sold properties, closing day photos",
-    examples: ["Featured listings", "Sold signs", "Key handoff photos", "Happy clients"],
+    examples: [
+      "Featured listings",
+      "Sold signs",
+      "Key handoff photos",
+      "Happy clients",
+    ],
     count: "15-20 photos",
   },
   {
     category: "55+ Communities",
     description: "Community amenities, clubhouses, golf courses",
-    examples: ["Sun City clubhouse", "Golf courses", "Recreation centers", "Community pools"],
+    examples: [
+      "Sun City clubhouse",
+      "Golf courses",
+      "Recreation centers",
+      "Community pools",
+    ],
     count: "10-15 photos",
   },
   {
     category: "Luxury Properties",
     description: "High-end listings and neighborhoods",
-    examples: ["The Ridges homes", "Custom estates", "Strip views", "Pool/backyard features"],
+    examples: [
+      "The Ridges homes",
+      "Custom estates",
+      "Strip views",
+      "Pool/backyard features",
+    ],
     count: "10-15 photos",
   },
 ];

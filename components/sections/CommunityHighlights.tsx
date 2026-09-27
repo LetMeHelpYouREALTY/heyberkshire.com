@@ -28,7 +28,9 @@ export default function CommunityHighlights({
       <div className="grid md:grid-cols-2 gap-8">
         {copy.pins.map((pin) => (
           <div key={pin.name} className="bg-slate-50 p-6 rounded-xl">
-            <h4 className="font-bold text-slate-900 text-lg mb-3">{pin.name}</h4>
+            <h4 className="font-bold text-slate-900 text-lg mb-3">
+              {pin.name}
+            </h4>
             <p className="text-slate-600">{pin.note}</p>
           </div>
         ))}

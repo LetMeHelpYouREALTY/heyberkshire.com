@@ -34,7 +34,7 @@ describe("namedCampuses", () => {
         "/neighborhoods/inspirada",
         "/neighborhoods/north-las-vegas",
         "/neighborhoods/mountains-edge",
-      ])
+      ]),
     );
     expect(paths).toHaveLength(11);
   });
