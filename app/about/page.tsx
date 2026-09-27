@@ -1,15 +1,13 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
-import { 
-  Phone, 
+import Image from "next/image";
+import {
+  Phone,
   Mail, 
   Award, 
   Users, 
   Home, 
   TrendingUp, 
-  CheckCircle, 
   MapPin,
   Shield,
   Star,
@@ -17,11 +15,22 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import CtaActions from "@/components/sections/CtaActions";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import ExpertQuote from "@/components/sections/ExpertQuote";
+import HeadingPhoto from "@/components/sections/HeadingPhoto";
+import LeftoverBand from "@/components/sections/LeftoverBand";
 
-export const metadata: Metadata = {
+import { maps, googleReviewsUrl } from "@/lib/contact";
+import { mediaUrl, photos } from "@/lib/media";
+
+export const metadata: Metadata = pageMetadata({
+  path: "/about",
   title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
   description:
-    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 222-1964.",
   keywords: [
     "Dr. Jan Duffy",
     "Berkshire Hathaway HomeServices agent",
@@ -30,13 +39,14 @@ export const metadata: Metadata = {
     "Henderson real estate agent",
     "Summerlin realtor",
   ],
-};
+});
 
 // Person Schema for Dr. Jan Duffy
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy",
+  image: "https://heyberkshire.com/images/dr-jan-duffy.jpg",
   jobTitle: "REALTOR®",
   description:
     "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
@@ -70,33 +80,6 @@ const personSchema = {
   ],
 };
 
-const specializations = [
-  {
-    title: "Residential Home Sales",
-    description: "Single-family homes, condos, and townhomes throughout Las Vegas and Henderson",
-  },
-  {
-    title: "Luxury Properties ($1M+)",
-    description: "The Ridges, MacDonald Highlands, Southern Highlands, and exclusive communities",
-  },
-  {
-    title: "New Construction",
-    description: "Free buyer representation with Toll Brothers, Lennar, Century Communities, and more",
-  },
-  {
-    title: "Investment Properties",
-    description: "Rental properties, fix-and-flip opportunities, and portfolio building",
-  },
-  {
-    title: "55+ Active Adult Communities",
-    description: "Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas expertise",
-  },
-  {
-    title: "California Relocation",
-    description: "Helping CA families transition to Nevada's tax advantages and lower costs",
-  },
-];
-
 const areasServed = [
   "Las Vegas",
   "Henderson",
@@ -119,8 +102,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-      <Navbar />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
@@ -130,11 +112,19 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Meet Your Berkshire Hathaway HomeServices Agent
             </h1>
+            <HeadingPhoto path="/about" />
             <p className="text-xl text-slate-600">
               Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most
               trusted name in real estate. Whether you're buying, selling, investing, or 
               relocating, you'll receive expert guidance with integrity and professionalism.
             </p>
+            <div className="mt-8">
+              <CtaActions variant="onLight" bookLabel="Book a Consultation" />
+          <OfficeProximity path="/about" />
+          <UniqueInterior path="/about" />
+          <ExpertQuote path="/about" />
+
+            </div>
           </div>
 
           {/* Agent Profile */}
@@ -142,7 +132,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
-                <p className="text-lg text-blue-600 mb-6">
+<p className="text-lg text-blue-600 mb-6">
                   REALTOR® | License S.0197614.LLC
                 </p>
 
@@ -155,10 +145,10 @@ export default function AboutPage() {
                   </p>
                   <p>
                     Since 2008, I've closed $127 million in transactions and
-                    helped hundreds of families find their perfect home in Las Vegas, Henderson,
+                    helped hundreds of buyers and sellers find the right home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
-                    relocations—particularly for California families seeking Nevada's tax advantages.
+                    relocations—particularly for California buyers seeking Nevada's tax advantages.
                   </p>
                   <p>
                     What sets <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
@@ -169,24 +159,22 @@ export default function AboutPage() {
                     deliver exceptional results.
                   </p>
                   <p>
-                    I believe in treating every client like family. Whether you're a first-time 
-                    buyer navigating the process for the first time, a luxury home seeker requiring 
-                    discretion, or an investor building a rental portfolio, I provide the same 
-                    level of dedication, expertise, and personalized attention. Real estate is 
-                    more than a transaction—it's about helping people find their place in the world.
+                    Files start at Suite 100. Square-footage tours, listing APNs, 55+ occupancy
+                    packets, and California inbound nets get the same dated CMA. Real estate is a
+                    walkthrough and a number, not a caption.
                   </p>
                 </div>
 
                 {/* Contact Info */}
                 <div className="bg-slate-50 rounded-lg p-6 mb-8">
                   <h3 className="font-bold text-slate-900 mb-4">Contact Dr. Jan Duffy</h3>
-                  <div className="space-y-3">
+<div className="space-y-3">
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17022221964"
                       className="flex items-center text-slate-700 hover:text-blue-600"
                     >
                       <Phone className="h-5 w-5 mr-3 text-blue-600" />
-                      <span className="font-semibold">(702) 500-1942</span>
+                      <span className="font-semibold">(702) 222-1964</span>
                     </a>
                     <a
                       href="mailto:homes@heyberkshire.com"
@@ -207,29 +195,48 @@ export default function AboutPage() {
                       Mon-Fri 9am-6pm, Sat 10am-4pm, Sun by appointment
                     </div>
                   </div>
+                  <div className="rounded-lg overflow-hidden mt-6 border border-slate-200">
+                    <iframe
+                      title="Map to Berkshire Hathaway HomeServices Nevada Properties, 9406 W Lake Mead Blvd"
+                      src={maps.embedSrc}
+                      className="w-full h-56"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                    <a
+                      href={maps.directionsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center min-h-[44px] px-4 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700"
+                    >
+                      Get Directions
+                    </a>
+                    <a
+                      href={googleReviewsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center min-h-[44px] px-4 py-2 rounded-md border border-slate-300 text-slate-900 font-semibold hover:bg-slate-50"
+                    >
+                      View Google Reviews
+                    </a>
+                  </div>
                 </div>
 
-                {/* Quote */}
-                <blockquote className="border-l-4 border-blue-600 pl-6 italic text-slate-700">
-                  "My job isn't just to show you houses—it's to make sure you don't overpay, that
-                  you understand what you're buying, and that you're protected through every step of
-                  the transaction. I treat every client like family and won't stop until we achieve 
-                  your real estate goals."
-                  <cite className="block mt-2 text-slate-900 font-semibold not-italic">
-                    — Dr. Jan Duffy, BHHS Nevada Properties
-                  </cite>
-                </blockquote>
               </div>
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
-                  </div>
+                <div className="relative rounded-lg overflow-hidden aspect-square">
+                  <Image
+                    src={mediaUrl(photos.agent.src)}
+                    alt={photos.agent.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    priority
+                  />
                 </div>
 
                 {/* Stats Grid */}
@@ -278,68 +285,46 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Specializations Section */}
-          <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Areas of Specialization
-            </h2>
-            <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Dr. Jan Duffy brings specialized expertise across multiple real estate categories. 
-              Whether you're a first-time buyer, luxury home seeker, investor, or retiree looking 
-              for the perfect 55+ community, you'll receive tailored guidance for your specific needs.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {specializations.map((spec) => (
-                <div key={spec.title} className="bg-white rounded-lg p-6 border border-slate-200">
-                  <h3 className="font-bold text-slate-900 mb-2 flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                    {spec.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm">{spec.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <LeftoverBand path="/about" />
+
+          <LeftoverBand path="/about" slot={1} />
 
           {/* Why BHHS Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Why Berkshire Hathaway HomeServices?
+            <h2 className="scroll-mt-32 text-3xl md:text-4xl font-bold mb-4 text-center">
+              License S.0197614.LLC on the card at 9406 W Lake Mead Blvd
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Berkshire Hathaway HomeServices is the only real estate brand backed by Warren 
-              Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, 
-              ethical standards, and a commitment to client service that defines every transaction.
+              Berkshire Hathaway HomeServices Nevada Properties holds the desk. Appointments start
+              at Suite 100. Call or text (702) 222-1964. The office line on Google is (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Award className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-xl mb-2">BHHS Nevada Properties on the paperwork</h3>
                 <p className="text-slate-300 text-sm">
-                  The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.—a 
-                  name synonymous with trust and integrity worldwide.
+                  The brokerage on the contract is Berkshire Hathaway HomeServices Nevada Properties,
+                  not a slogan. Suite 100 is the Maps pin.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Users className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Global Network</h3>
+                <h3 className="font-bold text-xl mb-2">West Coast sale timed against a Las Vegas purchase</h3>
                 <p className="text-slate-300 text-sm">
-                  50,000+ agents worldwide for seamless referrals and relocations. Whether you're 
-                  moving from California or anywhere else, our network has you covered.
+                  50,000+ BHHS agents for a California listing referral paired with a Suite 100 buyer file.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Shield className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Ethical Standards</h3>
+                <h3 className="font-bold text-xl mb-2">No-pressure consult, then a dated tour block</h3>
                 <p className="text-slate-300 text-sm">
-                  Rigorous ethical guidelines ensure your interests always come first. No pressure, 
-                  no games—just honest advice and expert representation.
+                  We review HOA packets and commute minutes at the desk before we drive. Call (702) 222-1964.
                 </p>
               </div>
             </div>
@@ -356,13 +341,12 @@ export default function AboutPage() {
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Areas Served by BHHS Nevada Properties
+              The Ridges, Summerlin, Henderson, NLV — commute minutes from Suite 100
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Dr. Jan Duffy serves the entire Las Vegas Valley with specialized knowledge of each 
-              neighborhood's unique characteristics, price points, and lifestyle offerings. From 
-              luxury estates in The Ridges to affordable new construction in North Las Vegas, 
-              she provides expert guidance wherever you want to buy or sell.
+              Files start at 9406 W Lake Mead Blvd, Suite 100. Summerlin is 10–15 minutes.
+              The Ridges gate is 15–20. Henderson is 25–35 via I-215 east. North Las Vegas
+              new construction is a separate afternoon. Call (702) 222-1964.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {areasServed.map((area) => (
@@ -385,7 +369,7 @@ export default function AboutPage() {
           {/* Client Testimonials */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              What Clients Say About Dr. Jan Duffy
+              Dated files and Google Reviews — 4.9 on the Suite 100 pin
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               With a 4.9-star rating and hundreds of satisfied clients, Dr. Jan has built a 
@@ -427,30 +411,13 @@ export default function AboutPage() {
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Book Suite 100 — license S.0197614.LLC is on the card</h2>
             <p className="text-xl text-blue-100 mb-8">
               Questions about buying or selling in Las Vegas? Call or text Dr. Jan Duffy today 
               for a free consultation. Whether you're ready to start your search or just exploring 
               options, she's here to help.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+17025001942"
-                className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-blue-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-400 transition-colors"
-              >
-                Schedule Consultation
-              </Link>
-            </div>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
+            <CtaActions variant="onDark" />
           </section>
         </div>
 
@@ -460,7 +427,6 @@ export default function AboutPage() {
         </div>
       </main>
       <RealScoutListings />
-      <Footer />
     </>
   );
 }

@@ -3,21 +3,31 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { realscout } from "@/lib/contact";
+import { mediaUrl, photos } from "@/lib/media";
+
+const images = [
+  {
+    src: mediaUrl(photos.homeHero.src),
+    alt: photos.homeHero.alt,
+  },
+  {
+    src: mediaUrl(photos.henderson.src),
+    alt: photos.henderson.alt,
+  },
+  {
+    src: mediaUrl(photos.summerlin.src),
+    alt: photos.summerlin.alt,
+  },
+];
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
   const prefersReducedMotion = useReducedMotion();
-  
-  const images = [
-    "/Image/hero_bg_1.jpg",
-    "/Image/hero_bg_2.jpg",
-    "/Image/hero_bg_3.jpg",
-  ];
 
   useEffect(() => {
-    // Don't animate if user prefers reduced motion
     if (prefersReducedMotion) return;
-    
+
     const intervalId = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
@@ -25,80 +35,62 @@ export default function HeroSection() {
   }, [prefersReducedMotion]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Background Images */}
+    <section className="relative w-full min-h-[100dvh] overflow-hidden" aria-label="Home search">
       <div className="absolute inset-0">
-        {images.map((src, index) => (
+        {images.map((image, index) => (
           <div
-            key={index}
+            key={image.src}
             className={`absolute inset-0 ${
-              prefersReducedMotion 
-                ? '' 
-                : 'transition-opacity duration-1000'
-            } ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
+              prefersReducedMotion ? "" : "transition-opacity duration-1000"
+            } ${index === currentImage ? "opacity-100" : "opacity-0"}`}
           >
             <Image
-              src={src}
-              alt={`Hero image ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
               fill
               className="object-cover"
               priority={index === 0}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
       </div>
 
-      {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center min-h-[100dvh] px-4 text-center pt-20">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Find Your Dream Home in
+          Find Your Next Home in
           <br />
-          <span className="text-blue-400">Las Vegas & Henderson</span>
+          <span className="text-blue-400">Las Vegas &amp; Henderson</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Expert real estate services with personalized attention. Your trusted partner for buying,
-          selling, and investing in Southern Nevada.
+          Search live MLS listings with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada
+          Properties. Call or text (702) 222-1964.
         </p>
 
-        {/* RealScout Search Widget */}
         <div className="realscout-wrapper mb-4">
           <div
             dangerouslySetInnerHTML={{
-              __html: `<realscout-simple-search agent-encoded-id="QWdlbnQtMjI1MDUw"></realscout-simple-search>`,
+              __html: `<realscout-simple-search agent-encoded-id="${realscout.agentEncodedId}"></realscout-simple-search>`,
             }}
           />
         </div>
 
-        {/* Trust Indicators */}
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-white/90 text-sm">
           <div className="flex items-center gap-2">
-            <span className="font-semibold">500+</span>
-            <span>Properties Sold</span>
+            <span className="font-semibold tabular-nums">500+</span>
+            <span>Transactions Closed</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold">Since 2008</span>
             <span>Serving Las Vegas</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">4.9★</span>
+            <span className="font-semibold tabular-nums">4.9★</span>
             <span>Average Rating</span>
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div 
-        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 ${
-          prefersReducedMotion ? '' : 'animate-bounce'
-        }`}
-      >
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white/50 rounded-full" />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }

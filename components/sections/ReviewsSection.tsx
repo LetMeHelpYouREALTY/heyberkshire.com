@@ -2,6 +2,7 @@
 
 import { Star, Quote } from "lucide-react";
 import Image from "next/image";
+import { googleReviewsUrl as defaultGoogleReviewsUrl } from "@/lib/contact";
 
 export interface Review {
   id: number;
@@ -13,7 +14,6 @@ export interface Review {
   date?: string;
 }
 
-// Default reviews
 export const defaultReviews: Review[] = [
   {
     id: 1,
@@ -44,45 +44,45 @@ export const defaultReviews: Review[] = [
   },
 ];
 
-// Aggregate rating stats
 export const aggregateRating = {
   ratingValue: 4.9,
-  reviewCount: 500,
+  reviewCount: 200,
   bestRating: 5,
   worstRating: 1,
 };
 
 interface ReviewsSectionProps {
-  /** Custom reviews to display */
   reviews?: Review[];
-  /** Custom title */
   title?: string;
-  /** Custom subtitle */
   subtitle?: string;
-  /** Google Business Profile URL */
   googleReviewsUrl?: string;
-  /** Custom class name */
   className?: string;
+  showHeading?: boolean;
 }
 
 export default function ReviewsSection({
   reviews = defaultReviews,
-  title = "What Our Clients Say",
-  subtitle = "Real testimonials from satisfied clients across Las Vegas and Henderson",
-  googleReviewsUrl = "https://g.page/r/heyberkshire/review",
+  title = "What Clients Say About Dr. Jan Duffy",
+  subtitle = "Verified client feedback from Las Vegas, Henderson, and Summerlin transactions",
+  googleReviewsUrl = defaultGoogleReviewsUrl,
   className = "",
+  showHeading = true,
 }: ReviewsSectionProps) {
   return (
-    <section className={`py-16 md:py-24 bg-slate-50 ${className}`}>
+    <section
+      className={`py-16 md:py-24 bg-slate-50 ${className}`}
+      aria-labelledby={showHeading ? "reviews-heading" : undefined}
+      aria-label={showHeading ? undefined : "Google reviews"}
+    >
       <div className="container mx-auto px-4">
+        {showHeading ? (
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+          <h2 id="reviews-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             {title}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
-          {/* Aggregate Rating Display */}
-          <div className="flex items-center justify-center gap-2 mt-4">
-            <div className="flex">
+          <div className="flex items-center justify-center gap-2 mt-4" aria-label={`${aggregateRating.ratingValue} out of 5 stars from ${aggregateRating.reviewCount} reviews`}>
+            <div className="flex" aria-hidden="true">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
@@ -94,31 +94,29 @@ export default function ReviewsSection({
                 />
               ))}
             </div>
-            <span className="text-lg font-semibold text-slate-900">
+            <span className="text-lg font-semibold text-slate-900 tabular-nums">
               {aggregateRating.ratingValue}
             </span>
-            <span className="text-slate-600">
-              ({aggregateRating.reviewCount}+ reviews)
-            </span>
+            <span className="text-slate-600">({aggregateRating.reviewCount}+ reviews)</span>
           </div>
         </div>
+        ) : null}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {reviews.map((review) => (
-            <div
+            <article
               key={review.id}
               className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-              itemScope
-              itemType="https://schema.org/Review"
             >
               <div className="flex items-center mb-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
                   {review.image ? (
                     <Image
                       src={review.image}
-                      alt={review.name}
+                      alt=""
                       fill
                       className="object-cover"
+                      sizes="64px"
                     />
                   ) : (
                     <div className="w-full h-full bg-slate-200 flex items-center justify-center">
@@ -126,47 +124,41 @@ export default function ReviewsSection({
                     </div>
                   )}
                 </div>
-                <div>
-                  <h3 className="font-bold text-slate-900" itemProp="author">
-                    {review.name}
-                  </h3>
+                <div className="min-w-0">
+                  <h3 className="font-bold text-slate-900 truncate">{review.name}</h3>
                   <p className="text-sm text-slate-600">{review.location}</p>
                 </div>
               </div>
 
-              <div className="flex items-center mb-4" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                <meta itemProp="ratingValue" content={review.rating.toString()} />
-                <meta itemProp="bestRating" content="5" />
+              <div className="flex items-center mb-4" aria-label={`${review.rating} out of 5 stars`}>
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
                     className={`h-5 w-5 ${
                       i < review.rating ? "text-yellow-400 fill-yellow-400" : "text-slate-300"
                     }`}
+                    aria-hidden="true"
                   />
                 ))}
               </div>
 
               <div className="relative">
-                <Quote className="absolute -top-2 -left-2 h-8 w-8 text-blue-100" />
-                <p className="text-slate-700 relative z-10 pl-4" itemProp="reviewBody">
-                  {review.text}
-                </p>
+                <Quote className="absolute -top-2 -left-2 h-8 w-8 text-blue-100" aria-hidden="true" />
+                <p className="text-slate-700 relative z-10 pl-4">{review.text}</p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        {/* Google Reviews CTA */}
         <div className="text-center mt-12">
           <a
             href={googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
+            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold min-h-[44px]"
           >
-            Read More Reviews on Google
-            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            View Google Reviews
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -174,10 +166,6 @@ export default function ReviewsSection({
   );
 }
 
-/**
- * Helper to convert reviews to schema format for ReviewSchema component
- * Use with: <ReviewSchema reviews={getReviewSchemaData(reviews)} aggregateRating={aggregateRating} />
- */
 export function getReviewSchemaData(reviews: Review[]) {
   return reviews.map((review) => ({
     author: review.name,

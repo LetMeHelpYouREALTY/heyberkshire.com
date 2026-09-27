@@ -80,7 +80,7 @@ export default function AIChatWidget() {
       const errorMessage: Message = {
         role: "assistant",
         content:
-          "I'm sorry, I'm having trouble connecting right now. Please try again or contact Dr. Jan Duffy directly at (702) 500-1942.",
+          "I'm sorry, I'm having trouble connecting right now. Please try again or call Dr. Jan Duffy at (702) 222-1964.",
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
@@ -101,7 +101,7 @@ export default function AIChatWidget() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg z-50 transition-all hover:scale-110"
+          className="fixed bottom-20 right-4 md:bottom-6 md:right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg z-50 transition-transform hover:scale-110"
           aria-label="Open chat"
         >
           <MessageCircle className="h-6 w-6" />
@@ -110,7 +110,11 @@ export default function AIChatWidget() {
 
       {/* Chat Widget */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-96 h-[600px] bg-white rounded-lg shadow-2xl z-50 flex flex-col border border-slate-200">
+        <div
+          className="fixed bottom-20 right-4 md:bottom-6 md:right-6 w-[min(24rem,calc(100vw-1.5rem))] h-[min(560px,calc(100dvh-9rem))] bg-white rounded-lg shadow-2xl z-50 flex flex-col border border-slate-200 overscroll-contain"
+          role="dialog"
+          aria-label="Real estate chat assistant"
+        >
           {/* Header */}
           <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
             <div>
@@ -127,7 +131,7 @@ export default function AIChatWidget() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div className="flex-1 overflow-y-auto p-4 space-y-4" aria-live="polite">
             {messages.map((message, index) => (
               <div
                 key={index}
@@ -158,13 +162,13 @@ export default function AIChatWidget() {
 
           {/* Input */}
           <div className="p-4 border-t border-slate-200">
-            <div className="flex gap-2">
+            <div className="flex items-center gap-2">
               <Input
                 ref={inputRef}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
-                placeholder="Type your message..."
+                placeholder="Type your message…"
                 disabled={isLoading}
                 className="flex-1"
               />
@@ -172,6 +176,7 @@ export default function AIChatWidget() {
                 onClick={handleSend}
                 disabled={isLoading || !input.trim()}
                 className="bg-blue-600 hover:bg-blue-700"
+                aria-label="Send message"
               >
                 {isLoading ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
@@ -181,7 +186,7 @@ export default function AIChatWidget() {
               </Button>
             </div>
             <p className="text-xs text-slate-500 mt-2 text-center">
-              Powered by AI • Contact: (702) 500-1942
+              Powered by AI · Call Dr. Jan: (702) 222-1964
             </p>
           </div>
         </div>

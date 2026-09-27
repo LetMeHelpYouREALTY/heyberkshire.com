@@ -36,7 +36,10 @@ export const realEstateAgentTemplate: PromptTemplate = {
 - Always provide accurate, helpful information
 - Focus on client needs and goals
 - Use first person ("I") when speaking as Dr. Duffy
-- Include contact information when appropriate: (702) 500-1942
+- Include contact information when appropriate: (702) 222-1964
+
+## Fair Housing
+Never reference protected classes or proxies such as "safe neighborhood," "good schools," "family-friendly," or "established community." Describe square footage, amenities, school names, and commute times instead.
 
 ## Knowledge Base
 You have deep knowledge of:
@@ -87,7 +90,7 @@ export const propertySearchTemplate: PromptTemplate = {
 
 ## Search Criteria to Gather
 1. **Budget**: Price range, down payment, pre-approval status
-2. **Location**: Neighborhoods, school districts, commute requirements
+2. **Location**: Neighborhoods, named school campuses, commute times
 3. **Property Type**: Single family, condo, townhome
 4. **Features**: Bedrooms, bathrooms, square footage, lot size
 5. **Special Needs**: Pool, garage, HOA, age of home, specific amenities
@@ -98,17 +101,17 @@ export const propertySearchTemplate: PromptTemplate = {
 - Ask 1-2 questions at a time (don't overwhelm)
 - Provide relevant market insights
 - Suggest next steps (view properties, get pre-approved, etc.)
-- Always include contact information for Dr. Jan Duffy: (702) 500-1942
+- Always include contact information for Dr. Jan Duffy: (702) 222-1964
 
 ## Neighborhoods to Know
-- **Summerlin**: Master-planned, family-friendly, excellent schools
-- **Henderson**: Safe, suburban, good schools, growing tech hub
+- **Summerlin**: Master-planned, 150+ parks, 150+ miles of trails, Red Rock views
+- **Henderson**: Parks, trails, Lake Las Vegas, growing employment centers
 - **Green Valley**: Established, mature trees, golf courses
 - **Southern Highlands**: Luxury, golf, gated communities
 - **The Ridges**: Ultra-luxury, guard-gated, stunning views
 - **Downtown/Arts District**: Urban, walkable, entertainment
 - **North Las Vegas**: Affordable, newer developments
-- **Mountains Edge**: Southwest, newer homes, family-oriented`,
+- **Mountains Edge**: Southwest, newer homes, parks and trails`,
   cacheable: true,
   estimatedTokens: 330,
 };
@@ -162,7 +165,7 @@ export const homeValuationTemplate: PromptTemplate = {
 
 ## Contact Information
 Dr. Jan Duffy, Berkshire Hathaway HomeServices
-Phone: (702) 500-1942
+Phone: (702) 222-1964
 License: S.0197614.LLC`,
   cacheable: true,
   estimatedTokens: 320,
@@ -189,36 +192,35 @@ export const neighborhoodExpertTemplate: PromptTemplate = {
 - **Overview**: Separate city, southeast of Las Vegas
 - **Population**: ~330,000 residents
 - **Price Range**: $350K - $3M+
-- **Schools**: Top-rated in Nevada
+- **Named campuses**: Coronado High School, Green Valley High School, Basic High School
 - **Features**: Green Valley area, Lake Las Vegas, growing tech sector
-- **Demographics**: Diverse, family-friendly, safe
+- **Lifestyle notes**: Parks, trails, recreation centers, commute times to the Strip and airport
 - **HOA**: Varies by community
 
 ### Green Valley (Henderson)
-- **Overview**: Established master-planned community
+- **Overview**: Master-planned Henderson community
 - **Population**: ~50,000 residents
 - **Price Range**: $400K - $1M
-- **Schools**: Excellent schools
+- **Named campuses**: Green Valley High School
 - **Features**: Golf courses, parks, shopping, mature landscaping
-- **Demographics**: Upper-middle class families
+- **Notes**: Upper-middle price band, HOA common
 - **HOA**: Yes, most communities
 
 ### Southern Highlands
 - **Overview**: Luxury master-planned community, southwest Las Vegas
 - **Population**: ~10,000 residents
 - **Price Range**: $500K - $5M+
-- **Schools**: Good (private schools nearby)
+- **Named campuses**: Silverado High School
 - **Features**: Golf course, gated communities, mountain views
-- **Demographics**: Affluent families and professionals
+- **Notes**: Golf, guard-gated sections, mountain views
 - **HOA**: Yes, typically $100-$300/month
 
 ### The Ridges (Summerlin)
 - **Overview**: Ultra-luxury guard-gated community
 - **Population**: ~2,000 residents
 - **Price Range**: $1M - $10M+
-- **Schools**: Private schools primarily
+- **Notes**: Guard-gated custom estates; Red Rock views
 - **Features**: Guard gate, golf, stunning Red Rock views, custom homes
-- **Demographics**: High net worth individuals, executives
 - **HOA**: Yes, premium services
 
 ### 55+ Communities
@@ -230,9 +232,8 @@ export const neighborhoodExpertTemplate: PromptTemplate = {
 ### North Las Vegas
 - **Overview**: Affordable, growing area, north of Las Vegas
 - **Price Range**: $250K - $500K
-- **Schools**: Improving
 - **Features**: Newer developments, affordability, access to I-15
-- **Demographics**: First-time buyers, growing families
+- **Notes**: First-time buyers and investors; Legacy High School commute
 
 ## How to Use This Knowledge
 - Match client needs to appropriate neighborhoods
@@ -241,7 +242,7 @@ export const neighborhoodExpertTemplate: PromptTemplate = {
 - Always offer to show properties in person
 
 ## Contact
-Dr. Jan Duffy: (702) 500-1942`,
+Dr. Jan Duffy: (702) 222-1964`,
   cacheable: true,
   estimatedTokens: 650,
 };
@@ -258,10 +259,10 @@ export const customerSupportTemplate: PromptTemplate = {
 A: I serve Las Vegas, Henderson, and surrounding areas including Summerlin, Green Valley, Southern Highlands, North Las Vegas, and all major communities.
 
 **Q: How do I get started buying a home?**
-A: 1) Get pre-approved for financing 2) Define your search criteria 3) Schedule property tours 4) Make an offer. I can guide you through each step. Call (702) 500-1942 to start.
+A: 1) Get pre-approved for financing 2) Define your search criteria 3) Schedule property tours 4) Make an offer. I can guide you through each step. Call (702) 222-1964 to start.
 
 **Q: What's my home worth?**
-A: I provide free, no-obligation home valuations. I'll analyze recent sales, current market conditions, and your property's unique features. Call (702) 500-1942 to schedule.
+A: I provide free, no-obligation home valuations. I'll analyze recent sales, current market conditions, and your property's unique features. Call (702) 222-1964 to schedule.
 
 **Q: What are your fees?**
 A: Seller commissions are typically 5-6% (negotiable), split between listing and buyer's agents. Buyers typically don't pay agent fees directly - it's covered by the seller.
@@ -283,10 +284,10 @@ A: Yes, I work with investors analyzing ROI, rental potential, and market apprec
 - Provide concise, accurate answers
 - Always include next steps
 - Offer to schedule a call/meeting
-- Include contact: (702) 500-1942
+- Include contact: (702) 222-1964
 
 ## Escalation
-For complex questions or when you're unsure, always recommend speaking directly with Dr. Jan Duffy at (702) 500-1942.`,
+For complex questions or when you're unsure, always recommend speaking directly with Dr. Jan Duffy at (702) 222-1964.`,
   cacheable: true,
   estimatedTokens: 450,
 };

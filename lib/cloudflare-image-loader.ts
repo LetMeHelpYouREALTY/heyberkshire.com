@@ -19,17 +19,9 @@ export default function cloudflareImageLoader({
   
   if (useCloudflareImages && process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH) {
     const accountHash = process.env.NEXT_PUBLIC_CLOUDFLARE_ACCOUNT_HASH;
-    // Remove leading slash if present
     const imagePath = src.startsWith('/') ? src.slice(1) : src;
-    
-    // Build Cloudflare Images URL
-    const params = new URLSearchParams({
-      width: width.toString(),
-      quality: (quality || 85).toString(),
-      format: 'auto', // Automatically serves WebP/AVIF when supported
-    });
-    
-    return `https://imagedelivery.net/${accountHash}/${imagePath}?${params.toString()}`;
+    // Hosted Images delivery: /<id>/<variant>. Flexible variants are optional.
+    return `https://imagedelivery.net/${accountHash}/${imagePath}/public`;
   }
   
   // Fallback: Use query parameters for Worker-based optimization

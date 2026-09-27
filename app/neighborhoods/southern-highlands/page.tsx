@@ -1,14 +1,26 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
-import Link from "next/link";
-import { Phone, Shield, Mountain, Star, MapPin } from "lucide-react";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import CtaActions from "@/components/sections/CtaActions";
+import HeadingPhoto from "@/components/sections/HeadingPhoto";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import NamedCampuses from "@/components/sections/NamedCampuses";
+import NeighborhoodCommute from "@/components/sections/NeighborhoodCommute";
+import NeighborhoodAmenities from "@/components/sections/NeighborhoodAmenities";
+import CommunityHighlights from "@/components/sections/CommunityHighlights";
+import VillageDetails from "@/components/sections/VillageDetails";
+import NeighborhoodLifestyle from "@/components/sections/NeighborhoodLifestyle";
+import NeighborhoodFaqs from "@/components/sections/NeighborhoodFaqs";
+import ExpertQuote from "@/components/sections/ExpertQuote";
+import LeftoverBand from "@/components/sections/LeftoverBand";
+import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/neighborhoods/southern-highlands",
   title: "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier golf community. Median price $750K. Call (702) 500-1942.",
+    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices Southern Highlands",
     "Southern Highlands homes for sale",
@@ -16,69 +28,15 @@ export const metadata: Metadata = {
     "Las Vegas golf community",
     "guard gated Las Vegas",
   ],
-};
+});
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is the current median home price in Southern Highlands?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of January 2026, Southern Highlands' median home price is $750,000, up 7.2% year-over-year. Prices range from $500,000 for non-gated homes to over $3 million in guard-gated sections.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does Southern Highlands have guard-gated sections?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Southern Highlands features multiple guard-gated luxury sections including Southern Highlands Golf Club estates and exclusive enclaves with 24/7 security. Non-gated sections also offer excellent value with community amenities.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the Southern Highlands Golf Club like?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Southern Highlands Golf Club features an award-winning Robert Trent Jones Jr. designed course. It offers private membership, a stunning clubhouse, fine dining, and is consistently ranked among Nevada's best golf courses.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How does Southern Highlands compare to Summerlin?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Southern Highlands offers similar luxury and amenities to Summerlin but in southwest Las Vegas, providing faster access to the Strip, airport, and I-15. It's ideal for buyers who want premier living with southern valley convenience.",
-      },
-    },
-  ],
-};
 
 export default function SouthernHighlandsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Navbar />
-      <main className="pt-24 pb-16">
+      <main id="main-content" className="pb-16">
         <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <div className="max-w-6xl mx-auto mb-6">
-            <nav className="text-sm text-slate-500">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-              {" / "}
-              <Link href="/neighborhoods" className="hover:text-blue-600">Neighborhoods</Link>
-              {" / "}
-              <span className="text-slate-900">Southern Highlands</span>
-            </nav>
-          </div>
-
-          {/* Hero */}
+{/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Berkshire Hathaway HomeServices Nevada Properties
@@ -86,18 +44,30 @@ export default function SouthernHighlandsPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Berkshire Hathaway HomeServices Southern Highlands
             </h1>
+            <HeadingPhoto path="/neighborhoods/southern-highlands" />
+
             <p className="text-xl text-slate-600">
-              Premier golf course living in southwest Las Vegas. Discover Southern Highlands with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              Robert Trent Jones Jr. scorecard 74.1 / 140, then 25–35 minutes via I-15 south from
+              Suite 100. <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
             </p>
+            <div className="mt-8">
+              <CtaActions variant="onLight" />
+            </div>
+            <div className="mt-8">
+              <RealScoutSearch />
+            </div>
           </div>
 
+          <OfficeProximity path="/neighborhoods/southern-highlands" />
+          <UniqueInterior path="/neighborhoods/southern-highlands" />
+          <LeftoverBand path="/neighborhoods/southern-highlands" />
+
           {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Southern Highlands Market | January 2026
+          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto" data-market-snapshot="/neighborhoods/southern-highlands">
+            <h2 className="scroll-mt-32 text-2xl font-bold mb-8 text-center">
+              156 listings, 35 days — January 2026 I-15 south golf-and-ridge snapshot
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-1">$750,000</div>
                 <div className="text-slate-300 text-sm">Median Home Price</div>
@@ -120,9 +90,7 @@ export default function SouthernHighlandsPage() {
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Southern Highlands: Southwest Las Vegas's Premier Master-Planned Community
-              </h2>
+              <NeighborhoodLifestyle path="/neighborhoods/southern-highlands" />
               <p>
                 <strong>Southern Highlands</strong> stands as southwest Las Vegas's answer to Summerlin—a
                 meticulously planned 2,200-acre community centered around an award-winning championship
@@ -142,147 +110,20 @@ export default function SouthernHighlandsPage() {
                 <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented buyers
                 and sellers in Southern Highlands for over two decades. Dr. Jan Duffy understands the
                 community's various sections—from the guard-gated luxury estates surrounding the golf
-                course to the family-friendly neighborhoods in the community's newer phases. Whether
-                you're seeking a golf course lot with Strip views or a spacious family home with top-rated
-                schools, BHHS has the local expertise to guide your search.
+                course to the residential neighborhoods with parks and trails in the community's newer phases. Whether
+                you're seeking a golf course lot with Strip views or a 4-bedroom home near Elise Wolff
+                Elementary, BHHS has the local expertise to guide your search.
               </p>
 
-              {/* Community Highlights */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Community Highlights</h3>
-              <div className="grid md:grid-cols-2 gap-8 not-prose">
-                <div className="bg-slate-50 p-6 rounded-xl">
-                  <div className="flex items-center mb-4">
-                    <Star className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Championship Golf Course</h4>
-                  </div>
-                  <p className="text-slate-600">
-                    The Robert Trent Jones Jr. designed course at Southern Highlands Golf Club is
-                    consistently rated among Nevada's finest. The private club offers members exceptional
-                    playing conditions year-round, a fully appointed clubhouse, fine dining, and a
-                    calendar of social events. Golf course homes enjoy premium values and stunning views.
-                  </p>
-                </div>
-                <div className="bg-slate-50 p-6 rounded-xl">
-                  <div className="flex items-center mb-4">
-                    <Shield className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Guard-Gated Luxury Sections</h4>
-                  </div>
-                  <p className="text-slate-600">
-                    Multiple guard-gated enclaves within Southern Highlands offer enhanced security
-                    and exclusivity. These sections feature custom and semi-custom homes on larger lots,
-                    with architectural standards ensuring estate-quality construction. 24/7 security
-                    provides residents peace of mind and protects property values.
-                  </p>
-                </div>
-              </div>
+              <CommunityHighlights path="/neighborhoods/southern-highlands" />
 
-              {/* Schools */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Southern Highlands School Districts</h3>
-              <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
-                <p className="text-slate-700 mb-4">
-                  Southern Highlands is served by Clark County School District with some of southwest
-                  Las Vegas's highest-rated schools:
-                </p>
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div>
-                    <h5 className="font-bold text-slate-900 mb-2">Elementary Schools</h5>
-                    <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• Elise Wolff Elementary (9/10)</li>
-                      <li>• Janet Lundahl Elementary</li>
-                      <li>• Robert Forbuss Elementary</li>
-                      <li>• Floyd Elementary</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-slate-900 mb-2">Middle & High Schools</h5>
-                    <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• Coronado High School (8/10)</li>
-                      <li>• Liberty High School</li>
-                      <li>• Del Webb Middle School</li>
-                      <li>• Mannion Middle School</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-slate-900 mb-2">Private Options</h5>
-                    <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• Bishop Gorman High School</li>
-                      <li>• Pinecrest Academy</li>
-                      <li>• Henderson International</li>
-                      <li>• Coral Academy</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <NamedCampuses path="/neighborhoods/southern-highlands" />
 
-              {/* Commute Times */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Commute Times from Southern Highlands</h3>
-              <div className="not-prose overflow-x-auto">
-                <table className="w-full bg-white border border-slate-200 rounded-lg">
-                  <thead className="bg-slate-50">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-slate-900">Destination</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-slate-900">Distance</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-slate-900">Drive Time</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-slate-900">Rush Hour</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-200">
-                    <tr><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">8 miles</td><td className="px-4 py-3">12 min</td><td className="px-4 py-3">18-25 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">McCarran Airport (LAS)</td><td className="px-4 py-3">10 miles</td><td className="px-4 py-3">15 min</td><td className="px-4 py-3">20-30 min</td></tr>
-                    <tr><td className="px-4 py-3">Downtown Las Vegas</td><td className="px-4 py-3">12 miles</td><td className="px-4 py-3">18 min</td><td className="px-4 py-3">25-35 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">Henderson</td><td className="px-4 py-3">15 miles</td><td className="px-4 py-3">20 min</td><td className="px-4 py-3">25-35 min</td></tr>
-                    <tr><td className="px-4 py-3">Summerlin</td><td className="px-4 py-3">18 miles</td><td className="px-4 py-3">25 min</td><td className="px-4 py-3">35-45 min</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-slate-600 text-sm mt-2 not-prose">
-                Southern Highlands' I-15 access provides the fastest route to the Strip and airport from
-                any Las Vegas master-planned community—a key advantage for frequent travelers.
-              </p>
+              <NeighborhoodCommute path="/neighborhoods/southern-highlands" />
 
-              {/* Local Amenities */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Shopping, Dining & Healthcare</h3>
-              <div className="not-prose grid md:grid-cols-2 gap-6">
-                <div className="bg-slate-50 rounded-xl p-6">
-                  <h5 className="font-bold text-slate-900 mb-3">Shopping & Entertainment</h5>
-                  <ul className="text-slate-600 text-sm space-y-2">
-                    <li><strong>Southern Highlands Marketplace:</strong> Grocery, restaurants, services within the community.</li>
-                    <li><strong>Town Square Las Vegas:</strong> 10 minutes—outdoor mall with Apple, Whole Foods, movie theater.</li>
-                    <li><strong>Las Vegas Premium Outlets South:</strong> 5 minutes—designer outlet shopping.</li>
-                    <li><strong>M Resort Spa Casino:</strong> Adjacent to community—gaming, dining, entertainment.</li>
-                  </ul>
-                </div>
-                <div className="bg-slate-50 rounded-xl p-6">
-                  <h5 className="font-bold text-slate-900 mb-3">Healthcare & Services</h5>
-                  <ul className="text-slate-600 text-sm space-y-2">
-                    <li><strong>St. Rose Dominican - Siena:</strong> Full-service hospital, 10 minutes.</li>
-                    <li><strong>Southern Hills Hospital:</strong> 24/7 ER, comprehensive services, 12 minutes.</li>
-                    <li><strong>Southwest Medical:</strong> Multiple urgent care and primary care locations nearby.</li>
-                    <li><strong>Dignity Health:</strong> Clinics throughout the southwest valley.</li>
-                  </ul>
-                </div>
-              </div>
+              <NeighborhoodAmenities path="/neighborhoods/southern-highlands" />
 
-              {/* Golf Club Details */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Southern Highlands Golf Club</h3>
-              <div className="not-prose bg-green-50 border border-green-200 rounded-xl p-6">
-                <p className="text-slate-700 mb-4">
-                  The Robert Trent Jones Jr. designed course is the community's centerpiece, offering
-                  private membership to residents and non-residents:
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <ul className="text-slate-600 text-sm space-y-2">
-                    <li><strong>Course Rating:</strong> 74.1 / Slope 140 (Championship)</li>
-                    <li><strong>Membership:</strong> Equity and non-equity options</li>
-                    <li><strong>Facilities:</strong> 35,000 sq ft clubhouse, fine dining</li>
-                  </ul>
-                  <ul className="text-slate-600 text-sm space-y-2">
-                    <li><strong>Practice:</strong> Full range, short game area, putting greens</li>
-                    <li><strong>Events:</strong> Private tournaments, member socials</li>
-                    <li><strong>Dining:</strong> Multiple restaurants, bars, banquet facilities</li>
-                  </ul>
-                </div>
-              </div>
+              <VillageDetails path="/neighborhoods/southern-highlands" />
 
               <p className="mt-8">
                 The Southern Highlands market currently shows <strong>156 active listings</strong> with
@@ -302,95 +143,25 @@ export default function SouthernHighlandsPage() {
             </div>
           </section>
 
-          {/* Expert Quote */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
-              <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
-                those relocating from California. You get championship golf, guard-gated security, mountain
-                views, and excellent schools, all just 15 minutes from the Strip. As a Berkshire Hathaway
-                HomeServices agent, I help clients see beyond the golf course to the community's full potential."
-              </blockquote>
-              <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
-              </cite>
-            </div>
-          </section>
+          <ExpertQuote path="/neighborhoods/southern-highlands" />
+          <NeighborhoodFaqs path="/neighborhoods/southern-highlands" />
 
-          {/* FAQ Section */}
-          <section className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Frequently Asked Questions About Southern Highlands
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  What is the current median home price in Southern Highlands?
-                </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Southern Highlands' median home price is $750,000, up 7.2%
-                  year-over-year. Prices range from $500,000 for non-gated homes to over $3 million
-                  in guard-gated sections.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  Does Southern Highlands have guard-gated sections?
-                </h3>
-                <p className="text-slate-600">
-                  Yes, Southern Highlands features multiple guard-gated luxury sections including
-                  Southern Highlands Golf Club estates and exclusive enclaves with 24/7 security.
-                  Non-gated sections also offer excellent value with community amenities.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  What is the Southern Highlands Golf Club like?
-                </h3>
-                <p className="text-slate-600">
-                  Southern Highlands Golf Club features an award-winning Robert Trent Jones Jr. designed
-                  course. It offers private membership, a stunning clubhouse, fine dining, and is
-                  consistently ranked among Nevada's best golf courses.
-                </p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-6">
-                <h3 className="font-bold text-slate-900 mb-2">
-                  How does Southern Highlands compare to Summerlin?
-                </h3>
-                <p className="text-slate-600">
-                  Southern Highlands offers similar luxury and amenities to Summerlin but in southwest
-                  Las Vegas, providing faster access to the Strip, airport, and I-15. It's ideal for
-                  buyers who want premier living with southern valley convenience.
-                </p>
-              </div>
-            </div>
-          </section>
 
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Explore Southern Highlands Living
+              Lock a Southern Highlands I-15 south block
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Southern Highlands specialist,
-              for expert guidance in this premier golf community.
+              Southern Highlands golf and ridge-top listings are a 25–35 minute I-15 run from
+              the office. Call for a south-valley tour block.
             </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Call (702) 500-1942
-            </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </p>
+            <CtaActions variant="onDark" />
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <RealScoutListings />
-      <Footer />
     </>
   );
 }

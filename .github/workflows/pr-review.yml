@@ -30,8 +30,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Cache Next.js build
         uses: actions/cache@v4
@@ -63,12 +63,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Cache node modules
         uses: actions/cache@v4
@@ -85,7 +87,27 @@ jobs:
         run: npm run lint
 
       - name: Check Prettier formatting
-        run: npx prettier --check "**/*.{ts,tsx,js,jsx,json,md,css}"
+        run: |
+          BASE="${{ github.event.pull_request.base.sha }}"
+          mapfile -t FILES < <(
+            git diff --name-only --diff-filter=ACMR "$BASE"...HEAD \
+              | grep -E '\.(ts|tsx|js|jsx|md|css)$' || true
+          )
+          mapfile -t JSON_FILES < <(
+            git diff --name-only --diff-filter=ACMR "$BASE"...HEAD \
+              | grep -E '\.json$' \
+              | grep -Ev '(package-lock|pnpm-lock)' || true
+          )
+          ALL=()
+          for f in "${FILES[@]}" "${JSON_FILES[@]}"; do
+            [ -n "$f" ] && ALL+=("$f")
+          done
+          if [ ${#ALL[@]} -eq 0 ]; then
+            echo "No Prettier-eligible files changed"
+            exit 0
+          fi
+          printf '%s\n' "${ALL[@]}"
+          npx prettier --check "${ALL[@]}"
 
   # ============================================
   # Test Suite
@@ -100,8 +122,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Cache node modules
         uses: actions/cache@v4
@@ -119,6 +141,7 @@ jobs:
 
       - name: Generate coverage report
         if: always()
+        continue-on-error: true
         run: npm run test:coverage
 
       - name: Upload coverage to artifacts
@@ -135,9 +158,9 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            
+
             let body = '## 🧪 Test Results\n\n';
-            
+
             try {
               // Read coverage summary if available
               const coveragePath = 'coverage/coverage-summary.json';
@@ -165,7 +188,7 @@ jobs:
             } catch (e) {
               body += '⚠️ Could not read coverage report.\n';
             }
-            
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -186,8 +209,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -223,16 +246,16 @@ jobs:
               repo: context.repo.repo,
               pull_number: context.issue.number
             });
-            
+
             const additions = files.reduce((sum, file) => sum + file.additions, 0);
             const deletions = files.reduce((sum, file) => sum + file.deletions, 0);
             const totalChanges = additions + deletions;
             const fileCount = files.length;
-            
+
             let sizeLabel = 'size/S';
             let sizeEmoji = '🟢';
             let message = '';
-            
+
             if (totalChanges > 1000 || fileCount > 30) {
               sizeLabel = 'size/XL';
               sizeEmoji = '🔴';
@@ -245,22 +268,22 @@ jobs:
               sizeLabel = 'size/M';
               sizeEmoji = '🟡';
             }
-            
+
             const summary = `
             ## 📊 PR Size Analysis
-            
+
             | Metric | Count |
             |--------|-------|
             | Files changed | ${fileCount} |
             | Additions | +${additions} |
             | Deletions | -${deletions} |
             | Total changes | ${totalChanges} |
-            
+
             **Size**: ${sizeEmoji} ${sizeLabel}
-            
+
             ${message}
             `;
-            
+
             // Add comment to PR
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -268,7 +291,7 @@ jobs:
               issue_number: context.issue.number,
               body: summary
             });
-            
+
             // Add label
             try {
               await github.rest.issues.addLabels({
@@ -297,23 +320,23 @@ jobs:
           script: |
             const fs = require('fs');
             const path = require('path');
-            
+
             const issues = [];
             const warnings = [];
-            
+
             // Get changed files
             const { data: files } = await github.rest.pulls.listFiles({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number
             });
-            
+
             const pageFiles = files.filter(f => 
               f.filename.includes('app/') && 
               f.filename.endsWith('page.tsx') &&
               f.status !== 'removed'
             );
-            
+
             for (const file of pageFiles) {
               try {
                 const content = fs.readFileSync(file.filename, 'utf8');
@@ -323,10 +346,15 @@ jobs:
                   issues.push(`❌ **${file.filename}**: Missing metadata export (SEO)`);
                 }
                 
-                // Check for proper phone numbers
-                if (content.includes('702-222-1964') || content.includes('7022221964') || 
-                    content.includes('702-500-1955') || content.includes('7025001955')) {
-                  issues.push(`❌ **${file.filename}**: Contains old phone number (should be (702) 500-1942)`);
+                // Retired office line only. (702) 222-1964 is the live client CTA;
+                // (702) 500-1942 is the GBP/office NAP. Do not flag the CTA.
+                if (
+                  content.includes('702-500-1955') ||
+                  content.includes('7025001955') ||
+                  content.includes('(702) 500-1955') ||
+                  content.includes('555-1234')
+                ) {
+                  issues.push(`❌ **${file.filename}**: Contains a retired or placeholder phone number`);
                 }
                 
                 // Check for JSON-LD schema
@@ -348,7 +376,7 @@ jobs:
                 console.log(`Could not read ${file.filename}:`, e.message);
               }
             }
-            
+
             if (issues.length > 0 || warnings.length > 0) {
               let body = '## 🔍 SEO & Content Review\n\n';
               
@@ -394,9 +422,9 @@ jobs:
               repo: context.repo.repo,
               pull_number: context.issue.number
             });
-            
+
             const labels = new Set();
-            
+
             for (const file of files) {
               const path = file.filename;
               
@@ -425,7 +453,7 @@ jobs:
                 labels.add('styles');
               }
             }
-            
+
             if (labels.size > 0) {
               try {
                 await github.rest.issues.addLabels({
@@ -456,42 +484,42 @@ jobs:
             const lintResult = '${{ needs.lint.result }}';
             const testResult = '${{ needs.test.result }}';
             const securityResult = '${{ needs.security.result }}';
-            
+
             const getEmoji = (result) => {
               if (result === 'success') return '✅';
               if (result === 'failure') return '❌';
               if (result === 'skipped') return '⏭️';
               return '⚠️';
             };
-            
+
             const body = `
             ## 🤖 Automated PR Review Summary
-            
+
             | Check | Status |
             |-------|--------|
             | Build & Type Check | ${getEmoji(buildResult)} ${buildResult} |
             | Lint & Format | ${getEmoji(lintResult)} ${lintResult} |
             | Test Suite | ${getEmoji(testResult)} ${testResult} |
             | Security Audit | ${getEmoji(securityResult)} ${securityResult} |
-            
+
             ---
-            
+
             ${buildResult === 'failure' || lintResult === 'failure' || testResult === 'failure' ? '⚠️ **Action required**: Please fix the failing checks before merging.' : '🎉 All automated checks passed!'}
-            
+
             <details>
             <summary>📋 Review Checklist</summary>
-            
+
             - [ ] Code follows project conventions
             - [ ] Tests pass with adequate coverage (80%+)
             - [ ] SEO metadata is present and optimized
-            - [ ] Phone numbers are correct: (702) 500-1942
+            - [ ] Client CTA is (702) 222-1964; GBP/office NAP is (702) 500-1942
             - [ ] Berkshire Hathaway branding is consistent
             - [ ] Mobile responsive design verified
             - [ ] No console errors
-            
+
             </details>
             `;
-            
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,

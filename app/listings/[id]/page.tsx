@@ -1,153 +1,110 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
+import Link from "next/link";
 import Image from "next/image";
-import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
+import { Bed, Bath, Square, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
+import MlsDisclaimer from "@/components/shared/MlsDisclaimer";
+import CtaActions from "@/components/sections/CtaActions";
+import OfficeProximity from "@/components/sections/OfficeProximity";
+import UniqueInterior from "@/components/sections/UniqueInterior";
+import { ctaPhone, nap } from "@/lib/contact";
+import { pageMetadata } from "@/lib/seo";
+import { mediaUrl, photos } from "@/lib/media";
 
-export const metadata: Metadata = {
-  title: "Property Details | Las Vegas & Henderson Real Estate",
-  description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+type PropertyPageProps = {
+  params: { id: string };
 };
 
-// This would typically fetch from RealScout API
-async function getProperty(id: string) {
-  // Placeholder - replace with RealScout API call
+export function generateMetadata({ params }: PropertyPageProps): Metadata {
   return {
-    id,
-    name: "Modern Luxury Home",
-    location: "Summerlin, Las Vegas, NV",
-    price: "$850,000",
-    image: "/Image/hero_bg_1.jpg",
-    bedrooms: 4,
-    bathrooms: 3,
-    squareFeet: 3200,
-    yearBuilt: 2018,
-    description:
-      "Stunning modern home in desirable Summerlin community. Features open floor plan, updated kitchen, and beautiful backyard. Close to schools, shopping, and entertainment.",
+    ...pageMetadata({
+      title: `MLS Listing ${params.id} | Las Vegas Homes | Dr. Jan Duffy`,
+      description:
+        "View this Las Vegas MLS listing with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 222-1964 to schedule a showing.",
+      path: `/listings/${params.id}`,
+    }),
+    robots: { index: false, follow: true },
   };
 }
 
-type PropertyPageProps = {
-  params: Promise<{ id: string }>;
-};
-
-export default async function PropertyPage({ params }: PropertyPageProps) {
-  const { id } = await params;
-  const property = await getProperty(id);
-
+export default function PropertyPage({ params }: PropertyPageProps) {
   return (
-    <>
-      <Navbar />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <nav className="mb-6 text-sm">
-            <ol className="flex items-center space-x-2 text-slate-600">
-              <li>
-                <a href="/" className="hover:text-blue-600">
-                  Home
-                </a>
-              </li>
-              <li>/</li>
-              <li>
-                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
-                  Properties
-                </a>
-              </li>
-              <li>/</li>
-              <li className="text-slate-900">{property.name}</li>
-            </ol>
-          </nav>
-
-          {/* Property Header */}
-          <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
-              {property.name}
+    <main id="main-content" className="pb-16">
+      <div className="container mx-auto px-4">
+<div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="md:col-span-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Schedule a Showing for This Las Vegas Listing
             </h1>
-            <div className="flex items-center text-slate-600 mb-4">
-              <MapPin className="h-5 w-5 mr-2" />
-              {property.location}
+            <p className="text-slate-700 mb-6">
+              Live MLS details for listing reference <span className="font-semibold">{params.id}</span>{" "}
+              are shown through RealScout. Tours start from {nap.fullAddress} unless we meet at the
+              property. Dr. Jan Duffy can pull the listing packet, comps, and a private showing time.
+            </p>
+            <div className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-6">
+              <Image
+                src={mediaUrl(photos.homeHero.src)}
+                alt={photos.homeHero.alt}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, 66vw"
+              />
             </div>
-            <div className="text-3xl font-bold text-blue-600">{property.price}</div>
+            <ul className="grid grid-cols-2 gap-4 mb-6 text-slate-700">
+              <li className="flex items-center">
+                <MapPin className="h-5 w-5 text-blue-600 mr-2" aria-hidden="true" />
+                Las Vegas, Henderson &amp; Summerlin
+              </li>
+              <li className="flex items-center">
+                <Bed className="h-5 w-5 text-blue-600 mr-2" aria-hidden="true" />
+                Filter by beds on live MLS
+              </li>
+              <li className="flex items-center">
+                <Bath className="h-5 w-5 text-blue-600 mr-2" aria-hidden="true" />
+                Filter by baths on live MLS
+              </li>
+              <li className="flex items-center">
+                <Square className="h-5 w-5 text-blue-600 mr-2" aria-hidden="true" />
+                Square footage on each listing
+              </li>
+            </ul>
+            <MlsDisclaimer />
+            <div className="mt-8">
+              <CtaActions variant="onLight" />
+          <OfficeProximity path="/listings" />
+          <UniqueInterior path="/listings" listingId={params.id} />
+
+            </div>
           </div>
-
-          {/* Main Image */}
-          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-8">
-            <Image
-              src={property.image}
-              alt={property.name}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-
-          {/* Property Details Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Main Content */}
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">Property Details</h2>
-              <p className="text-slate-700 mb-6">{property.description}</p>
-
-              <div className="bg-slate-50 rounded-lg p-6 mb-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Features</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center">
-                    <Bed className="h-5 w-5 text-blue-600 mr-2" />
-                    <span className="text-slate-700">{property.bedrooms} Bedrooms</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Bath className="h-5 w-5 text-blue-600 mr-2" />
-                    <span className="text-slate-700">{property.bathrooms} Bathrooms</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Square className="h-5 w-5 text-blue-600 mr-2" />
-                    <span className="text-slate-700">
-                      {property.squareFeet.toLocaleString()} sq ft
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                    <span className="text-slate-700">Built {property.yearBuilt}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* RealScout Widget Integration Point */}
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Schedule a Showing</h3>
-                <p className="text-slate-700 mb-4">
-                  Contact us to schedule a private viewing of this property.
-                </p>
-                <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <a href="/contact">Contact Agent</a>
+          <aside className="md:col-span-1">
+            <div className="bg-white border border-slate-200 rounded-lg p-6 sticky top-24">
+              <h2 className="text-xl font-bold text-slate-900 mb-2">Dr. Jan Duffy</h2>
+              <p className="text-sm text-slate-600 mb-4">{nap.brokerage}</p>
+              <p className="text-sm text-slate-600 mb-6">{nap.fullAddress}</p>
+              <div className="space-y-3">
+                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                  <a href={ctaPhone.href}>
+                    <Phone className="h-4 w-4 mr-2" aria-hidden="true" />
+                    Call {ctaPhone.display}
+                  </a>
+                </Button>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/contact">Send a Message</Link>
+                </Button>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/contact#schedule">Book a Showing</Link>
+                </Button>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/listings">Browse Live MLS</Link>
                 </Button>
               </div>
             </div>
-
-            {/* Sidebar */}
-            <div className="md:col-span-1">
-              <div className="bg-white border border-slate-200 rounded-lg p-6 sticky top-24">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Contact Agent</h3>
-                <p className="text-slate-600 mb-4">Dr. Jan Duffy</p>
-                <p className="text-sm text-slate-600 mb-6">
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </p>
-                <div className="space-y-3">
-                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-                    <a href="tel:+17025001942">Call (702) 500-1942</a>
-                  </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <a href="/contact">Send Message</a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
+          </aside>
         </div>
-      </main>
-      <Footer />
-    </>
+      </div>
+      <RealScoutListings />
+    </main>
   );
 }

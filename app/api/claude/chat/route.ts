@@ -23,8 +23,7 @@ import {
 
 // Initialize Claude client
 const claude = new ClaudeClient({
-  apiKey: process.env.AI_GATEWAY_API_KEY || process.env.ANTHROPIC_API_KEY || '',
-  baseURL: process.env.AI_GATEWAY_API_KEY ? 'https://ai-gateway.vercel.sh' : undefined,
+  apiKey: process.env.ANTHROPIC_API_KEY || '',
   enableCaching: true,
   enableCostTracking: true,
 });
@@ -42,7 +41,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!process.env.AI_GATEWAY_API_KEY && !process.env.ANTHROPIC_API_KEY) {
+    if (!process.env.ANTHROPIC_API_KEY) {
       return NextResponse.json(
         { error: 'Claude API key not configured' },
         { status: 500 }

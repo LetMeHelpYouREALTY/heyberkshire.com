@@ -14,10 +14,6 @@ export default function CalendlyWidget({
   height = "700px",
 }: CalendlyWidgetProps) {
   const widgetRef = useRef<HTMLDivElement>(null);
-  const normalizedUrl =
-    url.startsWith("http://") || url.startsWith("https://")
-      ? url
-      : `https://calendly.com/drjanduffy/${url.replace(/^\/+/, "")}`;
 
   useEffect(() => {
     // Ensure Calendly script is loaded and widget is initialized
@@ -29,7 +25,7 @@ export default function CalendlyWidget({
         // Create the widget div
         const widgetDiv = document.createElement("div");
         widgetDiv.className = "calendly-inline-widget";
-        widgetDiv.setAttribute("data-url", normalizedUrl);
+        widgetDiv.setAttribute("data-url", url);
         widgetDiv.style.minWidth = minWidth;
         widgetDiv.style.height = height;
         widgetDiv.style.width = "100%";
@@ -38,7 +34,7 @@ export default function CalendlyWidget({
         
         // Initialize the widget
         (window as any).Calendly.initInlineWidget({
-          url: normalizedUrl,
+          url: url,
           parentElement: widgetDiv,
         });
       }
@@ -59,7 +55,7 @@ export default function CalendlyWidget({
       // Clean up interval after 10 seconds
       setTimeout(() => clearInterval(checkCalendly), 10000);
     }
-  }, [normalizedUrl, minWidth, height]);
+  }, [url, minWidth, height]);
 
   return (
     <div 

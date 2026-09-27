@@ -64,7 +64,7 @@ export const businessInfo = {
   services: [
     // Core Services
     { name: "Buyer Representation", description: "Full-service home buying assistance" },
-    { name: "Seller Representation", description: "List and sell your home for top dollar" },
+    { name: "Seller Representation", description: "List and sell your home priced to recent comps" },
     { name: "Luxury Home Sales", description: "High-end properties $1M+" },
     // Niche Services (trigger intent phrases)
     { name: "California Relocation Services", description: "Helping CA buyers transition to Las Vegas" },
@@ -147,17 +147,17 @@ export const gbpDescription = {
   // Section 1: Who you are/mission (~250 words)
   whoWeAre: `Dr. Jan Duffy is a trusted REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving the Las Vegas real estate market since 2008. Backed by Warren Buffett's Berkshire Hathaway—the most recognized name in real estate—Dr. Jan combines local expertise with world-class resources to deliver exceptional results for buyers and sellers alike.
 
-With $127 million in closed transactions and hundreds of satisfied clients, Dr. Jan has earned a reputation for integrity, market knowledge, and personalized service. Whether you're a first-time buyer navigating the process, a luxury home seeker exploring The Ridges or MacDonald Highlands, or a California family relocating for Nevada's tax advantages, Dr. Jan provides the guidance you need to make confident real estate decisions.`,
+With $127 million in closed transactions and hundreds of satisfied clients, Dr. Jan has earned a reputation for integrity, market knowledge, and personalized service. Whether you're a first-time buyer navigating the process, a luxury home seeker exploring The Ridges or MacDonald Highlands, or a California buyer relocating for Nevada's tax advantages, Dr. Jan provides the guidance you need to make confident real estate decisions.`,
 
   // Section 2: What/why - Value proposition (~250 words)
   whatWeDo: `What sets Dr. Jan apart is a commitment to education and advocacy. Clients receive comprehensive market analysis, expert negotiation, and honest advice—not sales pressure. As a Berkshire Hathaway HomeServices agent, Dr. Jan offers access to a global network of 50,000+ agents, world-class marketing for sellers, and off-market opportunities for buyers.
 
 Specialized services include: buyer and seller representation, luxury home sales, 55+ active adult community expertise (Sun City Summerlin, Sun City Anthem, Del Webb Lake Las Vegas), California relocation assistance, probate and divorce real estate, investment property consulting, new construction representation, and first-time buyer programs including FHA, VA, and down payment assistance guidance.
 
-Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
+Dr. Jan's approach is simple: treat every client with the same care, know the market inside and out, and never stop working until the deal closes successfully.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, family-friendly Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
+  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, Centennial Hills and Skye Canyon, and Mountains Edge and North Las Vegas.
 
 55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
 
@@ -215,11 +215,25 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://heyberkshire.com/#organization",
     name: businessInfo.name,
-    image: "https://heyberkshire.com/images/dr-jan-duffy.jpg",
+    image: [
+      "https://heyberkshire.com/images/dr-jan-duffy.jpg",
+      "https://heyberkshire.com/images/hero/office-lake-mead-blvd.jpg",
+      "https://heyberkshire.com/images/hero/west-las-vegas-office-exterior.jpg",
+    ],
+    logo: "https://heyberkshire.com/images/dr-jan-duffy.jpg",
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,
     priceRange: businessInfo.priceRange,
+    hasMap: "https://www.google.com/maps/search/?api=1&query=9406+W+Lake+Mead+Blvd+Suite+100+Las+Vegas+NV+89134",
+    openingHours: ["Mo-Fr 09:00-18:00", "Sa 10:00-16:00"],
+    knowsAbout: [
+      "Las Vegas real estate",
+      "Summerlin homes",
+      "Henderson homes",
+      "55+ communities",
+      "California relocation",
+    ],
     address: {
       "@type": "PostalAddress",
       ...businessInfo.address,
@@ -260,9 +274,8 @@ export function generateLocalBusinessSchema() {
       bestRating: "5",
     },
     sameAs: [
-      "https://www.facebook.com/drjanduffy",
-      "https://www.instagram.com/drjanduffy",
-      "https://www.linkedin.com/in/drjanduffy",
+      ...businessInfo.socialProfiles,
+      "https://www.google.com/maps/search/?api=1&query=9406+W+Lake+Mead+Blvd+Suite+100+Las+Vegas+NV+89134",
     ],
   };
 }

@@ -68,7 +68,7 @@ Call (702) 500-1942 for a free California equity comparison.`,
 🏌️ Sun City Summerlin - Nevada's largest 55+ community (7,700+ homes, 3 golf courses)
 🌄 Sun City Anthem - Henderson location with mountain views
 🌊 Del Webb Lake Las Vegas - Resort-style lakefront living
-⛳ Solera at Anthem - Boutique community feel
+⛳ Solera at Anthem - 1,200-home guard-gated Henderson campus
 
 Each offers different amenities, price points, and lifestyles. Dr. Jan Duffy specializes in 55+ communities and can help you find the perfect fit.
 

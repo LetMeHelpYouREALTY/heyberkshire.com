@@ -1,5 +1,5 @@
 {
-  "name": "heyberkshire-com",
+  "name": "faq-gen",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "vercel:prod": "vercel deploy --prod --prebuilt",
     "cloudflare:dev": "wrangler dev",
     "cloudflare:deploy": "wrangler deploy",
+    "cloudflare:sync-images": "bash scripts/sync-images-to-cloudflare.sh",
     "cloudflare:pages": "npx @cloudflare/next-on-pages",
     "cloudflare:build": "npm run cloudflare:pages",
     "build:cloudflare": "npx @cloudflare/next-on-pages"
@@ -62,7 +63,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
-    "@types/node": "20.11.24",
+    "@types/node": "^20.19.43",
     "@types/react": "18.2.63",
     "@types/react-dom": "18.2.20",
     "@vitejs/plugin-react": "^5.1.4",

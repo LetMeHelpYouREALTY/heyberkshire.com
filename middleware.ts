@@ -6,6 +6,7 @@ export function middleware(request: NextRequest) {
   const response = NextResponse.next();
   // Pass hostname to pages via header so server components can read it
   response.headers.set("x-domain", hostname);
+  response.headers.set("x-pathname", request.nextUrl.pathname);
   return response;
 }
 

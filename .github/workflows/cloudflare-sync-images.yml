@@ -1,0 +1,27 @@
+name: Cloudflare Images Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/images/**"
+      - "scripts/sync-images-to-cloudflare.sh"
+      - ".github/workflows/cloudflare-sync-images.yml"
+  workflow_dispatch:
+
+# Hosted Images only. Do not deploy Workers or orange-cloud the Vercel hostname.
+jobs:
+  sync:
+    name: Upload public/images to Cloudflare Images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync hosted images
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: bash scripts/sync-images-to-cloudflare.sh

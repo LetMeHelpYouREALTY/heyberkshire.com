@@ -3,18 +3,43 @@
 @tailwind utilities;
 
 @layer base {
-  a,
-  button {
-    @apply transition;
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
-  a {
-    @apply text-emerald-500 underline hover:bg-emerald-100
-        outline-0 focus:ring-2 focus:ring-offset-1 focus:ring-emerald-500;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-white text-slate-900;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-blue-600 ring-offset-2;
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   ::selection {
-    @apply bg-emerald-200 text-emerald-950;
+    @apply bg-blue-200 text-blue-950;
   }
 
   label,
@@ -28,6 +53,7 @@
   h3,
   h4 {
     @apply text-balance;
+    scroll-margin-top: 6rem;
   }
 
   p {
@@ -35,9 +61,14 @@
   }
 }
 
+@layer components {
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:bg-blue-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold;
+  }
+}
+
 /* ===== RealScout Widget Styling ===== */
 
-/* RealScout Simple Search - Desktop */
 realscout-simple-search {
   --rs-ss-font-primary-color: #1e293b;
   --rs-ss-searchbar-border-color: #e2e8f0;
@@ -47,13 +78,11 @@ realscout-simple-search {
   --rs-ss-background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* RealScout Office Listings */
 realscout-office-listings {
   --rs-listing-divider-color: #2563eb;
   width: 100%;
 }
 
-/* RealScout container wrapper */
 .realscout-wrapper {
   display: flex;
   justify-content: center;
@@ -62,7 +91,6 @@ realscout-office-listings {
   padding: 0 1rem;
 }
 
-/* Mobile Responsive: Tablet */
 @media (max-width: 768px) {
   realscout-simple-search {
     --rs-ss-widget-width: 100% !important;
@@ -74,7 +102,6 @@ realscout-office-listings {
   }
 }
 
-/* Mobile Responsive: Phone */
 @media (max-width: 480px) {
   realscout-simple-search {
     --rs-ss-widget-width: 100% !important;
