@@ -1,6 +1,6 @@
 /**
  * Follow Up Boss API Client - Optimized
- * 
+ *
  * Features:
  * - Rate limiting (250 req/10s global, endpoint-specific limits)
  * - Response caching (reduce duplicate requests)
@@ -17,6 +17,20 @@ export interface FUBConfig {
   enableCaching?: boolean;
   enableRateLimiting?: boolean;
   retryAttempts?: number;
+}
+
+/** Sent on every FUB API request as `X-System`. */
+export const FUB_SYSTEM_HEADER = "DrJanDuffyWebsite";
+
+export function getFubApiKey(): string | undefined {
+  const key = process.env.FOLLOW_UP_BOSS_API_KEY || process.env.FUB_API_KEY;
+  const trimmed = key?.trim();
+  return trimmed || undefined;
+}
+
+export function getFubSystemKey(): string | undefined {
+  const trimmed = process.env.FUB_SYSTEM_KEY?.trim();
+  return trimmed || undefined;
 }
 
 export interface FUBPerson {
@@ -63,7 +77,7 @@ export interface FUBListOptions {
 
 export class FollowUpBossClient {
   private config: FUBConfig;
-  private baseUrl = 'https://api.followupboss.com/v1';
+  private baseUrl = "https://api.followupboss.com/v1";
   private rateLimiter: FUBRateLimiter;
   private cache: Map<string, { data: any; timestamp: number }>;
   private cacheTTL = 60000; // 1 minute
@@ -105,20 +119,22 @@ export class FollowUpBossClient {
     total?: number;
   }> {
     const params = new URLSearchParams();
-    
+
     // Recommended pagination
-    params.append('limit', String(options.limit || 50));
-    
-    if (options.offset) params.append('offset', String(options.offset));
-    if (options.next) params.append('next', options.next);
-    if (options.orderBy) params.append('orderBy', options.orderBy);
-    if (options.createdAfter) params.append('createdAfter', options.createdAfter);
-    if (options.updatedAfter) params.append('updatedAfter', options.updatedAfter);
-    if (options.email) params.append('email', options.email);
-    if (options.phone) params.append('phone', options.phone);
-    if (options.stage) params.append('stage', options.stage);
-    if (options.source) params.append('source', options.source);
-    if (options.ids) params.append('ids', options.ids.join(','));
+    params.append("limit", String(options.limit || 50));
+
+    if (options.offset) params.append("offset", String(options.offset));
+    if (options.next) params.append("next", options.next);
+    if (options.orderBy) params.append("orderBy", options.orderBy);
+    if (options.createdAfter)
+      params.append("createdAfter", options.createdAfter);
+    if (options.updatedAfter)
+      params.append("updatedAfter", options.updatedAfter);
+    if (options.email) params.append("email", options.email);
+    if (options.phone) params.append("phone", options.phone);
+    if (options.stage) params.append("stage", options.stage);
+    if (options.source) params.append("source", options.source);
+    if (options.ids) params.append("ids", options.ids.join(","));
 
     const cacheKey = `people:${params.toString()}`;
     const cached = this.getFromCache(cacheKey);
@@ -132,29 +148,31 @@ export class FollowUpBossClient {
   /**
    * Create or update a person (lead)
    */
-  async upsertPerson(data: Partial<FUBPerson> & { 
-    emails?: Array<{ value: string }> | string[];
-    phones?: Array<{ value: string }> | string[];
-  }): Promise<FUBPerson> {
+  async upsertPerson(
+    data: Partial<FUBPerson> & {
+      emails?: Array<{ value: string }> | string[];
+      phones?: Array<{ value: string }> | string[];
+    },
+  ): Promise<FUBPerson> {
     // Normalize email/phone formats
     const normalizedData = {
       ...data,
-      emails: data.emails?.map(e => 
-        typeof e === 'string' ? { value: e } : e
+      emails: data.emails?.map((e) =>
+        typeof e === "string" ? { value: e } : e,
       ),
-      phones: data.phones?.map(p => 
-        typeof p === 'string' ? { value: p } : p
+      phones: data.phones?.map((p) =>
+        typeof p === "string" ? { value: p } : p,
       ),
     };
 
     // Use PUT for upsert
-    const response = await this.request('/people', {
-      method: 'PUT',
+    const response = await this.request("/people", {
+      method: "PUT",
       body: JSON.stringify(normalizedData),
     });
 
     // Invalidate cache
-    this.clearCache('people:');
+    this.clearCache("people:");
     if (response.id) {
       this.clearCache(`person:${response.id}`);
     }
@@ -167,7 +185,7 @@ export class FollowUpBossClient {
    */
   async addTag(personId: number, tag: string): Promise<void> {
     await this.request(`/people/${personId}/tags`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({ tag }),
     });
 
@@ -179,7 +197,7 @@ export class FollowUpBossClient {
    */
   async updateStage(personId: number, stage: string): Promise<void> {
     await this.request(`/people/${personId}`, {
-      method: 'PUT',
+      method: "PUT",
       body: JSON.stringify({ stage }),
     });
 
@@ -191,23 +209,36 @@ export class FollowUpBossClient {
    */
   async createEvent(event: FUBEvent): Promise<{ id: string }> {
     // Events endpoint has unlimited rate limit
-    return await this.request('/events', {
-      method: 'POST',
-      body: JSON.stringify(event),
-    }, 'events');
+    return await this.request(
+      "/events",
+      {
+        method: "POST",
+        body: JSON.stringify(event),
+      },
+      "events",
+    );
   }
 
   /**
    * Search for person by email or phone (with deduplication)
    */
-  async findPerson(identifier: { email?: string; phone?: string }): Promise<FUBPerson | null> {
+  async findPerson(identifier: {
+    email?: string;
+    phone?: string;
+  }): Promise<FUBPerson | null> {
     if (identifier.email) {
-      const results = await this.listPeople({ email: identifier.email, limit: 1 });
+      const results = await this.listPeople({
+        email: identifier.email,
+        limit: 1,
+      });
       return results.people[0] || null;
     }
 
     if (identifier.phone) {
-      const results = await this.listPeople({ phone: identifier.phone, limit: 1 });
+      const results = await this.listPeople({
+        phone: identifier.phone,
+        limit: 1,
+      });
       return results.people[0] || null;
     }
 
@@ -225,12 +256,14 @@ export class FollowUpBossClient {
   /**
    * Get all people (with automatic pagination)
    */
-  async *getAllPeople(options: Omit<FUBListOptions, 'next'> = {}): AsyncGenerator<FUBPerson> {
+  async *getAllPeople(
+    options: Omit<FUBListOptions, "next"> = {},
+  ): AsyncGenerator<FUBPerson> {
     let next: string | undefined = undefined;
 
     do {
       const response = await this.listPeople({ ...options, next });
-      
+
       for (const person of response.people) {
         yield person;
       }
@@ -245,7 +278,7 @@ export class FollowUpBossClient {
   private async request(
     path: string,
     options: RequestInit = {},
-    context: 'global' | 'events' | 'people' = 'global'
+    context: "global" | "events" | "people" = "global",
   ): Promise<any> {
     // Check rate limit
     if (this.config.enableRateLimiting) {
@@ -254,19 +287,23 @@ export class FollowUpBossClient {
 
     const url = `${this.baseUrl}${path}`;
     const headers: HeadersInit = {
-      'Content-Type': 'application/json',
-      'Authorization': `Basic ${Buffer.from(`${this.config.apiKey}:`).toString('base64')}`,
+      "Content-Type": "application/json",
+      Authorization: `Basic ${Buffer.from(`${this.config.apiKey}:`).toString("base64")}`,
+      "X-System": FUB_SYSTEM_HEADER,
     };
 
-    // Add system key for higher rate limits
     if (this.config.systemKey) {
-      headers['X-System-Key'] = this.config.systemKey;
+      headers["X-System-Key"] = this.config.systemKey;
     }
 
     let lastError: Error | null = null;
     let delay = 1000; // Initial delay for retries
 
-    for (let attempt = 0; attempt <= (this.config.retryAttempts || 3); attempt++) {
+    for (
+      let attempt = 0;
+      attempt <= (this.config.retryAttempts || 3);
+      attempt++
+    ) {
       try {
         const response = await fetch(url, {
           ...options,
@@ -275,9 +312,9 @@ export class FollowUpBossClient {
 
         // Handle rate limiting
         if (response.status === 429) {
-          const retryAfter = response.headers.get('Retry-After');
+          const retryAfter = response.headers.get("Retry-After");
           const waitTime = retryAfter ? parseInt(retryAfter) * 1000 : delay;
-          
+
           await this.sleep(waitTime);
           delay *= 2; // Exponential backoff
           continue;
@@ -287,14 +324,14 @@ export class FollowUpBossClient {
         if (!response.ok) {
           const error = await response.json().catch(() => ({}));
           throw new Error(
-            `FUB API Error (${response.status}): ${error.message || response.statusText}`
+            `FUB API Error (${response.status}): ${error.message || response.statusText}`,
           );
         }
 
         return await response.json();
       } catch (error) {
         lastError = error as Error;
-        
+
         if (attempt < (this.config.retryAttempts || 3)) {
           await this.sleep(delay);
           delay *= 2;
@@ -302,7 +339,7 @@ export class FollowUpBossClient {
       }
     }
 
-    throw lastError || new Error('Request failed after retries');
+    throw lastError || new Error("Request failed after retries");
   }
 
   /**
@@ -325,7 +362,7 @@ export class FollowUpBossClient {
   }
 
   private clearCache(prefix: string): void {
-    Array.from(this.cache.keys()).forEach(key => {
+    Array.from(this.cache.keys()).forEach((key) => {
       if (key.startsWith(prefix)) {
         this.cache.delete(key);
       }
@@ -333,7 +370,7 @@ export class FollowUpBossClient {
   }
 
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
 
@@ -343,9 +380,9 @@ export class FollowUpBossClient {
 class FUBRateLimiter {
   private requests: Map<string, number[]> = new Map();
   private limits = {
-    global: 250,      // 250 with X-System-Key, 125 without
-    events: 20,       // 20 with X-System-Key, 10 without (GET only)
-    people: 25,       // PUT operations
+    global: 250, // 250 with X-System-Key, 125 without
+    events: 20, // 20 with X-System-Key, 10 without (GET only)
+    people: 25, // PUT operations
   };
 
   constructor(config: { systemKey?: string }) {
@@ -356,13 +393,14 @@ class FUBRateLimiter {
     }
   }
 
-  async checkLimit(context: 'global' | 'events' | 'people'): Promise<void> {
+  async checkLimit(context: "global" | "events" | "people"): Promise<void> {
     const now = Date.now();
     const windowStart = now - 10000; // 10-second sliding window
 
     // Get recent requests
-    const recentRequests = (this.requests.get(context) || [])
-      .filter(t => t > windowStart);
+    const recentRequests = (this.requests.get(context) || []).filter(
+      (t) => t > windowStart,
+    );
 
     // Check limit
     const limit = this.limits[context];
@@ -378,6 +416,6 @@ class FUBRateLimiter {
   }
 
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
