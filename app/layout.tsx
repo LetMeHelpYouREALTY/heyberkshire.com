@@ -37,14 +37,18 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: config.keywords,
     authors: [{ name: nap.shortName }],
     creator: nap.shortName,
-    robots: hostKnown ? { index: true, follow: true } : { index: false, follow: false },
+    robots: hostKnown
+      ? { index: true, follow: true }
+      : { index: false, follow: false },
     alternates: { canonical },
     openGraph: {
       type: "website",
       url: canonical,
       locale: "en_US",
       siteName: nap.brokerage,
-      images: [{ url: absoluteUrl(photos.homeHero.src), alt: photos.homeHero.alt }],
+      images: [
+        { url: absoluteUrl(photos.homeHero.src), alt: photos.homeHero.alt },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -56,10 +60,14 @@ export async function generateMetadata(): Promise<Metadata> {
 const siteSchemas = combineSchemas(
   generateLocalBusinessSchema(),
   generateOrganizationSchema(),
-  generateWebSiteSchema()
+  generateWebSiteSchema(),
 );
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
@@ -67,7 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="dns-prefetch" href="https://em.realscout.com" />
         <link rel="dns-prefetch" href="https://www.realscout.com" />
         <link rel="dns-prefetch" href="https://assets.calendly.com" />
-        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+        <link
+          rel="stylesheet"
+          href="https://assets.calendly.com/assets/external/widget.css"
+        />
       </head>
       <body className="bg-white text-slate-900 antialiased pb-16 md:pb-0">
         <SkipLink />

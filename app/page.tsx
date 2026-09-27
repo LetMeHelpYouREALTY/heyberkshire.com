@@ -67,7 +67,9 @@ export default async function Home() {
 
           <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-white tabular-nums">500+</span>
+              <span className="font-semibold text-white tabular-nums">
+                500+
+              </span>
               <span>Transactions Closed</span>
             </div>
             <div className="flex items-center gap-2">
@@ -75,7 +77,9 @@ export default async function Home() {
               <span>Las Vegas Experience</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-white tabular-nums">4.9★</span>
+              <span className="font-semibold text-white tabular-nums">
+                4.9★
+              </span>
               <span>Client Rating</span>
             </div>
           </div>
@@ -86,8 +90,8 @@ export default async function Home() {
       </section>
       <div className="container mx-auto px-4">
         <OfficeProximity path="/" />
-          <UniqueInterior path="/" />
-          <ExpertQuote path="/" />
+        <UniqueInterior path="/" />
+        <ExpertQuote path="/" />
       </div>
 
       <section className="py-16 md:py-20 bg-white" data-home-compare="/">
@@ -97,32 +101,37 @@ export default async function Home() {
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.summerlin} priority />
           <p className="text-lg text-slate-600 mb-8 text-center">
-            Same west-valley start at 9406 W Lake Mead Blvd, Suite 100. We pick two contrasting
-            pins so you are not averaging the whole valley.
+            Same west-valley start at 9406 W Lake Mead Blvd, Suite 100. We pick
+            two contrasting pins so you are not averaging the whole valley.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-xl border border-slate-200 p-6">
               <h3 className="font-bold text-lg mb-2">Summerlin (10–15 min)</h3>
               <p className="text-slate-600 text-sm">
-                Downtown Summerlin retail, The Trails, then Red Rock trailheads on the same clock.
+                Downtown Summerlin retail, The Trails, then Red Rock trailheads
+                on the same clock.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200 p-6">
               <h3 className="font-bold text-lg mb-2">Henderson (25–35 min)</h3>
               <p className="text-slate-600 text-sm">
-                Green Valley street trees vs Inspirada rec campus. One east afternoon, not both
-                plus Summerlin.
+                Green Valley street trees vs Inspirada rec campus. One east
+                afternoon, not both plus Summerlin.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200 p-6">
-              <h3 className="font-bold text-lg mb-2">Sun City Summerlin (10–15 min)</h3>
+              <h3 className="font-bold text-lg mb-2">
+                Sun City Summerlin (10–15 min)
+              </h3>
               <p className="text-slate-600 text-sm">
-                Four rec buildings if the brief is 55+. Anthem is a separate Henderson day.
+                Four rec buildings if the brief is 55+. Anthem is a separate
+                Henderson day.
               </p>
             </div>
           </div>
           <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-            {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+            {nap.brokerage} · {nap.fullAddress} · Call or text{" "}
+            {ctaPhone.display}.
           </p>
           <CtaActions variant="onLight" />
         </div>
@@ -134,8 +143,15 @@ export default async function Home() {
             <h2 className="text-3xl font-bold mb-3">
               January 2026 valley snapshot — then we apply it to your ZIP
             </h2>
-            <HeadingPhoto path="/" level="h2" photo={photos.sellers} className="max-w-4xl mx-auto" />
-            <p className="text-slate-400">Current data — updated {stats.lastUpdated}</p>
+            <HeadingPhoto
+              path="/"
+              level="h2"
+              photo={photos.sellers}
+              className="max-w-4xl mx-auto"
+            />
+            <p className="text-slate-400">
+              Current data — updated {stats.lastUpdated}
+            </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
@@ -144,7 +160,11 @@ export default async function Home() {
                 label: "Median Price",
                 sub: stats.lasVegas.yearOverYearChange + " YoY",
               },
-              { value: String(stats.lasVegas.daysOnMarket), label: "Avg Days on Market", sub: "" },
+              {
+                value: String(stats.lasVegas.daysOnMarket),
+                label: "Avg Days on Market",
+                sub: "",
+              },
               {
                 value: stats.lasVegas.activeListings.toLocaleString("en-US"),
                 label: "Active Listings",
@@ -157,9 +177,15 @@ export default async function Home() {
               },
             ].map(({ value, label, sub }) => (
               <div key={label} className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-1 tabular-nums">{value}</div>
+                <div className="text-4xl font-bold text-blue-400 mb-1 tabular-nums">
+                  {value}
+                </div>
                 <div className="text-slate-300 text-sm">{label}</div>
-                {sub && <div className="text-green-400 text-xs mt-1 tabular-nums">{sub}</div>}
+                {sub && (
+                  <div className="text-green-400 text-xs mt-1 tabular-nums">
+                    {sub}
+                  </div>
+                )}
               </div>
             ))}
           </div>

@@ -13,7 +13,13 @@ export interface DomainConfig {
   heroHeadline: string;
   heroSubheadline: string;
   keywords: string[];
-  pageType: "community" | "search" | "lifestyle" | "investment" | "55plus" | "luxury";
+  pageType:
+    | "community"
+    | "search"
+    | "lifestyle"
+    | "investment"
+    | "55plus"
+    | "luxury";
   realscoutAgentId: string;
   ctaBadge: string;
   ctaHeadline: string;
@@ -23,45 +29,804 @@ export interface DomainConfig {
 const REALSCOUT_AGENT_ID = "QWdlbnQtMjI1MDUw";
 
 export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
-  "consenzaestates.com": { domain: "consenzaestates.com", neighborhood: "Consenza Estates", tagline: "Luxury Living in Consenza Estates", description: "Find your dream home in Consenza Estates, Las Vegas. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Consenza Estates Homes for Sale", heroSubheadline: "Exclusive properties in one of Las Vegas' most sought-after communities.", keywords: ["Consenza Estates homes", "Las Vegas luxury real estate", "Consenza Estates Las Vegas"], pageType: "luxury", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Consenza Estates Expert", ctaHeadline: "Find Your Consenza Estates Home", ctaSubheadline: "I know every listing in this community. Let me match you with the right home." },
-  "aliantehomesforsale.com": { domain: "aliantehomesforsale.com", neighborhood: "Aliante", tagline: "Aliante Homes for Sale", description: "Search Aliante homes for sale in North Las Vegas. Expert real estate guidance from Dr. Jan Duffy.", heroHeadline: "Aliante Homes for Sale", heroSubheadline: "Master-planned living in the heart of North Las Vegas.", keywords: ["Aliante homes for sale", "Aliante North Las Vegas", "Aliante real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Aliante Specialist", ctaHeadline: "Search Aliante Homes Today", ctaSubheadline: "Get instant access to all Aliante listings with expert guidance." },
-  "californiaforeverbroker.com": { domain: "californiaforeverbroker.com", neighborhood: "Las Vegas", tagline: "Relocating from California to Las Vegas", description: "California to Las Vegas relocation specialist. Find your Nevada dream home with Dr. Jan Duffy.", heroHeadline: "Leaving California for Las Vegas?", heroSubheadline: "No state income tax, lower cost of living, and year-round sunshine. Let me help you make the move.", keywords: ["California to Las Vegas move", "relocation Las Vegas", "Nevada real estate for Californians"], pageType: "lifestyle", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Relocation Expert", ctaHeadline: "Your Nevada Fresh Start Awaits", ctaSubheadline: "I've helped hundreds of California buyers make the move. Let's talk." },
-  "centennialhillshomesforsale.com": { domain: "centennialhillshomesforsale.com", neighborhood: "Centennial Hills", tagline: "Centennial Hills Homes for Sale", description: "Search Centennial Hills homes for sale in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Centennial Hills Homes for Sale", heroSubheadline: "Premier Northwest Las Vegas community with stunning mountain views.", keywords: ["Centennial Hills homes", "Centennial Hills Las Vegas", "Northwest Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Centennial Hills Expert", ctaHeadline: "Find Your Centennial Hills Home", ctaSubheadline: "I know every street, every floor plan, and every value in Centennial Hills." },
-  "drjanduffyreviews.com": { domain: "drjanduffyreviews.com", neighborhood: "Las Vegas", tagline: "Dr. Jan Duffy — Client Reviews", description: "Read what clients say about Dr. Jan Duffy, Las Vegas real estate agent at BHHS Nevada Properties.", heroHeadline: "What Clients Say About Dr. Jan", heroSubheadline: "500+ clients helped. 30+ years of experience. Real results, real reviews.", keywords: ["Dr Jan Duffy reviews", "BHHS Nevada Properties reviews", "Las Vegas realtor reviews"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Client Reviews", ctaHeadline: "Join 500+ Happy Clients", ctaSubheadline: "Let's talk about your real estate goals — no pressure, just expertise." },
-  "drjanetduffy.com": { domain: "drjanetduffy.com", neighborhood: "Las Vegas", tagline: "Dr. Jan Duffy — Las Vegas REALTOR®", description: "Dr. Jan Duffy, Las Vegas REALTOR® at Berkshire Hathaway HomeServices Nevada Properties.", heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate Expert", heroSubheadline: "30+ years, 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.", keywords: ["Dr Jan Duffy", "Las Vegas realtor", "BHHS Nevada Properties"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Expert", ctaHeadline: "Ready to Buy or Sell?", ctaSubheadline: "Call or text Dr. Jan at 702-222-1964 — I answer my own phone." },
-  "eaglehillshomes.com": { domain: "eaglehillshomes.com", neighborhood: "Eagle Hills", tagline: "Eagle Hills Homes for Sale", description: "Search Eagle Hills homes for sale in Las Vegas. Expert real estate guidance from Dr. Jan Duffy.", heroHeadline: "Eagle Hills Homes for Sale", heroSubheadline: "Discover this beautiful Las Vegas neighborhood.", keywords: ["Eagle Hills homes", "Eagle Hills Las Vegas", "Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Eagle Hills Specialist", ctaHeadline: "Find Your Eagle Hills Home", ctaSubheadline: "I know every listing in Eagle Hills. Let me help you find the right one." },
-  "goodtoknowrealtor.com": { domain: "goodtoknowrealtor.com", neighborhood: "Las Vegas", tagline: "Las Vegas Real Estate — Good to Know", description: "Las Vegas real estate tips, market data, and insider knowledge from Dr. Jan Duffy.", heroHeadline: "Good to Know — Las Vegas Real Estate", heroSubheadline: "Market data, neighborhood guides, and insider tips from 30+ years in Las Vegas real estate.", keywords: ["Las Vegas real estate tips", "Las Vegas market data", "Las Vegas realtor advice"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Market Expert", ctaHeadline: "Get the Insider Knowledge", ctaSubheadline: "30 years of Las Vegas real estate data at your fingertips." },
-  "heritageatstonebridgehomes.com": { domain: "heritageatstonebridgehomes.com", neighborhood: "Heritage at Stonebridge", tagline: "Heritage at Stonebridge Homes for Sale", description: "Heritage at Stonebridge 55+ active adult community homes. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Heritage at Stonebridge Homes", heroSubheadline: "Award-winning 55+ active adult community with resort-style amenities in Summerlin.", keywords: ["Heritage Stonebridge homes", "55 plus Summerlin", "active adult Las Vegas"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "55+ Community Expert", ctaHeadline: "Heritage at Stonebridge Awaits", ctaSubheadline: "I specialize in 55+ communities. Let me show you everything Heritage has to offer." },
-  "heritagestonebridge.com": { domain: "heritagestonebridge.com", neighborhood: "Heritage at Stonebridge", tagline: "Heritage Stonebridge Las Vegas", description: "Heritage Stonebridge 55+ community in Summerlin Las Vegas. Find your perfect active adult home.", heroHeadline: "Heritage Stonebridge Homes for Sale", heroSubheadline: "Summerlin's premier 55+ active adult community with world-class amenities.", keywords: ["Heritage Stonebridge", "Summerlin 55 plus", "active adult Summerlin"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "55+ Specialist", ctaHeadline: "Your Heritage Stonebridge Home", ctaSubheadline: "Every floor plan, every amenity — I know Heritage Stonebridge inside and out." },
-  "justcalldrjan.com": { domain: "justcalldrjan.com", neighborhood: "Las Vegas", tagline: "Just Call Dr. Jan — Las Vegas Real Estate", description: "Ready to buy or sell in Las Vegas? Just call Dr. Jan Duffy at 702-222-1964.", heroHeadline: "Just Call Dr. Jan", heroSubheadline: "30+ years. 500+ clients. No runaround — just expert Las Vegas real estate guidance.", keywords: ["call Dr Jan Duffy", "Las Vegas realtor phone", "BHHS Nevada"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Direct Access", ctaHeadline: "I Answer My Own Phone", ctaSubheadline: "No assistant, no callback queue. Call or text 702-222-1964 and reach me directly." },
-  "lasvegashomeexpert.com": { domain: "lasvegashomeexpert.com", neighborhood: "Las Vegas", tagline: "Las Vegas Home Expert — Dr. Jan Duffy", description: "Las Vegas home buying and selling expert. Dr. Jan Duffy, BHHS Nevada Properties.", heroHeadline: "Las Vegas Home Expert", heroSubheadline: "The most knowledgeable real estate professional in the Las Vegas Valley.", keywords: ["Las Vegas home expert", "Las Vegas real estate expert", "buy sell Las Vegas homes"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Expert", ctaHeadline: "Work With the Expert", ctaSubheadline: "30+ years of Las Vegas market knowledge working for you." },
-  "lonemountainheights.com": { domain: "lonemountainheights.com", neighborhood: "Lone Mountain Heights", tagline: "Lone Mountain Heights Homes", description: "Lone Mountain Heights homes for sale in Northwest Las Vegas. Dr. Jan Duffy, expert realtor.", heroHeadline: "Lone Mountain Heights Homes for Sale", heroSubheadline: "Stunning views and spacious living in Northwest Las Vegas.", keywords: ["Lone Mountain Heights", "Northwest Las Vegas homes", "Lone Mountain real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Lone Mountain Expert", ctaHeadline: "Find Your Lone Mountain Home", ctaSubheadline: "I know every property in Lone Mountain. Let's find the right one for you." },
-  "lonemountainvistas.com": { domain: "lonemountainvistas.com", neighborhood: "Lone Mountain Vistas", tagline: "Lone Mountain Vistas Homes", description: "Lone Mountain Vistas homes for sale in Las Vegas. Expert real estate guidance.", heroHeadline: "Lone Mountain Vistas Homes for Sale", heroSubheadline: "Panoramic views and premium living in the Lone Mountain corridor.", keywords: ["Lone Mountain Vistas", "Lone Mountain Las Vegas", "Northwest Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Lone Mountain Specialist", ctaHeadline: "Lone Mountain Vistas Awaits", ctaSubheadline: "Breathtaking views and spacious homes — let me show you what's available." },
-  "macdonaldhighlandshomes.com": { domain: "macdonaldhighlandshomes.com", neighborhood: "MacDonald Highlands", tagline: "MacDonald Highlands Luxury Homes", description: "MacDonald Highlands luxury homes for sale in Henderson, Nevada. Expert guidance from Dr. Jan Duffy.", heroHeadline: "MacDonald Highlands Homes for Sale", heroSubheadline: "Henderson's most prestigious guard-gated luxury community.", keywords: ["MacDonald Highlands homes", "Henderson luxury real estate", "MacDonald Highlands Henderson"], pageType: "luxury", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Luxury Specialist", ctaHeadline: "MacDonald Highlands Living Awaits", ctaSubheadline: "Private tours available. Let me show you what makes MacDonald Highlands extraordinary." },
-  "midtownlasvegascondos.com": { domain: "midtownlasvegascondos.com", neighborhood: "Midtown Las Vegas", tagline: "Midtown Las Vegas Condos for Sale", description: "Search midtown Las Vegas condos and high-rise living. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Midtown Las Vegas Condos for Sale", heroSubheadline: "Urban living, walkable neighborhoods, and Las Vegas Strip views.", keywords: ["midtown Las Vegas condos", "Las Vegas urban living", "downtown Las Vegas real estate"], pageType: "luxury", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Condo Specialist", ctaHeadline: "Find Your Las Vegas Condo", ctaSubheadline: "From high-rises to urban lofts — I know every midtown building and floor plan." },
-  "mountainedgehomes.com": { domain: "mountainedgehomes.com", neighborhood: "Mountain's Edge", tagline: "Mountain's Edge Homes for Sale", description: "Search Mountain's Edge homes for sale in Southwest Las Vegas. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Mountain's Edge Homes for Sale", heroSubheadline: "Master-planned community living at its finest in Southwest Las Vegas.", keywords: ["Mountain's Edge homes", "Mountain Edge Las Vegas", "Southwest Las Vegas real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Mountain's Edge Expert", ctaHeadline: "Find Your Mountain's Edge Home", ctaSubheadline: "One of Las Vegas' most beautiful master-planned communities — let me be your guide." },
-  "openhouseupdate.com": { domain: "openhouseupdate.com", neighborhood: "Las Vegas", tagline: "Las Vegas Open House Schedule", description: "Las Vegas open houses this weekend. Find open homes near you with Dr. Jan Duffy.", heroHeadline: "Las Vegas Open Houses", heroSubheadline: "This weekend's open houses across the Las Vegas Valley — updated in real time.", keywords: ["Las Vegas open houses", "open house Las Vegas", "homes open this weekend Las Vegas"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Open House Expert", ctaHeadline: "Schedule a Private Showing", ctaSubheadline: "Can't make the open house? I'll get you a private tour on your schedule." },
-  "openhouseupdates.com": { domain: "openhouseupdates.com", neighborhood: "Las Vegas", tagline: "Las Vegas Open House Updates", description: "Current Las Vegas open house listings and schedule. Find your next home this weekend.", heroHeadline: "Las Vegas Open House Updates", heroSubheadline: "Real-time open house schedule for Las Vegas, Henderson, and Summerlin.", keywords: ["Las Vegas open house updates", "Henderson open houses", "Summerlin open houses"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Weekend Open Houses", ctaHeadline: "Never Miss an Open House", ctaSubheadline: "I'll alert you to new open houses matching your criteria before they're announced." },
-  "samaritanpharma.com": { domain: "samaritanpharma.com", neighborhood: "Las Vegas", tagline: "Las Vegas Real Estate", description: "Las Vegas real estate services from Dr. Jan Duffy, BHHS Nevada Properties.", heroHeadline: "Las Vegas Homes for Sale", heroSubheadline: "Expert Las Vegas real estate guidance from Dr. Jan Duffy.", keywords: ["Las Vegas homes for sale", "Las Vegas real estate", "Dr Jan Duffy"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Expert", ctaHeadline: "Find Your Las Vegas Home", ctaSubheadline: "30+ years of experience working for you." },
-  "searchforhomesinhenderson.com": { domain: "searchforhomesinhenderson.com", neighborhood: "Henderson", tagline: "Search Homes in Henderson NV", description: "Search Henderson NV homes for sale. Expert Henderson real estate guidance from Dr. Jan Duffy.", heroHeadline: "Search Homes in Henderson, NV", heroSubheadline: "Master-planned communities, parks, and Lake Las Vegas living in Henderson, NV.", keywords: ["Henderson NV homes for sale", "Henderson real estate", "search Henderson homes"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Henderson Specialist", ctaHeadline: "Find Your Henderson Home", ctaSubheadline: "Green Valley, MacDonald Highlands, Anthem — I know every Henderson neighborhood." },
-  "searchforlasvegashomes.com": { domain: "searchforlasvegashomes.com", neighborhood: "Las Vegas", tagline: "Search Las Vegas Homes for Sale", description: "Search all Las Vegas homes for sale. MLS listings updated daily. Dr. Jan Duffy, BHHS.", heroHeadline: "Search Las Vegas Homes for Sale", heroSubheadline: "Every MLS listing in the Las Vegas Valley — updated daily.", keywords: ["search Las Vegas homes", "Las Vegas MLS", "homes for sale Las Vegas NV"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "MLS Search Expert", ctaHeadline: "Start Your Home Search", ctaSubheadline: "Tell me what you're looking for and I'll send you matches before they hit the market." },
-  "skyecanyonhomeexpert.com": { domain: "skyecanyonhomeexpert.com", neighborhood: "Skye Canyon", tagline: "Skye Canyon Home Expert", description: "Skye Canyon homes for sale in Northwest Las Vegas. Dr. Jan Duffy, Skye Canyon specialist.", heroHeadline: "Skye Canyon Home Expert", heroSubheadline: "Northwest Las Vegas' most exciting master-planned community.", keywords: ["Skye Canyon homes", "Skye Canyon Las Vegas", "Northwest Las Vegas new construction"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Skye Canyon Expert", ctaHeadline: "Your Skye Canyon Expert", ctaSubheadline: "New construction lots, resales, builder incentives — I know Skye Canyon inside and out." },
-  "skyecanyonrealestateexpert.com": { domain: "skyecanyonrealestateexpert.com", neighborhood: "Skye Canyon", tagline: "Skye Canyon Real Estate Expert", description: "Expert Skye Canyon real estate guidance. Find new and resale homes in Skye Canyon Las Vegas.", heroHeadline: "Skye Canyon Real Estate Expert", heroSubheadline: "Get insider access to every lot, every floor plan, and every builder incentive in Skye Canyon.", keywords: ["Skye Canyon real estate", "Skye Canyon NW Las Vegas", "Skye Canyon new homes"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Skye Canyon Specialist", ctaHeadline: "Work With the Skye Canyon Expert", ctaSubheadline: "No one knows Skye Canyon better. Let me find you the best deal available." },
-  "speedycashhomeoffers.com": { domain: "speedycashhomeoffers.com", neighborhood: "Las Vegas", tagline: "Fast Cash Home Offers Las Vegas", description: "Sell your Las Vegas home fast for cash. Get a competitive offer from Dr. Jan Duffy's network.", heroHeadline: "Fast Cash Offers for Las Vegas Homes", heroSubheadline: "Close in as few as 7 days. No repairs, no showings, no hassle.", keywords: ["cash home offer Las Vegas", "sell house fast Las Vegas", "Las Vegas cash buyers"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Cash Offer Specialist", ctaHeadline: "Get Your Cash Offer Today", ctaSubheadline: "Call 702-222-1964 for a no-obligation cash offer on your Las Vegas home." },
-  "suncitysummerlinhomesforsale.com": { domain: "suncitysummerlinhomesforsale.com", neighborhood: "Sun City Summerlin", tagline: "Sun City Summerlin Homes for Sale", description: "Sun City Summerlin 55+ community homes for sale. Expert guidance from Dr. Jan Duffy.", heroHeadline: "Sun City Summerlin Homes for Sale", heroSubheadline: "Las Vegas' premier 55+ active adult community with 3 golf courses and resort amenities.", keywords: ["Sun City Summerlin homes", "Sun City Summerlin 55 plus", "active adult Summerlin"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Sun City Summerlin Expert", ctaHeadline: "Find Your Sun City Home", ctaSubheadline: "I've helped more Sun City Summerlin families than any other agent. Let me help you too." },
-  "sunstonelasvegashomes.com": { domain: "sunstonelasvegashomes.com", neighborhood: "Sunstone", tagline: "Sunstone Las Vegas Homes for Sale", description: "Sunstone community homes for sale in Northwest Las Vegas. Expert real estate guidance.", heroHeadline: "Sunstone Las Vegas Homes for Sale", heroSubheadline: "Beautiful homes in the Sunstone master-planned community.", keywords: ["Sunstone Las Vegas", "Sunstone homes for sale", "NW Las Vegas Sunstone"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Sunstone Specialist", ctaHeadline: "Find Your Sunstone Home", ctaSubheadline: "Everything you need to know about buying in Sunstone — let's talk." },
-  "theridgessummerlinhomes.com": { domain: "theridgessummerlinhomes.com", neighborhood: "The Ridges Summerlin", tagline: "The Ridges Summerlin Luxury Homes", description: "The Ridges Summerlin luxury homes for sale. Guard-gated living in Summerlin's finest community.", heroHeadline: "The Ridges Summerlin Homes for Sale", heroSubheadline: "Summerlin's most exclusive guard-gated luxury community.", keywords: ["The Ridges Summerlin", "Ridges Summerlin homes", "Summerlin luxury real estate"], pageType: "luxury", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Luxury Specialist", ctaHeadline: "Private Tours of The Ridges", ctaSubheadline: "Exclusive access to The Ridges listings — some never publicly listed. Call for details." },
-  "trilogysunstonehomes.com": { domain: "trilogysunstonehomes.com", neighborhood: "Trilogy at Sunstone", tagline: "Trilogy at Sunstone 55+ Homes", description: "Trilogy at Sunstone 55+ active adult community homes in Las Vegas. Dr. Jan Duffy, specialist.", heroHeadline: "Trilogy at Sunstone Homes for Sale", heroSubheadline: "Del Webb's premier 55+ active adult community in Northwest Las Vegas.", keywords: ["Trilogy Sunstone homes", "Trilogy at Sunstone Las Vegas", "Del Webb Northwest Las Vegas"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Trilogy Specialist", ctaHeadline: "Discover Trilogy at Sunstone", ctaSubheadline: "Del Webb quality, resort amenities, active lifestyle — let me show you everything." },
-  "vegas55plushomes.com": { domain: "vegas55plushomes.com", neighborhood: "Las Vegas 55+", tagline: "Las Vegas 55+ Homes for Sale", description: "Search all Las Vegas 55+ active adult community homes. Sun City, Del Webb, Trilogy and more.", heroHeadline: "Las Vegas 55+ Homes for Sale", heroSubheadline: "Find the perfect active adult community — Sun City, Del Webb, Trilogy, Heritage and more.", keywords: ["Las Vegas 55 plus homes", "active adult Las Vegas", "Las Vegas senior communities"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "55+ Community Expert", ctaHeadline: "Find Your 55+ Community", ctaSubheadline: "I know every 55+ community in Las Vegas. Let me match you with your perfect lifestyle." },
-  "yourdivorcerealtor.com": { domain: "yourdivorcerealtor.com", neighborhood: "Las Vegas", tagline: "Divorce Real Estate Specialist Las Vegas", description: "Confidential Las Vegas divorce real estate specialist. Dr. Jan Duffy handles court-ordered sales with discretion.", heroHeadline: "Your Divorce Real Estate Specialist", heroSubheadline: "Confidential, compassionate real estate guidance during life's most challenging transitions.", keywords: ["divorce realtor Las Vegas", "divorce real estate Las Vegas", "court ordered sale Las Vegas"], pageType: "lifestyle", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Confidential Support", ctaHeadline: "Private Consultation Available", ctaSubheadline: "I handle divorce sales with complete discretion. Let's discuss your options privately." },
-  "heyberkshire.com": { domain: "heyberkshire.com", neighborhood: "Las Vegas", tagline: "Las Vegas Real Estate — Dr. Jan Duffy", description: "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR® S.0197614.LLC.", heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100", heroSubheadline: "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.", keywords: ["Las Vegas homes for sale", "Las Vegas real estate", "Dr Jan Duffy"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "License S.0197614.LLC", ctaHeadline: "Book Suite 100, then the first two ZIP loops", ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk." },
-  "opportunityzonespecialists.com": { domain: "opportunityzonespecialists.com", neighborhood: "Opportunity Zones", tagline: "Las Vegas Opportunity Zone Real Estate", description: "Opportunity Zone investment and acquisition guidance in Las Vegas from Dr. Jan Duffy.", heroHeadline: "Las Vegas Opportunity Zone Specialists", heroSubheadline: "Identify qualified OZ parcels, timelines, and resale strategy with a Nevada REALTOR®.", keywords: ["Las Vegas opportunity zone", "OZ real estate Nevada", "opportunity zone investment Las Vegas"], pageType: "investment", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "OZ Guidance", ctaHeadline: "Review OZ Parcels With Dr. Jan", ctaSubheadline: "Call (702) 222-1964 to align tax deadlines with your acquisition plan." },
-  "heartlandlasvegas.com": { domain: "heartlandlasvegas.com", neighborhood: "Heartland", tagline: "Heartland Las Vegas Homes for Sale", description: "Heartland Las Vegas homes for sale and neighborhood guidance from Dr. Jan Duffy.", heroHeadline: "Heartland Las Vegas Homes for Sale", heroSubheadline: "Master-planned living in Southwest Las Vegas with parks and trails.", keywords: ["Heartland Las Vegas homes", "Heartland real estate", "Southwest Las Vegas homes"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Heartland Specialist", ctaHeadline: "Search Heartland Listings", ctaSubheadline: "Call (702) 222-1964 for current inventory and showing times." },
-  "drjanduffy.com": { domain: "drjanduffy.com", neighborhood: "Las Vegas", tagline: "Dr. Jan Duffy — Las Vegas REALTOR®", description: "Dr. Jan Duffy, Las Vegas REALTOR® — buy, sell, and invest across the Las Vegas Valley.", heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate", heroSubheadline: "30+ years serving Las Vegas buyers and sellers from Suite 100 on Lake Mead Blvd.", keywords: ["Dr Jan Duffy", "Las Vegas realtor", "Dr Jan Duffy real estate"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Expert", ctaHeadline: "Work With Dr. Jan Duffy", ctaSubheadline: "Call or text (702) 222-1964 — I answer my own phone." },
-  "vegashomeagents.com": { domain: "vegashomeagents.com", neighborhood: "Las Vegas", tagline: "Las Vegas Home Agents — Dr. Jan Duffy", description: "Las Vegas home agents led by Dr. Jan Duffy — MLS search, valuations, and contract strategy.", heroHeadline: "Las Vegas Home Agents", heroSubheadline: "Local agents with desk support at 9406 W Lake Mead Blvd, Suite 100.", keywords: ["Las Vegas home agents", "Las Vegas real estate agents", "Vegas home agents"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Agent Desk", ctaHeadline: "Connect With the Desk", ctaSubheadline: "Call (702) 222-1964 for buyer or seller representation." },
-  "emersonestateshomes.com": { domain: "emersonestateshomes.com", neighborhood: "Emerson Estates", tagline: "Emerson Estates Homes for Sale", description: "Emerson Estates homes for sale in Las Vegas. Dr. Jan Duffy, neighborhood listing specialist.", heroHeadline: "Emerson Estates Homes for Sale", heroSubheadline: "Search current Emerson Estates listings with local contract support.", keywords: ["Emerson Estates homes", "Emerson Estates Las Vegas", "Emerson Estates real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Emerson Estates", ctaHeadline: "Tour Emerson Estates Listings", ctaSubheadline: "Call (702) 222-1964 to schedule showings this week." },
-  "askdrjanduffy.com": { domain: "askdrjanduffy.com", neighborhood: "Las Vegas", tagline: "Ask Dr. Jan Duffy — Las Vegas Real Estate", description: "Ask Dr. Jan Duffy your Las Vegas real estate questions — buying, selling, and market timing.", heroHeadline: "Ask Dr. Jan Duffy", heroSubheadline: "Direct answers on pricing, inspections, and Las Vegas neighborhood fit.", keywords: ["ask Dr Jan Duffy", "Las Vegas real estate questions", "Dr Jan Duffy advice"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Ask the Expert", ctaHeadline: "Get a Straight Answer", ctaSubheadline: "Call or text (702) 222-1964 with your question — no call center." },
-  "justcallchance.com": { domain: "justcallchance.com", neighborhood: "Las Vegas", tagline: "Just Call Chance — Las Vegas Real Estate", description: "Las Vegas real estate with Chance — contact the desk for the verified tracking line.", heroHeadline: "Just Call Chance", heroSubheadline: "Las Vegas buyer and seller representation — use the site CTA line once provisioned in Vercel.", keywords: ["Just Call Chance", "Las Vegas real estate Chance", "call Chance realtor Las Vegas"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Team", ctaHeadline: "Reach the Desk", ctaSubheadline: "Use the verified phone constant for this host once set in Vercel env." },
+  "consenzaestates.com": {
+    domain: "consenzaestates.com",
+    neighborhood: "Consenza Estates",
+    tagline: "Luxury Living in Consenza Estates",
+    description:
+      "Find your dream home in Consenza Estates, Las Vegas. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Consenza Estates Homes for Sale",
+    heroSubheadline:
+      "Exclusive properties in one of Las Vegas' most sought-after communities.",
+    keywords: [
+      "Consenza Estates homes",
+      "Las Vegas luxury real estate",
+      "Consenza Estates Las Vegas",
+    ],
+    pageType: "luxury",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Consenza Estates Expert",
+    ctaHeadline: "Find Your Consenza Estates Home",
+    ctaSubheadline:
+      "I know every listing in this community. Let me match you with the right home.",
+  },
+  "aliantehomesforsale.com": {
+    domain: "aliantehomesforsale.com",
+    neighborhood: "Aliante",
+    tagline: "Aliante Homes for Sale",
+    description:
+      "Search Aliante homes for sale in North Las Vegas. Expert real estate guidance from Dr. Jan Duffy.",
+    heroHeadline: "Aliante Homes for Sale",
+    heroSubheadline: "Master-planned living in the heart of North Las Vegas.",
+    keywords: [
+      "Aliante homes for sale",
+      "Aliante North Las Vegas",
+      "Aliante real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Aliante Specialist",
+    ctaHeadline: "Search Aliante Homes Today",
+    ctaSubheadline:
+      "Get instant access to all Aliante listings with expert guidance.",
+  },
+  "californiaforeverbroker.com": {
+    domain: "californiaforeverbroker.com",
+    neighborhood: "Las Vegas",
+    tagline: "Relocating from California to Las Vegas",
+    description:
+      "California to Las Vegas relocation specialist. Find your Nevada dream home with Dr. Jan Duffy.",
+    heroHeadline: "Leaving California for Las Vegas?",
+    heroSubheadline:
+      "No state income tax, lower cost of living, and year-round sunshine. Let me help you make the move.",
+    keywords: [
+      "California to Las Vegas move",
+      "relocation Las Vegas",
+      "Nevada real estate for Californians",
+    ],
+    pageType: "lifestyle",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Relocation Expert",
+    ctaHeadline: "Your Nevada Fresh Start Awaits",
+    ctaSubheadline:
+      "I've helped hundreds of California buyers make the move. Let's talk.",
+  },
+  "centennialhillshomesforsale.com": {
+    domain: "centennialhillshomesforsale.com",
+    neighborhood: "Centennial Hills",
+    tagline: "Centennial Hills Homes for Sale",
+    description:
+      "Search Centennial Hills homes for sale in Northwest Las Vegas. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Centennial Hills Homes for Sale",
+    heroSubheadline:
+      "Premier Northwest Las Vegas community with stunning mountain views.",
+    keywords: [
+      "Centennial Hills homes",
+      "Centennial Hills Las Vegas",
+      "Northwest Las Vegas real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Centennial Hills Expert",
+    ctaHeadline: "Find Your Centennial Hills Home",
+    ctaSubheadline:
+      "I know every street, every floor plan, and every value in Centennial Hills.",
+  },
+  "drjanduffyreviews.com": {
+    domain: "drjanduffyreviews.com",
+    neighborhood: "Las Vegas",
+    tagline: "Dr. Jan Duffy — Client Reviews",
+    description:
+      "Read what clients say about Dr. Jan Duffy, Las Vegas real estate agent at BHHS Nevada Properties.",
+    heroHeadline: "What Clients Say About Dr. Jan",
+    heroSubheadline:
+      "500+ clients helped. 30+ years of experience. Real results, real reviews.",
+    keywords: [
+      "Dr Jan Duffy reviews",
+      "BHHS Nevada Properties reviews",
+      "Las Vegas realtor reviews",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Client Reviews",
+    ctaHeadline: "Join 500+ Happy Clients",
+    ctaSubheadline:
+      "Let's talk about your real estate goals — no pressure, just expertise.",
+  },
+  "drjanetduffy.com": {
+    domain: "drjanetduffy.com",
+    neighborhood: "Las Vegas",
+    tagline: "Dr. Jan Duffy — Las Vegas REALTOR®",
+    description:
+      "Dr. Jan Duffy, Las Vegas REALTOR® at Berkshire Hathaway HomeServices Nevada Properties.",
+    heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate Expert",
+    heroSubheadline:
+      "30+ years, 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.",
+    keywords: ["Dr Jan Duffy", "Las Vegas realtor", "BHHS Nevada Properties"],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Las Vegas Expert",
+    ctaHeadline: "Ready to Buy or Sell?",
+    ctaSubheadline:
+      "Call or text Dr. Jan at 702-222-1964 — I answer my own phone.",
+  },
+  "eaglehillshomes.com": {
+    domain: "eaglehillshomes.com",
+    neighborhood: "Eagle Hills",
+    tagline: "Eagle Hills Homes for Sale",
+    description:
+      "Search Eagle Hills homes for sale in Las Vegas. Expert real estate guidance from Dr. Jan Duffy.",
+    heroHeadline: "Eagle Hills Homes for Sale",
+    heroSubheadline: "Discover this beautiful Las Vegas neighborhood.",
+    keywords: [
+      "Eagle Hills homes",
+      "Eagle Hills Las Vegas",
+      "Las Vegas real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Eagle Hills Specialist",
+    ctaHeadline: "Find Your Eagle Hills Home",
+    ctaSubheadline:
+      "I know every listing in Eagle Hills. Let me help you find the right one.",
+  },
+  "goodtoknowrealtor.com": {
+    domain: "goodtoknowrealtor.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Real Estate — Good to Know",
+    description:
+      "Las Vegas real estate tips, market data, and insider knowledge from Dr. Jan Duffy.",
+    heroHeadline: "Good to Know — Las Vegas Real Estate",
+    heroSubheadline:
+      "Market data, neighborhood guides, and insider tips from 30+ years in Las Vegas real estate.",
+    keywords: [
+      "Las Vegas real estate tips",
+      "Las Vegas market data",
+      "Las Vegas realtor advice",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Market Expert",
+    ctaHeadline: "Get the Insider Knowledge",
+    ctaSubheadline:
+      "30 years of Las Vegas real estate data at your fingertips.",
+  },
+  "heritageatstonebridgehomes.com": {
+    domain: "heritageatstonebridgehomes.com",
+    neighborhood: "Heritage at Stonebridge",
+    tagline: "Heritage at Stonebridge Homes for Sale",
+    description:
+      "Heritage at Stonebridge 55+ active adult community homes. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Heritage at Stonebridge Homes",
+    heroSubheadline:
+      "Award-winning 55+ active adult community with resort-style amenities in Summerlin.",
+    keywords: [
+      "Heritage Stonebridge homes",
+      "55 plus Summerlin",
+      "active adult Las Vegas",
+    ],
+    pageType: "55plus",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "55+ Community Expert",
+    ctaHeadline: "Heritage at Stonebridge Awaits",
+    ctaSubheadline:
+      "I specialize in 55+ communities. Let me show you everything Heritage has to offer.",
+  },
+  "heritagestonebridge.com": {
+    domain: "heritagestonebridge.com",
+    neighborhood: "Heritage at Stonebridge",
+    tagline: "Heritage Stonebridge Las Vegas",
+    description:
+      "Heritage Stonebridge 55+ community in Summerlin Las Vegas. Find your perfect active adult home.",
+    heroHeadline: "Heritage Stonebridge Homes for Sale",
+    heroSubheadline:
+      "Summerlin's premier 55+ active adult community with world-class amenities.",
+    keywords: [
+      "Heritage Stonebridge",
+      "Summerlin 55 plus",
+      "active adult Summerlin",
+    ],
+    pageType: "55plus",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "55+ Specialist",
+    ctaHeadline: "Your Heritage Stonebridge Home",
+    ctaSubheadline:
+      "Every floor plan, every amenity — I know Heritage Stonebridge inside and out.",
+  },
+  "justcalldrjan.com": {
+    domain: "justcalldrjan.com",
+    neighborhood: "Las Vegas",
+    tagline: "Just Call Dr. Jan — Las Vegas Real Estate",
+    description:
+      "Ready to buy or sell in Las Vegas? Just call Dr. Jan Duffy at 702-222-1964.",
+    heroHeadline: "Just Call Dr. Jan",
+    heroSubheadline:
+      "30+ years. 500+ clients. No runaround — just expert Las Vegas real estate guidance.",
+    keywords: ["call Dr Jan Duffy", "Las Vegas realtor phone", "BHHS Nevada"],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Direct Access",
+    ctaHeadline: "I Answer My Own Phone",
+    ctaSubheadline:
+      "No assistant, no callback queue. Call or text 702-222-1964 and reach me directly.",
+  },
+  "lasvegashomeexpert.com": {
+    domain: "lasvegashomeexpert.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Home Expert — Dr. Jan Duffy",
+    description:
+      "Las Vegas home buying and selling expert. Dr. Jan Duffy, BHHS Nevada Properties.",
+    heroHeadline: "Las Vegas Home Expert",
+    heroSubheadline:
+      "The most knowledgeable real estate professional in the Las Vegas Valley.",
+    keywords: [
+      "Las Vegas home expert",
+      "Las Vegas real estate expert",
+      "buy sell Las Vegas homes",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Las Vegas Expert",
+    ctaHeadline: "Work With the Expert",
+    ctaSubheadline: "30+ years of Las Vegas market knowledge working for you.",
+  },
+  "lonemountainheights.com": {
+    domain: "lonemountainheights.com",
+    neighborhood: "Lone Mountain Heights",
+    tagline: "Lone Mountain Heights Homes",
+    description:
+      "Lone Mountain Heights homes for sale in Northwest Las Vegas. Dr. Jan Duffy, expert realtor.",
+    heroHeadline: "Lone Mountain Heights Homes for Sale",
+    heroSubheadline:
+      "Stunning views and spacious living in Northwest Las Vegas.",
+    keywords: [
+      "Lone Mountain Heights",
+      "Northwest Las Vegas homes",
+      "Lone Mountain real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Lone Mountain Expert",
+    ctaHeadline: "Find Your Lone Mountain Home",
+    ctaSubheadline:
+      "I know every property in Lone Mountain. Let's find the right one for you.",
+  },
+  "lonemountainvistas.com": {
+    domain: "lonemountainvistas.com",
+    neighborhood: "Lone Mountain Vistas",
+    tagline: "Lone Mountain Vistas Homes",
+    description:
+      "Lone Mountain Vistas homes for sale in Las Vegas. Expert real estate guidance.",
+    heroHeadline: "Lone Mountain Vistas Homes for Sale",
+    heroSubheadline:
+      "Panoramic views and premium living in the Lone Mountain corridor.",
+    keywords: [
+      "Lone Mountain Vistas",
+      "Lone Mountain Las Vegas",
+      "Northwest Las Vegas real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Lone Mountain Specialist",
+    ctaHeadline: "Lone Mountain Vistas Awaits",
+    ctaSubheadline:
+      "Breathtaking views and spacious homes — let me show you what's available.",
+  },
+  "macdonaldhighlandshomes.com": {
+    domain: "macdonaldhighlandshomes.com",
+    neighborhood: "MacDonald Highlands",
+    tagline: "MacDonald Highlands Luxury Homes",
+    description:
+      "MacDonald Highlands luxury homes for sale in Henderson, Nevada. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "MacDonald Highlands Homes for Sale",
+    heroSubheadline:
+      "Henderson's most prestigious guard-gated luxury community.",
+    keywords: [
+      "MacDonald Highlands homes",
+      "Henderson luxury real estate",
+      "MacDonald Highlands Henderson",
+    ],
+    pageType: "luxury",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Luxury Specialist",
+    ctaHeadline: "MacDonald Highlands Living Awaits",
+    ctaSubheadline:
+      "Private tours available. Let me show you what makes MacDonald Highlands extraordinary.",
+  },
+  "midtownlasvegascondos.com": {
+    domain: "midtownlasvegascondos.com",
+    neighborhood: "Midtown Las Vegas",
+    tagline: "Midtown Las Vegas Condos for Sale",
+    description:
+      "Search midtown Las Vegas condos and high-rise living. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Midtown Las Vegas Condos for Sale",
+    heroSubheadline:
+      "Urban living, walkable neighborhoods, and Las Vegas Strip views.",
+    keywords: [
+      "midtown Las Vegas condos",
+      "Las Vegas urban living",
+      "downtown Las Vegas real estate",
+    ],
+    pageType: "luxury",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Condo Specialist",
+    ctaHeadline: "Find Your Las Vegas Condo",
+    ctaSubheadline:
+      "From high-rises to urban lofts — I know every midtown building and floor plan.",
+  },
+  "mountainedgehomes.com": {
+    domain: "mountainedgehomes.com",
+    neighborhood: "Mountain's Edge",
+    tagline: "Mountain's Edge Homes for Sale",
+    description:
+      "Search Mountain's Edge homes for sale in Southwest Las Vegas. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Mountain's Edge Homes for Sale",
+    heroSubheadline:
+      "Master-planned community living at its finest in Southwest Las Vegas.",
+    keywords: [
+      "Mountain's Edge homes",
+      "Mountain Edge Las Vegas",
+      "Southwest Las Vegas real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Mountain's Edge Expert",
+    ctaHeadline: "Find Your Mountain's Edge Home",
+    ctaSubheadline:
+      "One of Las Vegas' most beautiful master-planned communities — let me be your guide.",
+  },
+  "openhouseupdate.com": {
+    domain: "openhouseupdate.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Open House Schedule",
+    description:
+      "Las Vegas open houses this weekend. Find open homes near you with Dr. Jan Duffy.",
+    heroHeadline: "Las Vegas Open Houses",
+    heroSubheadline:
+      "This weekend's open houses across the Las Vegas Valley — updated in real time.",
+    keywords: [
+      "Las Vegas open houses",
+      "open house Las Vegas",
+      "homes open this weekend Las Vegas",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Open House Expert",
+    ctaHeadline: "Schedule a Private Showing",
+    ctaSubheadline:
+      "Can't make the open house? I'll get you a private tour on your schedule.",
+  },
+  "openhouseupdates.com": {
+    domain: "openhouseupdates.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Open House Updates",
+    description:
+      "Current Las Vegas open house listings and schedule. Find your next home this weekend.",
+    heroHeadline: "Las Vegas Open House Updates",
+    heroSubheadline:
+      "Real-time open house schedule for Las Vegas, Henderson, and Summerlin.",
+    keywords: [
+      "Las Vegas open house updates",
+      "Henderson open houses",
+      "Summerlin open houses",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Weekend Open Houses",
+    ctaHeadline: "Never Miss an Open House",
+    ctaSubheadline:
+      "I'll alert you to new open houses matching your criteria before they're announced.",
+  },
+  "samaritanpharma.com": {
+    domain: "samaritanpharma.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Real Estate",
+    description:
+      "Las Vegas real estate services from Dr. Jan Duffy, BHHS Nevada Properties.",
+    heroHeadline: "Las Vegas Homes for Sale",
+    heroSubheadline:
+      "Expert Las Vegas real estate guidance from Dr. Jan Duffy.",
+    keywords: [
+      "Las Vegas homes for sale",
+      "Las Vegas real estate",
+      "Dr Jan Duffy",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Las Vegas Expert",
+    ctaHeadline: "Find Your Las Vegas Home",
+    ctaSubheadline: "30+ years of experience working for you.",
+  },
+  "searchforhomesinhenderson.com": {
+    domain: "searchforhomesinhenderson.com",
+    neighborhood: "Henderson",
+    tagline: "Search Homes in Henderson NV",
+    description:
+      "Search Henderson NV homes for sale. Expert Henderson real estate guidance from Dr. Jan Duffy.",
+    heroHeadline: "Search Homes in Henderson, NV",
+    heroSubheadline:
+      "Master-planned communities, parks, and Lake Las Vegas living in Henderson, NV.",
+    keywords: [
+      "Henderson NV homes for sale",
+      "Henderson real estate",
+      "search Henderson homes",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Henderson Specialist",
+    ctaHeadline: "Find Your Henderson Home",
+    ctaSubheadline:
+      "Green Valley, MacDonald Highlands, Anthem — I know every Henderson neighborhood.",
+  },
+  "searchforlasvegashomes.com": {
+    domain: "searchforlasvegashomes.com",
+    neighborhood: "Las Vegas",
+    tagline: "Search Las Vegas Homes for Sale",
+    description:
+      "Search all Las Vegas homes for sale. MLS listings updated daily. Dr. Jan Duffy, BHHS.",
+    heroHeadline: "Search Las Vegas Homes for Sale",
+    heroSubheadline:
+      "Every MLS listing in the Las Vegas Valley — updated daily.",
+    keywords: [
+      "search Las Vegas homes",
+      "Las Vegas MLS",
+      "homes for sale Las Vegas NV",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "MLS Search Expert",
+    ctaHeadline: "Start Your Home Search",
+    ctaSubheadline:
+      "Tell me what you're looking for and I'll send you matches before they hit the market.",
+  },
+  "skyecanyonhomeexpert.com": {
+    domain: "skyecanyonhomeexpert.com",
+    neighborhood: "Skye Canyon",
+    tagline: "Skye Canyon Home Expert",
+    description:
+      "Skye Canyon homes for sale in Northwest Las Vegas. Dr. Jan Duffy, Skye Canyon specialist.",
+    heroHeadline: "Skye Canyon Home Expert",
+    heroSubheadline:
+      "Northwest Las Vegas' most exciting master-planned community.",
+    keywords: [
+      "Skye Canyon homes",
+      "Skye Canyon Las Vegas",
+      "Northwest Las Vegas new construction",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Skye Canyon Expert",
+    ctaHeadline: "Your Skye Canyon Expert",
+    ctaSubheadline:
+      "New construction lots, resales, builder incentives — I know Skye Canyon inside and out.",
+  },
+  "skyecanyonrealestateexpert.com": {
+    domain: "skyecanyonrealestateexpert.com",
+    neighborhood: "Skye Canyon",
+    tagline: "Skye Canyon Real Estate Expert",
+    description:
+      "Expert Skye Canyon real estate guidance. Find new and resale homes in Skye Canyon Las Vegas.",
+    heroHeadline: "Skye Canyon Real Estate Expert",
+    heroSubheadline:
+      "Get insider access to every lot, every floor plan, and every builder incentive in Skye Canyon.",
+    keywords: [
+      "Skye Canyon real estate",
+      "Skye Canyon NW Las Vegas",
+      "Skye Canyon new homes",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Skye Canyon Specialist",
+    ctaHeadline: "Work With the Skye Canyon Expert",
+    ctaSubheadline:
+      "No one knows Skye Canyon better. Let me find you the best deal available.",
+  },
+  "speedycashhomeoffers.com": {
+    domain: "speedycashhomeoffers.com",
+    neighborhood: "Las Vegas",
+    tagline: "Fast Cash Home Offers Las Vegas",
+    description:
+      "Sell your Las Vegas home fast for cash. Get a competitive offer from Dr. Jan Duffy's network.",
+    heroHeadline: "Fast Cash Offers for Las Vegas Homes",
+    heroSubheadline:
+      "Close in as few as 7 days. No repairs, no showings, no hassle.",
+    keywords: [
+      "cash home offer Las Vegas",
+      "sell house fast Las Vegas",
+      "Las Vegas cash buyers",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Cash Offer Specialist",
+    ctaHeadline: "Get Your Cash Offer Today",
+    ctaSubheadline:
+      "Call 702-222-1964 for a no-obligation cash offer on your Las Vegas home.",
+  },
+  "suncitysummerlinhomesforsale.com": {
+    domain: "suncitysummerlinhomesforsale.com",
+    neighborhood: "Sun City Summerlin",
+    tagline: "Sun City Summerlin Homes for Sale",
+    description:
+      "Sun City Summerlin 55+ community homes for sale. Expert guidance from Dr. Jan Duffy.",
+    heroHeadline: "Sun City Summerlin Homes for Sale",
+    heroSubheadline:
+      "Las Vegas' premier 55+ active adult community with 3 golf courses and resort amenities.",
+    keywords: [
+      "Sun City Summerlin homes",
+      "Sun City Summerlin 55 plus",
+      "active adult Summerlin",
+    ],
+    pageType: "55plus",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Sun City Summerlin Expert",
+    ctaHeadline: "Find Your Sun City Home",
+    ctaSubheadline:
+      "I've helped more Sun City Summerlin families than any other agent. Let me help you too.",
+  },
+  "sunstonelasvegashomes.com": {
+    domain: "sunstonelasvegashomes.com",
+    neighborhood: "Sunstone",
+    tagline: "Sunstone Las Vegas Homes for Sale",
+    description:
+      "Sunstone community homes for sale in Northwest Las Vegas. Expert real estate guidance.",
+    heroHeadline: "Sunstone Las Vegas Homes for Sale",
+    heroSubheadline:
+      "Beautiful homes in the Sunstone master-planned community.",
+    keywords: [
+      "Sunstone Las Vegas",
+      "Sunstone homes for sale",
+      "NW Las Vegas Sunstone",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Sunstone Specialist",
+    ctaHeadline: "Find Your Sunstone Home",
+    ctaSubheadline:
+      "Everything you need to know about buying in Sunstone — let's talk.",
+  },
+  "theridgessummerlinhomes.com": {
+    domain: "theridgessummerlinhomes.com",
+    neighborhood: "The Ridges Summerlin",
+    tagline: "The Ridges Summerlin Luxury Homes",
+    description:
+      "The Ridges Summerlin luxury homes for sale. Guard-gated living in Summerlin's finest community.",
+    heroHeadline: "The Ridges Summerlin Homes for Sale",
+    heroSubheadline: "Summerlin's most exclusive guard-gated luxury community.",
+    keywords: [
+      "The Ridges Summerlin",
+      "Ridges Summerlin homes",
+      "Summerlin luxury real estate",
+    ],
+    pageType: "luxury",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Luxury Specialist",
+    ctaHeadline: "Private Tours of The Ridges",
+    ctaSubheadline:
+      "Exclusive access to The Ridges listings — some never publicly listed. Call for details.",
+  },
+  "trilogysunstonehomes.com": {
+    domain: "trilogysunstonehomes.com",
+    neighborhood: "Trilogy at Sunstone",
+    tagline: "Trilogy at Sunstone 55+ Homes",
+    description:
+      "Trilogy at Sunstone 55+ active adult community homes in Las Vegas. Dr. Jan Duffy, specialist.",
+    heroHeadline: "Trilogy at Sunstone Homes for Sale",
+    heroSubheadline:
+      "Del Webb's premier 55+ active adult community in Northwest Las Vegas.",
+    keywords: [
+      "Trilogy Sunstone homes",
+      "Trilogy at Sunstone Las Vegas",
+      "Del Webb Northwest Las Vegas",
+    ],
+    pageType: "55plus",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Trilogy Specialist",
+    ctaHeadline: "Discover Trilogy at Sunstone",
+    ctaSubheadline:
+      "Del Webb quality, resort amenities, active lifestyle — let me show you everything.",
+  },
+  "vegas55plushomes.com": {
+    domain: "vegas55plushomes.com",
+    neighborhood: "Las Vegas 55+",
+    tagline: "Las Vegas 55+ Homes for Sale",
+    description:
+      "Search all Las Vegas 55+ active adult community homes. Sun City, Del Webb, Trilogy and more.",
+    heroHeadline: "Las Vegas 55+ Homes for Sale",
+    heroSubheadline:
+      "Find the perfect active adult community — Sun City, Del Webb, Trilogy, Heritage and more.",
+    keywords: [
+      "Las Vegas 55 plus homes",
+      "active adult Las Vegas",
+      "Las Vegas senior communities",
+    ],
+    pageType: "55plus",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "55+ Community Expert",
+    ctaHeadline: "Find Your 55+ Community",
+    ctaSubheadline:
+      "I know every 55+ community in Las Vegas. Let me match you with your perfect lifestyle.",
+  },
+  "yourdivorcerealtor.com": {
+    domain: "yourdivorcerealtor.com",
+    neighborhood: "Las Vegas",
+    tagline: "Divorce Real Estate Specialist Las Vegas",
+    description:
+      "Confidential Las Vegas divorce real estate specialist. Dr. Jan Duffy handles court-ordered sales with discretion.",
+    heroHeadline: "Your Divorce Real Estate Specialist",
+    heroSubheadline:
+      "Confidential, compassionate real estate guidance during life's most challenging transitions.",
+    keywords: [
+      "divorce realtor Las Vegas",
+      "divorce real estate Las Vegas",
+      "court ordered sale Las Vegas",
+    ],
+    pageType: "lifestyle",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Confidential Support",
+    ctaHeadline: "Private Consultation Available",
+    ctaSubheadline:
+      "I handle divorce sales with complete discretion. Let's discuss your options privately.",
+  },
+  "heyberkshire.com": {
+    domain: "heyberkshire.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Real Estate — Dr. Jan Duffy",
+    description:
+      "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR® S.0197614.LLC.",
+    heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
+    heroSubheadline:
+      "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.",
+    keywords: [
+      "Las Vegas homes for sale",
+      "Las Vegas real estate",
+      "Dr Jan Duffy",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "License S.0197614.LLC",
+    ctaHeadline: "Book Suite 100, then the first two ZIP loops",
+    ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk.",
+  },
+  "opportunityzonespecialists.com": {
+    domain: "opportunityzonespecialists.com",
+    neighborhood: "Opportunity Zones",
+    tagline: "Las Vegas Opportunity Zone Real Estate",
+    description:
+      "Opportunity Zone investment and acquisition guidance in Las Vegas from Dr. Jan Duffy.",
+    heroHeadline: "Las Vegas Opportunity Zone Specialists",
+    heroSubheadline:
+      "Identify qualified OZ parcels, timelines, and resale strategy with a Nevada REALTOR®.",
+    keywords: [
+      "Las Vegas opportunity zone",
+      "OZ real estate Nevada",
+      "opportunity zone investment Las Vegas",
+    ],
+    pageType: "investment",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "OZ Guidance",
+    ctaHeadline: "Review OZ Parcels With Dr. Jan",
+    ctaSubheadline:
+      "Call (702) 222-1964 to align tax deadlines with your acquisition plan.",
+  },
+  "heartlandlasvegas.com": {
+    domain: "heartlandlasvegas.com",
+    neighborhood: "Heartland",
+    tagline: "Heartland Las Vegas Homes for Sale",
+    description:
+      "Heartland Las Vegas homes for sale and neighborhood guidance from Dr. Jan Duffy.",
+    heroHeadline: "Heartland Las Vegas Homes for Sale",
+    heroSubheadline:
+      "Master-planned living in Southwest Las Vegas with parks and trails.",
+    keywords: [
+      "Heartland Las Vegas homes",
+      "Heartland real estate",
+      "Southwest Las Vegas homes",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Heartland Specialist",
+    ctaHeadline: "Search Heartland Listings",
+    ctaSubheadline:
+      "Call (702) 222-1964 for current inventory and showing times.",
+  },
+  "drjanduffy.com": {
+    domain: "drjanduffy.com",
+    neighborhood: "Las Vegas",
+    tagline: "Dr. Jan Duffy — Las Vegas REALTOR®",
+    description:
+      "Dr. Jan Duffy, Las Vegas REALTOR® — buy, sell, and invest across the Las Vegas Valley.",
+    heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate",
+    heroSubheadline:
+      "30+ years serving Las Vegas buyers and sellers from Suite 100 on Lake Mead Blvd.",
+    keywords: ["Dr Jan Duffy", "Las Vegas realtor", "Dr Jan Duffy real estate"],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Las Vegas Expert",
+    ctaHeadline: "Work With Dr. Jan Duffy",
+    ctaSubheadline: "Call or text (702) 222-1964 — I answer my own phone.",
+  },
+  "vegashomeagents.com": {
+    domain: "vegashomeagents.com",
+    neighborhood: "Las Vegas",
+    tagline: "Las Vegas Home Agents — Dr. Jan Duffy",
+    description:
+      "Las Vegas home agents led by Dr. Jan Duffy — MLS search, valuations, and contract strategy.",
+    heroHeadline: "Las Vegas Home Agents",
+    heroSubheadline:
+      "Local agents with desk support at 9406 W Lake Mead Blvd, Suite 100.",
+    keywords: [
+      "Las Vegas home agents",
+      "Las Vegas real estate agents",
+      "Vegas home agents",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Agent Desk",
+    ctaHeadline: "Connect With the Desk",
+    ctaSubheadline: "Call (702) 222-1964 for buyer or seller representation.",
+  },
+  "emersonestateshomes.com": {
+    domain: "emersonestateshomes.com",
+    neighborhood: "Emerson Estates",
+    tagline: "Emerson Estates Homes for Sale",
+    description:
+      "Emerson Estates homes for sale in Las Vegas. Dr. Jan Duffy, neighborhood listing specialist.",
+    heroHeadline: "Emerson Estates Homes for Sale",
+    heroSubheadline:
+      "Search current Emerson Estates listings with local contract support.",
+    keywords: [
+      "Emerson Estates homes",
+      "Emerson Estates Las Vegas",
+      "Emerson Estates real estate",
+    ],
+    pageType: "community",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Emerson Estates",
+    ctaHeadline: "Tour Emerson Estates Listings",
+    ctaSubheadline: "Call (702) 222-1964 to schedule showings this week.",
+  },
+  "askdrjanduffy.com": {
+    domain: "askdrjanduffy.com",
+    neighborhood: "Las Vegas",
+    tagline: "Ask Dr. Jan Duffy — Las Vegas Real Estate",
+    description:
+      "Ask Dr. Jan Duffy your Las Vegas real estate questions — buying, selling, and market timing.",
+    heroHeadline: "Ask Dr. Jan Duffy",
+    heroSubheadline:
+      "Direct answers on pricing, inspections, and Las Vegas neighborhood fit.",
+    keywords: [
+      "ask Dr Jan Duffy",
+      "Las Vegas real estate questions",
+      "Dr Jan Duffy advice",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Ask the Expert",
+    ctaHeadline: "Get a Straight Answer",
+    ctaSubheadline:
+      "Call or text (702) 222-1964 with your question — no call center.",
+  },
+  "justcallchance.com": {
+    domain: "justcallchance.com",
+    neighborhood: "Las Vegas",
+    tagline: "Just Call Chance — Las Vegas Real Estate",
+    description:
+      "Las Vegas real estate with Chance — contact the desk for the verified tracking line.",
+    heroHeadline: "Just Call Chance",
+    heroSubheadline:
+      "Las Vegas buyer and seller representation — use the site CTA line once provisioned in Vercel.",
+    keywords: [
+      "Just Call Chance",
+      "Las Vegas real estate Chance",
+      "call Chance realtor Las Vegas",
+    ],
+    pageType: "search",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Las Vegas Team",
+    ctaHeadline: "Reach the Desk",
+    ctaSubheadline:
+      "Use the verified phone constant for this host once set in Vercel env.",
+  },
 };
 
 // Default config for any domain not specifically listed
@@ -69,10 +834,16 @@ export const DEFAULT_CONFIG: DomainConfig = {
   domain: "default",
   neighborhood: "Las Vegas",
   tagline: "Las Vegas Homes for Sale",
-  description: "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, BHHS Nevada Properties.",
+  description:
+    "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, BHHS Nevada Properties.",
   heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
-  heroSubheadline: "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.",
-  keywords: ["Las Vegas homes for sale", "Las Vegas real estate", "Dr Jan Duffy"],
+  heroSubheadline:
+    "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.",
+  keywords: [
+    "Las Vegas homes for sale",
+    "Las Vegas real estate",
+    "Dr Jan Duffy",
+  ],
   pageType: "search",
   realscoutAgentId: REALSCOUT_AGENT_ID,
   ctaBadge: "License S.0197614.LLC",

@@ -7,7 +7,10 @@
 const HEYBERKSHIRE_FALLBACK = "https://heyberkshire.com";
 
 export function normalizeHostname(hostname: string): string {
-  return hostname.replace(/^www\./i, "").split(":")[0].toLowerCase();
+  return hostname
+    .replace(/^www\./i, "")
+    .split(":")[0]
+    .toLowerCase();
 }
 
 /** Site origin for canonical/og:url — request host first; env for local/preview; heyberkshire fallback last. */
@@ -63,16 +66,47 @@ export const geo = {
 } as const;
 
 export const businessHours = [
-  { day: "Monday", opens: "09:00", closes: "18:00", label: "9:00 AM – 6:00 PM" },
-  { day: "Tuesday", opens: "09:00", closes: "18:00", label: "9:00 AM – 6:00 PM" },
-  { day: "Wednesday", opens: "09:00", closes: "18:00", label: "9:00 AM – 6:00 PM" },
-  { day: "Thursday", opens: "09:00", closes: "18:00", label: "9:00 AM – 6:00 PM" },
-  { day: "Friday", opens: "09:00", closes: "18:00", label: "9:00 AM – 6:00 PM" },
-  { day: "Saturday", opens: "10:00", closes: "16:00", label: "10:00 AM – 4:00 PM" },
+  {
+    day: "Monday",
+    opens: "09:00",
+    closes: "18:00",
+    label: "9:00 AM – 6:00 PM",
+  },
+  {
+    day: "Tuesday",
+    opens: "09:00",
+    closes: "18:00",
+    label: "9:00 AM – 6:00 PM",
+  },
+  {
+    day: "Wednesday",
+    opens: "09:00",
+    closes: "18:00",
+    label: "9:00 AM – 6:00 PM",
+  },
+  {
+    day: "Thursday",
+    opens: "09:00",
+    closes: "18:00",
+    label: "9:00 AM – 6:00 PM",
+  },
+  {
+    day: "Friday",
+    opens: "09:00",
+    closes: "18:00",
+    label: "9:00 AM – 6:00 PM",
+  },
+  {
+    day: "Saturday",
+    opens: "10:00",
+    closes: "16:00",
+    label: "10:00 AM – 4:00 PM",
+  },
   { day: "Sunday", opens: null, closes: null, label: "By appointment" },
 ] as const;
 
-export const hoursSummary = "Mon–Fri 9am–6pm · Sat 10am–4pm · Sun by appointment";
+export const hoursSummary =
+  "Mon–Fri 9am–6pm · Sat 10am–4pm · Sun by appointment";
 
 export const maps = {
   embedSrc:

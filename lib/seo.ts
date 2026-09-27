@@ -4,7 +4,8 @@ import { photoForPath } from "./media";
 
 export function absoluteUrl(path = "/", hostname?: string | null): string {
   if (path.startsWith("http")) return path;
-  const normalized = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
+  const normalized =
+    path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
   return `${resolveSiteUrl(hostname)}${normalized}`;
 }
 
@@ -24,7 +25,10 @@ export function pageMetadata({
   path: string;
   keywords?: string[];
   hostname?: string | null;
-} & Omit<Metadata, "title" | "description" | "keywords" | "alternates">): Metadata {
+} & Omit<
+  Metadata,
+  "title" | "description" | "keywords" | "alternates"
+>): Metadata {
   const url = absoluteUrl(path, hostname);
   const photo = photoForPath(path);
   return {
@@ -42,7 +46,10 @@ export function pageMetadata({
         openGraph && "images" in openGraph && openGraph.images
           ? openGraph.images
           : [{ url: absoluteUrl(photo.src, hostname), alt: photo.alt }],
-      title: openGraph && "title" in openGraph && openGraph.title ? openGraph.title : title,
+      title:
+        openGraph && "title" in openGraph && openGraph.title
+          ? openGraph.title
+          : title,
       description:
         openGraph && "description" in openGraph && openGraph.description
           ? openGraph.description
