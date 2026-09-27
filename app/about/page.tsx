@@ -388,7 +388,8 @@ export default function AboutPage() {
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              The Ridges, Summerlin, Henderson, NLV — commute minutes from Suite 100
+              The Ridges, Summerlin, Henderson, NLV — commute minutes from Suite
+              100
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Files start at 9406 W Lake Mead Blvd, Suite 100. Summerlin is

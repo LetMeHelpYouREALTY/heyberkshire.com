@@ -469,7 +469,8 @@ export default function NewConstructionPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Register Dr. Jan at Suite 100 before any Skye Canyon or Inspirada model
+              Register Dr. Jan at Suite 100 before any Skye Canyon or Inspirada
+              model
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Call <strong>(702) 222-1964</strong> to register Dr. Jan Duffy as

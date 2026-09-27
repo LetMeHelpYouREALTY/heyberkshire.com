@@ -2,6 +2,12 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
+/** JSX line wraps break exact substring matches after Prettier. */
+function containsText(source: string, needle: string): boolean {
+  const collapse = (value: string) => value.replace(/\s+/g, " ").trim();
+  return collapse(source).includes(collapse(needle));
+}
+
 const pages: { file: string; needles: string[]; banned: string[] }[] = [
   {
     file: "app/page.tsx",
@@ -608,7 +614,7 @@ describe("leftover chassis replacements", () => {
     for (const page of pages) {
       const src = readFileSync(join(process.cwd(), page.file), "utf8");
       for (const needle of page.needles) {
-        expect(src).toContain(needle);
+        expect(containsText(src, needle)).toBe(true);
       }
       for (const banned of page.banned) {
         expect(src).not.toContain(banned);
