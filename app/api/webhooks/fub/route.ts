@@ -1,27 +1,59 @@
 /**
  * Follow Up Boss Webhook Handler
- * 
+ *
  * Handles real-time events from FUB:
  * - peopleCreated
  * - peopleUpdated
  * - peopleDeleted
  * - peopleStageUpdated
  * - peopleTagsCreated
- * 
+ *
  * Integrates with:
  * - Claude AI for lead qualification
  * - RealScout for property matching
  * - Email notifications
  */
 
-import { NextRequest, NextResponse } from 'next/server';
-import { FollowUpBossClient } from '@/lib/fub/client';
-import { ClaudeClient } from '@/lib/claude/client';
-import { propertySearchTemplate } from '@/lib/claude/prompt-templates';
+import { NextRequest, NextResponse } from "next/server";
+import {
+  FollowUpBossClient,
+  getFubApiKey,
+  getFubSystemKey,
+} from "@/lib/fub/client";
+import { ClaudeClient } from "@/lib/claude/client";
+import { propertySearchTemplate } from "@/lib/claude/prompt-templates";
+
+function createFubClient(): FollowUpBossClient {
+  const apiKey = getFubApiKey();
+  if (!apiKey) {
+    throw new Error("FUB_API_KEY_NOT_CONFIGURED");
+  }
+  return new FollowUpBossClient({
+    apiKey,
+    systemKey: getFubSystemKey(),
+  });
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    let body: { event?: string; data?: unknown };
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json(
+        { error: "Invalid request body" },
+        { status: 400 },
+      );
+    }
+
+    if (!getFubApiKey()) {
+      console.error("[FUB Webhook] Follow Up Boss API key is not configured");
+      return NextResponse.json(
+        { error: "Webhook processing failed" },
+        { status: 500 },
+      );
+    }
+
     const { event, data } = body;
 
     console.log(`[FUB Webhook] Received event: ${event}`);
@@ -34,23 +66,23 @@ export async function POST(request: NextRequest) {
 
     // Route to appropriate handler
     switch (event) {
-      case 'peopleCreated':
+      case "peopleCreated":
         await handlePersonCreated(data);
         break;
 
-      case 'peopleUpdated':
+      case "peopleUpdated":
         await handlePersonUpdated(data);
         break;
 
-      case 'peopleStageUpdated':
+      case "peopleStageUpdated":
         await handleStageUpdated(data);
         break;
 
-      case 'peopleTagsCreated':
+      case "peopleTagsCreated":
         await handleTagsCreated(data);
         break;
 
-      case 'peopleDeleted':
+      case "peopleDeleted":
         await handlePersonDeleted(data);
         break;
 
@@ -60,10 +92,10 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('[FUB Webhook] Error:', error);
+    console.error("[FUB Webhook] Error:", error);
     return NextResponse.json(
-      { error: 'Webhook processing failed' },
-      { status: 500 }
+      { error: "Webhook processing failed" },
+      { status: 500 },
     );
   }
 }
@@ -74,9 +106,7 @@ export async function POST(request: NextRequest) {
 async function handlePersonCreated(data: any) {
   console.log(`[FUB] New person created: ${data.name || data.id}`);
 
-  const fub = new FollowUpBossClient({
-    apiKey: process.env.FUB_API_KEY || '',
-  });
+  const fub = createFubClient();
 
   try {
     // Get full person details
@@ -88,26 +118,25 @@ async function handlePersonCreated(data: any) {
     }
 
     // Add welcome tag
-    await fub.addTag(person.id, 'website-lead');
+    await fub.addTag(person.id, "website-lead");
 
     // Create event in FUB
     await fub.createEvent({
-      source: 'website',
-      type: 'Note',
-      message: 'New lead captured from website',
+      source: "website",
+      type: "Note",
+      message: "New lead captured from website",
       personId: person.id,
       data: {
-        source: person.source || 'website',
-        stage: person.stage || 'new',
+        source: person.source || "website",
+        stage: person.stage || "new",
       },
     });
 
     // Send notification (implement your notification service)
     // await sendSlackNotification(`New lead: ${person.name}`);
     // await sendEmailNotification(person);
-
   } catch (error) {
-    console.error('[FUB] Error processing new person:', error);
+    console.error("[FUB] Error processing new person:", error);
   }
 }
 
@@ -119,14 +148,14 @@ async function handlePersonUpdated(data: any) {
 
   // Track what changed
   const changes = data.changes || {};
-  
+
   // If email or phone changed, check for duplicates
   if (changes.emails || changes.phones) {
     await checkForDuplicates(data.id);
   }
 
   // If stage changed to "Active Buyer", trigger property search
-  if (changes.stage === 'Active Buyer') {
+  if (changes.stage === "Active Buyer") {
     await triggerPropertySearch(data.id);
   }
 }
@@ -137,44 +166,41 @@ async function handlePersonUpdated(data: any) {
 async function handleStageUpdated(data: any) {
   console.log(`[FUB] Stage updated for ${data.name || data.id}: ${data.stage}`);
 
-  const fub = new FollowUpBossClient({
-    apiKey: process.env.FUB_API_KEY || '',
-  });
+  const fub = createFubClient();
 
   try {
     // Add stage-specific tags and actions
     switch (data.stage) {
-      case 'Active Buyer':
-        await fub.addTag(data.id, 'active-buyer');
+      case "Active Buyer":
+        await fub.addTag(data.id, "active-buyer");
         await triggerPropertySearch(data.id);
         break;
 
-      case 'Active Seller':
-        await fub.addTag(data.id, 'active-seller');
+      case "Active Seller":
+        await fub.addTag(data.id, "active-seller");
         // Trigger home valuation workflow
         break;
 
-      case 'Under Contract':
-        await fub.addTag(data.id, 'under-contract');
+      case "Under Contract":
+        await fub.addTag(data.id, "under-contract");
         // Trigger pre-closing checklist
         break;
 
-      case 'Closed':
-        await fub.addTag(data.id, 'closed');
+      case "Closed":
+        await fub.addTag(data.id, "closed");
         // Trigger post-closing follow-up
         break;
     }
 
     // Log event
     await fub.createEvent({
-      source: 'automation',
-      type: 'Stage Change',
+      source: "automation",
+      type: "Stage Change",
       message: `Stage updated to: ${data.stage}`,
       personId: data.id,
     });
-
   } catch (error) {
-    console.error('[FUB] Error handling stage update:', error);
+    console.error("[FUB] Error handling stage update:", error);
   }
 }
 
@@ -182,35 +208,35 @@ async function handleStageUpdated(data: any) {
  * Handle tags created
  */
 async function handleTagsCreated(data: any) {
-  console.log(`[FUB] Tags added to ${data.name || data.id}: ${data.tags?.join(', ')}`);
+  console.log(
+    `[FUB] Tags added to ${data.name || data.id}: ${data.tags?.join(", ")}`,
+  );
 
-  const fub = new FollowUpBossClient({
-    apiKey: process.env.FUB_API_KEY || '',
-  });
+  const fub = createFubClient();
 
   // Trigger actions based on specific tags
   for (const tag of data.tags || []) {
     switch (tag.toLowerCase()) {
-      case 'summerlin':
-      case 'henderson':
-      case 'green valley':
+      case "summerlin":
+      case "henderson":
+      case "green valley":
         // Search for properties in that area
         await triggerPropertySearch(data.id, tag);
         break;
 
-      case 'luxury':
+      case "luxury":
         await fub.createEvent({
-          source: 'automation',
-          type: 'Note',
+          source: "automation",
+          type: "Note",
           message: `Tagged as luxury buyer - recommend Ridges, Southern Highlands`,
           personId: data.id,
         });
         break;
 
-      case '55+':
+      case "55+":
         await fub.createEvent({
-          source: 'automation',
-          type: 'Note',
+          source: "automation",
+          type: "Note",
           message: `Tagged as 55+ - recommend Sun City Summerlin, Sun City Anthem`,
           personId: data.id,
         });
@@ -224,7 +250,7 @@ async function handleTagsCreated(data: any) {
  */
 async function handlePersonDeleted(data: any) {
   console.log(`[FUB] Person deleted: ${data.id}`);
-  
+
   // Clean up any external integrations
   // await removeFromRealScout(data.id);
   // await removeFromMailingLists(data.id);
@@ -242,17 +268,17 @@ async function qualifyLeadWithAI(person: any, fub: FollowUpBossClient) {
     // Build context about the lead
     const context = `
 New lead information:
-- Name: ${person.name || 'Unknown'}
-- Source: ${person.source || 'Unknown'}
-- Stage: ${person.stage || 'New'}
-- Tags: ${person.tags?.join(', ') || 'None'}
+- Name: ${person.name || "Unknown"}
+- Source: ${person.source || "Unknown"}
+- Stage: ${person.stage || "New"}
+- Tags: ${person.tags?.join(", ") || "None"}
 - Custom fields: ${JSON.stringify(person.customFields || {})}
 
 Based on this information, provide a brief lead qualification summary and recommended next steps.
     `.trim();
 
     const response = await claude.sendMessage({
-      messages: [{ role: 'user', content: context }],
+      messages: [{ role: "user", content: context }],
       systemPrompt: propertySearchTemplate.system,
       maxTokens: 500,
       enableCache: false, // Don't cache unique lead data
@@ -260,8 +286,8 @@ Based on this information, provide a brief lead qualification summary and recomm
 
     // Add AI qualification as note in FUB
     await fub.createEvent({
-      source: 'ai-assistant',
-      type: 'Note',
+      source: "ai-assistant",
+      type: "Note",
       message: `AI Lead Qualification:\n\n${response.content}`,
       personId: person.id,
       data: {
@@ -272,7 +298,7 @@ Based on this information, provide a brief lead qualification summary and recomm
 
     console.log(`[FUB] AI qualification added for ${person.name}`);
   } catch (error) {
-    console.error('[FUB] Error qualifying lead with AI:', error);
+    console.error("[FUB] Error qualifying lead with AI:", error);
   }
 }
 
@@ -280,9 +306,7 @@ Based on this information, provide a brief lead qualification summary and recomm
  * Check for duplicate leads
  */
 async function checkForDuplicates(personId: number) {
-  const fub = new FollowUpBossClient({
-    apiKey: process.env.FUB_API_KEY || '',
-  });
+  const fub = createFubClient();
 
   try {
     const person = await fub.getPerson(personId);
@@ -296,8 +320,8 @@ async function checkForDuplicates(personId: number) {
 
       if (duplicates.people.length > 1) {
         await fub.createEvent({
-          source: 'automation',
-          type: 'Note',
+          source: "automation",
+          type: "Note",
           message: `⚠️ Potential duplicate found - ${duplicates.people.length} contacts with this email`,
           personId,
         });
@@ -313,15 +337,15 @@ async function checkForDuplicates(personId: number) {
 
       if (duplicates.people.length > 1) {
         await fub.createEvent({
-          source: 'automation',
-          type: 'Note',
+          source: "automation",
+          type: "Note",
           message: `⚠️ Potential duplicate found - ${duplicates.people.length} contacts with this phone`,
           personId,
         });
       }
     }
   } catch (error) {
-    console.error('[FUB] Error checking duplicates:', error);
+    console.error("[FUB] Error checking duplicates:", error);
   }
 }
 
@@ -329,9 +353,7 @@ async function checkForDuplicates(personId: number) {
  * Trigger property search
  */
 async function triggerPropertySearch(personId: number, neighborhood?: string) {
-  const fub = new FollowUpBossClient({
-    apiKey: process.env.FUB_API_KEY || '',
-  });
+  const fub = createFubClient();
 
   try {
     const person = await fub.getPerson(personId);
@@ -351,8 +373,8 @@ async function triggerPropertySearch(personId: number, neighborhood?: string) {
     // await createRealScoutSearch(person, { neighborhood, budget, bedrooms, bathrooms });
 
     await fub.createEvent({
-      source: 'automation',
-      type: 'Property Search',
+      source: "automation",
+      type: "Property Search",
       message: searchNote,
       personId,
       data: {
@@ -365,7 +387,7 @@ async function triggerPropertySearch(personId: number, neighborhood?: string) {
 
     console.log(`[FUB] Property search triggered for ${person.name}`);
   } catch (error) {
-    console.error('[FUB] Error triggering property search:', error);
+    console.error("[FUB] Error triggering property search:", error);
   }
 }
 
