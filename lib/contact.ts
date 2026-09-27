@@ -4,7 +4,33 @@
  * Office/GBP NAP: (702) 500-1942 — footer schema and Google Business match.
  */
 
-export const SITE_URL = "https://heyberkshire.com";
+const HEYBERKSHIRE_FALLBACK = "https://heyberkshire.com";
+
+export function normalizeHostname(hostname: string): string {
+  return hostname.replace(/^www\./i, "").split(":")[0].toLowerCase();
+}
+
+/** Site origin for canonical/og:url — env first; heyberkshire fallback only for that host (or local/preview). */
+export function resolveSiteUrl(hostname?: string | null): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  if (fromEnv) return fromEnv;
+
+  const clean = normalizeHostname(hostname ?? "");
+  if (
+    !clean ||
+    clean === "localhost" ||
+    clean.endsWith(".vercel.app") ||
+    clean === "heyberkshire.com"
+  ) {
+    return HEYBERKSHIRE_FALLBACK;
+  }
+
+  return `https://${clean}`;
+}
+
+/** Build-time default; prefer resolveSiteUrl() in request-aware metadata. */
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? HEYBERKSHIRE_FALLBACK;
 
 export const ctaPhone = {
   display: "(702) 222-1964",

@@ -44,13 +44,6 @@ export const defaultReviews: Review[] = [
   },
 ];
 
-export const aggregateRating = {
-  ratingValue: 4.9,
-  reviewCount: 200,
-  bestRating: 5,
-  worstRating: 1,
-};
-
 interface ReviewsSectionProps {
   reviews?: Review[];
   title?: string;
@@ -81,24 +74,6 @@ export default function ReviewsSection({
             {title}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
-          <div className="flex items-center justify-center gap-2 mt-4" aria-label={`${aggregateRating.ratingValue} out of 5 stars from ${aggregateRating.reviewCount} reviews`}>
-            <div className="flex" aria-hidden="true">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className={`h-6 w-6 ${
-                    i < Math.floor(aggregateRating.ratingValue)
-                      ? "text-yellow-400 fill-yellow-400"
-                      : "text-slate-300"
-                  }`}
-                />
-              ))}
-            </div>
-            <span className="text-lg font-semibold text-slate-900 tabular-nums">
-              {aggregateRating.ratingValue}
-            </span>
-            <span className="text-slate-600">({aggregateRating.reviewCount}+ reviews)</span>
-          </div>
         </div>
         ) : null}
 

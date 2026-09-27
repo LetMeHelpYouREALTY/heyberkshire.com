@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { headers } from "next/headers";
-import { getDomainConfig } from "@/lib/domain-config";
+import { getDomainConfig, isKnownHost } from "@/lib/domain-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import Navbar from "@/components/layouts/Navbar";
@@ -20,22 +20,24 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
-import { realscout, SITE_URL, nap } from "@/lib/contact";
+import { realscout, nap, resolveSiteUrl } from "@/lib/contact";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
   const pathname = headers().get("x-pathname") || "/";
   const config = getDomainConfig(domain);
-  const title = `${config.neighborhood} Real Estate | Dr. Jan Duffy, REALTOR® | BHHS Nevada`;
-  const canonical = absoluteUrl(pathname);
+  const title = `${config.neighborhood} Real Estate | Dr. Jan Duffy, REALTOR®`;
+  const siteUrl = resolveSiteUrl(domain);
+  const canonical = absoluteUrl(pathname, domain);
+  const hostKnown = isKnownHost(domain);
   return {
-    metadataBase: new URL(SITE_URL),
+    metadataBase: new URL(siteUrl),
     title,
     description: config.description,
     keywords: config.keywords,
     authors: [{ name: nap.shortName }],
     creator: nap.shortName,
-    robots: { index: true, follow: true },
+    robots: hostKnown ? { index: true, follow: true } : { index: false, follow: false },
     alternates: { canonical },
     openGraph: {
       type: "website",

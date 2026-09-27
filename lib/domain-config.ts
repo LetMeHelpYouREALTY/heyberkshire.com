@@ -3,6 +3,8 @@
  * Each domain maps to neighborhood-specific content rendered server-side via middleware.
  */
 
+import { normalizeHostname } from "./contact";
+
 export interface DomainConfig {
   domain: string;
   neighborhood: string;
@@ -52,6 +54,14 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
   "trilogysunstonehomes.com": { domain: "trilogysunstonehomes.com", neighborhood: "Trilogy at Sunstone", tagline: "Trilogy at Sunstone 55+ Homes", description: "Trilogy at Sunstone 55+ active adult community homes in Las Vegas. Dr. Jan Duffy, specialist.", heroHeadline: "Trilogy at Sunstone Homes for Sale", heroSubheadline: "Del Webb's premier 55+ active adult community in Northwest Las Vegas.", keywords: ["Trilogy Sunstone homes", "Trilogy at Sunstone Las Vegas", "Del Webb Northwest Las Vegas"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Trilogy Specialist", ctaHeadline: "Discover Trilogy at Sunstone", ctaSubheadline: "Del Webb quality, resort amenities, active lifestyle — let me show you everything." },
   "vegas55plushomes.com": { domain: "vegas55plushomes.com", neighborhood: "Las Vegas 55+", tagline: "Las Vegas 55+ Homes for Sale", description: "Search all Las Vegas 55+ active adult community homes. Sun City, Del Webb, Trilogy and more.", heroHeadline: "Las Vegas 55+ Homes for Sale", heroSubheadline: "Find the perfect active adult community — Sun City, Del Webb, Trilogy, Heritage and more.", keywords: ["Las Vegas 55 plus homes", "active adult Las Vegas", "Las Vegas senior communities"], pageType: "55plus", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "55+ Community Expert", ctaHeadline: "Find Your 55+ Community", ctaSubheadline: "I know every 55+ community in Las Vegas. Let me match you with your perfect lifestyle." },
   "yourdivorcerealtor.com": { domain: "yourdivorcerealtor.com", neighborhood: "Las Vegas", tagline: "Divorce Real Estate Specialist Las Vegas", description: "Confidential Las Vegas divorce real estate specialist. Dr. Jan Duffy handles court-ordered sales with discretion.", heroHeadline: "Your Divorce Real Estate Specialist", heroSubheadline: "Confidential, compassionate real estate guidance during life's most challenging transitions.", keywords: ["divorce realtor Las Vegas", "divorce real estate Las Vegas", "court ordered sale Las Vegas"], pageType: "lifestyle", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Confidential Support", ctaHeadline: "Private Consultation Available", ctaSubheadline: "I handle divorce sales with complete discretion. Let's discuss your options privately." },
+  "heyberkshire.com": { domain: "heyberkshire.com", neighborhood: "Las Vegas", tagline: "Las Vegas Real Estate — Dr. Jan Duffy", description: "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR® S.0197614.LLC.", heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100", heroSubheadline: "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.", keywords: ["Las Vegas homes for sale", "Las Vegas real estate", "Dr Jan Duffy"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "License S.0197614.LLC", ctaHeadline: "Book Suite 100, then the first two ZIP loops", ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk." },
+  "opportunityzonespecialists.com": { domain: "opportunityzonespecialists.com", neighborhood: "Opportunity Zones", tagline: "Las Vegas Opportunity Zone Real Estate", description: "Opportunity Zone investment and acquisition guidance in Las Vegas from Dr. Jan Duffy.", heroHeadline: "Las Vegas Opportunity Zone Specialists", heroSubheadline: "Identify qualified OZ parcels, timelines, and resale strategy with a Nevada REALTOR®.", keywords: ["Las Vegas opportunity zone", "OZ real estate Nevada", "opportunity zone investment Las Vegas"], pageType: "investment", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "OZ Guidance", ctaHeadline: "Review OZ Parcels With Dr. Jan", ctaSubheadline: "Call (702) 222-1964 to align tax deadlines with your acquisition plan." },
+  "heartlandlasvegas.com": { domain: "heartlandlasvegas.com", neighborhood: "Heartland", tagline: "Heartland Las Vegas Homes for Sale", description: "Heartland Las Vegas homes for sale and neighborhood guidance from Dr. Jan Duffy.", heroHeadline: "Heartland Las Vegas Homes for Sale", heroSubheadline: "Master-planned living in Southwest Las Vegas with parks and trails.", keywords: ["Heartland Las Vegas homes", "Heartland real estate", "Southwest Las Vegas homes"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Heartland Specialist", ctaHeadline: "Search Heartland Listings", ctaSubheadline: "Call (702) 222-1964 for current inventory and showing times." },
+  "drjanduffy.com": { domain: "drjanduffy.com", neighborhood: "Las Vegas", tagline: "Dr. Jan Duffy — Las Vegas REALTOR®", description: "Dr. Jan Duffy, Las Vegas REALTOR® — buy, sell, and invest across the Las Vegas Valley.", heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate", heroSubheadline: "30+ years serving Las Vegas buyers and sellers from Suite 100 on Lake Mead Blvd.", keywords: ["Dr Jan Duffy", "Las Vegas realtor", "Dr Jan Duffy real estate"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Expert", ctaHeadline: "Work With Dr. Jan Duffy", ctaSubheadline: "Call or text (702) 222-1964 — I answer my own phone." },
+  "vegashomeagents.com": { domain: "vegashomeagents.com", neighborhood: "Las Vegas", tagline: "Las Vegas Home Agents — Dr. Jan Duffy", description: "Las Vegas home agents led by Dr. Jan Duffy — MLS search, valuations, and contract strategy.", heroHeadline: "Las Vegas Home Agents", heroSubheadline: "Local agents with desk support at 9406 W Lake Mead Blvd, Suite 100.", keywords: ["Las Vegas home agents", "Las Vegas real estate agents", "Vegas home agents"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Agent Desk", ctaHeadline: "Connect With the Desk", ctaSubheadline: "Call (702) 222-1964 for buyer or seller representation." },
+  "emersonestateshomes.com": { domain: "emersonestateshomes.com", neighborhood: "Emerson Estates", tagline: "Emerson Estates Homes for Sale", description: "Emerson Estates homes for sale in Las Vegas. Dr. Jan Duffy, neighborhood listing specialist.", heroHeadline: "Emerson Estates Homes for Sale", heroSubheadline: "Search current Emerson Estates listings with local contract support.", keywords: ["Emerson Estates homes", "Emerson Estates Las Vegas", "Emerson Estates real estate"], pageType: "community", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Emerson Estates", ctaHeadline: "Tour Emerson Estates Listings", ctaSubheadline: "Call (702) 222-1964 to schedule showings this week." },
+  "askdrjanduffy.com": { domain: "askdrjanduffy.com", neighborhood: "Las Vegas", tagline: "Ask Dr. Jan Duffy — Las Vegas Real Estate", description: "Ask Dr. Jan Duffy your Las Vegas real estate questions — buying, selling, and market timing.", heroHeadline: "Ask Dr. Jan Duffy", heroSubheadline: "Direct answers on pricing, inspections, and Las Vegas neighborhood fit.", keywords: ["ask Dr Jan Duffy", "Las Vegas real estate questions", "Dr Jan Duffy advice"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Ask the Expert", ctaHeadline: "Get a Straight Answer", ctaSubheadline: "Call or text (702) 222-1964 with your question — no call center." },
+  "justcallchance.com": { domain: "justcallchance.com", neighborhood: "Las Vegas", tagline: "Just Call Chance — Las Vegas Real Estate", description: "Las Vegas real estate with Chance — contact the desk for the verified tracking line.", heroHeadline: "Just Call Chance", heroSubheadline: "Las Vegas buyer and seller representation — use the site CTA line once provisioned in Vercel.", keywords: ["Just Call Chance", "Las Vegas real estate Chance", "call Chance realtor Las Vegas"], pageType: "search", realscoutAgentId: REALSCOUT_AGENT_ID, ctaBadge: "Las Vegas Team", ctaHeadline: "Reach the Desk", ctaSubheadline: "Use the verified phone constant for this host once set in Vercel env." },
 };
 
 // Default config for any domain not specifically listed
@@ -70,7 +80,25 @@ export const DEFAULT_CONFIG: DomainConfig = {
   ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk.",
 };
 
+export function isKnownHost(hostname: string): boolean {
+  const clean = normalizeHostname(hostname);
+  if (!clean || clean === "localhost" || clean.endsWith(".vercel.app")) {
+    return true;
+  }
+  return clean in DOMAIN_CONFIGS;
+}
+
 export function getDomainConfig(hostname: string): DomainConfig {
-  const clean = hostname.replace(/^www\./, "").toLowerCase();
-  return DOMAIN_CONFIGS[clean] ?? DEFAULT_CONFIG;
+  const clean = normalizeHostname(hostname);
+  const mapped = DOMAIN_CONFIGS[clean];
+  if (mapped) return mapped;
+  if (!clean || clean === "localhost" || clean.endsWith(".vercel.app")) {
+    return { ...DEFAULT_CONFIG, domain: "heyberkshire.com" };
+  }
+  return {
+    ...DEFAULT_CONFIG,
+    domain: clean,
+    tagline: `${clean} — Las Vegas Real Estate`,
+    description: `Las Vegas real estate guidance on ${clean} from Dr. Jan Duffy, REALTOR® S.0197614.LLC.`,
+  };
 }
