@@ -10,25 +10,21 @@ export function normalizeHostname(hostname: string): string {
   return hostname.replace(/^www\./i, "").split(":")[0].toLowerCase();
 }
 
-/** Site origin for canonical/og:url — env first; heyberkshire fallback only for that host (or local/preview). */
+/** Site origin for canonical/og:url — request host first; env for local/preview; heyberkshire fallback last. */
 export function resolveSiteUrl(hostname?: string | null): string {
+  const clean = normalizeHostname(hostname ?? "");
+
+  if (clean && clean !== "localhost" && !clean.endsWith(".vercel.app")) {
+    return `https://${clean}`;
+  }
+
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
   if (fromEnv) return fromEnv;
 
-  const clean = normalizeHostname(hostname ?? "");
-  if (
-    !clean ||
-    clean === "localhost" ||
-    clean.endsWith(".vercel.app") ||
-    clean === "heyberkshire.com"
-  ) {
-    return HEYBERKSHIRE_FALLBACK;
-  }
-
-  return `https://${clean}`;
+  return HEYBERKSHIRE_FALLBACK;
 }
 
-/** Build-time default; prefer resolveSiteUrl() in request-aware metadata. */
+/** Build-time default for sitemap/robots; set NEXT_PUBLIC_SITE_URL on each Vercel project. */
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? HEYBERKSHIRE_FALLBACK;
 
