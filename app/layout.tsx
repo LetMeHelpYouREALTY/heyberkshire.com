@@ -91,6 +91,20 @@ export default async function RootLayout({
         <MobileStickyCTA />
         <AIChatWidget />
         <Analytics />
+        {/* GA4 used to be added by the ga4-injector Cloudflare Worker, which
+            never runs because the domain is DNS-only to Vercel. */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BXTZ077LFQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BXTZ077LFQ');
+          `}
+        </Script>
         <Script
           src={realscout.scriptSrc}
           type="module"
