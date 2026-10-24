@@ -43,7 +43,7 @@ export default function UniqueInterior({
       <HeadingPhoto path={path} level="h3" />
       <p className="text-slate-700 mb-6">{copy.h3Body}</p>
       <p className="text-sm text-slate-600 mb-6">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

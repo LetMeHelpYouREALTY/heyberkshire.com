@@ -18,9 +18,9 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/centennial-hills",
-  title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
+  title: "Centennial Hills Real Estate | Las Vegas Homes",
   description:
-    "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy covers this northwest Las Vegas area near Arbor View High School and Centennial Hills Park. Median price $495K. Call (702) 222-1964.",
+    "Find Centennial Hills homes with a local expert. Dr. Jan Duffy covers this northwest Las Vegas area near Arbor View High School and Centennial Hills Park. Median price $495K. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices Centennial Hills",
     "Centennial Hills homes for sale",
@@ -38,18 +38,16 @@ export default function CentennialHillsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
+              Centennial Hills Real Estate
             </h1>
             <HeadingPhoto path="/neighborhoods/centennial-hills" />
 
             <p className="text-xl text-slate-600">
               Arbor View High School commute and Centennial Hills Park, 15–20
-              minutes from Suite 100. $495K median, 25 DOM, 203 listings with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
-              Duffy.
+              minutes from Suite 100. $495K median, 25 DOM, 203 listings with Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -110,7 +108,7 @@ export default function CentennialHillsPage() {
                 attract attention, Centennial Hills offers something they can't:
                 mature street trees, named campuses such as Arbor View High
                 School, and landscaping that has had nearly two decades to grow.
-                <strong> Berkshire Hathaway HomeServices</strong> helps buyers
+                Dr. Jan Duffy helps buyers
                 discover why Centennial Hills remains a frequently compared
                 northwest Las Vegas address.
               </p>
@@ -124,14 +122,10 @@ export default function CentennialHillsPage() {
                 suggest.
               </p>
               <p>
-                <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </strong>{" "}
-                has represented Centennial Hills buyers and sellers since the
-                community's earliest phases. Dr. Jan Duffy knows which streets
+                Dr. Jan Duffy knows which streets
                 offer the strongest mountain views, commute times to the Strip
                 and Downtown Summerlin, and which HOAs publish current reserve
-                studies. This local knowledge, combined with the BHHS commitment
+                studies. This local knowledge, combined with a commitment
                 to client service, ensures Centennial Hills buyers and sellers
                 receive exceptional representation.
               </p>
@@ -162,7 +156,7 @@ export default function CentennialHillsPage() {
                 views.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in
+                Working with Dr. Jan Duffy in
                 Centennial Hills means partnering with agents who understand the
                 community's evolution and can identify properties that represent
                 genuine value. Dr. Jan Duffy helps buyers look beyond surface

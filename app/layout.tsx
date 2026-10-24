@@ -45,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       url: canonical,
       locale: "en_US",
-      siteName: nap.brokerage,
+      siteName: "Dr. Jan Duffy, REALTOR®",
       images: [
         { url: absoluteUrl(photos.homeHero.src), alt: photos.homeHero.alt },
       ],

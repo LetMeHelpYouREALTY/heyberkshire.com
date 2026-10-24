@@ -21,7 +21,7 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 export const metadata: Metadata = pageMetadata({
   path: "/new-construction",
   title:
-    "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+    "New Construction Las Vegas | Buyer's Guide",
   description:
     "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
   keywords: [
@@ -178,7 +178,7 @@ export default function NewConstructionPage() {
               Free Buyer Representation
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices New Construction Las Vegas
+              New Construction Las Vegas
             </h1>
             <HeadingPhoto path="/new-construction" />
 

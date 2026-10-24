@@ -17,9 +17,9 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/green-valley",
-  title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
+  title: "Green Valley Real Estate | Henderson Real Estate",
   description:
-    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 222-1964.",
+    "Find Green Valley homes with a local expert. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices Green Valley",
     "Green Valley homes for sale",
@@ -37,18 +37,16 @@ export default function GreenValleyPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Green Valley
+              Green Valley Real Estate
             </h1>
             <HeadingPhoto path="/neighborhoods/green-valley" />
 
             <p className="text-xl text-slate-600">
               1988 tree canopy, The District midpoint, 25–35 minutes from Suite
-              100. $520K median, 26 DOM with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
-              Duffy.
+              100. $520K median, 26 DOM with Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -107,8 +105,7 @@ export default function GreenValleyPage() {
                 <strong>Green Valley</strong> was established in 1988 as
                 Henderson&apos;s first large-scale plat with HOA streets, parks,
                 and golf. Three decades later the comparison is canopy age and
-                lot size vs newer Henderson rec campuses. Today,{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> sequences Green
+                lot size vs newer Henderson rec campuses. Today, Dr. Jan Duffy sequences Green
                 Valley tours from Suite 100: The District first, then
                 golf-course HOAs and interior streets on a 25–35 minute I-215
                 east clock.
@@ -123,14 +120,10 @@ export default function GreenValleyPage() {
                 that have been operating since the late 1980s.
               </p>
               <p>
-                <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </strong>{" "}
-                agents have been selling homes in Green Valley since the
-                beginning. Dr. Jan Duffy knows which streets offer the strongest
+                Dr. Jan Duffy knows which streets offer the strongest
                 mountain views, named campuses such as Green Valley High School,
                 and which HOAs publish current reserve studies. This local
-                knowledge, combined with the resources and reputation of BHHS,
+                knowledge
                 gives Green Valley buyers and sellers a distinct advantage.
               </p>
 
@@ -153,8 +146,7 @@ export default function GreenValleyPage() {
                 Valley Ranch and Green Valley South.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong>{" "}
-                agent in Green Valley means understanding the subtle differences
+                Working with Dr. Jan Duffy in Green Valley means understanding the subtle differences
                 between Green Valley proper, Green Valley Ranch, and Green
                 Valley South. Each area is compared by tree canopy age,
                 golf-course adjacency, The District retail, and commute minutes

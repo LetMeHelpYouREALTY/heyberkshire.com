@@ -24,9 +24,9 @@ import { nap } from "@/lib/contact";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/first-time-buyers",
-  title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "First-Time Home Buyers Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 222-1964.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy. Call (702) 222-1964.",
   keywords: [
     "first time home buyer Las Vegas",
     "first time buyer Nevada",

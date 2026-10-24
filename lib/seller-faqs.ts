@@ -22,15 +22,15 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "Where does listing prep start before the photographer is booked?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here, then we walk the house. Overpriced homes sit. We price to recent closes, then book BHHS photography. Call (702) 222-1964.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here, then we walk the house. Overpriced homes sit. We price to recent closes, then book professional photography. Call (702) 222-1964.",
       },
       {
         q: "What January 2026 days-on-market figure did this page last publish?",
         a: "This page last published about 28 days for well-priced Las Vegas listings and 45+ days for $1 million-plus product. Those are snapshots, not a guarantee. Confirm live MLS the week you list.",
       },
       {
-        q: "How does BHHS market a listing once photos are done?",
-        a: "Professional photography, virtual tours, drone when the HOA allows it, MLS syndication, BHHS network exposure, and paid digital. Marketing scope is set at Suite 100 before the photographer is booked. Call (702) 222-1964.",
+        q: "How is a listing marketed once photos are done?",
+        a: "Professional photography, virtual tours, drone when the HOA allows it, MLS syndication, referral network exposure, and paid digital. Marketing scope is set at Suite 100 before the photographer is booked. Call (702) 222-1964.",
       },
       {
         q: "Are commission rates posted on this page?",
@@ -89,7 +89,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "Should the Las Vegas closing share a calendar with the next city?",
-        a: "Yes. BHHS destination agents are briefed from this office so the sale and the next purchase share dates. Bring both contract drafts to 9406 W Lake Mead Blvd, Suite 100. Call (702) 222-1964.",
+        a: "Yes. Destination agents are briefed from this office so the sale and the next purchase share dates. Bring both contract drafts to 9406 W Lake Mead Blvd, Suite 100. Call (702) 222-1964.",
       },
       {
         q: "What did this page last publish about corporate buyouts vs open-market?",

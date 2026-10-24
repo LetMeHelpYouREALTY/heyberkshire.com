@@ -19,9 +19,9 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/southern-highlands",
   title:
-    "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
+    "Southern Highlands Real Estate | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 222-1964.",
+    "Find Southern Highlands homes with a local expert. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices Southern Highlands",
     "Southern Highlands homes for sale",
@@ -39,18 +39,16 @@ export default function SouthernHighlandsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Southern Highlands
+              Southern Highlands Real Estate
             </h1>
             <HeadingPhoto path="/neighborhoods/southern-highlands" />
 
             <p className="text-xl text-slate-600">
               Robert Trent Jones Jr. scorecard 74.1 / 140, then 25–35 minutes
-              via I-15 south from Suite 100.{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
-              Duffy.
+              via I-15 south from Suite 100 with Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -111,8 +109,7 @@ export default function SouthernHighlandsPage() {
                 community centered around an award-winning championship golf
                 course. For buyers seeking luxury living with convenient access
                 to the Strip, airport, and I-15 corridor,{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> considers
-                Southern Highlands among Las Vegas's finest residential options.
+                Dr. Jan Duffy considers Southern Highlands among Las Vegas's finest residential options.
               </p>
               <p>
                 The community's crown jewel is the Southern Highlands Golf Club,
@@ -125,16 +122,12 @@ export default function SouthernHighlandsPage() {
                 community's aesthetic.
               </p>
               <p>
-                <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </strong>{" "}
-                has represented buyers and sellers in Southern Highlands for
-                over two decades. Dr. Jan Duffy understands the community's
+                Dr. Jan Duffy understands the community's
                 various sections—from the guard-gated luxury estates surrounding
                 the golf course to the residential neighborhoods with parks and
                 trails in the community's newer phases. Whether you're seeking a
                 golf course lot with Strip views or a 4-bedroom home near Elise
-                Wolff Elementary, BHHS has the local expertise to guide your
+                Wolff Elementary, Dr. Jan Duffy has the local expertise to guide your
                 search.
               </p>
 
@@ -160,12 +153,12 @@ export default function SouthernHighlandsPage() {
                 course estates.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for
+                Choosing Dr. Jan Duffy for
                 Southern Highlands means working with agents who understand the
                 community's unique value proposition. Dr. Jan Duffy can explain
                 the differences between various sections, which lots offer the
                 best views, and how HOA fees vary across the community. This
-                knowledge, combined with the BHHS reputation for excellence,
+                knowledge, combined with a reputation for excellence,
                 ensures Southern Highlands buyers and sellers receive
                 exceptional service.
               </p>

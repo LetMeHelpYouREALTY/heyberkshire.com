@@ -18,9 +18,9 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/henderson",
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
+  title: "Henderson Real Estate | Nevada Real Estate",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's residential communities with parks and recreation. Median price $485K. Call (702) 222-1964.",
+    "Find Henderson homes with a local expert. Dr. Jan Duffy specializes in Henderson's residential communities with parks and recreation. Median price $485K. Call (702) 222-1964.",
   keywords: [
     "Berkshire Hathaway HomeServices Henderson",
     "Henderson homes for sale",
@@ -55,18 +55,16 @@ export default function HendersonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Real Estate
             </h1>
             <HeadingPhoto path="/neighborhoods/henderson" />
 
             <p className="text-xl text-slate-600">
               Green Valley trees vs Inspirada rec — two villages, 25–35 minutes
-              from Suite 100. $485K median, 1,280 listings with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
-              Duffy.
+              from Suite 100. $485K median, 1,280 listings with Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -125,9 +123,7 @@ export default function HendersonPage() {
                 <strong>Henderson</strong> is Nevada's second-largest city with
                 over 320,000 residents. Compare streets by square footage, HOA
                 dues, parks, and commute minutes from 9406 W Lake Mead Blvd—not
-                by slogan. <strong>Berkshire Hathaway HomeServices</strong> has
-                been helping buyers find Henderson homes for decades, and Dr.
-                Jan Duffy brings unmatched expertise to every transaction.
+                by slogan. Dr. Jan Duffy, in real estate since 1983, brings unmatched expertise to every transaction.
               </p>
               <p>
                 What sets Henderson apart is scale and planning: 60+ parks,
@@ -145,11 +141,7 @@ export default function HendersonPage() {
                 <strong> Lake Las Vegas</strong>—Green Valley, Inspirada,
                 MacDonald Highlands, and the 320-acre lake are compared by
                 square footage, HOA packet, and drive time from Suite 100.
-                <strong>
-                  {" "}
-                  Berkshire Hathaway HomeServices Nevada Properties
-                </strong>{" "}
-                agents know each of these communities intimately.
+                Dr. Jan Duffy knows each of these communities intimately.
               </p>
 
               <CommunityHighlights path="/neighborhoods/henderson" />
@@ -178,14 +170,12 @@ export default function HendersonPage() {
                 $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for
+                Choosing Dr. Jan Duffy for
                 your Henderson home search means working with agents who
                 understand the subtle differences between Henderson's many
                 communities. Dr. Jan Duffy can map commute times to named
                 campuses such as Coronado High School and Green Valley High
-                School, review HOA documents, and compare recent sales. That
-                local knowledge, backed by the resources and reputation of
-                Berkshire Hathaway, makes all the difference.
+                School, review HOA documents, and compare recent sales. That local knowledge makes all the difference.
               </p>
             </div>
           </section>

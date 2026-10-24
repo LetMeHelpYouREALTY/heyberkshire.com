@@ -25,7 +25,7 @@ export const neighborhoodCommutes: Record<string, NeighborhoodCommuteCopy> = {
     body: "Comparison tours leave 9406 W Lake Mead Blvd, Suite 100. Summerlin villages are typically 10–15 minutes. Green Valley is a 25–35 minute I-215 east run. We do not send you across the valley twice in one day unless the listings require it.",
     pins: [
       {
-        pin: "BHHS office, Suite 100",
+        pin: "Office, Suite 100",
         typical: "Tour start",
         why: "GBP pin and builder-registration desk before any model row",
       },

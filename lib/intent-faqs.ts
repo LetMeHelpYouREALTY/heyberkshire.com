@@ -53,8 +53,8 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
         a: "Prior copy put Las Vegas housing and living costs about 30–40% below LA/Orange County and 50%+ below San Francisco, with no Nevada state income tax vs California rates up to 13.3%. That is a planning range, not a CPA letter. Confirm with your tax advisor.",
       },
       {
-        q: "Do you coordinate the origin-city sale through BHHS?",
-        a: "Yes. Destination and origin agents are briefed from this office so both contracts share a calendar. Call (702) 222-1964. Berkshire Hathaway HomeServices Nevada Properties is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        q: "Do you coordinate the origin-city sale?",
+        a: "Yes. Destination and origin agents are briefed from this office so both contracts share a calendar. Call (702) 222-1964. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
     ],
   },
@@ -113,7 +113,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Do you work 1031 identification windows from Suite 100?",
-        a: "Yes. We work with qualified intermediaries and the 45-day identification window. BHHS's nationwide network is useful when exchanging into or out of Las Vegas. Call (702) 222-1964.",
+        a: "Yes. We work with qualified intermediaries and the 45-day identification window. A nationwide referral network is useful when exchanging into or out of Las Vegas. Call (702) 222-1964.",
       },
       {
         q: "Are North Las Vegas, Henderson, and Summerlin interchangeable for rentals?",

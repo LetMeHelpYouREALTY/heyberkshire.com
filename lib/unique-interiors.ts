@@ -167,7 +167,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Clubhouse pool terrace as the first stop",
     h3Body:
-      "See the amenity you will pay HOA for, then walk plans. Call (702) 222-1964. Berkshire Hathaway HomeServices Nevada Properties holds the listing or buyer paperwork at Suite 100.",
+      "See the amenity you will pay HOA for, then walk plans. Call (702) 222-1964. Paperwork is handled at Suite 100.",
   },
   "/55-plus-communities/heritage-stonebridge": {
     h2: "24/7 gate and Downtown Summerlin retail from Lake Mead Blvd",
@@ -219,7 +219,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
   },
   "/": {
     h2: "Same-day Summerlin-then-Henderson routing from the Maps pin",
-    body: "Buyer and seller appointments start at Berkshire Hathaway HomeServices Nevada Properties, 9406 W Lake Mead Blvd, Suite 100. We loop Summerlin first (10–15 minutes) and Henderson second (25–35 minutes) so you are not crisscrossing I-15.",
+    body: "Buyer and seller appointments start at 9406 W Lake Mead Blvd, Suite 100. We loop Summerlin first (10–15 minutes) and Henderson second (25–35 minutes) so you are not crisscrossing I-15.",
     facts: [
       "GBP name, address, and office line (702) 500-1942 match this pin",
       "Call or text (702) 222-1964 for a same-day showing window",
@@ -227,13 +227,13 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Office hours and how to start",
     h3Body:
-      "Mon–Fri 9am–6pm, Sat 10am–4pm, Sunday by appointment. License S.0197614.LLC. Book a consult, then we drive. Directions and Google Reviews links are in the footer on every page.",
+      "Mon–Fri 9am–6pm, Sat 10am–4pm, Sunday by appointment. Book a consult, then we drive. Directions and Google Reviews links are in the footer on every page.",
   },
   "/about": {
     h2: "Meet Dr. Jan Duffy at Suite 100, not a call center",
-    body: "License S.0197614.LLC appointments are held at 9406 W Lake Mead Blvd, Suite 100 unless we meet at a listing. The west-valley office is the Google Business pin—walk in during posted hours or book Calendly.",
+    body: "Appointments are held at 9406 W Lake Mead Blvd, Suite 100 unless we meet at a listing. The west-valley office is the Google Business pin—walk in during posted hours or book Calendly.",
     facts: [
-      "Brokerage: Berkshire Hathaway HomeServices Nevada Properties",
+      "Top 1% Las Vegas REALTOR®",
       "Markets: Las Vegas, Henderson, Summerlin",
       "Client CTA (702) 222-1964 · office/GBP (702) 500-1942",
     ],
@@ -279,7 +279,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
   },
   "/services": {
     h2: "Buy, sell, 55+, and relocation paperwork start at one desk",
-    body: "Each service meeting starts at 9406 W Lake Mead Blvd, Suite 100 so MLS, showing routes, and BHHS paperwork use the same west-valley start.",
+    body: "Each service meeting starts at 9406 W Lake Mead Blvd, Suite 100 so MLS, showing routes, and paperwork use the same west-valley start.",
     facts: [
       "Buyer representation, listing, 55+ campuses, California relocation",
       "RealScout handles property matching; we do not duplicate that engine",
@@ -318,7 +318,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Bring the APN or address to Suite 100. Comps are pulled here before we drive to the house for photos and pricing. Overpriced homes sit; we price to recent closed sales, not a wish list.",
     facts: [
       "CMA review on-site or at your property",
-      "BHHS marketing scope is set before the photographer is booked",
+      "Marketing scope is set before the photographer is booked",
       "Call (702) 222-1964 · office (702) 500-1942",
     ],
     h3: "What a priced-to-comps listing looks like",
@@ -367,7 +367,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "No state income tax in Nevada; property-tax and insurance still apply",
       "Palo Verde High School and Coronado High School are named commute checks",
-      "BHHS destination coordination from this office",
+      "Destination coordination from this office",
     ],
     h3: "Three-day itinerary, not a week of wasted drives",
     h3Body:
@@ -386,8 +386,8 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
       "Tell Dr. Jan the view you want (Strip, Red Rock, or golf). We will not send a PDF of 40 estates. Call (702) 222-1964.",
   },
   "/sellers": {
-    h2: "Pricing and BHHS marketing scoped at Suite 100, then the CMA walkthrough",
-    body: "Listing prep happens at the office, then we go on-site. Homes priced above last month's closes sit. We price to the comps and launch BHHS marketing once photos are done.",
+    h2: "Pricing and Marketing scoped at Suite 100, then the CMA walkthrough",
+    body: "Listing prep happens at the office, then we go on-site. Homes priced above last month's closes sit. We price to the comps and launch marketing once photos are done.",
     facts: [
       "Photographer and copy are booked after the walkthrough",
       "Call (702) 222-1964 for a listing appointment",
@@ -423,7 +423,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
   },
   "/sellers/relocation": {
     h2: "Las Vegas closing dates lined up with the next city",
-    body: "BHHS destination agents are briefed from this office so your Las Vegas sale and the next purchase share a calendar. Outbound sale coordination is a Suite 100 plus destination-agent call.",
+    body: "Destination agents are briefed from this office so your Las Vegas sale and the next purchase share a calendar. Outbound sale coordination is a Suite 100 plus destination-agent call.",
     facts: [
       "Corporate and individual relocations",
       "Named campuses and commute times for the destination if you stay local first",
@@ -471,7 +471,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     h2: "Luxury listing or search intake—Ridges, Highlands, or Lake Las Vegas",
     body: "This hub is for sellers and buyers who need photography, gate access, and marketing scoped at the office. Drive times: Ridges 15–20 minutes, Southern Highlands 25–35, Lake Las Vegas 35–45.",
     facts: [
-      "H1 here: List or Buy Las Vegas Luxury Homes With BHHS",
+      "H1 here: List or Buy Las Vegas Luxury Homes With Dr. Jan Duffy",
       "Buyer-only search lives at /buyers/luxury-homes-las-vegas",
       "Call (702) 222-1964",
     ],
@@ -480,8 +480,8 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
       "We confirm HOA vendor lists and drone rules before listing day. Call (702) 222-1964.",
   },
   "/why-berkshire-hathaway": {
-    h2: "BHHS network samples at Suite 100 before you sign a listing agreement",
-    body: "Brand questions are answered on-site: referral network, listing marketing samples, and who actually answers the phone. Dr. Jan Duffy, license S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties.",
+    h2: "Marketing samples at Suite 100 before you sign a listing agreement",
+    body: "Brand questions are answered on-site: referral network, listing marketing samples, and who actually answers the phone. Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
     facts: [
       "Global referral network for inbound and outbound moves",
       "Local showing still starts at 9406 W Lake Mead Blvd, Suite 100",

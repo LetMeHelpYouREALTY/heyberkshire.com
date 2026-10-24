@@ -112,7 +112,7 @@ export const expertQuotes: Record<string, ExpertQuoteCopy> = {
       "Buyer and seller appointments start at 9406 W Lake Mead Blvd, Suite 100. Summerlin first, Henderson second, so you are not crisscrossing I-15. Call or text (702) 222-1964. The office line on Google is (702) 500-1942.",
   },
   "/about": {
-    h2: "License S.0197614.LLC appointments are at Suite 100",
+    h2: "Appointments are at Suite 100",
     quote:
       "I do not route you through a call center. Walk in during posted hours or book Calendly. Bring pre-approval or an APN. Visitor parking faces W Lake Mead Blvd. Call (702) 222-1964 for a Sunday window.",
   },
@@ -124,7 +124,7 @@ export const expertQuotes: Record<string, ExpertQuoteCopy> = {
   "/google-business": {
     h2: "Maps, GBP, and this page must say the same NAP",
     quote:
-      "Berkshire Hathaway HomeServices Nevada Properties. 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office (702) 500-1942. Client CTA (702) 222-1964. If a directory disagrees, we fix the directory — not this page.",
+      "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office (702) 500-1942. Client CTA (702) 222-1964. If a directory disagrees, we fix the directory — not this page.",
   },
   "/faq": {
     h2: "Bring a ZIP and a pre-approval to the live Q&A",
@@ -139,7 +139,7 @@ export const expertQuotes: Record<string, ExpertQuoteCopy> = {
   "/security-policy": {
     h2: "Showing access stays at Suite 100, not unsecured email",
     quote:
-      "We do not collect listing keys by open email. Data and lockbox questions are handled at 9406 W Lake Mead Blvd. Call (702) 222-1964. License S.0197614.LLC.",
+      "We do not collect listing keys by open email. Data and lockbox questions are handled at 9406 W Lake Mead Blvd. Call (702) 222-1964.",
   },
   "/listings": {
     h2: "Save the RealScout results, then we sequence the tour",
@@ -194,7 +194,7 @@ export const expertQuotes: Record<string, ExpertQuoteCopy> = {
   "/sellers/relocation": {
     h2: "One calendar for the Las Vegas sale and the destination purchase",
     quote:
-      "BHHS destination agents are briefed from this office so the sale and the next purchase share a calendar. Call (702) 222-1964. Do not leave the file in two CRMs with no owner.",
+      "Destination agents are briefed from this office so the sale and the next purchase share a calendar. Call (702) 222-1964. Do not leave the file in two CRMs with no owner.",
   },
   "/sellers/divorce-probate": {
     h2: "Private file review by appointment — not a lobby conversation",
@@ -219,7 +219,7 @@ export const expertQuotes: Record<string, ExpertQuoteCopy> = {
   "/why-berkshire-hathaway": {
     h2: "See marketing samples at Suite 100 before you sign",
     quote:
-      "I show marketing samples and referral paths at 9406 W Lake Mead Blvd. The brand is Berkshire Hathaway HomeServices Nevada Properties. Call (702) 222-1964. License S.0197614.LLC.",
+      "I show marketing samples and referral paths at 9406 W Lake Mead Blvd. Call (702) 222-1964.",
   },
   "/market-insights": {
     h2: "Apply January 2026 numbers to your ZIP, then we drive",

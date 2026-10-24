@@ -21,7 +21,7 @@ export function generateMetadata({ params }: PropertyPageProps): Metadata {
     ...pageMetadata({
       title: `MLS Listing ${params.id} | Las Vegas Homes | Dr. Jan Duffy`,
       description:
-        "View this Las Vegas MLS listing with Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 222-1964 to schedule a showing.",
+        "View this Las Vegas MLS listing with Dr. Jan Duffy. Call (702) 222-1964 to schedule a showing.",
       path: `/listings/${params.id}`,
     }),
     robots: { index: false, follow: true },
@@ -96,7 +96,7 @@ export default function PropertyPage({ params }: PropertyPageProps) {
               <h2 className="text-xl font-bold text-slate-900 mb-2">
                 Dr. Jan Duffy
               </h2>
-              <p className="text-sm text-slate-600 mb-4">{nap.brokerage}</p>
+              <p className="text-sm text-slate-600 mb-4">Top 1% Las Vegas REALTOR®</p>
               <p className="text-sm text-slate-600 mb-6">{nap.fullAddress}</p>
               <div className="space-y-3">
                 <Button

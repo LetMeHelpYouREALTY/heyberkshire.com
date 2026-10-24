@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Heritage at Stonebridge Homes for Sale | Guard-Gated 55+ Summerlin | Dr. Jan Duffy",
   description:
-    "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy, BHHS. Call (702) 222-1964.",
+    "Heritage at Stonebridge - boutique guard-gated 55+ community in Summerlin. Homes from $400K-$750K. Near Downtown Summerlin, Red Rock Canyon. Dr. Jan Duffy. Call (702) 222-1964.",
   keywords: [
     "Heritage at Stonebridge homes for sale",
     "Heritage Stonebridge Summerlin",
@@ -41,7 +41,7 @@ export const metadata: Metadata = pageMetadata({
   openGraph: {
     title: "Heritage at Stonebridge - Guard-Gated 55+ Living in Summerlin",
     description:
-      "Boutique community with premium Summerlin location. Guard-gated security, near Downtown Summerlin. From $400K. Dr. Jan Duffy, BHHS.",
+      "Boutique community with premium Summerlin location. Guard-gated security, near Downtown Summerlin. From $400K. Dr. Jan Duffy.",
     type: "website",
   },
 });

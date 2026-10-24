@@ -31,7 +31,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "What hours is Suite 100 open for a walk-in?",
-        a: "Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. License S.0197614.LLC. Directions and Google Reviews are in the footer on every page.",
+        a: "Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. Directions and Google Reviews are in the footer on every page.",
       },
       {
         q: "Are buyer-broker fees posted as a number on the homepage?",
@@ -61,22 +61,22 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     ],
   },
   "/why-berkshire-hathaway": {
-    h2: "Who photographs, who writes remarks, who answers — BHHS at this desk",
+    h2: "Who photographs, who writes remarks, who answers at this desk",
     items: [
       {
-        q: "Where do I see BHHS listing samples before I sign?",
+        q: "Where do I see listing samples before I sign?",
         a: "At 9406 W Lake Mead Blvd, Suite 100. Brand questions are answered on-site: referral network, photography samples, and who actually answers the phone. Call (702) 222-1964.",
       },
       {
-        q: "Is Berkshire Hathaway HomeServices owned by Warren Buffett?",
-        a: "BHHS is part of HSF Affiliates LLC, a joint venture of Berkshire Hathaway Inc. and HomeServices of America. The brand carries the Berkshire Hathaway name. Local work is still Dr. Jan Duffy, license S.0197614.LLC, BHHS Nevada Properties.",
+        q: "How long has Dr. Jan Duffy been in real estate?",
+        a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®. Call (702) 222-1964.",
       },
       {
-        q: "Is BHHS commission higher than other Las Vegas brokerages?",
+        q: "Is commission here higher than other Las Vegas brokerages?",
         a: "No posted rate on this page. Commission is negotiated in writing at the listing or buyer-broker appointment. We walk every cost at Suite 100. Call (702) 222-1964.",
       },
       {
-        q: "Can a BHHS agent in another city brief this office on my outbound or inbound move?",
+        q: "Can an agent in another city brief this office on my outbound or inbound move?",
         a: "Yes. Destination and origin agents are briefed from this desk so both contracts share a calendar. Named campuses and commute minutes are mapped here, not as slogans. Call (702) 222-1964.",
       },
     ],

@@ -42,7 +42,7 @@ export default function LeftoverBand({ path, slot = 0 }: LeftoverBandProps) {
         ))}
       </div>
       <p className="text-sm text-slate-600 mt-6 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

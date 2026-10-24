@@ -18,7 +18,7 @@ const SEGMENT_LABELS: Record<string, string> = {
   "luxury-homes": "Luxury Homes",
   "luxury-homes-las-vegas": "Luxury Homes Las Vegas",
   "new-construction": "New Construction",
-  "why-berkshire-hathaway": "Why Berkshire Hathaway",
+  "why-berkshire-hathaway": "Why Dr. Jan Duffy",
   "google-business": "Google Business Profile",
   "security-policy": "Security Policy",
   "first-time-buyers": "First-Time Buyers",

@@ -28,9 +28,9 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/relocation",
-  title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocating to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Moving to Las Vegas? Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties provides comprehensive relocation services. Named campuses, commute times, cost of living. Call (702) 222-1964.",
+    "Moving to Las Vegas? Dr. Jan Duffy provides comprehensive relocation services. Named campuses, commute times, cost of living. Call (702) 222-1964.",
   keywords: [
     "relocating to Las Vegas",
     "moving to Las Vegas",
@@ -103,7 +103,7 @@ const relocationServices = [
   "Personalized neighborhood matching based on your priorities",
   "School district research and tour coordination",
   "Virtual home tours before you arrive",
-  "Coordination with your current BHHS agent",
+  "Coordination with your current agent",
   "Cost of living and budget comparison",
   "Commute time analysis to your workplace",
   "HOA packets and named-campus commute maps",
@@ -126,7 +126,7 @@ export default function RelocationPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Relocating to Las Vegas?
@@ -134,9 +134,7 @@ export default function RelocationPage() {
             <HeadingPhoto path="/relocation" />
 
             <p className="text-xl text-slate-600 mb-8">
-              <strong>Berkshire Hathaway HomeServices</strong> makes your move
-              seamless. With 50,000+ agents nationwide, we coordinate your
-              relocation from anywhere in the country. Whether you're moving
+              Dr. Jan Duffy makes your move seamless, coordinating your relocation from anywhere in the country. Whether you're moving
               from California, the Midwest, or across the globe, Dr. Jan Duffy
               provides comprehensive relocation services to ensure your
               transition is stress-free.
@@ -356,15 +354,13 @@ export default function RelocationPage() {
             </div>
           </section>
 
-          {/* BHHS Network */}
+          {/* Referral Network */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               50,000-agent referral, then a dated calendar at Suite 100
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              With 50,000+ agents in 1,500+ offices worldwide, Berkshire
-              Hathaway HomeServices provides seamless coordination for
-              relocations. Your agent back home can connect directly with Dr.
+              A nationwide referral network provides seamless coordination for relocations. Your agent back home can connect directly with Dr.
               Jan to ensure a smooth transition—no gaps, no miscommunication.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
@@ -372,8 +368,7 @@ export default function RelocationPage() {
                 <Globe className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Nationwide Network</h3>
                 <p className="text-slate-600 text-sm">
-                  Seamless referrals from any BHHS agent in the country directly
-                  to Dr. Jan
+                  Seamless referrals from agents across the country directly to Dr. Jan
                 </p>
               </div>
               <div className="text-center p-6 bg-slate-50 rounded-xl">
@@ -390,7 +385,7 @@ export default function RelocationPage() {
                 <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Trusted Referrals</h3>
                 <p className="text-slate-600 text-sm">
-                  Not using BHHS? Dr. Jan can recommend a trusted agent in your
+                  Need an agent? Dr. Jan can recommend a trusted agent in your
                   area
                 </p>
               </div>
@@ -405,8 +400,7 @@ export default function RelocationPage() {
               Book Suite 100 before the first inbound ZIP — (702) 222-1964
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Let Dr. Jan Duffy and Berkshire Hathaway HomeServices make your
-              relocation stress-free. Whether you're moving next month or
+              Let Dr. Jan Duffy make your relocation stress-free. Whether you're moving next month or
               exploring options, a free consultation can help you understand the
               Las Vegas market and plan your transition.
             </p>

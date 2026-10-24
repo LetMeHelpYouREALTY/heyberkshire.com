@@ -36,7 +36,7 @@ export default function FiftyFiveFaqs({ path }: FiftyFiveFaqsProps) {
       />
       <FaqAccordion items={[...copy.items]} />
       <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

@@ -82,14 +82,14 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex flex-col min-w-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-md"
-            aria-label={`${nap.brokerage} home`}
+            aria-label={`${nap.shortName} home`}
           >
             <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight truncate">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
+              Dr. Jan Duffy
+              <span className="text-blue-600"> REALTOR®</span>
             </span>
             <span className="text-xs text-slate-500 hidden sm:block">
-              Nevada Properties · Dr. Jan Duffy
+              Las Vegas Real Estate
             </span>
           </Link>
 

@@ -22,9 +22,9 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers",
-  title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Home Buying Guide Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 222-1964.",
+    "Looking to buy a home in Las Vegas? Dr. Jan Duffy guides you through every step. Free buyer consultation. Call (702) 222-1964.",
   keywords: [
     "buy home Las Vegas",
     "Las Vegas home buyer",
@@ -100,7 +100,7 @@ export default function BuyersPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Buy Your Las Vegas Home with Confidence
@@ -108,8 +108,7 @@ export default function BuyersPage() {
             <HeadingPhoto path="/buyers" />
 
             <p className="text-xl text-slate-600 mb-8">
-              When you work with a{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> buyer's agent,
+              When you work with Dr. Jan Duffy as your buyer's agent,
               the seller-paid buyer-broker fee is explained at Suite 100 — and
               it costs you nothing at the closing table. The representation is
               yours.
@@ -145,7 +144,7 @@ export default function BuyersPage() {
                 <p className="text-slate-300 mb-6">
                   Buyer representation is explained at Suite 100. The seller
                   typically pays the buyer-broker fee, and the agency file is
-                  yours. <strong>Berkshire Hathaway HomeServices</strong> agents
+                  yours. Dr. Jan Duffy and her team
                   write offers, inspections, and occupancy dates for the buyer —
                   not the listing agent. Call (702) 222-1964.
                 </p>
@@ -156,7 +155,7 @@ export default function BuyersPage() {
                     "Contract and disclosure review",
                     "Inspection coordination and repair negotiation",
                     "Lender and service provider referrals",
-                    "Local market expertise since 2008",
+                    "Local market expertise since 1983",
                   ].map((item) => (
                     <li key={item} className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-400 mr-2 flex-shrink-0" />
@@ -176,7 +175,7 @@ export default function BuyersPage() {
                   table and beyond.
                 </p>
                 <div className="text-sm text-slate-500">
-                  Serving Las Vegas since 2008 | $127M+ in transactions
+                  In real estate since 1983 | $127M+ in transactions
                 </div>
               </div>
             </div>
@@ -291,14 +290,13 @@ export default function BuyersPage() {
             </div>
           </section>
 
-          {/* Why BHHS */}
+          {/* Why Dr. Jan Duffy */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="scroll-mt-32 text-3xl font-bold text-slate-900 mb-4 text-center">
               Buyer-agency paperwork at Suite 100 before any model row
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Representation is signed at 9406 W Lake Mead Blvd, Suite 100.
-              License S.0197614.LLC is on the card. Call (702) 222-1964 before
+              Representation is signed at 9406 W Lake Mead Blvd, Suite 100. Call (702) 222-1964 before
               the first builder visit.
             </p>
             <div className="grid md:grid-cols-4 gap-6">
@@ -310,7 +308,7 @@ export default function BuyersPage() {
                   Buyer-agency form at the desk
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  BHHS Nevada Properties is on the form. We do not walk models
+                  Your agent is on the form. We do not walk models
                   unregistered.
                 </p>
               </div>
@@ -322,7 +320,7 @@ export default function BuyersPage() {
                   California-to-Nevada referral desk
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  50,000+ BHHS agents for a West Coast sale timed against a Las
+                  Referral agents for a West Coast sale timed against a Las
                   Vegas purchase
                 </p>
               </div>
@@ -334,8 +332,7 @@ export default function BuyersPage() {
                   West-valley start, then the listing street
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has served Las Vegas since 2008 with $127M+ in
-                  transactions from Suite 100
+                  Dr. Jan has been in real estate since 1983, with $127M+ in transactions from Suite 100
                 </p>
               </div>
               <div className="text-center">
@@ -365,8 +362,7 @@ export default function BuyersPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Questions about buying in Las Vegas? Call or text Dr. Jan Duffy
-              for a free buyer consultation. Get expert guidance backed by
-              Berkshire Hathaway HomeServices—the seller pays the commission, so
+              for a free buyer consultation. Get expert guidance—the seller pays the commission, so
               representation is free for you.
             </p>
             <CtaActions variant="onDark" />

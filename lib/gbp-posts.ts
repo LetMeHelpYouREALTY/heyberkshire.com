@@ -209,7 +209,7 @@ Working with buyers who know what they want makes my job a joy. I'm always here 
 
 Welcome to the neighborhood! 🏠
 
-- Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+- Dr. Jan Duffy
 `,
 
   fiveStarSeller: (
@@ -221,13 +221,13 @@ Thank you for the kind words, ${clientName}! Selling your ${neighborhood} home w
 
 The Las Vegas market is competitive, but with the right pricing strategy and marketing, we got you excellent results. Wishing you all the best in your next chapter!
 
-- Dr. Jan Duffy, BHHS Nevada Properties
+- Dr. Jan Duffy
 `,
 
   fourStar: (clientName: string, details: string) => `
 Thank you for your review, ${clientName}! I appreciate your feedback about ${details}. Your satisfaction is my priority, and I'm always looking for ways to improve.
 
-If there's anything I can help with going forward, please don't hesitate to reach out. I value your trust in choosing Berkshire Hathaway HomeServices.
+If there's anything I can help with going forward, please don't hesitate to reach out. I value your trust.
 
 - Dr. Jan Duffy
 `,
@@ -239,7 +239,7 @@ ${resolution}
 
 Real estate transactions can be complex, and I'm committed to learning from every experience. If you'd like to discuss this further, please call me directly at (702) 500-1942.
 
-- Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+- Dr. Jan Duffy
 `,
 };
 

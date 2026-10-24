@@ -22,22 +22,22 @@ export type FaqHubCategory = {
 export const faqHubCategories: FaqHubCategory[] = [
   {
     id: "bhhs",
-    h2: "BHHS Nevada Properties at Suite 100 — not a national slogan",
+    h2: "Dr. Jan Duffy at Suite 100 — not a national slogan",
     items: [
       {
-        q: "Where do I see local BHHS samples before I pick an agent?",
+        q: "Where do I see local listing samples before I pick an agent?",
         a: "At 9406 W Lake Mead Blvd, Suite 100. Photography, remarks, and who answers the phone are shown here. Call (702) 222-1964.",
       },
       {
-        q: "Is Berkshire Hathaway HomeServices owned by Warren Buffett?",
-        a: "BHHS is part of HSF Affiliates LLC, a joint venture of Berkshire Hathaway Inc. and HomeServices of America. Local work is Dr. Jan Duffy, license S.0197614.LLC, BHHS Nevada Properties.",
+        q: "How long has Dr. Jan Duffy been in real estate?",
+        a: "Dr. Jan Duffy has been in real estate since 1983. Call (702) 222-1964.",
       },
       {
         q: "Which cities does this office actually tour from Lake Mead Blvd?",
         a: "Las Vegas, Henderson, North Las Vegas, and Clark County streets we can time from Suite 100. Specialized pages exist for Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and Inspirada. Call (702) 222-1964.",
       },
       {
-        q: "Is BHHS commission posted as a higher rate on this site?",
+        q: "Is commission posted as a higher rate on this site?",
         a: "No. Commission is negotiated in writing at the appointment. We walk every cost at Suite 100. Call (702) 222-1964.",
       },
     ],
@@ -78,11 +78,11 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "What listing prep does this desk actually assign?",
-        a: "A checklist per house: repairs, paint if comps need it, then BHHS photography. Staging is a tactic, not a slogan. Call (702) 222-1964.",
+        a: "A checklist per house: repairs, paint if comps need it, then professional photography. Staging is a tactic, not a slogan. Call (702) 222-1964.",
       },
       {
-        q: "How does BHHS market a listing once photos are done?",
-        a: "Professional photography, virtual tours, MLS syndication, BHHS network exposure, and paid digital. Scope is set at Suite 100 before the photographer is booked.",
+        q: "How is a listing marketed once photos are done?",
+        a: "Professional photography, virtual tours, MLS syndication, referral network exposure, and paid digital. Scope is set at Suite 100 before the photographer is booked.",
       },
     ],
   },
@@ -109,7 +109,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     h2: "Three-day inbound itinerary questions — Summerlin, then Henderson",
     items: [
       {
-        q: "Can BHHS coordinate the origin-city sale with this office?",
+        q: "Can this office coordinate the origin-city sale with this office?",
         a: "Yes. Origin and destination agents are briefed from Suite 100 so both contracts share a calendar. Call (702) 222-1964.",
       },
       {
@@ -128,7 +128,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "What license and brokerage should match GBP?",
-        a: "Dr. Jan Duffy, license S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Never Janet as the agent name.",
+        a: "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®. Never Janet as the agent name.",
       },
       {
         q: "Which number do I call vs the office/GBP line?",
@@ -136,7 +136,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "What closed-volume snapshot did this hub last publish?",
-        a: "This page last published $127M+ in closed transactions and 500+ clients served since 2008. Ask the desk for current production — do not treat that snapshot as a live ranking.",
+        a: "This page last published $127M+ in closed transactions and 500+ clients served. Ask the desk for current production — do not treat that snapshot as a live ranking.",
       },
     ],
   },

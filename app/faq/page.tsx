@@ -19,9 +19,9 @@ import {
 
 export const metadata: Metadata = pageMetadata({
   path: "/faq",
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Las Vegas Real Estate | Dr. Jan Duffy, REALTOR®",
   description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Frequently asked questions about Las Vegas real estate, buying, selling, and working with Dr. Jan Duffy.",
   keywords: [
     "Berkshire Hathaway HomeServices FAQ",
     "Las Vegas real estate questions",
@@ -40,9 +40,9 @@ const breadcrumbs = [
 const pageSchemas = combineSchemas(
   generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
-    name: "Frequently Asked Questions | Berkshire Hathaway HomeServices Las Vegas",
+    name: "Frequently Asked Questions | Las Vegas Real Estate",
     description:
-      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties.",
+      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy.",
     url: "/faq",
     dateModified: "2026-09-15",
   }),
@@ -59,7 +59,7 @@ export default function FAQPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Frequently Asked Questions
@@ -67,8 +67,7 @@ export default function FAQPage() {
             <HeadingPhoto path="/faq" />
 
             <p className="text-xl text-slate-600">
-              Everything you need to know about working with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> in Las Vegas
+              Everything you need to know about working with Dr. Jan Duffy in Las Vegas
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />

@@ -32,7 +32,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "What HOPA occupancy rule do you review before a clubhouse tour?",
-        a: "HOPA requires at least 80% of occupied units to have one resident 55 or older. Most campuses allow a younger spouse. Solera at Anthem requires all residents 55+ — confirm that packet in writing. Berkshire Hathaway HomeServices Nevada Properties is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        a: "HOPA requires at least 80% of occupied units to have one resident 55 or older. Most campuses allow a younger spouse. Solera at Anthem requires all residents 55+ — confirm that packet in writing. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
       {
         q: "What January 2026 price band did this hub last publish?",
@@ -103,7 +103,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "Do we register at the office before walking Shea plan rows?",
-        a: "Yes. Register for a private tour at Suite 100 so the amenity you pay HOA for is the first stop, then walk plans. Berkshire Hathaway HomeServices Nevada Properties holds the listing or buyer paperwork at 9406 W Lake Mead Blvd, Suite 100.",
+        a: "Yes. Register for a private tour at Suite 100 so the amenity you pay HOA for is the first stop, then walk plans. Paperwork is handled at 9406 W Lake Mead Blvd, Suite 100.",
       },
     ],
   },

@@ -50,7 +50,7 @@ export default function CtaActions({
         </Link>
       </div>
       <p className={`mt-6 text-center text-sm ${napClass}`}>
-        {nap.brokerage} · {nap.fullAddress} · Call {ctaPhone.display}
+        {nap.shortName} · {nap.fullAddress} · Call {ctaPhone.display}
       </p>
     </div>
   );

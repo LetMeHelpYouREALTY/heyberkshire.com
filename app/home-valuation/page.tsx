@@ -16,9 +16,9 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   path: "/home-valuation",
   title:
-    "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
+    "Free Home Valuation Las Vegas | What's Your Home Worth? | Dr. Jan Duffy, REALTOR®",
   description:
-    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 222-1964.",
+    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 222-1964.",
   keywords: [
     "home valuation Las Vegas",
     "what is my home worth Las Vegas",
@@ -38,7 +38,7 @@ export default function HomeValuationPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy, REALTOR®
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               What's Your Las Vegas Home Worth?
@@ -46,10 +46,7 @@ export default function HomeValuationPage() {
             <HeadingPhoto path="/home-valuation" />
 
             <p className="text-xl text-slate-600">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy at{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>. Accurate pricing
-              backed by 17+ years of Las Vegas market expertise and $127M+ in
-              closed transactions.
+              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate pricing from a REALTOR® in real estate since 1983, with $127M+ in closed transactions.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Valuation" />
@@ -83,8 +80,7 @@ export default function HomeValuationPage() {
               </div>
               <CalendlyWidget url="showing" height="650px" />
               <p className="text-xs text-slate-500 text-center p-4 border-t border-slate-200">
-                No obligation. No pressure. Just accurate information from
-                Berkshire Hathaway HomeServices.
+                No obligation. No pressure. Just accurate information from Dr. Jan Duffy.
               </p>
             </div>
 
@@ -98,8 +94,7 @@ export default function HomeValuationPage() {
                   Online estimators like Zillow's "Zestimate" can be off by 10%
                   or more—that's $45,000+ on a typical Las Vegas home. Dr. Jan
                   Duffy provides a comprehensive market analysis using current
-                  MLS data, recent comparable sales, and her expertise serving
-                  Las Vegas since 2008. The result? Accurate pricing that helps
+                  MLS data, recent comparable sales, and her expertise in real estate since 1983. The result? Accurate pricing that helps
                   you sell faster and for more money.
                 </p>
                 <div className="space-y-3">
@@ -345,8 +340,7 @@ export default function HomeValuationPage() {
               Bring the APN to Suite 100 — (702) 222-1964 or Calendly
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy and
-              Berkshire Hathaway HomeServices Nevada Properties. Accurate
+              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate
               pricing. Expert guidance. Zero pressure.
             </p>
             <CtaActions variant="onDark" />

@@ -8,9 +8,9 @@ import { photos } from "@/lib/media";
 const features = [
   {
     icon: Shield,
-    title: "Berkshire Hathaway Backing",
+    title: "In Real Estate Since 1983",
     description:
-      "The only real estate brand backed by Berkshire Hathaway Inc. Integrity you can verify.",
+      "Las Vegas experience since 1983. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -28,7 +28,7 @@ const features = [
     icon: Award,
     title: "$127M+ Closed",
     description:
-      "500+ transactions since 2008 across Las Vegas, Henderson, and Summerlin.",
+      "500+ transactions across Las Vegas, Henderson, and Summerlin.",
   },
   {
     icon: Clock,
@@ -61,8 +61,7 @@ export default function WhyChooseUs() {
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Berkshire Hathaway HomeServices Nevada
-            Properties, Suite 100. We sequence the tour from this desk — not a
+            Appointments start at Suite 100. We sequence the tour from this desk — not a
             call center.
           </p>
         </div>
@@ -87,7 +86,7 @@ export default function WhyChooseUs() {
           })}
         </div>
         <p className="text-sm text-slate-600 mt-10 mb-6 text-center">
-          {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+          {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
         </p>
         <CtaActions variant="onLight" />
         <div className="text-center mt-10">

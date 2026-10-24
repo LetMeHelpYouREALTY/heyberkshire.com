@@ -22,9 +22,9 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/relocation",
-  title: "Relocation Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocation Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with BHHS offices nationwide. Call (702) 222-1964.",
+    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with agents nationwide. Call (702) 222-1964.",
   keywords: [
     "relocation sale Las Vegas",
     "job relocation Las Vegas",
@@ -43,7 +43,7 @@ export default function RelocationPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Plane className="h-4 w-4 mr-2" />
-              Nationwide BHHS Network
+              Nationwide Referral Network
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               New Opportunity?
@@ -136,11 +136,10 @@ export default function RelocationPage() {
                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                     <div>
                       <strong className="text-slate-900">
-                        BHHS Agent Referrals
+                        Agent Referrals
                       </strong>
                       <p className="text-slate-600 text-sm">
-                        We connect you with top-producing BHHS agents in your
-                        destination city— professionals we trust to take care of
+                        We connect you with top-producing agents in your destination city— professionals we trust to take care of
                         you.
                       </p>
                     </div>
@@ -387,8 +386,7 @@ export default function RelocationPage() {
                     Destination Agent Connection
                   </h3>
                   <p className="text-slate-600">
-                    Dr. Jan introduces you to a top-producing BHHS agent in your
-                    new city. They're briefed on your timeline, budget, and
+                    Dr. Jan introduces you to a top-producing agent in your new city. They're briefed on your timeline, budget, and
                     preferences before your first conversation.
                   </p>
                 </div>
@@ -448,8 +446,7 @@ export default function RelocationPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="bg-green-50 border border-green-200 rounded-xl p-8">
               <p className="text-slate-700 mb-4">
-                If you're moving TO Las Vegas from another city, Dr. Jan
-                welcomes referrals from BHHS agents nationwide. She provides:
+                If you're moving TO Las Vegas from another city, Dr. Jan welcomes referrals from agents nationwide. She provides:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <ul className="space-y-2 text-slate-700">

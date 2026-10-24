@@ -24,9 +24,9 @@ import { businessInfo, generateLocalBusinessSchema } from "@/lib/gbp-schema";
 
 export const metadata: Metadata = pageMetadata({
   path: "/google-business",
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Dr. Jan Duffy, REALTOR® | Las Vegas Real Estate",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 222-1964.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, in real estate since 1983. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 222-1964.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
@@ -37,9 +37,9 @@ export const metadata: Metadata = pageMetadata({
     "California relocation Las Vegas",
   ],
   openGraph: {
-    title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    title: "Dr. Jan Duffy, REALTOR®",
     description:
-      "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
+      "Trusted Las Vegas REALTOR® in real estate since 1983. Summerlin, Henderson, luxury homes, 55+ communities.",
     type: "profile",
   },
 });
@@ -67,7 +67,7 @@ export default function GoogleBusinessPage() {
                       aria-hidden="true"
                     />
                     <span className="text-yellow-400 font-semibold">
-                      Berkshire Hathaway HomeServices
+                      Top 1% Las Vegas REALTOR®
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -76,7 +76,7 @@ export default function GoogleBusinessPage() {
                   <HeadingPhoto path="/google-business" />
 
                   <p className="text-xl text-blue-200 mb-2">
-                    REALTOR® | License {businessInfo.license}
+                    Top 1% Las Vegas REALTOR®
                   </p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
 
@@ -213,12 +213,11 @@ export default function GoogleBusinessPage() {
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               The embed, Get Directions, and View Google Reviews buttons are the
-              GBP actions. Call or text (702) 222-1964. License S.0197614.LLC.
-              Berkshire Hathaway HomeServices Nevada Properties.
+              GBP actions. Call or text (702) 222-1964.
             </p>
             <div className="rounded-xl overflow-hidden border border-slate-200 mb-6">
               <iframe
-                title="Map to Berkshire Hathaway HomeServices Nevada Properties, 9406 W Lake Mead Blvd"
+                title="Map to the office at 9406 W Lake Mead Blvd"
                 src={maps.embedSrc}
                 className="w-full h-72"
                 loading="lazy"

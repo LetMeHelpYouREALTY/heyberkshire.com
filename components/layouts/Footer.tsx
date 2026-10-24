@@ -32,10 +32,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
             <h2 className="font-bold text-xl mb-4">
-              Berkshire Hathaway HomeServices
+              Dr. Jan Duffy, REALTOR®
             </h2>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties — Dr. Jan Duffy, REALTOR®. Buying, selling, and
+              Buying, selling, and
               relocating in Las Vegas, Henderson, and Summerlin.
             </p>
             <address className="not-italic text-slate-300 text-sm mb-4">
@@ -93,7 +93,7 @@ export default function Footer() {
                 { href: "/55-plus-communities", label: "55+ Communities" },
                 { href: "/new-construction", label: "New Construction" },
                 { href: "/market-report", label: "Las Vegas Market Report" },
-                { href: "/why-berkshire-hathaway", label: "Why BHHS" },
+                { href: "/why-berkshire-hathaway", label: "Why Dr. Jan Duffy" },
                 { href: "/about", label: "About Dr. Jan Duffy" },
               ].map((link) => (
                 <li key={link.href}>
@@ -237,7 +237,7 @@ export default function Footer() {
 
         <div className="mt-10 rounded-lg overflow-hidden border border-slate-800">
           <iframe
-            title={`Map to ${nap.brokerage} at ${nap.fullAddress}`}
+            title={`Map to the office at ${nap.fullAddress}`}
             src={maps.embedSrc}
             className="w-full h-56"
             loading="lazy"
@@ -248,7 +248,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} {nap.brokerage}. All rights reserved.
+              © {currentYear} {nap.shortName}, REALTOR®. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link
@@ -278,7 +278,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-500 text-xs mt-4 text-center">
-            {nap.shortName}, REALTOR® | License {nap.license} | {nap.brokerage}
+            Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
           </p>
           <p className="text-slate-500 text-xs mt-2 text-center">
             {nap.fullAddress} · Office {officePhone.display} · Call or text{" "}

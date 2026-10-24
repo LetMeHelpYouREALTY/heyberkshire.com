@@ -41,7 +41,7 @@ export default function FiftyFiveAmenities({ path }: FiftyFiveAmenitiesProps) {
         ))}
       </div>
       <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

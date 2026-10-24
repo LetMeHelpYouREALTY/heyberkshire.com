@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   path: "/market-insights",
   title:
-    "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
+    "Las Vegas Real Estate Market Insights 2026 | Dr. Jan Duffy, REALTOR®",
   description:
     "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 222-1964.",
   keywords: [

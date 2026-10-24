@@ -57,7 +57,7 @@ export const officePhone = {
 } as const;
 
 export const nap = {
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Dr. Jan Duffy, REALTOR®",
   shortName: "Dr. Jan Duffy",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
   license: "S.0197614.LLC",

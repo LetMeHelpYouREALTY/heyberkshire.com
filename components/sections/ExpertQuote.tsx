@@ -29,11 +29,11 @@ export default function ExpertQuote({ path }: ExpertQuoteProps) {
       <blockquote className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8 mb-6">
         <p className="text-lg text-slate-700 mb-4">“{copy.quote}”</p>
         <cite className="text-slate-900 font-semibold not-italic">
-          — Dr. Jan Duffy, {nap.brokerage}
+          — Dr. Jan Duffy
         </cite>
       </blockquote>
       <p className="text-sm text-slate-600 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.shortName} · {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>
