@@ -233,7 +233,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     h2: "Meet Dr. Jan Duffy at Suite 100, not a call center",
     body: "Appointments are held at 9406 W Lake Mead Blvd, Suite 100 unless we meet at a listing. The west-valley office is the Google Business pin—walk in during posted hours or book Calendly.",
     facts: [
-      "Top 1% Las Vegas REALTOR®",
+      "Las Vegas REALTOR®",
       "Markets: Las Vegas, Henderson, Summerlin",
       "Client CTA (702) 222-1964 · office/GBP (702) 500-1942",
     ],
@@ -481,7 +481,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
   },
   "/why-berkshire-hathaway": {
     h2: "Marketing samples at Suite 100 before you sign a listing agreement",
-    body: "Brand questions are answered on-site: referral network, listing marketing samples, and who actually answers the phone. Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
+    body: "Brand questions are answered on-site: referral network, listing marketing samples, and who actually answers the phone. Dr. Jan Duffy, Las Vegas REALTOR®.",
     facts: [
       "Global referral network for inbound and outbound moves",
       "Local showing still starts at 9406 W Lake Mead Blvd, Suite 100",

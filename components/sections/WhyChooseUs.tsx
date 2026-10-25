@@ -8,9 +8,9 @@ import { photos } from "@/lib/media";
 const features = [
   {
     icon: Shield,
-    title: "In Real Estate Since 1983",
+    title: "Licensed Since 2008 · 35 Years in Las Vegas",
     description:
-      "Las Vegas experience since 1983. Integrity you can verify.",
+      "35 years of Las Vegas experience. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -26,9 +26,9 @@ const features = [
   },
   {
     icon: Award,
-    title: "$127M+ Closed",
+    title: "$127M+ Team Career Sales",
     description:
-      "500+ transactions across Las Vegas, Henderson, and Summerlin.",
+      "500+ team sales across Las Vegas, Henderson, and Summerlin.",
   },
   {
     icon: Clock,

@@ -268,7 +268,7 @@ export default function ListingsPage() {
                   Escalation language written at Suite 100
                 </h3>
                 <p className="text-slate-400 text-sm">
-                  $127M+ in closed files. Inspection and appraisal terms are
+                  $127M+ in Dr. Duffy Group career sales. Inspection and appraisal terms are
                   drafted before you leave the office.
                 </p>
               </div>

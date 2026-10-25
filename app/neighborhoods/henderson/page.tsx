@@ -123,7 +123,7 @@ export default function HendersonPage() {
                 <strong>Henderson</strong> is Nevada's second-largest city with
                 over 320,000 residents. Compare streets by square footage, HOA
                 dues, parks, and commute minutes from 9406 W Lake Mead Blvd—not
-                by slogan. Dr. Jan Duffy, in real estate since 1983, brings unmatched expertise to every transaction.
+                by slogan. Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, brings unmatched expertise to every transaction.
               </p>
               <p>
                 What sets Henderson apart is scale and planning: 60+ parks,
