@@ -13,10 +13,13 @@ import { pageMetadata } from "@/lib/seo";
 import { mediaUrl, photos } from "@/lib/media";
 
 type PropertyPageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export function generateMetadata({ params }: PropertyPageProps): Metadata {
+export async function generateMetadata(
+  props: PropertyPageProps,
+): Promise<Metadata> {
+  const params = await props.params;
   return {
     ...pageMetadata({
       title: `MLS Listing ${params.id} | Las Vegas Homes | Dr. Jan Duffy`,
@@ -28,7 +31,8 @@ export function generateMetadata({ params }: PropertyPageProps): Metadata {
   };
 }
 
-export default function PropertyPage({ params }: PropertyPageProps) {
+export default async function PropertyPage(props: PropertyPageProps) {
+  const params = await props.params;
   return (
     <main id="main-content" className="pb-16">
       <div className="container mx-auto px-4">
@@ -96,7 +100,9 @@ export default function PropertyPage({ params }: PropertyPageProps) {
               <h2 className="text-xl font-bold text-slate-900 mb-2">
                 Dr. Jan Duffy
               </h2>
-              <p className="text-sm text-slate-600 mb-4">Top 1% Las Vegas REALTOR®</p>
+              <p className="text-sm text-slate-600 mb-4">
+                Top 1% Las Vegas REALTOR®
+              </p>
               <p className="text-sm text-slate-600 mb-6">{nap.fullAddress}</p>
               <div className="space-y-3">
                 <Button
