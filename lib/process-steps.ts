@@ -98,11 +98,11 @@ export const processSteps: Record<string, ProcessCopy[]> = {
     },
     {
       h2: "What actually goes on the contract",
-      body: "Volume cited on this site: $127M+. Call (702) 222-1964.",
+      body: "Dr. Duffy Group career volume: $127M+. Call (702) 222-1964.",
       steps: [
         {
           title: "Brokerage line on every listing and buyer agreement",
-          body: "Dr. Jan Duffy, in real estate since 1983. 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office/GBP (702) 500-1942.",
+          body: "Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office/GBP (702) 500-1942.",
         },
         {
           title: "Written disclosure standards on every file",
@@ -154,7 +154,7 @@ export const processSteps: Record<string, ProcessCopy[]> = {
       steps: [
         {
           title: "A named agent, not a round-robin call center",
-          body: "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®. The Maps pin is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+          body: "Dr. Jan Duffy, Las Vegas REALTOR®. The Maps pin is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
         },
         {
           title: "Same-day reply on the number you left",

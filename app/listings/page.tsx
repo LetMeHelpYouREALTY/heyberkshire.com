@@ -256,8 +256,8 @@ export default function ListingsPage() {
                   Off-market windows from the desk
                 </h3>
                 <p className="text-slate-400 text-sm">
-                  Pocket listings come through the referral network. We do not text
-                  addresses on unsecured threads.
+                  Pocket listings come through the referral network. We do not
+                  text addresses on unsecured threads.
                 </p>
               </div>
               <div className="text-center">
@@ -268,8 +268,8 @@ export default function ListingsPage() {
                   Escalation language written at Suite 100
                 </h3>
                 <p className="text-slate-400 text-sm">
-                  $127M+ in closed files. Inspection and appraisal terms are
-                  drafted before you leave the office.
+                  $127M+ in Dr. Duffy Group career sales. Inspection and
+                  appraisal terms are drafted before you leave the office.
                 </p>
               </div>
               <div className="text-center">
@@ -339,8 +339,8 @@ export default function ListingsPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for personalized guidance, off-market
-              listings, and expert representation. Free buyer consultations available—the seller pays
-              the commission.
+              listings, and expert representation. Free buyer consultations
+              available—the seller pays the commission.
             </p>
             <CtaActions variant="onDark" />
           </section>

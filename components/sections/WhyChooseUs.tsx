@@ -8,9 +8,8 @@ import { photos } from "@/lib/media";
 const features = [
   {
     icon: Shield,
-    title: "In Real Estate Since 1983",
-    description:
-      "Las Vegas experience since 1983. Integrity you can verify.",
+    title: "Licensed Since 2008 · 35 Years in Las Vegas",
+    description: "35 years of Las Vegas experience. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -26,9 +25,8 @@ const features = [
   },
   {
     icon: Award,
-    title: "$127M+ Closed",
-    description:
-      "500+ transactions across Las Vegas, Henderson, and Summerlin.",
+    title: "$127M+ Team Career Sales",
+    description: "500+ team sales across Las Vegas, Henderson, and Summerlin.",
   },
   {
     icon: Clock,
@@ -61,8 +59,8 @@ export default function WhyChooseUs() {
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Suite 100. We sequence the tour from this desk — not a
-            call center.
+            Appointments start at Suite 100. We sequence the tour from this desk
+            — not a call center.
           </p>
         </div>
 

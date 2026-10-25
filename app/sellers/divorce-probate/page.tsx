@@ -22,8 +22,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/divorce-probate",
-  title:
-    "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
+  title: "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
     "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 222-1964.",
   keywords: [
@@ -340,7 +339,9 @@ export default function DivorceProbatePage() {
                   Credibility & Trust
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan Duffy has been in real estate since 1983. Her valuations and processes are respected by attorneys, judges, and opposing parties for their integrity.
+                  Dr. Jan Duffy has been licensed since 2008 (35 years in Las
+                  Vegas). Her valuations and processes are respected by
+                  attorneys, judges, and opposing parties for their integrity.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">

@@ -74,7 +74,9 @@ export default function ContactPage() {
             <HeadingPhoto path="/contact" />
 
             <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-              Questions about Las Vegas real estate? Your Las Vegas real estate expert is here to help. Schedule an appointment or reach out directly.
+              Questions about Las Vegas real estate? Your Las Vegas real estate
+              expert is here to help. Schedule an appointment or reach out
+              directly.
             </p>
             <CtaActions variant="onLight" bookLabel="Book a Consultation" />
             <OfficeProximity path="/contact" />
@@ -204,7 +206,7 @@ export default function ContactPage() {
                 <p className="text-sm text-slate-700">
                   <strong>{nap.shortName}, REALTOR®</strong>
                   <br />
-                  Top 1% Las Vegas REALTOR®
+                  Las Vegas REALTOR®
                   <br />
                   {nap.fullAddress}
                 </p>
