@@ -82,8 +82,7 @@ const sellerTypes = [
   {
     title: "Relocation Sellers",
     href: "/sellers/relocation",
-    description:
-      "Selling from out of state? Remote coordination is available.",
+    description: "Selling from out of state? Remote coordination is available.",
   },
 ];
 
@@ -107,10 +106,10 @@ export default function ServicesPage() {
             <HeadingPhoto path="/services" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. Whether you're
-              buying your first home, selling a luxury estate, or relocating
-              from California, you'll receive expert guidance every step of the
-              way.
+              Comprehensive real estate solutions from Dr. Jan Duffy, licensed
+              since 2008 · 35 years in Las Vegas. Whether you're buying your
+              first home, selling a luxury estate, or relocating from
+              California, you'll receive expert guidance every step of the way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
@@ -215,7 +214,8 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our
               real estate services. Whether you're buying, selling, investing,
-              or relocating, you'll receive expert guidance from a REALTOR® licensed since 2008 · 35 years in Las Vegas.
+              or relocating, you'll receive expert guidance from a REALTOR®
+              licensed since 2008 · 35 years in Las Vegas.
             </p>
             <CtaActions variant="onDark" />
           </section>

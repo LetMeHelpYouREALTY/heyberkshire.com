@@ -46,7 +46,9 @@ export default function HomeValuationPage() {
             <HeadingPhoto path="/home-valuation" />
 
             <p className="text-xl text-slate-600">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate pricing from a REALTOR® licensed since 2008 · 35 years in Las Vegas, with $127M+ in Dr. Duffy Group career sales.
+              Get a free, no-obligation home valuation from Dr. Jan Duffy.
+              Accurate pricing from a REALTOR® licensed since 2008 · 35 years
+              in Las Vegas, with $127M+ in Dr. Duffy Group career sales.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Valuation" />
@@ -80,7 +82,8 @@ export default function HomeValuationPage() {
               </div>
               <CalendlyWidget url="showing" height="650px" />
               <p className="text-xs text-slate-500 text-center p-4 border-t border-slate-200">
-                No obligation. No pressure. Just accurate information from Dr. Jan Duffy.
+                No obligation. No pressure. Just accurate information from Dr.
+                Jan Duffy.
               </p>
             </div>
 
@@ -94,8 +97,9 @@ export default function HomeValuationPage() {
                   Online estimators like Zillow's "Zestimate" can be off by 10%
                   or more—that's $45,000+ on a typical Las Vegas home. Dr. Jan
                   Duffy provides a comprehensive market analysis using current
-                  MLS data, recent comparable sales, and her expertise (licensed since 2008, 35 years in Las Vegas). The result? Accurate pricing that helps
-                  you sell faster and for more money.
+                  MLS data, recent comparable sales, and her expertise (licensed
+                  since 2008, 35 years in Las Vegas). The result? Accurate
+                  pricing that helps you sell faster and for more money.
                 </p>
                 <div className="space-y-3">
                   {[
@@ -340,8 +344,8 @@ export default function HomeValuationPage() {
               Bring the APN to Suite 100 — (702) 222-1964 or Calendly
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate
-              pricing. Expert guidance. Zero pressure.
+              Get a free, no-obligation home valuation from Dr. Jan Duffy.
+              Accurate pricing. Expert guidance. Zero pressure.
             </p>
             <CtaActions variant="onDark" />
           </section>

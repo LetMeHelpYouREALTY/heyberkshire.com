@@ -60,7 +60,9 @@ export default function WhyBerkshireHathawayPage() {
             <HeadingPhoto path="/why-berkshire-hathaway" />
 
             <p className="text-xl text-slate-600 leading-relaxed">
-              When you work with Dr. Jan Duffy, you get a REALTOR® licensed since 2008 · 35 years in Las Vegas, known for trust and ethical standards.
+              When you work with Dr. Jan Duffy, you get a REALTOR® licensed
+              since 2008 · 35 years in Las Vegas, known for trust and ethical
+              standards.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />

@@ -88,9 +88,10 @@ export default function SellersPage() {
             <HeadingPhoto path="/sellers" />
 
             <p className="text-xl text-slate-600 mb-8">
-              When you list with Dr. Jan Duffy, you get world-class marketing, expert pricing, and a name that buyers trust. Licensed since 2008 · 35 years in Las Vegas, she helps
-              sellers achieve top-dollar results with proven marketing
-              strategies and skilled negotiation.
+              When you list with Dr. Jan Duffy, you get world-class marketing,
+              expert pricing, and a name that buyers trust. Licensed since 2008
+              · 35 years in Las Vegas, she helps sellers achieve top-dollar
+              results with proven marketing strategies and skilled negotiation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center">
@@ -199,8 +200,8 @@ export default function SellersPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Schedule a free listing consultation with Dr. Jan Duffy and
-              discover what your home could sell for. No obligation, no pressure—just honest advice and
-              expert analysis.
+              discover what your home could sell for. No obligation, no
+              pressure—just honest advice and expert analysis.
             </p>
             <CtaActions variant="onDark" />
           </section>
