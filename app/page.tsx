@@ -73,7 +73,9 @@ export default async function Home() {
               <span>Transactions Closed</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Licensed Since 2008</span>
+              <span className="font-semibold text-white">
+                Licensed Since 2008
+              </span>
               <span>In Real Estate</span>
             </div>
             <div className="flex items-center gap-2">

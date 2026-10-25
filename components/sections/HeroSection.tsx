@@ -67,8 +67,8 @@ export default function HeroSection() {
           <span className="text-blue-400">Las Vegas &amp; Henderson</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Search live MLS listings with Dr. Jan Duffy, Las Vegas
-          REALTOR®. Call or text (702) 222-1964.
+          Search live MLS listings with Dr. Jan Duffy, Las Vegas REALTOR®. Call
+          or text (702) 222-1964.
         </p>
 
         <div className="realscout-wrapper mb-4">
