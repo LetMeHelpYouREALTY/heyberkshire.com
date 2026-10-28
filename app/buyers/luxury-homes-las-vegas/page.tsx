@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/buyers/luxury-homes-las-vegas",
   title: "Luxury Homes Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 222-1964.",
+    "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-1942.",
   keywords: [
     "luxury homes Las Vegas",
     "The Ridges Las Vegas",
@@ -162,7 +162,7 @@ export default function LuxuryHomesPage() {
               Suite 100
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Call (702) 222-1964. Addresses stay off unsecured threads. 9406 W
+              Call (702) 500-1942. Addresses stay off unsecured threads. 9406 W
               Lake Mead Blvd, Suite 100 is where the showing clock is written.
             </p>
             <CtaActions variant="onDark" bookLabel="Request Private Showing" />

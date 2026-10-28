@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/luxury-homes",
   title: "Las Vegas Luxury Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 222-1964.",
+    "Discover Las Vegas luxury real estate with Dr. Jan Duffy. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1942.",
   keywords: [
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",

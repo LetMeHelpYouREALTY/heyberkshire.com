@@ -22,7 +22,7 @@ const features = [
     icon: Users,
     title: "Direct Access to Dr. Jan",
     description:
-      "Call or text (702) 222-1964. No call center, no assistant queue.",
+      "Call or text (702) 500-1942. No call center, no assistant queue.",
   },
   {
     icon: Award,

@@ -68,7 +68,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
           Search live MLS listings with Dr. Jan Duffy, Top 1% Las Vegas
-          REALTOR®. Call or text (702) 222-1964.
+          REALTOR®. Call or text (702) 500-1942.
         </p>
 
         <div className="realscout-wrapper mb-4">

@@ -28,7 +28,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/sun-city-summerlin",
   title: "Sun City Summerlin Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, 55+ specialist. Call (702) 222-1964.",
+    "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, 55+ specialist. Call (702) 500-1942.",
   keywords: [
     "Sun City Summerlin homes for sale",
     "Sun City Summerlin Las Vegas",
@@ -196,7 +196,7 @@ export default function SunCitySummerlinPage() {
             <p className="text-xl text-amber-100 mb-8">
               Highland Falls, Palm Valley, and Eagle Crest plus four rec
               campuses. Pick one course and one rec building per visit. Call
-              (702) 222-1964.
+              (702) 500-1942.
             </p>
             <CtaActions variant="onDark" />
           </section>

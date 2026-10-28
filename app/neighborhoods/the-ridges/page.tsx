@@ -21,7 +21,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "The Ridges Real Estate | Las Vegas Luxury Real Estate",
   description:
-    "Find The Ridges homes with a local expert. Guard-gated Summerlin ridge lots, 15–20 minutes from Suite 100. Median $2.5M, 42 listings, 67 DOM (January 2026). Call (702) 222-1964.",
+    "Find The Ridges homes with a local expert. Guard-gated Summerlin ridge lots, 15–20 minutes from Suite 100. Median $2.5M, 42 listings, 67 DOM (January 2026). Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices The Ridges",
     "The Ridges homes for sale",

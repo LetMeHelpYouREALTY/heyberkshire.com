@@ -30,7 +30,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/about",
   title: "About Dr. Jan Duffy | Las Vegas REALTOR®",
   description:
-    "Meet Dr. Jan Duffy, your trusted agent. In real estate since 1983, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 222-1964.",
+    "Meet Dr. Jan Duffy, your trusted agent. In real estate since 1983, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Berkshire Hathaway HomeServices agent",
@@ -171,11 +171,11 @@ export default function AboutPage() {
                   </h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:+17022221964"
+                      href="tel:+17025001942"
                       className="flex items-center text-slate-700 hover:text-blue-600"
                     >
                       <Phone className="h-5 w-5 mr-3 text-blue-600" />
-                      <span className="font-semibold">(702) 222-1964</span>
+                      <span className="font-semibold">(702) 500-1942</span>
                     </a>
                     <a
                       href="mailto:homes@heyberkshire.com"
@@ -320,8 +320,8 @@ export default function AboutPage() {
               Appointments at 9406 W Lake Mead Blvd
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Appointments start at Suite 100. Call or text (702) 222-1964. The
-              office line on Google is (702) 500-1942.
+              Appointments start at Suite 100. Call or text (702) 500-1942, the
+              same line listed on Google.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
@@ -357,7 +357,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-slate-300 text-sm">
                   We review HOA packets and commute minutes at the desk before
-                  we drive. Call (702) 222-1964.
+                  we drive. Call (702) 500-1942.
                 </p>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function AboutPage() {
               Files start at 9406 W Lake Mead Blvd, Suite 100. Summerlin is
               10–15 minutes. The Ridges gate is 15–20. Henderson is 25–35 via
               I-215 east. North Las Vegas new construction is a separate
-              afternoon. Call (702) 222-1964.
+              afternoon. Call (702) 500-1942.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {areasServed.map((area) => (

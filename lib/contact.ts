@@ -1,7 +1,7 @@
 /**
  * Single source of truth for NAP, phones, hours, maps, and social.
- * CTA line: (702) 222-1964 — client-facing call buttons.
- * Office/GBP NAP: (702) 500-1942 — footer schema and Google Business match.
+ * One line sitewide: (702) 500-1942 matches the Google Business Profile.
+ * (702) 222-1964 is reserved for client emails and texts; never publish it here.
  */
 
 /** Canonical production origin for heyberkshire (www, not apex). */
@@ -43,10 +43,10 @@ export const SITE_URL =
   HEYBERKSHIRE_CANONICAL;
 
 export const ctaPhone = {
-  display: "(702) 222-1964",
-  displayShort: "702-222-1964",
-  tel: "+17022221964",
-  href: "tel:+17022221964",
+  display: "(702) 500-1942",
+  displayShort: "702-500-1942",
+  tel: "+17025001942",
+  href: "tel:+17025001942",
 } as const;
 
 export const officePhone = {

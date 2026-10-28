@@ -30,7 +30,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/relocation",
   title: "Relocating to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Moving to Las Vegas? Dr. Jan Duffy provides comprehensive relocation services. Named campuses, commute times, cost of living. Call (702) 222-1964.",
+    "Moving to Las Vegas? Dr. Jan Duffy provides comprehensive relocation services. Named campuses, commute times, cost of living. Call (702) 500-1942.",
   keywords: [
     "relocating to Las Vegas",
     "moving to Las Vegas",
@@ -188,7 +188,7 @@ export default function RelocationPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Inbound itineraries start at 9406 W Lake Mead Blvd, Suite 100.
               Named campuses, commute minutes, trailheads, and HOA packets are
-              compared at the desk, then we drive one ZIP. Call (702) 222-1964.
+              compared at the desk, then we drive one ZIP. Call (702) 500-1942.
               We will not tour twelve ZIPs the day you land.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -293,7 +293,7 @@ export default function RelocationPage() {
             <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
               California to Nevada inbound files start at 9406 W Lake Mead Blvd,
               Suite 100. Housing prices 40–60% below many California coastal
-              cities is a comparison, not a guarantee. Call (702) 222-1964. No
+              cities is a comparison, not a guarantee. Call (702) 500-1942. No
               Nevada state income tax is a line item on the net sheet.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -397,7 +397,7 @@ export default function RelocationPage() {
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Book Suite 100 before the first inbound ZIP — (702) 222-1964
+              Book Suite 100 before the first inbound ZIP — (702) 500-1942
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Let Dr. Jan Duffy make your relocation stress-free. Whether you're moving next month or

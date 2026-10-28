@@ -44,7 +44,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "Eagle Hills",
-          note: "Newer village with desert-contemporary plans. Published band $2M–$6M. Call (702) 222-1964.",
+          note: "Newer village with desert-contemporary plans. Published band $2M–$6M. Call (702) 500-1942.",
         },
       ],
     },
@@ -64,7 +64,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "Equity vs non-equity membership",
-          note: "Ask which option applies before writing an offer. Call (702) 222-1964. Janet Lundahl Elementary is mapped by address at ccsd.net/zoning.",
+          note: "Ask which option applies before writing an offer. Call (702) 500-1942. Janet Lundahl Elementary is mapped by address at ccsd.net/zoning.",
         },
         {
           name: "Practice campus",
@@ -96,7 +96,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "KB Home",
-          note: "Published band $420K–$550K. Energy Star plans. Call (702) 222-1964.",
+          note: "Published band $420K–$550K. Energy Star plans. Call (702) 500-1942.",
         },
         {
           name: "Century Communities",
@@ -132,7 +132,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "Century Communities",
-          note: "Published band $420K–$500K. Call (702) 222-1964. St. Rose Siena is the hospital pin.",
+          note: "Published band $420K–$500K. Call (702) 500-1942. St. Rose Siena is the hospital pin.",
         },
       ],
     },
@@ -156,7 +156,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "Station Casinos — Green Valley Ranch and Sunset Station",
-          note: "Hospitality shifts. Call (702) 222-1964 to sequence The District vs Water Street.",
+          note: "Hospitality shifts. Call (702) 500-1942 to sequence The District vs Water Street.",
         },
         {
           name: "Levi Strauss distribution and nearby Amazon",
@@ -192,7 +192,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "North Las Vegas Airport and Motor Speedway",
-          note: "Aviation and event-shift pins. Call (702) 222-1964.",
+          note: "Aviation and event-shift pins. Call (702) 500-1942.",
         },
         {
           name: "City of North Las Vegas",
@@ -218,7 +218,7 @@ export const villageDetails: Record<string, VillageDetailCopy[]> = {
         },
         {
           name: "Camino Al Norte",
-          note: "Near the 215. Multiple builders. Published band $380K–$480K. Call (702) 222-1964.",
+          note: "Near the 215. Multiple builders. Published band $380K–$480K. Call (702) 500-1942.",
         },
         {
           name: "North Vista Hospital",

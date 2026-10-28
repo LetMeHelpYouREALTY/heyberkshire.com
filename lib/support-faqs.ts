@@ -23,11 +23,11 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Where does a same-day Summerlin-then-Henderson tour actually start?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. Summerlin first (10–15 minutes), Henderson second (25–35 minutes via I-215 east). Call or text (702) 222-1964. Office/GBP line is (702) 500-1942.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. Summerlin first (10–15 minutes), Henderson second (25–35 minutes via I-215 east). Call or text (702) 500-1942.",
       },
       {
         q: "Is the live MLS search on this homepage or on /listings?",
-        a: "RealScout widgets appear here and on /listings. Matching stays in RealScout; we sequence the drive from this desk. Agent ID QWdlbnQtMjI1MDUw. Call (702) 222-1964 after you save a list.",
+        a: "RealScout widgets appear here and on /listings. Matching stays in RealScout; we sequence the drive from this desk. Agent ID QWdlbnQtMjI1MDUw. Call (702) 500-1942 after you save a list.",
       },
       {
         q: "What hours is Suite 100 open for a walk-in?",
@@ -35,7 +35,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "Are buyer-broker fees posted as a number on the homepage?",
-        a: "No. Buyer representation is typically paid by the listing side when the listing agreement allows it. Seller commission is negotiated in writing. Call (702) 222-1964 for a cost walkthrough before you sign.",
+        a: "No. Buyer representation is typically paid by the listing side when the listing agreement allows it. Seller commission is negotiated in writing. Call (702) 500-1942 for a cost walkthrough before you sign.",
       },
     ],
   },
@@ -44,7 +44,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Can I walk into Suite 100 without a Calendly hold?",
-        a: "Yes during posted hours: Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. Address is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Call or text (702) 222-1964 if you are already in the parking lot.",
+        a: "Yes during posted hours: Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment. Address is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Call or text (702) 500-1942 if you are already in the parking lot.",
       },
       {
         q: "What do I bring to a first desk meeting?",
@@ -52,11 +52,11 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "How fast do you reply to a call or text vs email?",
-        a: "Call or text (702) 222-1964 for the fastest reply during posted hours. This page last published a typical two-hour window for calls, texts, and emails during business hours. Office/GBP line is (702) 500-1942.",
+        a: "Call or text (702) 500-1942 for the fastest reply during posted hours. This page last published a typical two-hour window for calls, texts, and emails during business hours.",
       },
       {
         q: "Is the first consultation billed?",
-        a: "No. Desk time at Suite 100 is not billed as a consulting hour. Buyer-broker and listing compensation are written later, not at the door. Call (702) 222-1964.",
+        a: "No. Desk time at Suite 100 is not billed as a consulting hour. Buyer-broker and listing compensation are written later, not at the door. Call (702) 500-1942.",
       },
     ],
   },
@@ -65,19 +65,19 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Where do I see listing samples before I sign?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. Brand questions are answered on-site: referral network, photography samples, and who actually answers the phone. Call (702) 222-1964.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. Brand questions are answered on-site: referral network, photography samples, and who actually answers the phone. Call (702) 500-1942.",
       },
       {
         q: "How long has Dr. Jan Duffy been in real estate?",
-        a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®. Call (702) 222-1964.",
+        a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®. Call (702) 500-1942.",
       },
       {
         q: "Is commission here higher than other Las Vegas brokerages?",
-        a: "No posted rate on this page. Commission is negotiated in writing at the listing or buyer-broker appointment. We walk every cost at Suite 100. Call (702) 222-1964.",
+        a: "No posted rate on this page. Commission is negotiated in writing at the listing or buyer-broker appointment. We walk every cost at Suite 100. Call (702) 500-1942.",
       },
       {
         q: "Can an agent in another city brief this office on my outbound or inbound move?",
-        a: "Yes. Destination and origin agents are briefed from this desk so both contracts share a calendar. Named campuses and commute minutes are mapped here, not as slogans. Call (702) 222-1964.",
+        a: "Yes. Destination and origin agents are briefed from this desk so both contracts share a calendar. Named campuses and commute minutes are mapped here, not as slogans. Call (702) 500-1942.",
       },
     ],
   },
@@ -86,7 +86,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Is this page the live MLS search or a buyer-process explainer?",
-        a: "Live MLS search. RealScout widgets on this URL use agent ID QWdlbnQtMjI1MDUw. Buyer-process copy lives at /buyers. Filter beds, baths, and square footage, save the list, then call (702) 222-1964.",
+        a: "Live MLS search. RealScout widgets on this URL use agent ID QWdlbnQtMjI1MDUw. Buyer-process copy lives at /buyers. Filter beds, baths, and square footage, save the list, then call (702) 500-1942.",
       },
       {
         q: "What inventory snapshot did this page last publish for January 2026?",
@@ -94,7 +94,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "How do we sequence Summerlin vs Henderson after I save results?",
-        a: "Summerlin first (10–15 minutes from Suite 100), Henderson second (25–35 minutes via I-215 east). We will not tour 12 ZIPs in one day. Named campuses we time by street: Palo Verde High School, Coronado High School. No ratings. Call (702) 222-1964.",
+        a: "Summerlin first (10–15 minutes from Suite 100), Henderson second (25–35 minutes via I-215 east). We will not tour 12 ZIPs in one day. Named campuses we time by street: Palo Verde High School, Coronado High School. No ratings. Call (702) 500-1942.",
       },
       {
         q: "Where are HOA dues checked before I write an offer from this search?",
@@ -107,19 +107,19 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Which phone number matches Google Business vs the client CTA?",
-        a: "Office/GBP line is (702) 500-1942. Client CTA on this site is (702) 222-1964. Address is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Hours: Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment.",
+        a: "Office and client line: (702) 500-1942. Address is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Hours: Monday–Friday 9am–6pm, Saturday 10am–4pm, Sunday by appointment.",
       },
       {
         q: "How do I leave a Google review that actually helps the Maps listing?",
-        a: "Use the View Google Reviews button on this page. Mention the transaction type and the street or village you toured — not a protected-class slogan. Call (702) 222-1964 if you cannot find the listing.",
+        a: "Use the View Google Reviews button on this page. Mention the transaction type and the street or village you toured — not a protected-class slogan. Call (702) 500-1942 if you cannot find the listing.",
       },
       {
         q: "Do GBP posts and photos on Google match this website?",
-        a: "They should. This URL exists so Maps, GBP, and the website say the same name, address, hours, and office line. If a post or photo is off, tell the desk. Call (702) 222-1964.",
+        a: "They should. This URL exists so Maps, GBP, and the website say the same name, address, hours, and office line. If a post or photo is off, tell the desk. Call (702) 500-1942.",
       },
       {
         q: "Can I get directions and a same-day desk visit from this page?",
-        a: "Yes. Directions, Call, and Reviews buttons are on this URL and in the footer. Walk-ins during posted hours start at Suite 100. Call or text (702) 222-1964 if you are already in the parking lot.",
+        a: "Yes. Directions, Call, and Reviews buttons are on this URL and in the footer. Walk-ins during posted hours start at Suite 100. Call or text (702) 500-1942 if you are already in the parking lot.",
       },
     ],
   },
@@ -128,7 +128,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Is the dark stats band a live quote for my address?",
-        a: "No. Bring the APN to 9406 W Lake Mead Blvd, Suite 100. The report is a January 2026 snapshot. The decision needs your address. Call (702) 222-1964.",
+        a: "No. Bring the APN to 9406 W Lake Mead Blvd, Suite 100. The report is a January 2026 snapshot. The decision needs your address. Call (702) 500-1942.",
       },
       {
         q: "What median and YoY figures did this report last publish?",
@@ -149,7 +149,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "Where are these 2026 forces applied to a specific ZIP?",
-        a: "At Suite 100. California inbound demand, data-center hiring, no state income tax, new-construction inventory, and mortgage-rate ranges are briefing notes — not a forecast letter. Call (702) 222-1964.",
+        a: "At Suite 100. California inbound demand, data-center hiring, no state income tax, new-construction inventory, and mortgage-rate ranges are briefing notes — not a forecast letter. Call (702) 500-1942.",
       },
       {
         q: "What median and DOM did the insights page last publish for January 2026?",
@@ -161,7 +161,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "How do I get a ZIP-level read instead of the valley average?",
-        a: "Book the desk or call (702) 222-1964. We map commute minutes, HOA dues, and recent comps for the villages you name — Palo Verde High School vs Coronado High School by street, not ratings.",
+        a: "Book the desk or call (702) 500-1942. We map commute minutes, HOA dues, and recent comps for the villages you name — Palo Verde High School vs Coronado High School by street, not ratings.",
       },
     ],
   },
@@ -170,7 +170,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
     items: [
       {
         q: "What week does this update cover, and where do I get same-week comps?",
-        a: "This update covers the week of January 20, 2026. Call (702) 222-1964 for same-week comps in your ZIP. Desk: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        a: "This update covers the week of January 20, 2026. Call (702) 500-1942 for same-week comps in your ZIP. Desk: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
       {
         q: "What valley print did that week last publish?",
@@ -182,7 +182,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "Is the inbox signup on this page a blast, or can it attach to my listing?",
-        a: "If you want the update applied to a listing, send the APN to the desk. Call (702) 222-1964. Do not treat a weekly bump as an automatic list-now order.",
+        a: "If you want the update applied to a listing, send the APN to the desk. Call (702) 500-1942. Do not treat a weekly bump as an automatic list-now order.",
       },
     ],
   },

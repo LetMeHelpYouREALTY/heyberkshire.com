@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "New Construction Las Vegas | Buyer's Guide",
   description:
-    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 222-1964.",
+    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices new construction Las Vegas",
     "new homes Las Vegas",
@@ -197,8 +197,8 @@ export default function NewConstructionPage() {
                   <p className="text-amber-800 text-sm">
                     Most builders require agent registration on your{" "}
                     <strong>first visit</strong>. Call{" "}
-                    <a href="tel:+17022221964" className="font-bold underline">
-                      (702) 222-1964
+                    <a href="tel:+17025001942" className="font-bold underline">
+                      (702) 500-1942
                     </a>{" "}
                     to register Dr. Jan Duffy as your buyer's agent before
                     visiting any model home—or you may lose your right to free
@@ -360,10 +360,10 @@ export default function NewConstructionPage() {
                   <p className="text-slate-600">
                     Call{" "}
                     <a
-                      href="tel:+17022221964"
+                      href="tel:+17025001942"
                       className="text-blue-600 font-semibold hover:underline"
                     >
-                      (702) 222-1964
+                      (702) 500-1942
                     </a>{" "}
                     to register Dr. Jan Duffy as your buyer's agent before any
                     builder visits. We'll discuss your needs, budget, and
@@ -473,7 +473,7 @@ export default function NewConstructionPage() {
               model
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Call <strong>(702) 222-1964</strong> to register Dr. Jan Duffy as
+              Call <strong>(702) 500-1942</strong> to register Dr. Jan Duffy as
               your buyer's agent
               <strong> before</strong> visiting any model home—or you may lose
               your right to free professional representation. Current incentive

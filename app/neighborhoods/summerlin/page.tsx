@@ -27,7 +27,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Summerlin Real Estate | Las Vegas Luxury Real Estate",
   description:
-    "Find Summerlin homes with a local expert. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 222-1964.",
+    "Find Summerlin homes with a local expert. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Summerlin",
     "Summerlin homes for sale",

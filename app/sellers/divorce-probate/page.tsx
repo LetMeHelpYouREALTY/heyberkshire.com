@@ -25,7 +25,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 222-1964.",
+    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1942.",
   keywords: [
     "divorce home sale Las Vegas",
     "probate real estate Las Vegas",
@@ -374,7 +374,7 @@ export default function DivorceProbatePage() {
           {/* CTA */}
           <section className="text-center bg-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Call (702) 222-1964 — this file is not a group showing
+              Call (702) 500-1942 — this file is not a group showing
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Discuss your situation privately with Dr. Jan. No pressure, no

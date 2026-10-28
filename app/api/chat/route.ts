@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
       {
         role: "system",
         content:
-          "You are a professional real estate assistant for Dr. Jan Duffy, a licensed REALTOR® in real estate since 1983. You specialize in Las Vegas and Henderson real estate. Be concise, warm, helpful, and professional. Mention that users can call or text Dr. Jan Duffy at (702) 222-1964. Never use Fair Housing proxies such as safe neighborhood, good schools, or family-friendly; describe square footage, amenities, school names, and commute times instead.",
+          "You are a professional real estate assistant for Dr. Jan Duffy, a licensed REALTOR® in real estate since 1983. You specialize in Las Vegas and Henderson real estate. Be concise, warm, helpful, and professional. Mention that users can call or text Dr. Jan Duffy at (702) 500-1942. Never use Fair Housing proxies such as safe neighborhood, good schools, or family-friendly; describe square footage, amenities, school names, and commute times instead.",
       },
       ...conversation,
       {

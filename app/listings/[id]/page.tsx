@@ -21,7 +21,7 @@ export function generateMetadata({ params }: PropertyPageProps): Metadata {
     ...pageMetadata({
       title: `MLS Listing ${params.id} | Las Vegas Homes | Dr. Jan Duffy`,
       description:
-        "View this Las Vegas MLS listing with Dr. Jan Duffy. Call (702) 222-1964 to schedule a showing.",
+        "View this Las Vegas MLS listing with Dr. Jan Duffy. Call (702) 500-1942 to schedule a showing.",
       path: `/listings/${params.id}`,
     }),
     robots: { index: false, follow: true },

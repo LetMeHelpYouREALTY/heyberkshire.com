@@ -24,7 +24,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Las Vegas Homes for Sale | MLS Property Search | Dr. Jan Duffy, REALTOR®",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features.  Dr. Jan Duffy. Call (702) 222-1964.",
+    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features.  Dr. Jan Duffy. Call (702) 500-1942.",
   path: "/listings",
   keywords: [
     "Las Vegas homes for sale",
@@ -176,7 +176,7 @@ export default function ListingsPage() {
               Each card is a live GLVAR MLS slice: Summerlin, Henderson, Green
               Valley, The Ridges, 55+ campuses, and new construction. Palo Verde
               High School and Coronado High School commutes are mapped by
-              address at ccsd.net/zoning, not as a slogan. Call (702) 222-1964.
+              address at ccsd.net/zoning, not as a slogan. Call (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               {popularSearches.map((search) => (
@@ -207,7 +207,7 @@ export default function ListingsPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Nevada has no state income tax. Confirm the week you tour: under
               $400K condos and townhomes, $400K–$600K at 1,800–2,400 sq ft
-              typical, $1M+ guard-gated product. Call (702) 222-1964 from 9406 W
+              typical, $1M+ guard-gated product. Call (702) 500-1942 from 9406 W
               Lake Mead Blvd, Suite 100.
             </p>
             <div className="space-y-4">
@@ -245,7 +245,7 @@ export default function ListingsPage() {
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               Search is opened at 9406 W Lake Mead Blvd. Dr. Jan Duffy sequences
               Summerlin 10–15 minutes west, then a Henderson loop if that is the
-              brief. Call (702) 222-1964.
+              brief. Call (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">

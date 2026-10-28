@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/inspirada",
   title: "Inspirada Real Estate | Henderson Resort Living",
   description:
-    "Find Inspirada homes with a local expert. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 222-1964.",
+    "Find Inspirada homes with a local expert. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Inspirada",
     "Inspirada homes for sale",
@@ -104,7 +104,7 @@ export default function InspiradaPage() {
               <p>
                 <strong>Inspirada</strong> is a 2,000-acre Henderson campus.
                 Pools, slides, cabanas, and trail mileage are in the HOA packet.
-                Call (702) 222-1964 from 9406 W Lake Mead Blvd, Suite 100. Do
+                Call (702) 500-1942 from 9406 W Lake Mead Blvd, Suite 100. Do
                 not stack this with a Summerlin gate afternoon.
               </p>
               <p>

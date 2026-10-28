@@ -24,7 +24,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Relocating from California to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 222-1964.",
+    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 500-1942.",
   keywords: [
     "California to Las Vegas relocation",
     "moving from California to Nevada",
