@@ -96,7 +96,9 @@ export default function PropertyPage({ params }: PropertyPageProps) {
               <h2 className="text-xl font-bold text-slate-900 mb-2">
                 Dr. Jan Duffy
               </h2>
-              <p className="text-sm text-slate-600 mb-4">Top 1% Las Vegas REALTOR®</p>
+              <p className="text-sm text-slate-600 mb-4">
+                Top 1% Las Vegas REALTOR®
+              </p>
               <p className="text-sm text-slate-600 mb-6">{nap.fullAddress}</p>
               <div className="space-y-3">
                 <Button

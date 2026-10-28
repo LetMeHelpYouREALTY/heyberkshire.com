@@ -144,9 +144,10 @@ export default function LuxuryHomesPage() {
             <HeadingPhoto path="/luxury-homes" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Dr. Jan Duffy brings the gold standard to luxury real estate. When you're buying or selling
-              a $1M+ home, trust matters more than ever. Her network, discretion, and expertise ensure your luxury transaction receives
-              the exceptional service it deserves.
+              Dr. Jan Duffy brings the gold standard to luxury real estate. When
+              you're buying or selling a $1M+ home, trust matters more than
+              ever. Her network, discretion, and expertise ensure your luxury
+              transaction receives the exceptional service it deserves.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center">
@@ -278,8 +279,8 @@ export default function LuxuryHomesPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Whether buying or selling a luxury property, Dr. Jan Duffy
-              provides the expertise your transaction deserves. Confidential consultations available for
-              discerning clients.
+              provides the expertise your transaction deserves. Confidential
+              consultations available for discerning clients.
             </p>
             <CtaActions variant="onDark" />
           </section>

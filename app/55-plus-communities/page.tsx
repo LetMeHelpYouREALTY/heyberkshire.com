@@ -447,9 +447,9 @@ export default function FiftyFiveCommunitiesPage() {
                     Suite 100
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Virtual tours and destination intros start at 9406 W
-                    Lake Mead Blvd. We do not stack a Summerlin 55+ morning with
-                    a Henderson 55+ drive.
+                    Virtual tours and destination intros start at 9406 W Lake
+                    Mead Blvd. We do not stack a Summerlin 55+ morning with a
+                    Henderson 55+ drive.
                   </p>
                 </div>
               </div>
@@ -462,9 +462,8 @@ export default function FiftyFiveCommunitiesPage() {
                     Occupancy rules in writing before any clubhouse
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Paperwork is handled at 9406 W
-                    Lake Mead Blvd, Suite 100. We review age-qualification and
-                    guest rules before the drive.
+                    Paperwork is handled at 9406 W Lake Mead Blvd, Suite 100. We
+                    review age-qualification and guest rules before the drive.
                   </p>
                 </div>
               </div>

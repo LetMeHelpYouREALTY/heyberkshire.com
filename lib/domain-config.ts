@@ -137,8 +137,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     domain: "drjanetduffy.com",
     neighborhood: "Las Vegas",
     tagline: "Dr. Jan Duffy — Las Vegas REALTOR®",
-    description:
-      "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
+    description: "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
     heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate Expert",
     heroSubheadline:
       "In real estate since 1983, 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.",
@@ -188,8 +187,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Market Expert",
     ctaHeadline: "Get the Insider Knowledge",
-    ctaSubheadline:
-      "Decades of Las Vegas real estate data at your fingertips.",
+    ctaSubheadline: "Decades of Las Vegas real estate data at your fingertips.",
   },
   "heritageatstonebridgehomes.com": {
     domain: "heritageatstonebridgehomes.com",
@@ -254,8 +252,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     domain: "lasvegashomeexpert.com",
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Home Expert — Dr. Jan Duffy",
-    description:
-      "Las Vegas home buying and selling expert. Dr. Jan Duffy.",
+    description: "Las Vegas home buying and selling expert. Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Home Expert",
     heroSubheadline:
       "The most knowledgeable real estate professional in the Las Vegas Valley.",
@@ -421,8 +418,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     domain: "samaritanpharma.com",
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Real Estate",
-    description:
-      "Las Vegas real estate services from Dr. Jan Duffy.",
+    description: "Las Vegas real estate services from Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Homes for Sale",
     heroSubheadline:
       "Expert Las Vegas real estate guidance from Dr. Jan Duffy.",

@@ -9,8 +9,7 @@ const features = [
   {
     icon: Shield,
     title: "In Real Estate Since 1983",
-    description:
-      "Las Vegas experience since 1983. Integrity you can verify.",
+    description: "Las Vegas experience since 1983. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -61,8 +60,8 @@ export default function WhyChooseUs() {
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Suite 100. We sequence the tour from this desk — not a
-            call center.
+            Appointments start at Suite 100. We sequence the tour from this desk
+            — not a call center.
           </p>
         </div>
 

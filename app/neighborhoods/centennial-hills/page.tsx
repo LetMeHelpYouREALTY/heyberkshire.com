@@ -47,7 +47,8 @@ export default function CentennialHillsPage() {
 
             <p className="text-xl text-slate-600">
               Arbor View High School commute and Centennial Hills Park, 15–20
-              minutes from Suite 100. $495K median, 25 DOM, 203 listings with Dr. Jan Duffy.
+              minutes from Suite 100. $495K median, 25 DOM, 203 listings with
+              Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -108,9 +109,8 @@ export default function CentennialHillsPage() {
                 attract attention, Centennial Hills offers something they can't:
                 mature street trees, named campuses such as Arbor View High
                 School, and landscaping that has had nearly two decades to grow.
-                Dr. Jan Duffy helps buyers
-                discover why Centennial Hills remains a frequently compared
-                northwest Las Vegas address.
+                Dr. Jan Duffy helps buyers discover why Centennial Hills remains
+                a frequently compared northwest Las Vegas address.
               </p>
               <p>
                 The community's appeal starts with location. Positioned at the
@@ -122,12 +122,12 @@ export default function CentennialHillsPage() {
                 suggest.
               </p>
               <p>
-                Dr. Jan Duffy knows which streets
-                offer the strongest mountain views, commute times to the Strip
-                and Downtown Summerlin, and which HOAs publish current reserve
-                studies. This local knowledge, combined with a commitment
-                to client service, ensures Centennial Hills buyers and sellers
-                receive exceptional representation.
+                Dr. Jan Duffy knows which streets offer the strongest mountain
+                views, commute times to the Strip and Downtown Summerlin, and
+                which HOAs publish current reserve studies. This local
+                knowledge, combined with a commitment to client service, ensures
+                Centennial Hills buyers and sellers receive exceptional
+                representation.
               </p>
 
               <CommunityHighlights path="/neighborhoods/centennial-hills" />
@@ -156,14 +156,14 @@ export default function CentennialHillsPage() {
                 views.
               </p>
               <p>
-                Working with Dr. Jan Duffy in
-                Centennial Hills means partnering with agents who understand the
-                community's evolution and can identify properties that represent
-                genuine value. Dr. Jan Duffy helps buyers look beyond surface
-                features to evaluate factors that matter long-term: construction
-                quality, lot positioning, HOA documents, and named school
-                campuses. That expertise translates into better purchase
-                decisions and stronger long-term investments.
+                Working with Dr. Jan Duffy in Centennial Hills means partnering
+                with agents who understand the community's evolution and can
+                identify properties that represent genuine value. Dr. Jan Duffy
+                helps buyers look beyond surface features to evaluate factors
+                that matter long-term: construction quality, lot positioning,
+                HOA documents, and named school campuses. That expertise
+                translates into better purchase decisions and stronger long-term
+                investments.
               </p>
             </div>
           </section>

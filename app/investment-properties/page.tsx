@@ -96,7 +96,8 @@ export default function InvestmentPropertiesPage() {
 
             <p className="text-xl text-slate-600">
               No state income tax, strong appreciation, and excellent rental
-              yields. Discover why investors choose Las Vegas—with guidance from Dr. Jan Duffy.
+              yields. Discover why investors choose Las Vegas—with guidance from
+              Dr. Jan Duffy.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -435,7 +436,9 @@ export default function InvestmentPropertiesPage() {
               </div>
               <p className="text-slate-600 text-sm">
                 Dr. Jan works with qualified intermediaries and can help
-                identify replacement properties within the 45-day window. Her referral network is invaluable for clients exchanging into or out of Las Vegas.
+                identify replacement properties within the 45-day window. Her
+                referral network is invaluable for clients exchanging into or
+                out of Las Vegas.
               </p>
             </div>
           </section>
@@ -447,7 +450,8 @@ export default function InvestmentPropertiesPage() {
               Bring the APN and rent roll to Suite 100 — (702) 500-1942
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy.
+              Get expert guidance on Las Vegas investment properties from Dr.
+              Jan Duffy.
             </p>
             <CtaActions variant="onDark" />
           </section>

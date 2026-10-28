@@ -123,7 +123,8 @@ export default function HendersonPage() {
                 <strong>Henderson</strong> is Nevada's second-largest city with
                 over 320,000 residents. Compare streets by square footage, HOA
                 dues, parks, and commute minutes from 9406 W Lake Mead Blvd—not
-                by slogan. Dr. Jan Duffy, in real estate since 1983, brings unmatched expertise to every transaction.
+                by slogan. Dr. Jan Duffy, in real estate since 1983, brings
+                unmatched expertise to every transaction.
               </p>
               <p>
                 What sets Henderson apart is scale and planning: 60+ parks,
@@ -140,8 +141,8 @@ export default function HendersonPage() {
                 the waterfront properties at
                 <strong> Lake Las Vegas</strong>—Green Valley, Inspirada,
                 MacDonald Highlands, and the 320-acre lake are compared by
-                square footage, HOA packet, and drive time from Suite 100.
-                Dr. Jan Duffy knows each of these communities intimately.
+                square footage, HOA packet, and drive time from Suite 100. Dr.
+                Jan Duffy knows each of these communities intimately.
               </p>
 
               <CommunityHighlights path="/neighborhoods/henderson" />
@@ -170,12 +171,12 @@ export default function HendersonPage() {
                 $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing Dr. Jan Duffy for
-                your Henderson home search means working with agents who
-                understand the subtle differences between Henderson's many
-                communities. Dr. Jan Duffy can map commute times to named
-                campuses such as Coronado High School and Green Valley High
-                School, review HOA documents, and compare recent sales. That local knowledge makes all the difference.
+                Choosing Dr. Jan Duffy for your Henderson home search means
+                working with agents who understand the subtle differences
+                between Henderson's many communities. Dr. Jan Duffy can map
+                commute times to named campuses such as Coronado High School and
+                Green Valley High School, review HOA documents, and compare
+                recent sales. That local knowledge makes all the difference.
               </p>
             </div>
           </section>

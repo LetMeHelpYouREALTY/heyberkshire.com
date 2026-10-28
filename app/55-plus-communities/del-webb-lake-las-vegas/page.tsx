@@ -91,8 +91,9 @@ export default function DelWebbLakeLasVegasPage() {
                 confirm them the week you tour.
               </p>
               <p>
-                Dr. Jan Duffy helps buyers navigate Del Webb's various floor plans and lot positions, and provides guidance on which phases offer
-                the best value and which premium lots justify their price
+                Dr. Jan Duffy helps buyers navigate Del Webb's various floor
+                plans and lot positions, and provides guidance on which phases
+                offer the best value and which premium lots justify their price
                 premiums.
               </p>
             </div>

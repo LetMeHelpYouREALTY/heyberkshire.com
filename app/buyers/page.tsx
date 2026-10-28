@@ -108,9 +108,9 @@ export default function BuyersPage() {
             <HeadingPhoto path="/buyers" />
 
             <p className="text-xl text-slate-600 mb-8">
-              When you work with Dr. Jan Duffy as your buyer's agent,
-              the seller-paid buyer-broker fee is explained at Suite 100 — and
-              it costs you nothing at the closing table. The representation is
+              When you work with Dr. Jan Duffy as your buyer's agent, the
+              seller-paid buyer-broker fee is explained at Suite 100 — and it
+              costs you nothing at the closing table. The representation is
               yours.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
@@ -144,9 +144,9 @@ export default function BuyersPage() {
                 <p className="text-slate-300 mb-6">
                   Buyer representation is explained at Suite 100. The seller
                   typically pays the buyer-broker fee, and the agency file is
-                  yours. Dr. Jan Duffy and her team
-                  write offers, inspections, and occupancy dates for the buyer —
-                  not the listing agent. Call (702) 500-1942.
+                  yours. Dr. Jan Duffy and her team write offers, inspections,
+                  and occupancy dates for the buyer — not the listing agent.
+                  Call (702) 500-1942.
                 </p>
                 <ul className="space-y-2">
                   {[
@@ -296,8 +296,8 @@ export default function BuyersPage() {
               Buyer-agency paperwork at Suite 100 before any model row
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Representation is signed at 9406 W Lake Mead Blvd, Suite 100. Call (702) 500-1942 before
-              the first builder visit.
+              Representation is signed at 9406 W Lake Mead Blvd, Suite 100. Call
+              (702) 500-1942 before the first builder visit.
             </p>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
@@ -308,8 +308,7 @@ export default function BuyersPage() {
                   Buyer-agency form at the desk
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Your agent is on the form. We do not walk models
-                  unregistered.
+                  Your agent is on the form. We do not walk models unregistered.
                 </p>
               </div>
               <div className="text-center">
@@ -332,7 +331,8 @@ export default function BuyersPage() {
                   West-valley start, then the listing street
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has been in real estate since 1983, with $127M+ in transactions from Suite 100
+                  Dr. Jan has been in real estate since 1983, with $127M+ in
+                  transactions from Suite 100
                 </p>
               </div>
               <div className="text-center">
@@ -362,8 +362,8 @@ export default function BuyersPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Questions about buying in Las Vegas? Call or text Dr. Jan Duffy
-              for a free buyer consultation. Get expert guidance—the seller pays the commission, so
-              representation is free for you.
+              for a free buyer consultation. Get expert guidance—the seller pays
+              the commission, so representation is free for you.
             </p>
             <CtaActions variant="onDark" />
           </section>

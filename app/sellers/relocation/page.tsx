@@ -139,7 +139,8 @@ export default function RelocationPage() {
                         Agent Referrals
                       </strong>
                       <p className="text-slate-600 text-sm">
-                        We connect you with top-producing agents in your destination city— professionals we trust to take care of
+                        We connect you with top-producing agents in your
+                        destination city— professionals we trust to take care of
                         you.
                       </p>
                     </div>
@@ -386,7 +387,8 @@ export default function RelocationPage() {
                     Destination Agent Connection
                   </h3>
                   <p className="text-slate-600">
-                    Dr. Jan introduces you to a top-producing agent in your new city. They're briefed on your timeline, budget, and
+                    Dr. Jan introduces you to a top-producing agent in your new
+                    city. They're briefed on your timeline, budget, and
                     preferences before your first conversation.
                   </p>
                 </div>
@@ -446,7 +448,8 @@ export default function RelocationPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="bg-green-50 border border-green-200 rounded-xl p-8">
               <p className="text-slate-700 mb-4">
-                If you're moving TO Las Vegas from another city, Dr. Jan welcomes referrals from agents nationwide. She provides:
+                If you're moving TO Las Vegas from another city, Dr. Jan
+                welcomes referrals from agents nationwide. She provides:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <ul className="space-y-2 text-slate-700">

@@ -21,8 +21,7 @@ import LeftoverBand from "@/components/sections/LeftoverBand";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/california-relocator",
-  title:
-    "Relocating from California to Las Vegas | Dr. Jan Duffy, REALTOR®",
+  title: "Relocating from California to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
     "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 500-1942.",
   keywords: [

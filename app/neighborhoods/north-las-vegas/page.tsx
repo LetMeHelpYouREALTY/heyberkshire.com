@@ -107,10 +107,9 @@ export default function NorthLasVegasPage() {
                 transformation over the past decade. What was once considered a
                 distant suburb is now a thriving city with new master-planned
                 communities, major employers, and infrastructure improvements
-                that make it an inventory band to compare at Suite 100.{" "}
-                Dr. Jan Duffy compares $385K
-                median listings, named campuses, and commute minutes on this
-                north clock.
+                that make it an inventory band to compare at Suite 100. Dr. Jan
+                Duffy compares $385K median listings, named campuses, and
+                commute minutes on this north clock.
               </p>
               <p>
                 With a median home price of <strong>$385,000</strong>—roughly
@@ -123,10 +122,11 @@ export default function NorthLasVegasPage() {
                 line.
               </p>
               <p>
-                Dr. Jan Duffy provides the same expert service in North Las Vegas as she does in the valley's luxury markets. She helps compare square
-                footage, named campuses, and financing files on this north
-                clock. For new construction—where builders' sales agents
-                represent the builder, not you—she provides free buyer
+                Dr. Jan Duffy provides the same expert service in North Las
+                Vegas as she does in the valley's luxury markets. She helps
+                compare square footage, named campuses, and financing files on
+                this north clock. For new construction—where builders' sales
+                agents represent the builder, not you—she provides free buyer
                 representation that can save thousands in upgrades and
                 negotiations.
               </p>
@@ -154,14 +154,13 @@ export default function NorthLasVegasPage() {
                 opportunities here, with rental yields often exceeding 6%.
               </p>
               <p>
-                Working with Dr. Jan Duffy in
-                North Las Vegas means getting honest guidance about which
-                neighborhoods offer the best value, which builders have the best
-                reputations, and which areas are poised for the strongest
-                appreciation. Dr. Jan Duffy won't push you toward a more
-                expensive area when North Las Vegas fits your needs—that
-                integrity is what sets this service apart from agencies focused solely
-                on commission.
+                Working with Dr. Jan Duffy in North Las Vegas means getting
+                honest guidance about which neighborhoods offer the best value,
+                which builders have the best reputations, and which areas are
+                poised for the strongest appreciation. Dr. Jan Duffy won't push
+                you toward a more expensive area when North Las Vegas fits your
+                needs—that integrity is what sets this service apart from
+                agencies focused solely on commission.
               </p>
             </div>
           </section>

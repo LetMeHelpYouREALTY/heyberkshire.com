@@ -193,8 +193,8 @@ export default function NeighborhoodsPage() {
             <HeadingPhoto path="/neighborhoods" />
 
             <p className="text-xl text-slate-600">
-              Compare Las Vegas and Henderson neighborhoods with Dr. Jan Duffy, your neighborhood
-              expert
+              Compare Las Vegas and Henderson neighborhoods with Dr. Jan Duffy,
+              your neighborhood expert
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />

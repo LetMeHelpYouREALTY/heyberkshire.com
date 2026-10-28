@@ -256,8 +256,8 @@ export default function ListingsPage() {
                   Off-market windows from the desk
                 </h3>
                 <p className="text-slate-400 text-sm">
-                  Pocket listings come through the referral network. We do not text
-                  addresses on unsecured threads.
+                  Pocket listings come through the referral network. We do not
+                  text addresses on unsecured threads.
                 </p>
               </div>
               <div className="text-center">
@@ -339,8 +339,8 @@ export default function ListingsPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for personalized guidance, off-market
-              listings, and expert representation. Free buyer consultations available—the seller pays
-              the commission.
+              listings, and expert representation. Free buyer consultations
+              available—the seller pays the commission.
             </p>
             <CtaActions variant="onDark" />
           </section>

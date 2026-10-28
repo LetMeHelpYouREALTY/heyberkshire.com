@@ -18,8 +18,7 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/southern-highlands",
-  title:
-    "Southern Highlands Real Estate | Las Vegas Golf Community",
+  title: "Southern Highlands Real Estate | Las Vegas Golf Community",
   description:
     "Find Southern Highlands homes with a local expert. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 500-1942.",
   keywords: [
@@ -108,8 +107,9 @@ export default function SouthernHighlandsPage() {
                 Vegas's answer to Summerlin—a meticulously planned 2,200-acre
                 community centered around an award-winning championship golf
                 course. For buyers seeking luxury living with convenient access
-                to the Strip, airport, and I-15 corridor,{" "}
-                Dr. Jan Duffy considers Southern Highlands among Las Vegas's finest residential options.
+                to the Strip, airport, and I-15 corridor, Dr. Jan Duffy
+                considers Southern Highlands among Las Vegas's finest
+                residential options.
               </p>
               <p>
                 The community's crown jewel is the Southern Highlands Golf Club,
@@ -122,12 +122,12 @@ export default function SouthernHighlandsPage() {
                 community's aesthetic.
               </p>
               <p>
-                Dr. Jan Duffy understands the community's
-                various sections—from the guard-gated luxury estates surrounding
-                the golf course to the residential neighborhoods with parks and
-                trails in the community's newer phases. Whether you're seeking a
-                golf course lot with Strip views or a 4-bedroom home near Elise
-                Wolff Elementary, Dr. Jan Duffy has the local expertise to guide your
+                Dr. Jan Duffy understands the community's various sections—from
+                the guard-gated luxury estates surrounding the golf course to
+                the residential neighborhoods with parks and trails in the
+                community's newer phases. Whether you're seeking a golf course
+                lot with Strip views or a 4-bedroom home near Elise Wolff
+                Elementary, Dr. Jan Duffy has the local expertise to guide your
                 search.
               </p>
 
@@ -153,14 +153,13 @@ export default function SouthernHighlandsPage() {
                 course estates.
               </p>
               <p>
-                Choosing Dr. Jan Duffy for
-                Southern Highlands means working with agents who understand the
-                community's unique value proposition. Dr. Jan Duffy can explain
-                the differences between various sections, which lots offer the
-                best views, and how HOA fees vary across the community. This
-                knowledge, combined with a reputation for excellence,
-                ensures Southern Highlands buyers and sellers receive
-                exceptional service.
+                Choosing Dr. Jan Duffy for Southern Highlands means working with
+                agents who understand the community's unique value proposition.
+                Dr. Jan Duffy can explain the differences between various
+                sections, which lots offer the best views, and how HOA fees vary
+                across the community. This knowledge, combined with a reputation
+                for excellence, ensures Southern Highlands buyers and sellers
+                receive exceptional service.
               </p>
             </div>
           </section>

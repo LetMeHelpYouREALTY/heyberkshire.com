@@ -105,10 +105,10 @@ export default function GreenValleyPage() {
                 <strong>Green Valley</strong> was established in 1988 as
                 Henderson&apos;s first large-scale plat with HOA streets, parks,
                 and golf. Three decades later the comparison is canopy age and
-                lot size vs newer Henderson rec campuses. Today, Dr. Jan Duffy sequences Green
-                Valley tours from Suite 100: The District first, then
-                golf-course HOAs and interior streets on a 25–35 minute I-215
-                east clock.
+                lot size vs newer Henderson rec campuses. Today, Dr. Jan Duffy
+                sequences Green Valley tours from Suite 100: The District first,
+                then golf-course HOAs and interior streets on a 25–35 minute
+                I-215 east clock.
               </p>
               <p>
                 What makes Green Valley unique is something that can't be
@@ -120,10 +120,9 @@ export default function GreenValleyPage() {
                 that have been operating since the late 1980s.
               </p>
               <p>
-                Dr. Jan Duffy knows which streets offer the strongest
-                mountain views, named campuses such as Green Valley High School,
-                and which HOAs publish current reserve studies. This local
-                knowledge
+                Dr. Jan Duffy knows which streets offer the strongest mountain
+                views, named campuses such as Green Valley High School, and
+                which HOAs publish current reserve studies. This local knowledge
                 gives Green Valley buyers and sellers a distinct advantage.
               </p>
 
@@ -146,11 +145,11 @@ export default function GreenValleyPage() {
                 Valley Ranch and Green Valley South.
               </p>
               <p>
-                Working with Dr. Jan Duffy in Green Valley means understanding the subtle differences
-                between Green Valley proper, Green Valley Ranch, and Green
-                Valley South. Each area is compared by tree canopy age,
-                golf-course adjacency, The District retail, and commute minutes
-                from Suite 100. Call (702) 500-1942.
+                Working with Dr. Jan Duffy in Green Valley means understanding
+                the subtle differences between Green Valley proper, Green Valley
+                Ranch, and Green Valley South. Each area is compared by tree
+                canopy age, golf-course adjacency, The District retail, and
+                commute minutes from Suite 100. Call (702) 500-1942.
               </p>
             </div>
           </section>

@@ -12,8 +12,7 @@ import { pageMetadata, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/market-update",
-  title:
-    "Las Vegas Market Update | January 2026",
+  title: "Las Vegas Market Update | January 2026",
   description:
     "Weekly Las Vegas real estate market update. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
@@ -70,7 +69,8 @@ export default function MarketUpdatePage() {
             <HeadingPhoto path="/market-update" />
 
             <p className="text-xl text-slate-600">
-              Your weekly insider report on Las Vegas Valley real estate from Dr. Jan Duffy
+              Your weekly insider report on Las Vegas Valley real estate from
+              Dr. Jan Duffy
             </p>
             <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
               <span>By Dr. Jan Duffy, REALTOR®</span>

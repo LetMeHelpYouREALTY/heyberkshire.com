@@ -104,7 +104,8 @@ export default function LuxuryHomesPage() {
               <div>
                 <p className="text-slate-700 mb-4">
                   Luxury transactions require a level of discretion that most
-                  agents can't provide. Dr. Jan Duffy understands that privacy isn't a luxury—it's a requirement.
+                  agents can't provide. Dr. Jan Duffy understands that privacy
+                  isn't a luxury—it's a requirement.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">

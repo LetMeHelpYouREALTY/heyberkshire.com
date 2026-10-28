@@ -134,7 +134,8 @@ export default function RelocationPage() {
             <HeadingPhoto path="/relocation" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Dr. Jan Duffy makes your move seamless, coordinating your relocation from anywhere in the country. Whether you're moving
+              Dr. Jan Duffy makes your move seamless, coordinating your
+              relocation from anywhere in the country. Whether you're moving
               from California, the Midwest, or across the globe, Dr. Jan Duffy
               provides comprehensive relocation services to ensure your
               transition is stress-free.
@@ -360,7 +361,8 @@ export default function RelocationPage() {
               50,000-agent referral, then a dated calendar at Suite 100
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              A nationwide referral network provides seamless coordination for relocations. Your agent back home can connect directly with Dr.
+              A nationwide referral network provides seamless coordination for
+              relocations. Your agent back home can connect directly with Dr.
               Jan to ensure a smooth transition—no gaps, no miscommunication.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
@@ -368,7 +370,8 @@ export default function RelocationPage() {
                 <Globe className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Nationwide Network</h3>
                 <p className="text-slate-600 text-sm">
-                  Seamless referrals from agents across the country directly to Dr. Jan
+                  Seamless referrals from agents across the country directly to
+                  Dr. Jan
                 </p>
               </div>
               <div className="text-center p-6 bg-slate-50 rounded-xl">
@@ -400,9 +403,9 @@ export default function RelocationPage() {
               Book Suite 100 before the first inbound ZIP — (702) 500-1942
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Let Dr. Jan Duffy make your relocation stress-free. Whether you're moving next month or
-              exploring options, a free consultation can help you understand the
-              Las Vegas market and plan your transition.
+              Let Dr. Jan Duffy make your relocation stress-free. Whether you're
+              moving next month or exploring options, a free consultation can
+              help you understand the Las Vegas market and plan your transition.
             </p>
             <CtaActions variant="onDark" />
           </section>
