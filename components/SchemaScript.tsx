@@ -62,7 +62,7 @@ export async function BreadcrumbSchema({
 }: {
   items: Array<{ name: string; url: string }>;
 }) {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -118,7 +118,7 @@ export async function ReviewSchema({
     date?: string;
   }>;
 }) {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const siteUrl = resolveSiteUrl(domain);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -166,7 +166,7 @@ export async function NeighborhoodSchema({
   longitude?: number;
   containedIn?: string;
 }) {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const siteUrl = resolveSiteUrl(domain);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",

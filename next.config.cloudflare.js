@@ -1,62 +1,61 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Output configuration for Cloudflare Pages
-  output: 'standalone',
+  output: "standalone",
 
   // Image optimization for Cloudflare
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     // Use Cloudflare Images loader
-    loader: 'custom',
-    loaderFile: './lib/cloudflare-image-loader.ts',
+    loader: "custom",
+    loaderFile: "./lib/cloudflare-image-loader.ts",
   },
 
   // Compression (handled by Cloudflare)
   compress: false,
 
   // Performance optimizations
-  swcMinify: true,
 
   // Environment variables
   env: {
-    CLOUDFLARE_ENV: process.env.CLOUDFLARE_ENV || 'production',
+    CLOUDFLARE_ENV: process.env.CLOUDFLARE_ENV || "production",
   },
 
   // Redirect non-www to www (handled by Worker)
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         has: [
           {
-            type: 'host',
-            value: 'heyberkshire.com',
+            type: "host",
+            value: "heyberkshire.com",
           },
         ],
-        destination: 'https://www.heyberkshire.com/:path*',
+        destination: "https://www.heyberkshire.com/:path*",
         permanent: true,
       },
-    ]
+    ];
   },
 
   // Python API rewrites
   rewrites: async () => {
     return [
       {
-        source: '/api/:path*',
+        source: "/api/:path*",
         destination:
-          process.env.NODE_ENV === 'development'
-            ? 'http://127.0.0.1:5328/api/:path*'
-            : '/api/',
+          process.env.NODE_ENV === "development"
+            ? "http://127.0.0.1:5328/api/:path*"
+            : "/api/",
       },
-    ]
+    ];
   },
 
   // Headers are handled by Cloudflare Workers
   async headers() {
-    return []
+    return [];
   },
 
   // Webpack configuration for Cloudflare compatibility
@@ -66,26 +65,26 @@ const nextConfig = {
       config.resolve.alias = {
         ...config.resolve.alias,
         // Polyfills for Node.js modules
-        'async_hooks': false,
-        'fs': false,
-        'net': false,
-        'tls': false,
+        async_hooks: false,
+        fs: false,
+        net: false,
+        tls: false,
       };
     }
 
     // Bundle analyzer (when ANALYZE=true)
-    if (process.env.ANALYZE === 'true' && !isServer) {
-      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+    if (process.env.ANALYZE === "true" && !isServer) {
+      const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
       config.plugins.push(
         new BundleAnalyzerPlugin({
-          analyzerMode: 'static',
-          reportFilename: './analyze.html',
+          analyzerMode: "static",
+          reportFilename: "./analyze.html",
           openAnalyzer: false,
-        })
-      )
+        }),
+      );
     }
 
-    return config
+    return config;
   },
 
   // Experimental features for Cloudflare
@@ -93,8 +92,8 @@ const nextConfig = {
     // Use lighter runtime
     serverMinification: true,
     // Optimize server components
-    serverComponentsExternalPackages: ['sharp'],
+    serverComponentsExternalPackages: ["sharp"],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
