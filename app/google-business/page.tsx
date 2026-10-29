@@ -151,8 +151,15 @@ export default function GoogleBusinessPage() {
                       />
                     ))}
                   </div>
-                  <p className="text-3xl font-bold mb-2">4.9 / 5.0</p>
-                  <p className="text-blue-200 mb-6">200+ Client Reviews</p>
+                  <p className="text-3xl font-bold mb-2">5.0 / 5.0</p>
+                  <a
+                    href="https://www.realtor.com/realestateagents/63340593275bf055fedf5ff1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-blue-200 mb-6 underline-offset-2 hover:underline"
+                  >
+                    50 reviews on Realtor.com
+                  </a>
                   <CtaActions variant="onDark" />
                 </div>
               </div>
