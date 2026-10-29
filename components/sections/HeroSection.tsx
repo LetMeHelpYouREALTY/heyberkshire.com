@@ -67,8 +67,8 @@ export default function HeroSection() {
           <span className="text-blue-400">Las Vegas &amp; Henderson</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Search live MLS listings with Dr. Jan Duffy, Top 1% Las Vegas
-          REALTOR®. Call or text (702) 500-1942.
+          Search live MLS listings with Dr. Jan Duffy, Las Vegas REALTOR®. Call
+          or text (702) 500-1942.
         </p>
 
         <div className="realscout-wrapper mb-4">
@@ -82,11 +82,11 @@ export default function HeroSection() {
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-white/90 text-sm">
           <div className="flex items-center gap-2">
             <span className="font-semibold tabular-nums">500+</span>
-            <span>Transactions Closed</span>
+            <span>Team Sales</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">Since 1983</span>
-            <span>In Real Estate</span>
+            <span className="font-semibold">Since 2008</span>
+            <span>Licensed</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold tabular-nums">5.0★</span>
