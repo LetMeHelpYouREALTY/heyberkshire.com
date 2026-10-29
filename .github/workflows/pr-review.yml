@@ -346,8 +346,7 @@ jobs:
                   issues.push(`❌ **${file.filename}**: Missing metadata export (SEO)`);
                 }
                 
-                // (702) 500-1942 is the only published line (matches GBP).
-                // (702) 222-1964 is for client emails and texts only, never the site.
+                // Site phone is (702) 500-1955. 702-222-1964 is client email and text only (flag it).
                 if (
                   content.includes('222-1964') ||
                   content.includes('7022221964') ||
@@ -514,7 +513,7 @@ jobs:
             - [ ] Code follows project conventions
             - [ ] Tests pass with adequate coverage (80%+)
             - [ ] SEO metadata is present and optimized
-            - [ ] Every published phone number is (702) 500-1942 (matches GBP)
+            - [ ] Phone numbers are correct: (702) 500-1955 (702-222-1964 is client email and text only)
             - [ ] Berkshire Hathaway branding is consistent
             - [ ] Mobile responsive design verified
             - [ ] No console errors
