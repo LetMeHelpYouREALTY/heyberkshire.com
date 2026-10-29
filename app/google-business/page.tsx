@@ -26,7 +26,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/google-business",
   title: "Dr. Jan Duffy, REALTOR® | Las Vegas Real Estate",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, in real estate since 1983. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, licensed since 2008. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
@@ -39,7 +39,7 @@ export const metadata: Metadata = pageMetadata({
   openGraph: {
     title: "Dr. Jan Duffy, REALTOR®",
     description:
-      "Trusted Las Vegas REALTOR® in real estate since 1983. Summerlin, Henderson, luxury homes, 55+ communities.",
+      "Trusted Las Vegas REALTOR® licensed since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
     type: "profile",
   },
 });
@@ -67,7 +67,7 @@ export default function GoogleBusinessPage() {
                       aria-hidden="true"
                     />
                     <span className="text-yellow-400 font-semibold">
-                      Top 1% Las Vegas REALTOR®
+                      Las Vegas REALTOR®
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -76,7 +76,7 @@ export default function GoogleBusinessPage() {
                   <HeadingPhoto path="/google-business" />
 
                   <p className="text-xl text-blue-200 mb-2">
-                    Top 1% Las Vegas REALTOR®
+                    Las Vegas REALTOR®
                   </p>
                   <p className="text-slate-300 mb-6">Nevada Properties</p>
 

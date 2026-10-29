@@ -177,9 +177,9 @@ export default function SummerlinPage() {
               <p>
                 Working with Dr. Jan Duffy gives you access to listings before
                 they hit the market and offer math written at 9406 W Lake Mead
-                Blvd. Dr. Jan Duffy has been in real estate since 1983 — which
-                streets have mountain views and which builder rows we register
-                first are desk facts, not a search screenshot.
+                Blvd. Dr. Jan Duffy has been licensed since 2008 — which streets
+                have mountain views and which builder rows we register first are
+                desk facts, not a search screenshot.
               </p>
             </div>
           </section>

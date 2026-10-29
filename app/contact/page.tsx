@@ -206,7 +206,7 @@ export default function ContactPage() {
                 <p className="text-sm text-slate-700">
                   <strong>{nap.shortName}, REALTOR®</strong>
                   <br />
-                  Top 1% Las Vegas REALTOR®
+                  Las Vegas REALTOR®
                   <br />
                   {nap.fullAddress}
                 </p>

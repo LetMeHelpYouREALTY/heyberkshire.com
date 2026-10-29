@@ -69,7 +69,7 @@ export const supportFaqs: Record<string, SupportFaqCopy> = {
       },
       {
         q: "How long has Dr. Jan Duffy been in real estate?",
-        a: "Dr. Jan Duffy has been in real estate since 1983 and is a Top 1% Las Vegas REALTOR®. Call (702) 500-1942.",
+        a: "Dr. Jan Duffy has been licensed since 2008 and is a Las Vegas REALTOR®. Call (702) 500-1942.",
       },
       {
         q: "Is commission here higher than other Las Vegas brokerages?",

@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/about",
   title: "About Dr. Jan Duffy | Las Vegas REALTOR®",
   description:
-    "Meet Dr. Jan Duffy, your trusted agent. In real estate since 1983, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, your trusted agent. Licensed since 2008, $127M+ in Dr. Duffy Group career sales, Henderson & Summerlin specialist. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Berkshire Hathaway HomeServices agent",
@@ -113,9 +113,9 @@ export default function AboutPage() {
             </h1>
             <HeadingPhoto path="/about" />
             <p className="text-xl text-slate-600">
-              Dr. Jan Duffy has been in real estate since 1983. Whether you're
-              buying, selling, investing, or relocating, you'll receive expert
-              guidance with integrity and professionalism.
+              Dr. Jan Duffy has been licensed since 2008. Whether you're buying,
+              selling, investing, or relocating, you'll receive expert guidance
+              with integrity and professionalism.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Consultation" />
@@ -133,23 +133,23 @@ export default function AboutPage() {
                   Dr. Jan Duffy
                 </h2>
                 <p className="text-lg text-blue-600 mb-6">
-                  Top 1% Las Vegas REALTOR®
+                  Las Vegas REALTOR®
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
                     When you choose to work with me, you're choosing trust,
-                    integrity, and excellence. I've been in real estate since
-                    1983, and I bring local expertise to every client I serve.
+                    integrity, and excellence. I've been licensed since 2008,
+                    and I bring local expertise to every client I serve.
                   </p>
                   <p>
-                    I've closed $127M+ in transactions and helped hundreds of
-                    buyers and sellers find the right home in Las Vegas,
-                    Henderson, Summerlin, and throughout Southern Nevada. My
-                    expertise spans luxury properties, new construction,
-                    investment real estate, 55+ active adult communities, and
-                    relocations—particularly for California buyers seeking
-                    Nevada's tax advantages.
+                    I've led the Dr. Duffy Group to $127M+ in career sales and
+                    helped hundreds of buyers and sellers find the right home in
+                    Las Vegas, Henderson, Summerlin, and throughout Southern
+                    Nevada. My expertise spans luxury properties, new
+                    construction, investment real estate, 55+ active adult
+                    communities, and relocations—particularly for California
+                    buyers seeking Nevada's tax advantages.
                   </p>
                   <p>
                     When you're making the biggest financial decision of your
@@ -245,21 +245,23 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">
-                      Since 1983
+                      Since 2008
                     </div>
-                    <div className="text-sm text-slate-600">In Real Estate</div>
+                    <div className="text-sm text-slate-600">Licensed</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">
                       $127M+
                     </div>
-                    <div className="text-sm text-slate-600">Volume Closed</div>
+                    <div className="text-sm text-slate-600">
+                      Team Career Sales
+                    </div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">
                       500+
                     </div>
-                    <div className="text-sm text-slate-600">Transactions</div>
+                    <div className="text-sm text-slate-600">Team Sales</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">

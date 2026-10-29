@@ -30,7 +30,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "How long has Dr. Jan Duffy been in real estate?",
-        a: "Dr. Jan Duffy has been in real estate since 1983. Call (702) 500-1942.",
+        a: "Dr. Jan Duffy has been licensed since 2008. Call (702) 500-1942.",
       },
       {
         q: "Which cities does this office actually tour from Lake Mead Blvd?",
@@ -128,7 +128,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "What license and brokerage should match GBP?",
-        a: "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®. Never Janet as the agent name.",
+        a: "Dr. Jan Duffy, Las Vegas REALTOR®. Never Janet as the agent name.",
       },
       {
         q: "Which number do I call vs the office/GBP line?",
@@ -136,7 +136,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "What closed-volume snapshot did this hub last publish?",
-        a: "This page last published $127M+ in closed transactions and 500+ clients served. Ask the desk for current production — do not treat that snapshot as a live ranking.",
+        a: "This page last published $127M+ in Dr. Duffy Group career sales and 500+ team sales. Ask the desk for current production — do not treat that snapshot as a live ranking.",
       },
     ],
   },

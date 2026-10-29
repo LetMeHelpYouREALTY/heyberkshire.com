@@ -70,11 +70,11 @@ export default async function Home() {
               <span className="font-semibold text-white tabular-nums">
                 500+
               </span>
-              <span>Transactions Closed</span>
+              <span>Team Sales</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Since 1983</span>
-              <span>In Real Estate</span>
+              <span className="font-semibold text-white">Since 2008</span>
+              <span>Licensed</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-semibold text-white tabular-nums">

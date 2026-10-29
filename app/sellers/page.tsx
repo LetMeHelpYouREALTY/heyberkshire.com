@@ -89,9 +89,9 @@ export default function SellersPage() {
 
             <p className="text-xl text-slate-600 mb-8">
               When you list with Dr. Jan Duffy, you get world-class marketing,
-              expert pricing, and a name that buyers trust. In real estate since
-              1983, she helps sellers achieve top-dollar results with proven
-              marketing strategies and skilled negotiation.
+              expert pricing, and a name that buyers trust. Licensed since 2008,
+              she helps sellers achieve top-dollar results with proven marketing
+              strategies and skilled negotiation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center">
