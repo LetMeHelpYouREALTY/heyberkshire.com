@@ -24,7 +24,7 @@
 - [ ] JSON-LD schema markup included (if applicable)
 - [ ] H1 tag present and keyword-optimized
 - [ ] Berkshire Hathaway HomeServices branding consistent
-- [ ] Phone number is correct: **(702) 500-1942** for CTAs
+- [ ] Phone number is correct: **(702) 500-1955** (702-222-1964 is client email and text only)
 
 ## Quality Checklist
 
