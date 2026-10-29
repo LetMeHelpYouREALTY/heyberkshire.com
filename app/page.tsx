@@ -20,7 +20,7 @@ import { mediaUrl, photos } from "@/lib/media";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
-  const hostname = headers().get("x-domain");
+  const hostname = (await headers()).get("x-domain");
   return pageMetadata({
     path: "/",
     hostname,
