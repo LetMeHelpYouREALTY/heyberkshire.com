@@ -54,9 +54,11 @@ interface ReviewsSectionProps {
 }
 
 export default function ReviewsSection({
-  reviews = defaultReviews,
+  // Named testimonials are held until each one is confirmed as a real client (Oct 29, 2026).
+  // Pass `reviews` explicitly to show verified quotes.
+  reviews = [],
   title = "What Clients Say About Dr. Jan Duffy",
-  subtitle = "Verified client feedback from Las Vegas, Henderson, and Summerlin transactions",
+  subtitle = "Read verified client reviews on Google and Realtor.com",
   googleReviewsUrl = defaultGoogleReviewsUrl,
   className = "",
   showHeading = true,
@@ -82,67 +84,69 @@ export default function ReviewsSection({
           </div>
         ) : null}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {reviews.map((review) => (
-            <article
-              key={review.id}
-              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
-            >
-              <div className="flex items-center mb-4">
-                <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
-                  {review.image ? (
-                    <Image
-                      src={review.image}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="64px"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                      <span className="text-slate-400 text-sm">
-                        {review.name[0]}
-                      </span>
-                    </div>
-                  )}
-                </div>
-                <div className="min-w-0">
-                  <h3 className="font-bold text-slate-900 truncate">
-                    {review.name}
-                  </h3>
-                  <p className="text-sm text-slate-600">{review.location}</p>
-                </div>
-              </div>
-
-              <div
-                className="flex items-center mb-4"
-                aria-label={`${review.rating} out of 5 stars`}
+        {reviews.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {reviews.map((review) => (
+              <article
+                key={review.id}
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
               >
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`h-5 w-5 ${
-                      i < review.rating
-                        ? "text-yellow-400 fill-yellow-400"
-                        : "text-slate-300"
-                    }`}
+                <div className="flex items-center mb-4">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                    {review.image ? (
+                      <Image
+                        src={review.image}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="64px"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-slate-200 flex items-center justify-center">
+                        <span className="text-slate-400 text-sm">
+                          {review.name[0]}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="font-bold text-slate-900 truncate">
+                      {review.name}
+                    </h3>
+                    <p className="text-sm text-slate-600">{review.location}</p>
+                  </div>
+                </div>
+
+                <div
+                  className="flex items-center mb-4"
+                  aria-label={`${review.rating} out of 5 stars`}
+                >
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`h-5 w-5 ${
+                        i < review.rating
+                          ? "text-yellow-400 fill-yellow-400"
+                          : "text-slate-300"
+                      }`}
+                      aria-hidden="true"
+                    />
+                  ))}
+                </div>
+
+                <div className="relative">
+                  <Quote
+                    className="absolute -top-2 -left-2 h-8 w-8 text-blue-100"
                     aria-hidden="true"
                   />
-                ))}
-              </div>
-
-              <div className="relative">
-                <Quote
-                  className="absolute -top-2 -left-2 h-8 w-8 text-blue-100"
-                  aria-hidden="true"
-                />
-                <p className="text-slate-700 relative z-10 pl-4">
-                  {review.text}
-                </p>
-              </div>
-            </article>
-          ))}
-        </div>
+                  <p className="text-slate-700 relative z-10 pl-4">
+                    {review.text}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
 
         <div className="text-center mt-12">
           <a

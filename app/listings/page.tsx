@@ -122,9 +122,8 @@ export default function ListingsPage() {
             <HeadingPhoto path="/listings" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Search thousands of Las Vegas, Henderson, and Summerlin properties
-              with live MLS listings updated every 15 minutes. Find your dream
-              home with expert guidance from Dr. Jan Duffy.
+              Search Las Vegas, Henderson, and Summerlin properties from the
+              live MLS feed, with expert guidance from Dr. Jan Duffy.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500 mb-8">
               <span className="flex items-center">
@@ -132,12 +131,8 @@ export default function ListingsPage() {
                 Data
               </span>
               <span className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Updated
-                Every 15 Min
-              </span>
-              <span className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-1" /> 5,000+
-                Active Listings
+                <CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Saved
+                Searches & Alerts
               </span>
             </div>
             <div className="mb-8">

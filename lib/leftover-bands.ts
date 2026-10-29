@@ -19,12 +19,12 @@ export type LeftoverCopy = {
 export const leftoverBands: Record<string, LeftoverCopy[]> = {
   "/": [
     {
-      h2: "GBP 4.9 on this homepage — open Google Reviews from the Maps pin, then book Suite 100",
+      h2: "Google Reviews on this homepage — open them from the Maps pin, then book Suite 100",
       body: "Reviews on this URL support Maps ranking for 9406 W Lake Mead Blvd, Suite 100. Call (702) 500-1942. Named campuses and commute minutes beat a slogan row.",
       pins: [
         {
-          name: "4.9 on the pin",
-          note: "Star rating cited on this page. Write the review on the Google listing that matches this NAP.",
+          name: "Reviews on the pin",
+          note: "Write the review on the Google listing that matches this NAP.",
         },
         {
           name: "Directions",
@@ -2179,7 +2179,7 @@ export const leftoverBands: Record<string, LeftoverCopy[]> = {
       ],
     },
     {
-      h2: "4.9-star GBP reviews on this URL — Maps ranking uses the Suite 100 pin",
+      h2: "Google reviews on this URL — Maps ranking uses the Suite 100 pin",
       body: "Review schema and the Google Reviews link stay aligned with 9406 W Lake Mead Blvd, Suite 100. Call (702) 500-1942.",
       pins: [
         {

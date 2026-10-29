@@ -89,8 +89,8 @@ export default function HeroSection() {
             <span>In Real Estate</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold tabular-nums">4.9★</span>
-            <span>Average Rating</span>
+            <span className="font-semibold tabular-nums">5.0★</span>
+            <span>on Realtor.com</span>
           </div>
         </div>
       </div>
