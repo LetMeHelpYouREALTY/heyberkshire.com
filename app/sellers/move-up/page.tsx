@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/sellers/move-up",
   title: "Move-Up Sellers Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-1942.",
+    "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-1955.",
   keywords: [
     "move up buyer Las Vegas",
     "sell and buy Las Vegas",

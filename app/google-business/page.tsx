@@ -26,7 +26,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/google-business",
   title: "Dr. Jan Duffy, REALTOR® | Las Vegas Real Estate",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, licensed since 2008 · 35 years in Las Vegas. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1942.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®, licensed since 2008 · 35 years in Las Vegas. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1955.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
@@ -184,7 +184,7 @@ export default function GoogleBusinessPage() {
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               Hours on this URL must match Google Business. Walk-ins welcome
-              during posted hours. Call (702) 500-1942. 9406 W Lake Mead Blvd,
+              during posted hours. Call (702) 500-1955. 9406 W Lake Mead Blvd,
               Suite 100, Las Vegas, NV 89134.
             </p>
             <div className="bg-slate-50 rounded-xl p-6">
@@ -220,7 +220,7 @@ export default function GoogleBusinessPage() {
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               The embed, Get Directions, and View Google Reviews buttons are the
-              GBP actions. Call or text (702) 500-1942.
+              GBP actions. Call or text (702) 500-1955.
             </p>
             <div className="rounded-xl overflow-hidden border border-slate-200 mb-6">
               <iframe

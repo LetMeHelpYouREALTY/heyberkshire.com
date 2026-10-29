@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/buyers/california-relocator",
   title: "Relocating from California to Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 500-1942.",
+    "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices. Dr. Jan Duffy compares California proceeds to Summerlin and Henderson ZIPs. Call (702) 500-1955.",
   keywords: [
     "California to Las Vegas relocation",
     "moving from California to Nevada",
@@ -38,7 +38,7 @@ const realEstateAgentSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-  telephone: "+17025001942",
+  telephone: "+17025001955",
   url: absoluteUrl("/buyers/california-relocator"),
   address: {
     "@type": "PostalAddress",

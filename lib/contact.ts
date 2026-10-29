@@ -1,6 +1,6 @@
 /**
  * Single source of truth for NAP, phones, hours, maps, and social.
- * One line sitewide: (702) 500-1942 matches the Google Business Profile.
+ * One line sitewide: (702) 500-1955 matches the Google Business Profile.
  * (702) 222-1964 is reserved for client emails and texts; never publish it here.
  */
 
@@ -43,17 +43,17 @@ export const SITE_URL =
   HEYBERKSHIRE_CANONICAL;
 
 export const ctaPhone = {
-  display: "(702) 500-1942",
-  displayShort: "702-500-1942",
-  tel: "+17025001942",
-  href: "tel:+17025001942",
+  display: "(702) 500-1955",
+  displayShort: "702-500-1955",
+  tel: "+17025001955",
+  href: "tel:+17025001955",
 } as const;
 
 export const officePhone = {
-  display: "(702) 500-1942",
-  displayShort: "702-500-1942",
-  tel: "+17025001942",
-  href: "tel:+17025001942",
+  display: "(702) 500-1955",
+  displayShort: "702-500-1955",
+  tel: "+17025001955",
+  href: "tel:+17025001955",
 } as const;
 
 export const nap = {

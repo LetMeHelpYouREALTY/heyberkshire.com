@@ -21,7 +21,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
     items: [
       {
         q: "Is this hub for listing intake, buyer search, or both?",
-        a: "Both, scoped at Suite 100. H1 on this URL is listing-or-search intake. Buyer-only search lives at /buyers/luxury-homes-las-vegas. Call (702) 500-1942.",
+        a: "Both, scoped at Suite 100. H1 on this URL is listing-or-search intake. Buyer-only search lives at /buyers/luxury-homes-las-vegas. Call (702) 500-1955.",
       },
       {
         q: "What days-on-market did this page last publish for $1 million-plus listings?",
@@ -29,11 +29,11 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Can a luxury listing stay off public MLS?",
-        a: "Yes. Off-market and pocket windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. Gate codes stay off group texts. We confirm HOA vendor lists and drone rules before listing day. Call (702) 500-1942.",
+        a: "Yes. Off-market and pocket windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. Gate codes stay off group texts. We confirm HOA vendor lists and drone rules before listing day. Call (702) 500-1955.",
       },
       {
         q: "How far are The Ridges, Southern Highlands, and Lake Las Vegas from Suite 100?",
-        a: "Ridges about 15–20 minutes, Southern Highlands 25–35, Lake Las Vegas 35–45. We pick one campus per afternoon so you are not recrossing the valley. Call (702) 500-1942.",
+        a: "Ridges about 15–20 minutes, Southern Highlands 25–35, Lake Las Vegas 35–45. We pick one campus per afternoon so you are not recrossing the valley. Call (702) 500-1955.",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
     items: [
       {
         q: "What does a three-day inbound itinerary look like from Suite 100?",
-        a: "Day 1 Summerlin (10–15 minutes from 9406 W Lake Mead Blvd). Day 2 Henderson (25–35 minutes via I-215 east). Day 3 55+ or new construction if that is the brief. Video first is possible; the tour week still starts here. Call (702) 500-1942.",
+        a: "Day 1 Summerlin (10–15 minutes from 9406 W Lake Mead Blvd). Day 2 Henderson (25–35 minutes via I-215 east). Day 3 55+ or new construction if that is the brief. Video first is possible; the tour week still starts here. Call (702) 500-1955.",
       },
       {
         q: "Which named campuses do we time on Day 1 vs Day 2?",
@@ -54,7 +54,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Do you coordinate the origin-city sale?",
-        a: "Yes. Destination and origin agents are briefed from this office so both contracts share a calendar. Call (702) 500-1942. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        a: "Yes. Destination and origin agents are briefed from this office so both contracts share a calendar. Call (702) 500-1955. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
     ],
   },
@@ -63,7 +63,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
     items: [
       {
         q: "Where are comps pulled before photos at the house?",
-        a: "Bring the APN or address to 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here before we drive for photos and pricing. Call (702) 500-1942.",
+        a: "Bring the APN or address to 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here before we drive for photos and pricing. Call (702) 500-1955.",
       },
       {
         q: "What did this page last publish about Zestimate accuracy vs a CMA?",
@@ -75,7 +75,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Do I need the house staged before the first valuation walk-through?",
-        a: "No. An initial read can start from records and MLS. A brief walk-through catches upgrades a portal misses. Staging is a later listing tactic, not a requirement for the first CMA. Call (702) 500-1942.",
+        a: "No. An initial read can start from records and MLS. A brief walk-through catches upgrades a portal misses. Staging is a later listing tactic, not a requirement for the first CMA. Call (702) 500-1955.",
       },
     ],
   },
@@ -84,7 +84,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
     items: [
       {
         q: "Do I register Dr. Jan at Suite 100 before the first model visit?",
-        a: "Yes. Most Las Vegas and Henderson builders require your agent on the first visit. Sign the guest registry alone and you can forfeit buyer representation. Call (702) 500-1942. Start at 9406 W Lake Mead Blvd, Suite 100.",
+        a: "Yes. Most Las Vegas and Henderson builders require your agent on the first visit. Sign the guest registry alone and you can forfeit buyer representation. Call (702) 500-1955. Start at 9406 W Lake Mead Blvd, Suite 100.",
       },
       {
         q: "What January 2026 builder incentive range did this page last publish?",
@@ -96,7 +96,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Which builder corridors do we pick per tour day?",
-        a: "One corridor per day: northwest (Skye Canyon) or south Henderson (Inspirada/Cadence), not both. Registration first, models second. Call (702) 500-1942.",
+        a: "One corridor per day: northwest (Skye Canyon) or south Henderson (Inspirada/Cadence), not both. Registration first, models second. Call (702) 500-1955.",
       },
     ],
   },
@@ -105,7 +105,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
     items: [
       {
         q: "Where are rent comps and HOA rental caps reviewed before we drive?",
-        a: "At Suite 100. HOA rental caps kill deals — we check them before you fly in. Then we tour North Las Vegas, Henderson, or southwest ZIP clusters. Call (702) 500-1942.",
+        a: "At Suite 100. HOA rental caps kill deals — we check them before you fly in. Then we tour North Las Vegas, Henderson, or southwest ZIP clusters. Call (702) 500-1955.",
       },
       {
         q: "What cap-rate range did this page last publish?",
@@ -113,7 +113,7 @@ export const intentFaqs: Record<string, IntentFaqCopy> = {
       },
       {
         q: "Do you work 1031 identification windows from Suite 100?",
-        a: "Yes. We work with qualified intermediaries and the 45-day identification window. A nationwide referral network is useful when exchanging into or out of Las Vegas. Call (702) 500-1942.",
+        a: "Yes. We work with qualified intermediaries and the 45-day identification window. A nationwide referral network is useful when exchanging into or out of Las Vegas. Call (702) 500-1955.",
       },
       {
         q: "Are North Las Vegas, Henderson, and Summerlin interchangeable for rentals?",

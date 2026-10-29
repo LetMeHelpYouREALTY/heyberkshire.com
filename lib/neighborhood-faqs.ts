@@ -27,11 +27,11 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Which Las Vegas neighborhoods should I compare first from the office pin?",
-        a: "Start with commute from 9406 W Lake Mead Blvd, Suite 100, then HOA dues and home size. Summerlin villages are typically 10–15 minutes. Green Valley is a 25–35 minute I-215 east run. January 2026 medians already published on those pages: Summerlin about $625,000, Henderson about $485,000, North Las Vegas about $385,000. Call (702) 500-1942.",
+        a: "Start with commute from 9406 W Lake Mead Blvd, Suite 100, then HOA dues and home size. Summerlin villages are typically 10–15 minutes. Green Valley is a 25–35 minute I-215 east run. January 2026 medians already published on those pages: Summerlin about $625,000, Henderson about $485,000, North Las Vegas about $385,000. Call (702) 500-1955.",
       },
       {
         q: "Can Dr. Jan Duffy tour more than one village in a day?",
-        a: "Yes. Call (702) 500-1942 to book a clustered tour. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. We pair a west-valley loop with one east or northwest block so you are not recrossing the valley twice.",
+        a: "Yes. Call (702) 500-1955 to book a clustered tour. The office is at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. We pair a west-valley loop with one east or northwest block so you are not recrossing the valley twice.",
       },
       {
         q: "Do these neighborhood pages use live MLS data?",
@@ -48,7 +48,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "How long is a Summerlin village tour from 9406 W Lake Mead Blvd?",
-        a: "Most Summerlin streets are 10–15 minutes from Suite 100. We typically start in The Trails or Pueblo, time Palo Verde High School on Pavilion Center Drive, then add Red Rock Canyon Scenic Drive on the west end of the same loop. Call (702) 500-1942.",
+        a: "Most Summerlin streets are 10–15 minutes from Suite 100. We typically start in The Trails or Pueblo, time Palo Verde High School on Pavilion Center Drive, then add Red Rock Canyon Scenic Drive on the west end of the same loop. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for Summerlin on this page?",
@@ -60,7 +60,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
       },
       {
         q: "What makes a Summerlin loop different from a Henderson day?",
-        a: "Summerlin is a west-valley loop from the GBP office pin: 150+ parks, 150+ miles of trails, Palo Verde High School, and Red Rock trailheads. Henderson is a 25–35 minute I-215 east run with Green Valley High School or Coronado High School timed by street. Call (702) 500-1942 to book one afternoon, not two slogans.",
+        a: "Summerlin is a west-valley loop from the GBP office pin: 150+ parks, 150+ miles of trails, Palo Verde High School, and Red Rock trailheads. Henderson is a 25–35 minute I-215 east run with Green Valley High School or Coronado High School timed by street. Call (702) 500-1955 to book one afternoon, not two slogans.",
       },
     ],
   },
@@ -69,7 +69,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Do Ridges showings start at the gate or at Suite 100?",
-        a: "Both. Gate lists and off-market windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. The drive to the guardhouse is typically 15–20 minutes. We do not text estate addresses on unsecured threads. Call (702) 500-1942.",
+        a: "Both. Gate lists and off-market windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. The drive to the guardhouse is typically 15–20 minutes. We do not text estate addresses on unsecured threads. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for The Ridges?",
@@ -90,7 +90,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "How far is Southern Highlands from the Lake Mead Blvd office versus Harry Reid?",
-        a: "The office run is 25–35 minutes via I-15 south from Suite 100. Once you are on I-15, Harry Reid International was previously published at about 10 miles / 15 minutes off-peak. The Strip was about 8 miles / 12 minutes off-peak. Call (702) 500-1942 to keep golf and ridge streets in one south-valley block.",
+        a: "The office run is 25–35 minutes via I-15 south from Suite 100. Once you are on I-15, Harry Reid International was previously published at about 10 miles / 15 minutes off-peak. The Strip was about 8 miles / 12 minutes off-peak. Call (702) 500-1955 to keep golf and ridge streets in one south-valley block.",
       },
       {
         q: "What January 2026 median was published for Southern Highlands?",
@@ -111,7 +111,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Do I register at Suite 100 before walking Skye Canyon models?",
-        a: "Yes. Builder registration happens at 9406 W Lake Mead Blvd, Suite 100 first. The 215 northwest run is typically 20–25 minutes. Then we walk model rows and adjacent resales without a second freeway hop. Call (702) 500-1942.",
+        a: "Yes. Builder registration happens at 9406 W Lake Mead Blvd, Suite 100 first. The 215 northwest run is typically 20–25 minutes. Then we walk model rows and adjacent resales without a second freeway hop. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for Skye Canyon?",
@@ -132,7 +132,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Is Centennial Hills a US-95 loop from Suite 100 or a 215 hop?",
-        a: "US-95 from 9406 W Lake Mead Blvd, Suite 100 is typically 15–20 minutes. We compare mountain-view lots near Centennial Hills Park with closer-in streets toward the hospital campus, then map Arbor View High School by address. Call (702) 500-1942.",
+        a: "US-95 from 9406 W Lake Mead Blvd, Suite 100 is typically 15–20 minutes. We compare mountain-view lots near Centennial Hills Park with closer-in streets toward the hospital campus, then map Arbor View High School by address. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for Centennial Hills?",
@@ -153,7 +153,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Do Green Valley tours meet at The District or at Lake Mead Blvd?",
-        a: "Either. The office run is 25–35 minutes via I-215 east from Suite 100. The District at Green Valley Ranch is the practical midpoint for listing tours. Call (702) 500-1942 and we will pick the start that saves a freeway hop.",
+        a: "Either. The office run is 25–35 minutes via I-215 east from Suite 100. The District at Green Valley Ranch is the practical midpoint for listing tours. Call (702) 500-1955 and we will pick the start that saves a freeway hop.",
       },
       {
         q: "What January 2026 median and days on market were published for Green Valley?",
@@ -174,7 +174,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Can we compare two Henderson villages in one afternoon from Suite 100?",
-        a: "Yes. From 9406 W Lake Mead Blvd we pick two contrasting villages as a 25–35 minute east run so you compare 35-year-old trees vs new rec campuses in one day. Call (702) 500-1942.",
+        a: "Yes. From 9406 W Lake Mead Blvd we pick two contrasting villages as a 25–35 minute east run so you compare 35-year-old trees vs new rec campuses in one day. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for Henderson as a city?",
@@ -195,7 +195,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Is Inspirada a same-day add-on after Green Valley from Suite 100?",
-        a: "Yes. Inspirada is 30–40 minutes from 9406 W Lake Mead Blvd. Green Valley was previously about 5 miles / 10 minutes from Inspirada streets. Tours hit the central park and amenity campus, then The District if you want 35-year-old trees the same afternoon. Call (702) 500-1942.",
+        a: "Yes. Inspirada is 30–40 minutes from 9406 W Lake Mead Blvd. Green Valley was previously about 5 miles / 10 minutes from Inspirada streets. Tours hit the central park and amenity campus, then The District if you want 35-year-old trees the same afternoon. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for Inspirada?",
@@ -216,7 +216,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Is Aliante sequenced with Craig Road from Suite 100?",
-        a: "Yes. North Las Vegas is 20–25 minutes via US-95 / I-15 from 9406 W Lake Mead Blvd. Aliante recreation is the north anchor; Craig Road employment corridors and new-construction villages are sequenced on the same tour. Call (702) 500-1942.",
+        a: "Yes. North Las Vegas is 20–25 minutes via US-95 / I-15 from 9406 W Lake Mead Blvd. Aliante recreation is the north anchor; Craig Road employment corridors and new-construction villages are sequenced on the same tour. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 median was published for North Las Vegas?",
@@ -237,7 +237,7 @@ export const neighborhoodFaqs: Record<string, NeighborhoodFaqCopy> = {
     items: [
       {
         q: "Do Mountains Edge tours start at Exploration Peak or at Suite 100?",
-        a: "Suite 100 first (20–30 minutes via the southwest Beltway), then Exploration Peak Park as the trailhead pin on the same showing block. Call (702) 500-1942. Southern Highlands Golf Club is about 5 miles / 10 minutes if you want a southwest golf comparison the same day.",
+        a: "Suite 100 first (20–30 minutes via the southwest Beltway), then Exploration Peak Park as the trailhead pin on the same showing block. Call (702) 500-1955. Southern Highlands Golf Club is about 5 miles / 10 minutes if you want a southwest golf comparison the same day.",
       },
       {
         q: "What January 2026 median was published for Mountains Edge?",

@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/services",
   title: "Real Estate Services Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Comprehensive real estate services from Dr. Jan Duffy. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-1942.",
+    "Comprehensive real estate services from Dr. Jan Duffy. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-1955.",
   keywords: [
     "Las Vegas real estate services",
     "Berkshire Hathaway services",
@@ -33,7 +33,7 @@ const servicesSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
   serviceType: "Real Estate Services",
@@ -147,7 +147,7 @@ export default function ServicesPage() {
               /buyers/california-relocator, /buyers/first-time-buyers, and
               /buyers/luxury-homes-las-vegas are separate clocks from Suite 100.
               We do not stack a Henderson luxury afternoon with a first-purchase
-              FHA briefing. Call (702) 500-1942.
+              FHA briefing. Call (702) 500-1955.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {buyerTypes.map((type) => (
@@ -180,7 +180,7 @@ export default function ServicesPage() {
               /sellers/move-up, /sellers/downsizing, /sellers/divorce-probate,
               and /sellers/relocation start with dates at 9406 W Lake Mead Blvd,
               Suite 100. The MLS remarks wait until the occupancy and
-              next-address clock is written. Call (702) 500-1942.
+              next-address clock is written. Call (702) 500-1955.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {sellerTypes.map((type) => (

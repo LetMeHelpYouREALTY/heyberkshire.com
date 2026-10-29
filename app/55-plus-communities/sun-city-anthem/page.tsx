@@ -33,7 +33,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/sun-city-anthem",
   title: "Sun City Anthem Homes for Sale | Dr. Jan Duffy, REALTOR®",
   description:
-    "Henderson 55+ campus with a 64,000 sq ft clubhouse. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, McCullough Range views. Dr. Jan Duffy. Call (702) 500-1942.",
+    "Henderson 55+ campus with a 64,000 sq ft clubhouse. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, McCullough Range views. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Sun City Anthem homes for sale",
     "Sun City Anthem Henderson",
@@ -175,7 +175,7 @@ export default function SunCityAnthemPage() {
             </h2>
             <p className="text-xl text-green-100 mb-8">
               Anthem Center is about 64,000 sq ft. We review occupancy rules at
-              Suite 100, then drive. Call (702) 500-1942.
+              Suite 100, then drive. Call (702) 500-1955.
             </p>
             <CtaActions variant="onDark" />
           </section>

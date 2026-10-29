@@ -18,7 +18,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Free Home Valuation Las Vegas | What's Your Home Worth? | Dr. Jan Duffy, REALTOR®",
   description:
-    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-1942.",
+    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-1955.",
   keywords: [
     "home valuation Las Vegas",
     "what is my home worth Las Vegas",
@@ -165,11 +165,11 @@ export default function HomeValuationPage() {
                   Prefer to talk? Call Dr. Jan directly:
                 </p>
                 <a
-                  href="tel:+17025001942"
+                  href="tel:+17025001955"
                   className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold transition-colors"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  (702) 500-1942
+                  (702) 500-1955
                 </a>
               </div>
             </div>
@@ -342,7 +342,7 @@ export default function HomeValuationPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Bring the APN to Suite 100 — (702) 500-1942 or Calendly
+              Bring the APN to Suite 100 — (702) 500-1955 or Calendly
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Get a free, no-obligation home valuation from Dr. Jan Duffy.

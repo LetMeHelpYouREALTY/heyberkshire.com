@@ -28,7 +28,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/sellers",
   title: "Sell Your Las Vegas Home | Dr. Jan Duffy, REALTOR®",
   description:
-    "Sell your Las Vegas or Henderson home with Dr. Jan Duffy. Free home valuation. World-class marketing priced to recent comps. Call (702) 500-1942.",
+    "Sell your Las Vegas or Henderson home with Dr. Jan Duffy. Free home valuation. World-class marketing priced to recent comps. Call (702) 500-1955.",
   keywords: [
     "sell home Las Vegas",
     "Las Vegas listing agent",
@@ -47,7 +47,7 @@ const sellerSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
   serviceType: "Seller Representation",
