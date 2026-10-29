@@ -54,7 +54,7 @@ Call Dr. Jan Duffy at (702) 500-1942 for a free market analysis of your home or 
 
 ✅ 0% state income tax (save thousands annually)
 ✅ 40-60% lower home prices vs. comparable CA properties
-✅ Same-quality schools, better affordability
+✅ Named public school campuses, better affordability
 ✅ 4-hour drive to LA, easy flights everywhere
 
 A $1.2M California home could buy you a luxury property in Summerlin or The Ridges. Dr. Jan Duffy specializes in California-to-Nevada relocations and can help you maximize your equity.

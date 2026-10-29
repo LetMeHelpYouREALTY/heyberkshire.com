@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
     "downsizing Las Vegas",
     "sell large home Las Vegas",
     "55 plus communities Las Vegas",
-    "empty nester Las Vegas",
+    "downsizer Las Vegas",
     "Berkshire Hathaway HomeServices downsizing",
   ],
 });
