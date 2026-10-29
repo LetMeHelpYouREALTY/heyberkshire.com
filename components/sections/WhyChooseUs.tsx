@@ -8,8 +8,8 @@ import { photos } from "@/lib/media";
 const features = [
   {
     icon: Shield,
-    title: "In Real Estate Since 1983",
-    description: "Las Vegas experience since 1983. Integrity you can verify.",
+    title: "Licensed Since 2008",
+    description: "35 years in Las Vegas. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -25,9 +25,9 @@ const features = [
   },
   {
     icon: Award,
-    title: "$127M+ Closed",
+    title: "$127M+ Team Career Sales",
     description:
-      "500+ transactions across Las Vegas, Henderson, and Summerlin.",
+      "500+ Dr. Duffy Group sales across Las Vegas, Henderson, and Summerlin.",
   },
   {
     icon: Clock,

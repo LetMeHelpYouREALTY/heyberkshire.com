@@ -83,7 +83,7 @@ export const marketStats = {
 
 // Agent Stats
 export const agentStats = {
-  servingSince: 1983,
+  servingSince: 2008,
   transactionsClosed: 500,
   volumeClosed: "$127M+",
   // Verified on Realtor.com, Oct 29 2026. Not emitted as AggregateRating JSON-LD
@@ -100,7 +100,7 @@ export const valuePropositions = {
   trust:
     "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents.",
   expertise:
-    "In real estate since 1983 with $127M+ in closed transactions, Dr. Jan Duffy combines deep local market knowledge with personalized service.",
+    "Licensed since 2008 · 35 years in Las Vegas with $127M+ in Dr. Duffy Group career sales, Dr. Jan Duffy combines deep local market knowledge with personalized service.",
 };
 
 // Neighborhoods served
@@ -307,7 +307,7 @@ export const commonFAQs = {
     {
       question: "What is Dr. Jan Duffy's experience in Las Vegas real estate?",
       answer:
-        "Dr. Jan Duffy has been in real estate since 1983, with $127M+ in closed transactions and 500+ satisfied clients. Her expertise spans residential, luxury, investment, and new construction properties throughout Southern Nevada.",
+        "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, backed by $127M+ in Dr. Duffy Group career sales and 500+ team sales. Her expertise spans residential, luxury, investment, and new construction properties throughout Southern Nevada.",
     },
   ],
   buying: [
@@ -331,7 +331,7 @@ export const commonFAQs = {
     {
       question: "What is my home worth in today's Las Vegas market?",
       answer:
-        "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise in real estate since 1983.",
+        "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise as a REALTOR® licensed since 2008 · 35 years in Las Vegas.",
     },
     {
       question: "How long will it take to sell my home?",

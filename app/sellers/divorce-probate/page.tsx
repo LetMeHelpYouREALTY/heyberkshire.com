@@ -339,9 +339,9 @@ export default function DivorceProbatePage() {
                   Credibility & Trust
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan Duffy has been in real estate since 1983. Her
-                  valuations and processes are respected by attorneys, judges,
-                  and opposing parties for their integrity.
+                  Dr. Jan Duffy has been licensed since 2008 · 35 years in Las
+                  Vegas. Her valuations and processes are respected by
+                  attorneys, judges, and opposing parties for their integrity.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">

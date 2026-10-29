@@ -106,23 +106,23 @@ export default function ServicesPage() {
             <HeadingPhoto path="/services" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from Dr. Jan Duffy, in real
-              estate since 1983. Whether you're buying your first home, selling
-              a luxury estate, or relocating from California, you'll receive
+              Comprehensive real estate solutions from Dr. Jan Duffy, licensed
+              since 2008. Whether you're buying your first home, selling a
+              luxury estate, or relocating from California, you'll receive
               expert guidance every step of the way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>In Real Estate Since 1983</span>
+                <span>Licensed Since 2008</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>$127M+ in Transactions</span>
+                <span>$127M+ in Team Career Sales</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>500+ Satisfied Clients</span>
+                <span>500+ Team Sales</span>
               </div>
             </div>
             <div className="mt-8">
@@ -214,8 +214,8 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our
               real estate services. Whether you're buying, selling, investing,
-              or relocating, you'll receive expert guidance from a REALTOR® in
-              real estate since 1983.
+              or relocating, you'll receive expert guidance from a REALTOR®
+              licensed since 2008 · 35 years in Las Vegas.
             </p>
             <CtaActions variant="onDark" />
           </section>
