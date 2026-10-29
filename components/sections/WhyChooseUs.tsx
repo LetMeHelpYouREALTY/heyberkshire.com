@@ -9,8 +9,7 @@ const features = [
   {
     icon: Shield,
     title: "In Real Estate Since 1983",
-    description:
-      "Las Vegas experience since 1983. Integrity you can verify.",
+    description: "Las Vegas experience since 1983. Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -22,7 +21,7 @@ const features = [
     icon: Users,
     title: "Direct Access to Dr. Jan",
     description:
-      "Call or text (702) 222-1964. No call center, no assistant queue.",
+      "Call or text (702) 500-1942. No call center, no assistant queue.",
   },
   {
     icon: Award,
@@ -61,8 +60,8 @@ export default function WhyChooseUs() {
           </h2>
           <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Suite 100. We sequence the tour from this desk — not a
-            call center.
+            Appointments start at Suite 100. We sequence the tour from this desk
+            — not a call center.
           </p>
         </div>
 

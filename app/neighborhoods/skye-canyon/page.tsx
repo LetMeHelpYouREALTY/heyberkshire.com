@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/skye-canyon",
   title: "Skye Canyon Real Estate | Northwest Las Vegas",
   description:
-    "Find Skye Canyon homes with a local expert. Register at Suite 100 before any northwest builder row. January 2026 median $550K. Call (702) 222-1964.",
+    "Find Skye Canyon homes with a local expert. Register at Suite 100 before any northwest builder row. January 2026 median $550K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Skye Canyon",
     "Skye Canyon homes for sale",
@@ -106,9 +106,8 @@ export default function SkyeCanyonPage() {
                 <strong>Skye Canyon</strong> represents the future of Las Vegas
                 master-planned living. This 1,700-acre community in northwest
                 Las Vegas sits next to Floyd Lamb Park with Skye Center as the
-                rec campus. Dr. Jan Duffy
-                registers you at Suite 100 before the first model row so builder
-                tours stay on one northwest clock.
+                rec campus. Dr. Jan Duffy registers you at Suite 100 before the
+                first model row so builder tours stay on one northwest clock.
               </p>
               <p>
                 What sets Skye Canyon apart is Skye Center—a stunning 15-acre
@@ -121,12 +120,12 @@ export default function SkyeCanyonPage() {
                 connections that transform neighborhoods into true communities.
               </p>
               <p>
-                Dr. Jan Duffy offers free buyer representation on all Skye Canyon new
-                construction purchases. This is crucial because when you walk
-                into a builder's sales center, those agents work for the
-                builder—not you. She represents your interests,
-                negotiates upgrades, reviews contracts for hidden pitfalls, and
-                ensures you're getting fair value. This service costs buyers
+                Dr. Jan Duffy offers free buyer representation on all Skye
+                Canyon new construction purchases. This is crucial because when
+                you walk into a builder's sales center, those agents work for
+                the builder—not you. She represents your interests, negotiates
+                upgrades, reviews contracts for hidden pitfalls, and ensures
+                you're getting fair value. This service costs buyers
                 nothing—builders pay the commission.
               </p>
 
@@ -151,13 +150,13 @@ export default function SkyeCanyonPage() {
                 Woodside Homes ranges from $450,000 to $800,000.
               </p>
               <p>
-                Choosing Dr. Jan Duffy for
-                your Skye Canyon purchase means working with agents who know
-                which builders offer the best quality, which lots have the best
-                views, and which upgrades deliver the best value. Dr. Jan Duffy
-                has helped dozens of buyers find their Skye Canyon homes, and
-                that experience translates into better outcomes for buyers
-                navigating this competitive market.
+                Choosing Dr. Jan Duffy for your Skye Canyon purchase means
+                working with agents who know which builders offer the best
+                quality, which lots have the best views, and which upgrades
+                deliver the best value. Dr. Jan Duffy has helped dozens of
+                buyers find their Skye Canyon homes, and that experience
+                translates into better outcomes for buyers navigating this
+                competitive market.
               </p>
             </div>
           </section>

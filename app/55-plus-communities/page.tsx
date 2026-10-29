@@ -35,7 +35,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "55+ Active Adult Communities Las Vegas | Sun City, Del Webb, Heritage | Dr. Jan Duffy",
   description:
-    "Find your perfect 55+ community in Las Vegas. Sun City Summerlin, Sun City Aliante, Del Webb Lake Las Vegas, Heritage at Stonebridge, Solera, Trilogy. Dr. Jan Duffy specializes in active adult living. Call (702) 222-1964.",
+    "Find your perfect 55+ community in Las Vegas. Sun City Summerlin, Sun City Aliante, Del Webb Lake Las Vegas, Heritage at Stonebridge, Solera, Trilogy. Dr. Jan Duffy specializes in active adult living. Call (702) 500-1942.",
   keywords: [
     "55+ communities Las Vegas",
     "active adult communities Las Vegas",
@@ -62,7 +62,7 @@ const localBusinessSchema = {
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
   description:
     "55+ community specialist helping active adults find their perfect Las Vegas retirement home",
-  telephone: "(702) 222-1964",
+  telephone: "(702) 500-1942",
   url: absoluteUrl("/55-plus-communities"),
   areaServed: {
     "@type": "City",
@@ -290,7 +290,7 @@ export default function FiftyFiveCommunitiesPage() {
                     <p>
                       <strong>Co-occupant rules:</strong> Minimum ages for a
                       co-occupant vary by campus (often 40–45). Confirm in
-                      writing. Call (702) 222-1964.
+                      writing. Call (702) 500-1942.
                     </p>
                     <p className="text-blue-800 font-medium">
                       Sun City Summerlin is 10–15 minutes. Anthem campuses are
@@ -395,7 +395,7 @@ export default function FiftyFiveCommunitiesPage() {
                       </Link>
                     ) : (
                       <a
-                        href="tel:+17022221964"
+                        href="tel:+17025001942"
                         className="block text-center bg-slate-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-slate-700 transition-colors"
                       >
                         Call for {community.name} Info
@@ -433,7 +433,7 @@ export default function FiftyFiveCommunitiesPage() {
                   <p className="text-slate-600 text-sm">
                     Occupancy rules, guest ages, and HOA reserve lines are
                     reviewed at 9406 W Lake Mead Blvd before any clubhouse. Call
-                    (702) 222-1964.
+                    (702) 500-1942.
                   </p>
                 </div>
               </div>
@@ -447,9 +447,9 @@ export default function FiftyFiveCommunitiesPage() {
                     Suite 100
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Virtual tours and destination intros start at 9406 W
-                    Lake Mead Blvd. We do not stack a Summerlin 55+ morning with
-                    a Henderson 55+ drive.
+                    Virtual tours and destination intros start at 9406 W Lake
+                    Mead Blvd. We do not stack a Summerlin 55+ morning with a
+                    Henderson 55+ drive.
                   </p>
                 </div>
               </div>
@@ -462,9 +462,8 @@ export default function FiftyFiveCommunitiesPage() {
                     Occupancy rules in writing before any clubhouse
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Paperwork is handled at 9406 W
-                    Lake Mead Blvd, Suite 100. We review age-qualification and
-                    guest rules before the drive.
+                    Paperwork is handled at 9406 W Lake Mead Blvd, Suite 100. We
+                    review age-qualification and guest rules before the drive.
                   </p>
                 </div>
               </div>
@@ -479,7 +478,7 @@ export default function FiftyFiveCommunitiesPage() {
                   <p className="text-slate-600 text-sm">
                     We review HOA occupancy and guest rules at 9406 W Lake Mead
                     Blvd, Suite 100, then tour one rec building. Call (702)
-                    222-1964. We do not stack Summerlin and Henderson 55+ on the
+                    500-1942. We do not stack Summerlin and Henderson 55+ on the
                     same morning.
                   </p>
                 </div>
@@ -495,7 +494,7 @@ export default function FiftyFiveCommunitiesPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Sun City Summerlin is 10–15 minutes. Anthem campuses are 30–35.
-              Call (702) 222-1964 with occupancy questions before we drive.
+              Call (702) 500-1942 with occupancy questions before we drive.
             </p>
             <CtaActions variant="onDark" />
             <p className="mt-4 text-blue-300 text-sm">

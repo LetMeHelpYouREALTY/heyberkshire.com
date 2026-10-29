@@ -193,8 +193,8 @@ export default function NeighborhoodsPage() {
             <HeadingPhoto path="/neighborhoods" />
 
             <p className="text-xl text-slate-600">
-              Compare Las Vegas and Henderson neighborhoods with Dr. Jan Duffy, your neighborhood
-              expert
+              Compare Las Vegas and Henderson neighborhoods with Dr. Jan Duffy,
+              your neighborhood expert
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -273,7 +273,7 @@ export default function NeighborhoodsPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Summerlin is 10–15 minutes. Green Valley is 25–35. Call (702)
-              222-1964 with two ZIPs — we will not city-swap a recommendation.
+              500-1942 with two ZIPs — we will not city-swap a recommendation.
             </p>
             <CtaActions variant="onDark" />
           </section>

@@ -28,7 +28,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Which 55+ campus do we time first from 9406 W Lake Mead Blvd?",
-        a: "Sun City Summerlin is 10–15 minutes from Suite 100. Anthem campuses are 30–35 minutes. We review HOA packets and HOPA occupancy rules at the desk before we drive to clubhouses. Call (702) 222-1964.",
+        a: "Sun City Summerlin is 10–15 minutes from Suite 100. Anthem campuses are 30–35 minutes. We review HOA packets and HOPA occupancy rules at the desk before we drive to clubhouses. Call (702) 500-1942.",
       },
       {
         q: "What HOPA occupancy rule do you review before a clubhouse tour?",
@@ -40,7 +40,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "Is Solera occupancy the same as Sun City Summerlin?",
-        a: "No. Solera requires all residents 55+. Sun City Summerlin follows HOPA 80/20 with a younger-spouse rule in the HOA docs. Guest-stay limits are also in that packet — we do not publish a one-size guest slogan. Call (702) 222-1964.",
+        a: "No. Solera requires all residents 55+. Sun City Summerlin follows HOPA 80/20 with a younger-spouse rule in the HOA docs. Guest-stay limits are also in that packet — we do not publish a one-size guest slogan. Call (702) 500-1942.",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Can we preview rec centers and golf campuses in one west-valley afternoon?",
-        a: "Yes. Sun City Summerlin is 10–15 minutes from 9406 W Lake Mead Blvd. Highland Falls, Palm Valley, and Eagle Crest plus Mountain Shadows, Sun Shadows, Pinnacle, and Desert Vista rec centers can be sequenced the same afternoon. Call (702) 222-1964.",
+        a: "Yes. Sun City Summerlin is 10–15 minutes from 9406 W Lake Mead Blvd. Highland Falls, Palm Valley, and Eagle Crest plus Mountain Shadows, Sun Shadows, Pinnacle, and Desert Vista rec centers can be sequenced the same afternoon. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Sun City Summerlin?",
@@ -61,7 +61,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "Do Sun City Summerlin tours start at Suite 100 or at a rec center?",
-        a: "Suite 100 first so age-restriction and HOA questions are on paper. Then we pick the rec center you will actually use. Call (702) 222-1964. Register before walking model streets.",
+        a: "Suite 100 first so age-restriction and HOA questions are on paper. Then we pick the rec center you will actually use. Call (702) 500-1942. Register before walking model streets.",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Is Sun City Anthem a same-morning add-on after Summerlin 55+?",
-        a: "No. Sun City Anthem is 30–35 minutes from the Lake Mead Blvd pin. Anthem Center, golf, and upper-elevation streets are one Henderson 55+ block — not mixed with Summerlin 55+ the same morning. Call (702) 222-1964.",
+        a: "No. Sun City Anthem is 30–35 minutes from the Lake Mead Blvd pin. Anthem Center, golf, and upper-elevation streets are one Henderson 55+ block — not mixed with Summerlin 55+ the same morning. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Sun City Anthem?",
@@ -82,7 +82,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "What occupancy rule is in the Sun City Anthem HOA packet?",
-        a: "At least one resident 55 or older per home, with remaining occupancy limits in the HOA docs we review at Suite 100. We do not substitute a marketing line for that packet. Call (702) 222-1964.",
+        a: "At least one resident 55 or older per home, with remaining occupancy limits in the HOA docs we review at Suite 100. We do not substitute a marketing line for that packet. Call (702) 500-1942.",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "How far is the Trilogy clubhouse from Suite 100?",
-        a: "Trilogy at Summerlin is 12–18 minutes from 9406 W Lake Mead Blvd. Clubhouse, spa, and Shea Homes plan rows sit on the same west-valley side as the office — no Henderson freeway tax. Call (702) 222-1964.",
+        a: "Trilogy at Summerlin is 12–18 minutes from 9406 W Lake Mead Blvd. Clubhouse, spa, and Shea Homes plan rows sit on the same west-valley side as the office — no Henderson freeway tax. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Trilogy?",
@@ -112,7 +112,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Do Heritage showings start with a gate list from Suite 100?",
-        a: "Yes. Heritage at Stonebridge is 12–18 minutes from the GBP office. We put you on the guest list from 9406 W Lake Mead Blvd, Suite 100 so arrival is not improvised. Call (702) 222-1964.",
+        a: "Yes. Heritage at Stonebridge is 12–18 minutes from the GBP office. We put you on the guest list from 9406 W Lake Mead Blvd, Suite 100 so arrival is not improvised. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Heritage at Stonebridge?",
@@ -133,7 +133,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Is Solera all-residents-55+ or HOPA 80/20?",
-        a: "All residents must be 55+ at Solera at Anthem. Confirm the HOA occupancy rule in writing at Suite 100 before the 30–35 minute Henderson drive. Call (702) 222-1964.",
+        a: "All residents must be 55+ at Solera at Anthem. Confirm the HOA occupancy rule in writing at Suite 100 before the 30–35 minute Henderson drive. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Solera at Anthem?",
@@ -145,7 +145,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
       },
       {
         q: "Do we tour Solera with Sun City Anthem the same Henderson afternoon?",
-        a: "Only if that is the brief. Solera is toured with nearby Anthem parks as a 30–35 minute block from Suite 100. We do not hopscotch the whole valley. Call (702) 222-1964.",
+        a: "Only if that is the brief. Solera is toured with nearby Anthem parks as a 30–35 minute block from Suite 100. We do not hopscotch the whole valley. Call (702) 500-1942.",
       },
     ],
   },
@@ -154,7 +154,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Is Sun City Aliante sequenced as a north loop from Suite 100?",
-        a: "Yes. Sun City Aliante is 20–25 minutes from 9406 W Lake Mead Blvd. The golf course and rec campus sit next to Aliante retail for a compact north tour. Call (702) 222-1964.",
+        a: "Yes. Sun City Aliante is 20–25 minutes from 9406 W Lake Mead Blvd. The golf course and rec campus sit next to Aliante retail for a compact north tour. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Sun City Aliante?",
@@ -175,7 +175,7 @@ export const fiftyFiveFaqs: Record<string, FiftyFiveFaqCopy> = {
     items: [
       {
         q: "Why is Del Webb at Lake Las Vegas an east-Henderson half day?",
-        a: "It is 35–45 minutes from the office pin. Lake-adjacent plans and Reflection Bay golf are blocked as an east-Henderson half day so you are not mixing Summerlin 55+ into the same morning. Call (702) 222-1964.",
+        a: "It is 35–45 minutes from the office pin. Lake-adjacent plans and Reflection Bay golf are blocked as an east-Henderson half day so you are not mixing Summerlin 55+ into the same morning. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 price and HOA range was published for Del Webb at Lake Las Vegas?",

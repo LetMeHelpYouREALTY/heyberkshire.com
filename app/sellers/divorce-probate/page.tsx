@@ -22,10 +22,9 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/divorce-probate",
-  title:
-    "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
+  title: "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 222-1964.",
+    "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1942.",
   keywords: [
     "divorce home sale Las Vegas",
     "probate real estate Las Vegas",
@@ -340,7 +339,9 @@ export default function DivorceProbatePage() {
                   Credibility & Trust
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan Duffy has been in real estate since 1983. Her valuations and processes are respected by attorneys, judges, and opposing parties for their integrity.
+                  Dr. Jan Duffy has been in real estate since 1983. Her
+                  valuations and processes are respected by attorneys, judges,
+                  and opposing parties for their integrity.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
@@ -374,7 +375,7 @@ export default function DivorceProbatePage() {
           {/* CTA */}
           <section className="text-center bg-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Call (702) 222-1964 — this file is not a group showing
+              Call (702) 500-1942 — this file is not a group showing
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Discuss your situation privately with Dr. Jan. No pressure, no

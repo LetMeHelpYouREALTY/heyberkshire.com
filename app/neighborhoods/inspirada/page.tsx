@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/inspirada",
   title: "Inspirada Real Estate | Henderson Resort Living",
   description:
-    "Find Inspirada homes with a local expert. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 222-1964.",
+    "Find Inspirada homes with a local expert. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Inspirada",
     "Inspirada homes for sale",
@@ -104,7 +104,7 @@ export default function InspiradaPage() {
               <p>
                 <strong>Inspirada</strong> is a 2,000-acre Henderson campus.
                 Pools, slides, cabanas, and trail mileage are in the HOA packet.
-                Call (702) 222-1964 from 9406 W Lake Mead Blvd, Suite 100. Do
+                Call (702) 500-1942 from 9406 W Lake Mead Blvd, Suite 100. Do
                 not stack this with a Summerlin gate afternoon.
               </p>
               <p>
@@ -117,12 +117,13 @@ export default function InspiradaPage() {
                 week you tour — not as a slogan.
               </p>
               <p>
-                Dr. Jan Duffy provides free buyer representation on Inspirada new construction
-                purchases. With multiple builders offering homes in the
-                community, navigating options can be overwhelming. She helps buyers compare builders, negotiate upgrades, and avoid
-                common new construction pitfalls. For resales, she identifies properties where previous owners made smart upgrade
-                decisions, delivering better value than comparable new
-                construction.
+                Dr. Jan Duffy provides free buyer representation on Inspirada
+                new construction purchases. With multiple builders offering
+                homes in the community, navigating options can be overwhelming.
+                She helps buyers compare builders, negotiate upgrades, and avoid
+                common new construction pitfalls. For resales, she identifies
+                properties where previous owners made smart upgrade decisions,
+                delivering better value than comparable new construction.
               </p>
 
               <CommunityHighlights path="/neighborhoods/inspirada" />
@@ -147,13 +148,13 @@ export default function InspiradaPage() {
                 features offer compelling alternatives.
               </p>
               <p>
-                Choosing Dr. Jan Duffy for
-                your Inspirada purchase means working with agents who understand
-                the community's various neighborhoods, which builders offer the
-                best quality, and which lots provide the best value. Dr. Jan
-                Duffy has helped dozens of buyers find their Inspirada homes,
-                and that experience translates into better outcomes for buyers
-                navigating this popular community.
+                Choosing Dr. Jan Duffy for your Inspirada purchase means working
+                with agents who understand the community's various
+                neighborhoods, which builders offer the best quality, and which
+                lots provide the best value. Dr. Jan Duffy has helped dozens of
+                buyers find their Inspirada homes, and that experience
+                translates into better outcomes for buyers navigating this
+                popular community.
               </p>
             </div>
           </section>

@@ -35,7 +35,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Aliante retail",
-        note: "North Las Vegas stop when the brief is northwest. Pair with Craig Road jobs, not a Strip hopscotch. Call (702) 222-1964.",
+        note: "North Las Vegas stop when the brief is northwest. Pair with Craig Road jobs, not a Strip hopscotch. Call (702) 500-1942.",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Tivoli Village",
-        note: "Outdoor shops on the same west-valley clock. Red Rock Casino is optional if the brief includes dining, not a third ZIP. Call (702) 222-1964.",
+        note: "Outdoor shops on the same west-valley clock. Red Rock Casino is optional if the brief includes dining, not a third ZIP. Call (702) 500-1942.",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Henderson Executive Airport",
-        note: "Private-aviation pin only if the brief includes it. Not a default tour stop. Call (702) 222-1964.",
+        note: "Private-aviation pin only if the brief includes it. Not a default tour stop. Call (702) 500-1942.",
       },
     ],
   },
@@ -89,7 +89,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Harry Reid International (LAS)",
-        note: "Typically 15–25 minutes depending on I-15. Confirm the week you tour. Call (702) 222-1964.",
+        note: "Typically 15–25 minutes depending on I-15. Confirm the week you tour. Call (702) 500-1942.",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Centennial Hills Hospital",
-        note: "Northwest ER pin on the same US-95 corridor. Call (702) 222-1964 to sequence the drive.",
+        note: "Northwest ER pin on the same US-95 corridor. Call (702) 500-1942 to sequence the drive.",
       },
     ],
   },
@@ -125,7 +125,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Centennial Center retail",
-        note: "Target, Costco, theatres on the Durango/215 cluster. Call (702) 222-1964.",
+        note: "Target, Costco, theatres on the Durango/215 cluster. Call (702) 500-1942.",
       },
     ],
   },
@@ -143,7 +143,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Galleria at Sunset",
-        note: "Enclosed mall on the same Henderson clock. Call (702) 222-1964.",
+        note: "Enclosed mall on the same Henderson clock. Call (702) 500-1942.",
       },
     ],
   },
@@ -161,7 +161,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Galleria at Sunset",
-        note: "Macy's/Dillard's mall. The District is a separate Green Valley stop. Call (702) 222-1964.",
+        note: "Macy's/Dillard's mall. The District is a separate Green Valley stop. Call (702) 500-1942.",
       },
     ],
   },
@@ -179,7 +179,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "St. Rose Dominican — Siena",
-        note: "Hospital on the Henderson clock. Call (702) 222-1964.",
+        note: "Hospital on the Henderson clock. Call (702) 500-1942.",
       },
     ],
   },
@@ -197,7 +197,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "North Vista Hospital",
-        note: "North Las Vegas hospital pin. Confirm drive minutes the week you tour. Call (702) 222-1964.",
+        note: "North Las Vegas hospital pin. Confirm drive minutes the week you tour. Call (702) 500-1942.",
       },
     ],
   },
@@ -215,7 +215,7 @@ export const neighborhoodAmenities: Record<string, NeighborhoodAmenityCopy> = {
       },
       {
         name: "Southern Hills Hospital",
-        note: "About 10 minutes. St. Rose Siena is the Henderson alternative. Call (702) 222-1964.",
+        note: "About 10 minutes. St. Rose Siena is the Henderson alternative. Call (702) 500-1942.",
       },
     ],
   },

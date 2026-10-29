@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/services",
   title: "Real Estate Services Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Comprehensive real estate services from Dr. Jan Duffy. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 222-1964.",
+    "Comprehensive real estate services from Dr. Jan Duffy. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-1942.",
   keywords: [
     "Las Vegas real estate services",
     "Berkshire Hathaway services",
@@ -82,8 +82,7 @@ const sellerTypes = [
   {
     title: "Relocation Sellers",
     href: "/sellers/relocation",
-    description:
-      "Selling from out of state? Remote coordination is available.",
+    description: "Selling from out of state? Remote coordination is available.",
   },
 ];
 
@@ -107,10 +106,10 @@ export default function ServicesPage() {
             <HeadingPhoto path="/services" />
 
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from Dr. Jan Duffy, in real estate since 1983. Whether you're
-              buying your first home, selling a luxury estate, or relocating
-              from California, you'll receive expert guidance every step of the
-              way.
+              Comprehensive real estate solutions from Dr. Jan Duffy, in real
+              estate since 1983. Whether you're buying your first home, selling
+              a luxury estate, or relocating from California, you'll receive
+              expert guidance every step of the way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
@@ -148,7 +147,7 @@ export default function ServicesPage() {
               /buyers/california-relocator, /buyers/first-time-buyers, and
               /buyers/luxury-homes-las-vegas are separate clocks from Suite 100.
               We do not stack a Henderson luxury afternoon with a first-purchase
-              FHA briefing. Call (702) 222-1964.
+              FHA briefing. Call (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {buyerTypes.map((type) => (
@@ -181,7 +180,7 @@ export default function ServicesPage() {
               /sellers/move-up, /sellers/downsizing, /sellers/divorce-probate,
               and /sellers/relocation start with dates at 9406 W Lake Mead Blvd,
               Suite 100. The MLS remarks wait until the occupancy and
-              next-address clock is written. Call (702) 222-1964.
+              next-address clock is written. Call (702) 500-1942.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {sellerTypes.map((type) => (
@@ -215,7 +214,8 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our
               real estate services. Whether you're buying, selling, investing,
-              or relocating, you'll receive expert guidance from a REALTOR® in real estate since 1983.
+              or relocating, you'll receive expert guidance from a REALTOR® in
+              real estate since 1983.
             </p>
             <CtaActions variant="onDark" />
           </section>

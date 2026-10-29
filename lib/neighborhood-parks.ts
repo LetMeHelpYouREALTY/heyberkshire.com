@@ -39,7 +39,7 @@ export const neighborhoodParks: Record<string, NeighborhoodParkCopy> = {
       },
       {
         name: "Angel Park Golf Club",
-        note: "Two public courses, 36 holes, on the west-valley side toward Summerlin. Call (702) 222-1964 to sequence golf vs the 120-acre park.",
+        note: "Two public courses, 36 holes, on the west-valley side toward Summerlin. Call (702) 500-1942 to sequence golf vs the 120-acre park.",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const neighborhoodParks: Record<string, NeighborhoodParkCopy> = {
       },
       {
         name: "Rhodes Ranch Golf Club",
-        note: "Public golf near the southwest plat. Southern Highlands Golf Club is a separate I-15 add-on. Call (702) 222-1964.",
+        note: "Public golf near the southwest plat. Southern Highlands Golf Club is a separate I-15 add-on. Call (702) 500-1942.",
       },
     ],
   },

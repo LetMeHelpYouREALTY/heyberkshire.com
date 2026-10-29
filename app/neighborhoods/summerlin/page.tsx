@@ -24,10 +24,9 @@ import {
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/summerlin",
-  title:
-    "Summerlin Real Estate | Las Vegas Luxury Real Estate",
+  title: "Summerlin Real Estate | Las Vegas Luxury Real Estate",
   description:
-    "Find Summerlin homes with a local expert. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 222-1964.",
+    "Find Summerlin homes with a local expert. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Summerlin",
     "Summerlin homes for sale",
@@ -135,9 +134,10 @@ export default function SummerlinPage() {
               <p>
                 When homebuyers compare Las Vegas master-planned communities,{" "}
                 <strong>Summerlin</strong> is the Howard Hughes 22,500-acre
-                west-valley plat. As a REALTOR® specializing in Summerlin real estate, Dr. Jan Duffy times
-                village tours from Suite 100 so you compare The Trails, Downtown
-                Summerlin, and Red Rock trailheads on the same clock.
+                west-valley plat. As a REALTOR® specializing in Summerlin real
+                estate, Dr. Jan Duffy times village tours from Suite 100 so you
+                compare The Trails, Downtown Summerlin, and Red Rock trailheads
+                on the same clock.
               </p>
               <p>
                 Developed by The Howard Hughes Corporation since 1990, Summerlin
@@ -175,11 +175,11 @@ export default function SummerlinPage() {
                 proceeds — with no Nevada state income tax.
               </p>
               <p>
-                Working with Dr. Jan Duffy gives you access to listings before they hit the market
-                and offer math written at 9406 W Lake Mead Blvd. Dr. Jan Duffy
-                has been in real estate since 1983 — which streets have
-                mountain views and which builder rows we register first are desk
-                facts, not a search screenshot.
+                Working with Dr. Jan Duffy gives you access to listings before
+                they hit the market and offer math written at 9406 W Lake Mead
+                Blvd. Dr. Jan Duffy has been in real estate since 1983 — which
+                streets have mountain views and which builder rows we register
+                first are desk facts, not a search screenshot.
               </p>
             </div>
           </section>

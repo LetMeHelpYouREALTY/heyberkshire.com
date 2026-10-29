@@ -116,7 +116,7 @@ const byPath: Record<string, PlaceDrive> = {
   "/google-business": {
     place: "the Google Business Profile address",
     driveMinutes: "this is the Maps pin",
-    note: "Name, address, and office line (702) 500-1942 match the Google listing; call or text (702) 222-1964 for a same-day reply.",
+    note: "Name, address, and office line (702) 500-1942 match the Google listing; call or text for a same-day reply.",
   },
   "/faq": {
     place: "a live Q&A",
@@ -254,9 +254,8 @@ export default function OfficeProximity({ path }: OfficeProximityProps) {
         Drive time from {nap.street} to {row.place}
       </h2>
       <p className="text-slate-700 mb-4">
-        Showings start from the office at{" "}
-        {nap.fullAddress}. Typical drive to {row.place} is {row.driveMinutes}.{" "}
-        {row.note}
+        Showings start from the office at {nap.fullAddress}. Typical drive to{" "}
+        {row.place} is {row.driveMinutes}. {row.note}
       </p>
       <p className="text-sm text-slate-600 mb-4">
         Office (matches Google Business): {officePhone.display}. Call or text{" "}

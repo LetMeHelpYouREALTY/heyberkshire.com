@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
   description:
-    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy. Call (702) 222-1964.",
+    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
     "Trilogy at Summerlin homes for sale",
     "Trilogy Summerlin Las Vegas",
@@ -211,7 +211,7 @@ export default function TrilogySummerlinPage() {
             <p className="text-xl text-rose-100 mb-8">
               Clubhouse, spa, and Shea plan rows sit 12–18 minutes from 9406 W
               Lake Mead Blvd. Register before walking models. Call (702)
-              222-1964.
+              500-1942.
             </p>
             <CtaActions variant="onDark" />
             <p className="text-rose-200">

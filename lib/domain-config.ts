@@ -137,8 +137,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     domain: "drjanetduffy.com",
     neighborhood: "Las Vegas",
     tagline: "Dr. Jan Duffy — Las Vegas REALTOR®",
-    description:
-      "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
+    description: "Dr. Jan Duffy, Top 1% Las Vegas REALTOR®.",
     heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate Expert",
     heroSubheadline:
       "In real estate since 1983, 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.",
@@ -148,7 +147,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Las Vegas Expert",
     ctaHeadline: "Ready to Buy or Sell?",
     ctaSubheadline:
-      "Call or text Dr. Jan at 702-222-1964 — I answer my own phone.",
+      "Call or text Dr. Jan at 702-500-1942 — I answer my own phone.",
   },
   "eaglehillshomes.com": {
     domain: "eaglehillshomes.com",
@@ -188,8 +187,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Market Expert",
     ctaHeadline: "Get the Insider Knowledge",
-    ctaSubheadline:
-      "Decades of Las Vegas real estate data at your fingertips.",
+    ctaSubheadline: "Decades of Las Vegas real estate data at your fingertips.",
   },
   "heritageatstonebridgehomes.com": {
     domain: "heritageatstonebridgehomes.com",
@@ -238,7 +236,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Just Call Dr. Jan — Las Vegas Real Estate",
     description:
-      "Ready to buy or sell in Las Vegas? Just call Dr. Jan Duffy at 702-222-1964.",
+      "Ready to buy or sell in Las Vegas? Just call Dr. Jan Duffy at 702-500-1942.",
     heroHeadline: "Just Call Dr. Jan",
     heroSubheadline:
       "In real estate since 1983. 500+ clients. No runaround — just expert Las Vegas real estate guidance.",
@@ -248,14 +246,13 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Direct Access",
     ctaHeadline: "I Answer My Own Phone",
     ctaSubheadline:
-      "No assistant, no callback queue. Call or text 702-222-1964 and reach me directly.",
+      "No assistant, no callback queue. Call or text 702-500-1942 and reach me directly.",
   },
   "lasvegashomeexpert.com": {
     domain: "lasvegashomeexpert.com",
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Home Expert — Dr. Jan Duffy",
-    description:
-      "Las Vegas home buying and selling expert. Dr. Jan Duffy.",
+    description: "Las Vegas home buying and selling expert. Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Home Expert",
     heroSubheadline:
       "The most knowledgeable real estate professional in the Las Vegas Valley.",
@@ -421,8 +418,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     domain: "samaritanpharma.com",
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Real Estate",
-    description:
-      "Las Vegas real estate services from Dr. Jan Duffy.",
+    description: "Las Vegas real estate services from Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Homes for Sale",
     heroSubheadline:
       "Expert Las Vegas real estate guidance from Dr. Jan Duffy.",
@@ -540,7 +536,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Cash Offer Specialist",
     ctaHeadline: "Get Your Cash Offer Today",
     ctaSubheadline:
-      "Call 702-222-1964 for a no-obligation cash offer on your Las Vegas home.",
+      "Call 702-500-1942 for a no-obligation cash offer on your Las Vegas home.",
   },
   "suncitysummerlinhomesforsale.com": {
     domain: "suncitysummerlinhomesforsale.com",
@@ -675,7 +671,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
       "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR®.",
     heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
     heroSubheadline:
-      "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.",
+      "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 500-1942.",
     keywords: [
       "Las Vegas homes for sale",
       "Las Vegas real estate",
@@ -685,7 +681,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Top 1% Las Vegas REALTOR®",
     ctaHeadline: "Book Suite 100, then the first two ZIP loops",
-    ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk.",
+    ctaSubheadline: "Call or text (702) 500-1942. The Maps pin is this desk.",
   },
   "opportunityzonespecialists.com": {
     domain: "opportunityzonespecialists.com",
@@ -706,7 +702,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "OZ Guidance",
     ctaHeadline: "Review OZ Parcels With Dr. Jan",
     ctaSubheadline:
-      "Call (702) 222-1964 to align tax deadlines with your acquisition plan.",
+      "Call (702) 500-1942 to align tax deadlines with your acquisition plan.",
   },
   "heartlandlasvegas.com": {
     domain: "heartlandlasvegas.com",
@@ -727,7 +723,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Heartland Specialist",
     ctaHeadline: "Search Heartland Listings",
     ctaSubheadline:
-      "Call (702) 222-1964 for current inventory and showing times.",
+      "Call (702) 500-1942 for current inventory and showing times.",
   },
   "drjanduffy.com": {
     domain: "drjanduffy.com",
@@ -743,7 +739,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Las Vegas Expert",
     ctaHeadline: "Work With Dr. Jan Duffy",
-    ctaSubheadline: "Call or text (702) 222-1964 — I answer my own phone.",
+    ctaSubheadline: "Call or text (702) 500-1942 — I answer my own phone.",
   },
   "askdrjanduffy.com": {
     domain: "askdrjanduffy.com",
@@ -764,7 +760,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Ask the Expert",
     ctaHeadline: "Get a Straight Answer",
     ctaSubheadline:
-      "Call or text (702) 222-1964 with your question — no call center.",
+      "Call or text (702) 500-1942 with your question — no call center.",
   },
 };
 
@@ -777,7 +773,7 @@ export const DEFAULT_CONFIG: DomainConfig = {
     "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy.",
   heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
   heroSubheadline:
-    "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 222-1964.",
+    "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 500-1942.",
   keywords: [
     "Las Vegas homes for sale",
     "Las Vegas real estate",
@@ -787,7 +783,7 @@ export const DEFAULT_CONFIG: DomainConfig = {
   realscoutAgentId: REALSCOUT_AGENT_ID,
   ctaBadge: "Top 1% Las Vegas REALTOR®",
   ctaHeadline: "Book Suite 100, then the first two ZIP loops",
-  ctaSubheadline: "Call or text (702) 222-1964. The Maps pin is this desk.",
+  ctaSubheadline: "Call or text (702) 500-1942. The Maps pin is this desk.",
 };
 
 export function isKnownHost(hostname: string): boolean {

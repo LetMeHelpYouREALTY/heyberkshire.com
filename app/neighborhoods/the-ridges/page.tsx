@@ -18,10 +18,9 @@ import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/the-ridges",
-  title:
-    "The Ridges Real Estate | Las Vegas Luxury Real Estate",
+  title: "The Ridges Real Estate | Las Vegas Luxury Real Estate",
   description:
-    "Find The Ridges homes with a local expert. Guard-gated Summerlin ridge lots, 15–20 minutes from Suite 100. Median $2.5M, 42 listings, 67 DOM (January 2026). Call (702) 222-1964.",
+    "Find The Ridges homes with a local expert. Guard-gated Summerlin ridge lots, 15–20 minutes from Suite 100. Median $2.5M, 42 listings, 67 DOM (January 2026). Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices The Ridges",
     "The Ridges homes for sale",
@@ -119,10 +118,11 @@ export default function TheRidgesPage() {
                 not improvised.
               </p>
               <p>
-                Dr. Jan Duffy understands that luxury
-                transactions require gate lists, photography scoped in writing,
-                and addresses kept off group texts. The office connects Ridges appointments from 9406 W Lake Mead Blvd, Suite
-                100 — typically 15–20 minutes to the guardhouse.
+                Dr. Jan Duffy understands that luxury transactions require gate
+                lists, photography scoped in writing, and addresses kept off
+                group texts. The office connects Ridges appointments from 9406 W
+                Lake Mead Blvd, Suite 100 — typically 15–20 minutes to the
+                guardhouse.
               </p>
 
               <CommunityHighlights path="/neighborhoods/the-ridges" />
@@ -147,13 +147,12 @@ export default function TheRidgesPage() {
                 most spectacular custom estates.
               </p>
               <p>
-                Working with Dr. Jan Duffy in
-                The Ridges means working with agents who schedule gate lists,
-                photography, and off-market windows from Suite 100. Dr. Jan
-                Duffy coordinates access with architects, designers, and
-                property managers when the brief includes those vendors. When
-                the list price is measured in millions, the paperwork is handled
-                at 9406 W Lake Mead Blvd.
+                Working with Dr. Jan Duffy in The Ridges means working with
+                agents who schedule gate lists, photography, and off-market
+                windows from Suite 100. Dr. Jan Duffy coordinates access with
+                architects, designers, and property managers when the brief
+                includes those vendors. When the list price is measured in
+                millions, the paperwork is handled at 9406 W Lake Mead Blvd.
               </p>
             </div>
           </section>

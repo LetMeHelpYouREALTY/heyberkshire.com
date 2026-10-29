@@ -22,7 +22,7 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
     items: [
       {
         q: "Where does buyer-agent onboarding start before the first tour?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. RealScout does matching; we sequence the drives and the offer. Call (702) 222-1964 when pre-approval is in hand.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. RealScout does matching; we sequence the drives and the offer. Call (702) 500-1942 when pre-approval is in hand.",
       },
       {
         q: "What down-payment types did this page last publish for Las Vegas?",
@@ -30,11 +30,11 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
       },
       {
         q: "Do you represent buyers on new construction if I walk a model first?",
-        a: "Register Dr. Jan at Suite 100 before the first model visit. Most Las Vegas and Henderson builders require your agent on that first visit. The builder typically pays the buyer-broker fee; she still reviews the contract and upgrades for you. Call (702) 222-1964.",
+        a: "Register Dr. Jan at Suite 100 before the first model visit. Most Las Vegas and Henderson builders require your agent on that first visit. The builder typically pays the buyer-broker fee; she still reviews the contract and upgrades for you. Call (702) 500-1942.",
       },
       {
         q: "How do you sequence Summerlin vs Henderson on a first-tour day?",
-        a: "Summerlin first (10–15 minutes from Suite 100), Henderson second (25–35 minutes via I-215 east). Named campuses we time by street: Palo Verde High School, Coronado High School, Arbor View High School. No ratings. Call (702) 222-1964.",
+        a: "Summerlin first (10–15 minutes from Suite 100), Henderson second (25–35 minutes via I-215 east). Named campuses we time by street: Palo Verde High School, Coronado High School, Arbor View High School. No ratings. Call (702) 500-1942.",
       },
     ],
   },
@@ -43,7 +43,7 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
     items: [
       {
         q: "What paperwork do we review at Suite 100 before an FHA or VA tour?",
-        a: "Lender intro, program checklist, and pre-approval status at 9406 W Lake Mead Blvd, Suite 100. Then we schedule model or resale tours. Call (702) 222-1964.",
+        a: "Lender intro, program checklist, and pre-approval status at 9406 W Lake Mead Blvd, Suite 100. Then we schedule model or resale tours. Call (702) 500-1942.",
       },
       {
         q: "What 2026 FHA loan limit did this page last publish for Clark County?",
@@ -55,7 +55,7 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
       },
       {
         q: "Do first-time buyers pay Dr. Jan's commission on resale or new construction?",
-        a: "Buyer-broker fees on resale are typically paid from the listing side; new-construction builders usually pay the buyer agent if you registered before the first model visit. Confirm the fee exhibit in writing. Representation is not a DIY model-row walk. Call (702) 222-1964.",
+        a: "Buyer-broker fees on resale are typically paid from the listing side; new-construction builders usually pay the buyer agent if you registered before the first model visit. Confirm the fee exhibit in writing. Representation is not a DIY model-row walk. Call (702) 500-1942.",
       },
     ],
   },
@@ -64,7 +64,7 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
     items: [
       {
         q: "How do we turn California sale proceeds into a Las Vegas tour week?",
-        a: "We compare your California net to Las Vegas ZIP targets at Suite 100 or on video, then lock a concentrated Summerlin-then-Henderson week so you are not flying in for a random open-house hopscotch. Call (702) 222-1964.",
+        a: "We compare your California net to Las Vegas ZIP targets at Suite 100 or on video, then lock a concentrated Summerlin-then-Henderson week so you are not flying in for a random open-house hopscotch. Call (702) 500-1942.",
       },
       {
         q: "What Nevada tax fact vs remaining costs did this page last publish?",
@@ -85,7 +85,7 @@ export const buyerFaqs: Record<string, BuyerFaqCopy> = {
     items: [
       {
         q: "Do Ridges gate codes go on a group text from this luxury search page?",
-        a: "No. The Ridges is typically 15–20 minutes from Suite 100. Gate codes and off-market windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. We do not send a PDF of 40 estates. Call (702) 222-1964.",
+        a: "No. The Ridges is typically 15–20 minutes from Suite 100. Gate codes and off-market windows are confirmed at 9406 W Lake Mead Blvd, Suite 100. We do not send a PDF of 40 estates. Call (702) 500-1942.",
       },
       {
         q: "What December 2025 luxury median did this page last publish?",

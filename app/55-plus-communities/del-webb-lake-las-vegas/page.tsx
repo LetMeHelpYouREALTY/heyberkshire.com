@@ -25,7 +25,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/del-webb-lake-las-vegas",
   title: "Del Webb at Lake Las Vegas Homes | Dr. Jan Duffy, REALTOR®",
   description:
-    "Lakefront 55+ living at Del Webb Lake Las Vegas. Homes from $400K-$900K. Resort amenities, stunning lake and mountain views. Dr. Jan Duffy. Call (702) 222-1964.",
+    "Lakefront 55+ living at Del Webb Lake Las Vegas. Homes from $400K-$900K. Resort amenities, stunning lake and mountain views. Dr. Jan Duffy. Call (702) 500-1942.",
   keywords: [
     "Del Webb Lake Las Vegas",
     "Lake Las Vegas 55 plus",
@@ -81,7 +81,7 @@ export default function DelWebbLakeLasVegasPage() {
                 <strong>Del Webb at Lake Las Vegas</strong> is a 2016-to-present
                 55+ campus on Lake Las Vegas. Occupancy rules are reviewed at
                 9406 W Lake Mead Blvd, Suite 100 before the Henderson drive.
-                Call (702) 222-1964. Do not stack this with a Summerlin 55+
+                Call (702) 500-1942. Do not stack this with a Summerlin 55+
                 morning.
               </p>
               <p>
@@ -91,8 +91,9 @@ export default function DelWebbLakeLasVegasPage() {
                 confirm them the week you tour.
               </p>
               <p>
-                Dr. Jan Duffy helps buyers navigate Del Webb's various floor plans and lot positions, and provides guidance on which phases offer
-                the best value and which premium lots justify their price
+                Dr. Jan Duffy helps buyers navigate Del Webb's various floor
+                plans and lot positions, and provides guidance on which phases
+                offer the best value and which premium lots justify their price
                 premiums.
               </p>
             </div>

@@ -346,9 +346,11 @@ jobs:
                   issues.push(`❌ **${file.filename}**: Missing metadata export (SEO)`);
                 }
                 
-                // Retired office line only. (702) 222-1964 is the live client CTA;
-                // (702) 500-1942 is the GBP/office NAP. Do not flag the CTA.
+                // (702) 500-1942 is the only published line (matches GBP).
+                // (702) 222-1964 is for client emails and texts only, never the site.
                 if (
+                  content.includes('222-1964') ||
+                  content.includes('7022221964') ||
                   content.includes('702-500-1955') ||
                   content.includes('7025001955') ||
                   content.includes('(702) 500-1955') ||
@@ -512,7 +514,7 @@ jobs:
             - [ ] Code follows project conventions
             - [ ] Tests pass with adequate coverage (80%+)
             - [ ] SEO metadata is present and optimized
-            - [ ] Client CTA is (702) 222-1964; GBP/office NAP is (702) 500-1942
+            - [ ] Every published phone number is (702) 500-1942 (matches GBP)
             - [ ] Berkshire Hathaway branding is consistent
             - [ ] Mobile responsive design verified
             - [ ] No console errors

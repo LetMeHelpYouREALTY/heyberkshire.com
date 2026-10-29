@@ -23,7 +23,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Red Rock trailheads and named campuses on the same loop",
     h3Body:
-      "Scenic Drive and Red Rock Canyon trailheads sit west of the villages. Named campuses on the same west-valley loop include Palo Verde High School, West Career & Technical Academy, and Sig Rogich Middle School. Call (702) 222-1964 to lock a same-afternoon village tour.",
+      "Scenic Drive and Red Rock Canyon trailheads sit west of the villages. Named campuses on the same west-valley loop include Palo Verde High School, West Career & Technical Academy, and Sig Rogich Middle School. Call (702) 500-1942 to lock a same-afternoon village tour.",
   },
   "/neighborhoods/the-ridges": {
     h2: "Guard-gate timing for The Ridges estate showings",
@@ -35,7 +35,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Pool terraces and valley overlooks on the showing route",
     h3Body:
-      "Most Ridges tours include the club campus, selected ridge streets, and a return to Downtown Summerlin if you also want retail context. Call (702) 222-1964 for a private gate window.",
+      "Most Ridges tours include the club campus, selected ridge streets, and a return to Downtown Summerlin if you also want retail context. Call (702) 500-1942 for a private gate window.",
   },
   "/neighborhoods/southern-highlands": {
     h2: "South-valley golf and ridge streets in one tour block",
@@ -47,7 +47,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Clubhouse, fairways, and I-15 access",
     h3Body:
-      "Ask for current HOA dues, golf membership rules, and commute minutes to Harry Reid International Airport. Call (702) 222-1964 to schedule the south-valley block from Suite 100.",
+      "Ask for current HOA dues, golf membership rules, and commute minutes to Harry Reid International Airport. Call (702) 500-1942 to schedule the south-valley block from Suite 100.",
   },
   "/neighborhoods/skye-canyon": {
     h2: "Skye Canyon model rows and resale streets in one northwest loop",
@@ -59,7 +59,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Trails, splash pad, and northwest commute minutes",
     h3Body:
-      "Resort pool, splash pad, sports courts, and desert trails are the amenity core. Call (702) 222-1964 to register and tour the same day.",
+      "Resort pool, splash pad, sports courts, and desert trails are the amenity core. Call (702) 500-1942 to register and tour the same day.",
   },
   "/neighborhoods/centennial-hills": {
     h2: "Mountain-view streets near Floyd Lamb from the office pin",
@@ -71,7 +71,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Arbor View High School commute, not slogans",
     h3Body:
-      "Named campuses and drive times replace generic school talk. Call (702) 222-1964 with the addresses you want timed from the office.",
+      "Named campuses and drive times replace generic school talk. Call (702) 500-1942 with the addresses you want timed from the office.",
   },
   "/neighborhoods/green-valley": {
     h2: "Green Valley trees, golf, and The District as a Henderson block",
@@ -83,7 +83,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "The District as the tour midpoint",
     h3Body:
-      "We often park at The District, then fan out to golf-course HOAs and interior streets. Call (702) 222-1964 to start that Henderson block from Lake Mead Blvd.",
+      "We often park at The District, then fan out to golf-course HOAs and interior streets. Call (702) 500-1942 to start that Henderson block from Lake Mead Blvd.",
   },
   "/neighborhoods/inspirada": {
     h2: "Inspirada amenity center and builder rows as a south Henderson block",
@@ -95,7 +95,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Central park and rec campus on the same stop",
     h3Body:
-      "Square footage, HOA dues, and park acreage are the comparison points—not slogans. Call (702) 222-1964 to schedule the south Henderson block.",
+      "Square footage, HOA dues, and park acreage are the comparison points—not slogans. Call (702) 500-1942 to schedule the south Henderson block.",
   },
   "/neighborhoods/henderson": {
     h2: "Henderson villages sequenced from one west-valley start",
@@ -107,7 +107,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Which Henderson village first",
     h3Body:
-      "Tell Dr. Jan Duffy your commute target (Strip, airport, or a named campus) and HOA budget. Call (702) 222-1964. We will not city-swap copy—each village gets its own facts.",
+      "Tell Dr. Jan Duffy your commute target (Strip, airport, or a named campus) and HOA budget. Call (702) 500-1942. We will not city-swap copy—each village gets its own facts.",
   },
   "/neighborhoods/mountains-edge": {
     h2: "Exploration Peak trails and southwest resales in one loop",
@@ -119,7 +119,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Trailhead first, then streets",
     h3Body:
-      "We start at the trailhead so you see the recreation campus, then drive listing streets. Call (702) 222-1964 to lock the southwest loop.",
+      "We start at the trailhead so you see the recreation campus, then drive listing streets. Call (702) 500-1942 to lock the southwest loop.",
   },
   "/neighborhoods/north-las-vegas": {
     h2: "Aliante, Craig Road, and new villages grouped as a north tour",
@@ -131,7 +131,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Aliante rec campus as the north anchor",
     h3Body:
-      "If you work warehouse or medical shifts on the north end, we time drive minutes to the actual facility—not a valley average. Call (702) 222-1964.",
+      "If you work warehouse or medical shifts on the north end, we time drive minutes to the actual facility—not a valley average. Call (702) 500-1942.",
   },
   "/55-plus-communities/sun-city-summerlin": {
     h2: "Three golf campuses and four rec centers without a long freeway run",
@@ -143,7 +143,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Rec-center tour before you pick a street",
     h3Body:
-      "We walk one rec center and one golf campus before writing offers so you know the amenity you will actually use. Call (702) 222-1964. Age-restriction rules are reviewed at Suite 100 first.",
+      "We walk one rec center and one golf campus before writing offers so you know the amenity you will actually use. Call (702) 500-1942. Age-restriction rules are reviewed at Suite 100 first.",
   },
   "/55-plus-communities/sun-city-anthem": {
     h2: "Anthem Center and upper-elevation streets as a Henderson 55+ block",
@@ -155,7 +155,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Golf fairways against the McCullough Range",
     h3Body:
-      "Bring the HOA packet questions to the office, then we tour fairway vs interior streets. Call (702) 222-1964 to book the Henderson 55+ block.",
+      "Bring the HOA packet questions to the office, then we tour fairway vs interior streets. Call (702) 500-1942 to book the Henderson 55+ block.",
   },
   "/55-plus-communities/trilogy-summerlin": {
     h2: "Trilogy clubhouse, spa, and Shea plans on the office side of the valley",
@@ -167,7 +167,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Clubhouse pool terrace as the first stop",
     h3Body:
-      "See the amenity you will pay HOA for, then walk plans. Call (702) 222-1964. Paperwork is handled at Suite 100.",
+      "See the amenity you will pay HOA for, then walk plans. Call (702) 500-1942. Paperwork is handled at Suite 100.",
   },
   "/55-plus-communities/heritage-stonebridge": {
     h2: "24/7 gate and Downtown Summerlin retail from Lake Mead Blvd",
@@ -179,7 +179,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Gate arrival, then clubhouse",
     h3Body:
-      "We put you on the guest list from the office so arrival is not improvised. Call (702) 222-1964.",
+      "We put you on the guest list from the office so arrival is not improvised. Call (702) 500-1942.",
   },
   "/55-plus-communities/solera-anthem": {
     h2: "Solera's 1,200-home campus toured with nearby Anthem parks",
@@ -191,7 +191,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Boutique clubhouse and pool, not a mega rec campus",
     h3Body:
-      "If you want fewer homes and a staffed gate in Henderson, Solera is the comparison to Sun City Anthem. Call (702) 222-1964 to see both in one Henderson 55+ block only if that is the brief.",
+      "If you want fewer homes and a staffed gate in Henderson, Solera is the comparison to Sun City Anthem. Call (702) 500-1942 to see both in one Henderson 55+ block only if that is the brief.",
   },
   "/55-plus-communities/sun-city-aliante": {
     h2: "18-hole course and rec campus next to the Aliante retail strip",
@@ -203,7 +203,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Rec campus first, then fairway vs interior lots",
     h3Body:
-      "We time Craig Road and I-15 commutes if you still work. Call (702) 222-1964 to book the north 55+ loop.",
+      "We time Craig Road and I-15 commutes if you still work. Call (702) 500-1942 to book the north 55+ loop.",
   },
   "/55-plus-communities/del-webb-lake-las-vegas": {
     h2: "Lake-adjacent Del Webb plans as an east-Henderson half day",
@@ -215,14 +215,14 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Shoreline and golf before floor plans",
     h3Body:
-      "See the lake and golf setting, then walk interiors. Call (702) 222-1964. Start at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+      "See the lake and golf setting, then walk interiors. Call (702) 500-1942. Start at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
   },
   "/": {
     h2: "Same-day Summerlin-then-Henderson routing from the Maps pin",
     body: "Buyer and seller appointments start at 9406 W Lake Mead Blvd, Suite 100. We loop Summerlin first (10–15 minutes) and Henderson second (25–35 minutes) so you are not crisscrossing I-15.",
     facts: [
       "GBP name, address, and office line (702) 500-1942 match this pin",
-      "Call or text (702) 222-1964 for a same-day showing window",
+      "Call or text (702) 500-1942 for a same-day showing window",
       "Live MLS search sits on RealScout; we sequence the tour from this desk",
     ],
     h3: "Office hours and how to start",
@@ -235,27 +235,27 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Top 1% Las Vegas REALTOR®",
       "Markets: Las Vegas, Henderson, Summerlin",
-      "Client CTA (702) 222-1964 · office/GBP (702) 500-1942",
+      "Call or text (702) 500-1942 · matches GBP",
     ],
     h3: "Parking, hours, and the consult desk",
     h3Body:
-      "Visitor parking faces W Lake Mead Blvd. Bring pre-approval or an APN. Call (702) 222-1964 if you need a Sunday appointment.",
+      "Visitor parking faces W Lake Mead Blvd. Bring pre-approval or an APN. Call (702) 500-1942 if you need a Sunday appointment.",
   },
   "/contact": {
     h2: "Walk-in desk and Calendly showings from the same pin",
     body: "Walk-ins during posted hours are welcome at Suite 100. Calendly showings can start here and continue to the property. Email homes@heyberkshire.com for documents; do not send listing keys by unsecured email.",
     facts: [
       "Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
-      "Call or text (702) 222-1964 · office (702) 500-1942",
+      "Call or text (702) 500-1942",
       "Map embed, Directions, and View Google Reviews are on this page and the footer",
     ],
     h3: "What to bring to the contact desk",
     h3Body:
-      "Photo ID, lender contact, and target ZIPs. We map commute minutes before the first tour. Call (702) 222-1964 if you are already in the parking lot.",
+      "Photo ID, lender contact, and target ZIPs. We map commute minutes before the first tour. Call (702) 500-1942 if you are already in the parking lot.",
   },
   "/google-business": {
     h2: "This page exists so Maps, GBP, and the website say the same thing",
-    body: "Name, address, and office line (702) 500-1942 match the Google listing. Call or text (702) 222-1964 for a same-day reply. Hours, map pin, reviews, and photos on this URL are kept aligned with the Business Profile.",
+    body: "Name, address, and office line (702) 500-1942 match the Google listing. Call or text for a same-day reply. Hours, map pin, reviews, and photos on this URL are kept aligned with the Business Profile.",
     facts: [
       "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
       "Mon–Fri 9am–6pm, Sat 10am–4pm, Sunday by appointment",
@@ -270,12 +270,12 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Bring loan pre-approval and a target ZIP to Suite 100. We map commute minutes to listings from this desk instead of answering with valley-wide averages only.",
     facts: [
       "FAQs below are Fair Housing-safe: square footage, amenities, named campuses, commute times",
-      "Client CTA (702) 222-1964",
+      "Client CTA (702) 500-1942",
       "Office NAP matches GBP",
     ],
     h3: "Still stuck after the accordion",
     h3Body:
-      "Call (702) 222-1964 or book Calendly. Dr. Jan Duffy will answer from the actual addresses you care about.",
+      "Call (702) 500-1942 or book Calendly. Dr. Jan Duffy will answer from the actual addresses you care about.",
   },
   "/services": {
     h2: "Buy, sell, 55+, and relocation paperwork start at one desk",
@@ -287,19 +287,19 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Pick a service, then pick a drive",
     h3Body:
-      "Call (702) 222-1964. We will not send you to a generic city page—each service has its own interior and next-step CTA.",
+      "Call (702) 500-1942. We will not send you to a generic city page—each service has its own interior and next-step CTA.",
   },
   "/security-policy": {
     h2: "Showing access and data questions stay at Suite 100",
     body: "Privacy, lockbox, and showing-access questions are handled at the office. We do not collect listing keys by unsecured email.",
     facts: [
       "Email homes@heyberkshire.com for written policy questions",
-      "Office (702) 500-1942 matches GBP · CTA (702) 222-1964",
+      "Office (702) 500-1942 matches GBP",
       "Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
     ],
     h3: "What we will not do",
     h3Body:
-      "No unsecured key photos, no off-platform wire instructions. Call (702) 222-1964 if a message claiming to be Dr. Jan asks you to change wiring details.",
+      "No unsecured key photos, no off-platform wire instructions. Call (702) 500-1942 if a message claiming to be Dr. Jan asks you to change wiring details.",
   },
   "/listings": {
     h2: "Live MLS search, then a sequenced tour from Lake Mead Blvd",
@@ -311,7 +311,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "How to use the live search without getting lost",
     h3Body:
-      "Filter beds, baths, and square footage, save the list, then call (702) 222-1964. We will not tour 12 ZIPs in one day.",
+      "Filter beds, baths, and square footage, save the list, then call (702) 500-1942. We will not tour 12 ZIPs in one day.",
   },
   "/home-valuation": {
     h2: "Comps at the desk, then photos at the house",
@@ -319,11 +319,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "CMA review on-site or at your property",
       "Marketing scope is set before the photographer is booked",
-      "Call (702) 222-1964 · office (702) 500-1942",
+      "Call (702) 500-1942",
     ],
     h3: "What a priced-to-comps listing looks like",
     h3Body:
-      "Days on market climb when the ask ignores last month's closes. Call (702) 222-1964 for a CMA that starts at this office.",
+      "Days on market climb when the ask ignores last month's closes. Call (702) 500-1942 for a CMA that starts at this office.",
   },
   "/new-construction": {
     h2: "Register the buyer agent before any model-home visit",
@@ -335,19 +335,19 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Northwest vs south Henderson builder rows",
     h3Body:
-      "We pick one builder corridor per tour day. Call (702) 222-1964 to register, then drive.",
+      "We pick one builder corridor per tour day. Call (702) 500-1942 to register, then drive.",
   },
   "/buyers": {
     h2: "Pre-approval, search criteria, and first-tour routing at one desk",
     body: "Buyer-agent onboarding happens at Suite 100 so you are not touring without a plan. RealScout does matching; we sequence the drives and the offer.",
     facts: [
       "Named campuses and commute minutes, not school ratings as slogans",
-      "Call (702) 222-1964 to start",
+      "Call (702) 500-1942 to start",
       "NAP matches Google Business",
     ],
     h3: "Keys-on-the-counter is the last step, not the first",
     h3Body:
-      "Search, tour, offer, inspection, close. Call (702) 222-1964 when pre-approval is in hand.",
+      "Search, tour, offer, inspection, close. Call (702) 500-1942 when pre-approval is in hand.",
   },
   "/buyers/first-time-buyers": {
     h2: "FHA, VA, and Nevada down-payment programs before the first tour",
@@ -355,11 +355,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Lender intro and program checklist at this desk",
       "Arbor View High School and Legacy High School commute mapping by address",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Entry ZIPs without guessing prices",
     h3Body:
-      "Ask for current list ranges the week you tour. Call (702) 222-1964. UNKNOWN figures are not invented here.",
+      "Ask for current list ranges the week you tour. Call (702) 500-1942. UNKNOWN figures are not invented here.",
   },
   "/buyers/california-relocator": {
     h2: "California sale proceeds vs Las Vegas ZIP targets, then a tour week",
@@ -371,7 +371,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Three-day itinerary, not a week of wasted drives",
     h3Body:
-      "Day 1 Summerlin, Day 2 Henderson, Day 3 55+ or new construction. Call (702) 222-1964 to lock dates.",
+      "Day 1 Summerlin, Day 2 Henderson, Day 3 55+ or new construction. Call (702) 500-1942 to lock dates.",
   },
   "/buyers/luxury-homes-las-vegas": {
     h2: "Private luxury search—gate codes stay off group texts",
@@ -379,23 +379,23 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "H1 on this URL: Private Luxury Home Search in Las Vegas",
       "Silverado High School commute is a Henderson luxury check when relevant",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Infinity-pool estates vs golf-course lots",
     h3Body:
-      "Tell Dr. Jan the view you want (Strip, Red Rock, or golf). We will not send a PDF of 40 estates. Call (702) 222-1964.",
+      "Tell Dr. Jan the view you want (Strip, Red Rock, or golf). We will not send a PDF of 40 estates. Call (702) 500-1942.",
   },
   "/sellers": {
     h2: "Pricing and Marketing scoped at Suite 100, then the CMA walkthrough",
     body: "Listing prep happens at the office, then we go on-site. Homes priced above last month's closes sit. We price to the comps and launch marketing once photos are done.",
     facts: [
       "Photographer and copy are booked after the walkthrough",
-      "Call (702) 222-1964 for a listing appointment",
+      "Call (702) 500-1942 for a listing appointment",
       "Office/GBP (702) 500-1942",
     ],
     h3: "Staged living room is a tactic, not a slogan",
     h3Body:
-      "We will tell you whether paint, furniture, or price is the lever. Call (702) 222-1964.",
+      "We will tell you whether paint, furniture, or price is the lever. Call (702) 500-1942.",
   },
   "/sellers/move-up": {
     h2: "Sale and purchase timed from one west-valley start",
@@ -403,11 +403,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Two stops from this pin on tour days",
       "Palo Verde vs Coronado commute if campuses matter to the next house",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Do not list blind and then shop",
     h3Body:
-      "See the next street before you price the current one, or at least the same week. Call (702) 222-1964.",
+      "See the next street before you price the current one, or at least the same week. Call (702) 500-1942.",
   },
   "/sellers/downsizing": {
     h2: "List the larger home or tour 55+ the same day from Lake Mead Blvd",
@@ -415,11 +415,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "HOA-maintained 55+ vs a smaller resale with a yard",
       "Age-restriction rules reviewed before you tour",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Square footage you will actually use",
     h3Body:
-      "Measure furniture against plan widths at the office or the model. Call (702) 222-1964.",
+      "Measure furniture against plan widths at the office or the model. Call (702) 500-1942.",
   },
   "/sellers/relocation": {
     h2: "Las Vegas closing dates lined up with the next city",
@@ -427,22 +427,22 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Corporate and individual relocations",
       "Named campuses and commute times for the destination if you stay local first",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Do not let two closings collide",
-    h3Body: "Bring both contract drafts to the desk. Call (702) 222-1964.",
+    h3Body: "Bring both contract drafts to the desk. Call (702) 500-1942.",
   },
   "/sellers/divorce-probate": {
     h2: "Court dates and showing access at Suite 100, not the lobby",
     body: "Confidential file review is by appointment at 9406 W Lake Mead Blvd, Suite 100. Court dates, attorney contacts, and lockbox rules are handled here—not in a public lobby conversation.",
     facts: [
       "Neutral process, documented access, written offers",
-      "Call (702) 222-1964 to schedule a private slot",
+      "Call (702) 500-1942 to schedule a private slot",
       "Do not email sensitive orders to a shared inbox without a heads-up call",
     ],
     h3: "What to bring",
     h3Body:
-      "Letters testamentary or court orders, HOA contacts, and a preferred showing window. Call (702) 222-1964.",
+      "Letters testamentary or court orders, HOA contacts, and a preferred showing window. Call (702) 500-1942.",
   },
   "/relocation": {
     h2: "Three-day inbound itinerary: Summerlin, then Henderson",
@@ -450,11 +450,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Palo Verde High School and Coronado High School commute mapping",
       "HOA dues and park acreage as comparison points",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Remote buying is possible; the tour week still starts here",
     h3Body:
-      "Video walkthroughs, then a concentrated trip. Call (702) 222-1964.",
+      "Video walkthroughs, then a concentrated trip. Call (702) 500-1942.",
   },
   "/investment-properties": {
     h2: "Rent comps and HOA rental rules before the area drive",
@@ -462,10 +462,10 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Downtown and mid-rise product vs suburban 3/2 rentals",
       "Named campus commutes only as a location fact, not a targeting pitch",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Do not buy the photo; buy the lease math",
-    h3Body: "Bring target cap rate and cash-to-close. Call (702) 222-1964.",
+    h3Body: "Bring target cap rate and cash-to-close. Call (702) 500-1942.",
   },
   "/luxury-homes": {
     h2: "Luxury listing or search intake—Ridges, Highlands, or Lake Las Vegas",
@@ -473,11 +473,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "H1 here: List or Buy Las Vegas Luxury Homes With Dr. Jan Duffy",
       "Buyer-only search lives at /buyers/luxury-homes-las-vegas",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Gate access is a logistics problem",
     h3Body:
-      "We confirm HOA vendor lists and drone rules before listing day. Call (702) 222-1964.",
+      "We confirm HOA vendor lists and drone rules before listing day. Call (702) 500-1942.",
   },
   "/why-berkshire-hathaway": {
     h2: "Marketing samples at Suite 100 before you sign a listing agreement",
@@ -485,11 +485,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Global referral network for inbound and outbound moves",
       "Local showing still starts at 9406 W Lake Mead Blvd, Suite 100",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Reputation is the brokerage; the work is the agent",
     h3Body:
-      "Ask who photographs, who writes remarks, who negotiates. Call (702) 222-1964.",
+      "Ask who photographs, who writes remarks, who negotiates. Call (702) 500-1942.",
   },
   "/market-insights": {
     h2: "January 2026 inventory walked against your ZIP, not a valley average only",
@@ -497,10 +497,10 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Valley median often cited near $450,000 (January 2026)",
       "Summerlin median often cited near $625,000",
-      "Call (702) 222-1964 to interpret YOUR address",
+      "Call (702) 500-1942 to interpret YOUR address",
     ],
     h3: "Skyline photos are context; comps are the decision",
-    h3Body: "Bring the address. Call (702) 222-1964.",
+    h3Body: "Bring the address. Call (702) 500-1942.",
   },
   "/market-update": {
     h2: "This week's numbers against your address or buyer criteria",
@@ -508,11 +508,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "DOM and inventory move; we will not invent a rate or a price",
       "Office hours Mon–Fri 9am–6pm, Sat 10am–4pm",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Subscribe to a conversation, not a blast",
     h3Body:
-      "If you want the update applied to a listing, send the APN. Call (702) 222-1964.",
+      "If you want the update applied to a listing, send the APN. Call (702) 500-1942.",
   },
   "/market-report": {
     h2: "Full CMA and report review with the property address in the room",
@@ -520,11 +520,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Report date on this page: January 2026",
       "Area breakdown is not a substitute for a CMA on one APN",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Snapshot vs decision",
     h3Body:
-      "The dark stats band is a snapshot. The decision needs your address. Call (702) 222-1964.",
+      "The dark stats band is a snapshot. The decision needs your address. Call (702) 500-1942.",
   },
   "/neighborhoods": {
     h2: "Two contrasting areas from one west-valley start",
@@ -532,11 +532,11 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Each community page has its own H1 photo and drive-time note",
       "Named campuses and commute times, not ratings as marketing",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "Do not pick a ZIP from a card grid alone",
     h3Body:
-      "Open the community page, then book the drive. Call (702) 222-1964.",
+      "Open the community page, then book the drive. Call (702) 500-1942.",
   },
   "/55-plus-communities": {
     h2: "Age-restriction rules at the desk, clubhouses on the drive",
@@ -544,10 +544,10 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Price bands on this hub span roughly $280,000–$1.2 million depending on campus",
       "California relocators: we still tour by amenity, not by slogan",
-      "Call (702) 222-1964",
+      "Call (702) 500-1942",
     ],
     h3: "HOPA 80/20 vs all-residents-55+",
     h3Body:
-      "Solera requires all residents 55+. Most other campuses follow HOPA with a younger-spouse rule. Confirm in the HOA docs. Call (702) 222-1964.",
+      "Solera requires all residents 55+. Most other campuses follow HOPA with a younger-spouse rule. Confirm in the HOA docs. Call (702) 500-1942.",
   },
 };

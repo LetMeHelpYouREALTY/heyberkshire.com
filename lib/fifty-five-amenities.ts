@@ -31,7 +31,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Lake Las Vegas Del Webb",
-        note: "35–45 minutes. Lakefront rec, not a Summerlin clone. Call (702) 222-1964.",
+        note: "35–45 minutes. Lakefront rec, not a Summerlin clone. Call (702) 500-1942.",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Pinnacle and Desert Vista rec",
-        note: "The other two rec buildings. We do not walk all four the first afternoon. Call (702) 222-1964.",
+        note: "The other two rec buildings. We do not walk all four the first afternoon. Call (702) 500-1942.",
       },
     ],
   },
@@ -67,7 +67,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "McCullough Range views",
-        note: "Fairway and street views vary by block. Measure from the listing, not the clubhouse lawn. Call (702) 222-1964.",
+        note: "Fairway and street views vary by block. Measure from the listing, not the clubhouse lawn. Call (702) 500-1942.",
       },
     ],
   },
@@ -85,7 +85,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Pool terrace",
-        note: "Resort pool at the clubhouse. Pair with Downtown Summerlin only if time remains. Call (702) 222-1964.",
+        note: "Resort pool at the clubhouse. Pair with Downtown Summerlin only if time remains. Call (702) 500-1942.",
       },
     ],
   },
@@ -103,7 +103,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Downtown Summerlin",
-        note: "West-valley retail after the gate. Call (702) 222-1964.",
+        note: "West-valley retail after the gate. Call (702) 500-1942.",
       },
     ],
   },
@@ -121,7 +121,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "St. Rose / Henderson Hospital",
-        note: "Henderson hospital pins on the same east clock. Call (702) 222-1964.",
+        note: "Henderson hospital pins on the same east clock. Call (702) 500-1942.",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Craig Road employers",
-        note: "Commute check for anyone still working. Call (702) 222-1964.",
+        note: "Commute check for anyone still working. Call (702) 500-1942.",
       },
     ],
   },
@@ -157,7 +157,7 @@ export const fiftyFiveAmenities: Record<string, FiftyFiveAmenityCopy> = {
       },
       {
         name: "Lake path / shoreline",
-        note: "Measure the walk from the listing, not the marketing aerial. Call (702) 222-1964.",
+        note: "Measure the walk from the listing, not the marketing aerial. Call (702) 500-1942.",
       },
     ],
   },

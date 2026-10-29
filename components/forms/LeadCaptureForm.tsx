@@ -132,7 +132,7 @@ export function LeadCaptureForm({
         </h3>
         <p className="text-green-700">
           Your information has been received. Dr. Jan Duffy will contact you
-          shortly. For faster help, call or text (702) 222-1964.
+          shortly. For faster help, call or text (702) 500-1942.
         </p>
         <Button
           onClick={() => setSuccess(false)}
@@ -153,7 +153,7 @@ export function LeadCaptureForm({
           role="alert"
           aria-live="polite"
         >
-          {error}. Call (702) 222-1964 if the problem continues.
+          {error}. Call (702) 500-1942 if the problem continues.
         </div>
       )}
 
@@ -221,7 +221,7 @@ export function LeadCaptureForm({
           value={formData.phone}
           onChange={handleChange}
           disabled={loading}
-          placeholder="(702) 222-1964"
+          placeholder="(702) 500-1942"
         />
       </div>
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/mountains-edge",
   title: "Mountains Edge Real Estate | Southwest Las Vegas",
   description:
-    "Find Mountains Edge homes with a local expert. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 222-1964.",
+    "Find Mountains Edge homes with a local expert. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-1942.",
   keywords: [
     "Berkshire Hathaway HomeServices Mountains Edge",
     "Mountains Edge homes for sale",
@@ -108,9 +108,8 @@ export default function MountainsEdgePage() {
                 significantly below Summerlin or Henderson. This 3,500-acre
                 community in southwest Las Vegas offers mountain views,
                 exceptional parks, and modern homes—without the premium prices
-                of Summerlin or The Ridges.{" "}
-                Dr. Jan Duffy helps value-conscious buyers discover Mountains Edge's
-                potential.
+                of Summerlin or The Ridges. Dr. Jan Duffy helps value-conscious
+                buyers discover Mountains Edge's potential.
               </p>
               <p>
                 The community's crown jewel is Exploration Peak Park—120 acres
@@ -123,11 +122,13 @@ export default function MountainsEdgePage() {
                 beauty.
               </p>
               <p>
-                Dr. Jan Duffy serves Mountains Edge buyers with the same commitment to excellence she brings to the valley's luxury markets. She understands that value doesn't mean compromise—it means
-                finding the right home at the right price. For buyers priced out
-                of Summerlin or Henderson, Mountains Edge is compared by square
-                footage, HOA dues, and minutes from Suite 100 — not as a swapped
-                Summerlin caption.
+                Dr. Jan Duffy serves Mountains Edge buyers with the same
+                commitment to excellence she brings to the valley's luxury
+                markets. She understands that value doesn't mean compromise—it
+                means finding the right home at the right price. For buyers
+                priced out of Summerlin or Henderson, Mountains Edge is compared
+                by square footage, HOA dues, and minutes from Suite 100 — not as
+                a swapped Summerlin caption.
               </p>
 
               <CommunityHighlights path="/neighborhoods/mountains-edge" />
@@ -151,13 +152,12 @@ export default function MountainsEdgePage() {
                 properties with premium views and upgraded features.
               </p>
               <p>
-                Working with Dr. Jan Duffy in
-                Mountains Edge means getting honest guidance about where the
-                community offers the best value. Dr. Jan Duffy helps buyers
-                identify neighborhoods with the strongest appreciation
-                potential, homes with the best views, and properties that
-                represent genuine value rather than superficial appeal. That
-                expertise—combined with a commitment to client
+                Working with Dr. Jan Duffy in Mountains Edge means getting
+                honest guidance about where the community offers the best value.
+                Dr. Jan Duffy helps buyers identify neighborhoods with the
+                strongest appreciation potential, homes with the best views, and
+                properties that represent genuine value rather than superficial
+                appeal. That expertise—combined with a commitment to client
                 service—ensures Mountains Edge buyers make informed decisions.
               </p>
             </div>

@@ -19,7 +19,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "Do you help with home valuations?",
     answer:
-      "Yes. You get a free, no-obligation home valuation using current MLS data and comparable sales. Call or text (702) 222-1964 to schedule.",
+      "Yes. You get a free, no-obligation home valuation using current MLS data and comparable sales. Call or text (702) 500-1942 to schedule.",
   },
   {
     question: "What makes you different from other real estate agents?",
@@ -34,7 +34,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "What are your fees?",
     answer:
-      "For buyers, representation is typically paid by the seller. For sellers, commission is negotiable. Call (702) 222-1964 for a transparent walkthrough of costs before you sign.",
+      "For buyers, representation is typically paid by the seller. For sellers, commission is negotiable. Call (702) 500-1942 for a transparent walkthrough of costs before you sign.",
   },
 ];
 

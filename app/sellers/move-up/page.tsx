@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/sellers/move-up",
   title: "Move-Up Sellers Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 222-1964.",
+    "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-1942.",
   keywords: [
     "move up buyer Las Vegas",
     "sell and buy Las Vegas",
@@ -188,9 +188,9 @@ export default function MoveUpSellerPage() {
               <p>
                 The biggest concern move-up buyers have is timing. What happens
                 if you sell before finding your next home? What if you find your
-                dream home but can't sell in time?
-                Dr. Jan Duffy has strategies for every scenario, ensuring you
-                never end up homeless or paying two mortgages unnecessarily.
+                dream home but can't sell in time? Dr. Jan Duffy has strategies
+                for every scenario, ensuring you never end up homeless or paying
+                two mortgages unnecessarily.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

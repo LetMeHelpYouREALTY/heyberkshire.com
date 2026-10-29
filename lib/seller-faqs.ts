@@ -22,7 +22,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "Where does listing prep start before the photographer is booked?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here, then we walk the house. Overpriced homes sit. We price to recent closes, then book professional photography. Call (702) 222-1964.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. Comps are pulled here, then we walk the house. Overpriced homes sit. We price to recent closes, then book professional photography. Call (702) 500-1942.",
       },
       {
         q: "What January 2026 days-on-market figure did this page last publish?",
@@ -30,11 +30,11 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "How is a listing marketed once photos are done?",
-        a: "Professional photography, virtual tours, drone when the HOA allows it, MLS syndication, referral network exposure, and paid digital. Marketing scope is set at Suite 100 before the photographer is booked. Call (702) 222-1964.",
+        a: "Professional photography, virtual tours, drone when the HOA allows it, MLS syndication, referral network exposure, and paid digital. Marketing scope is set at Suite 100 before the photographer is booked. Call (702) 500-1942.",
       },
       {
         q: "Are commission rates posted on this page?",
-        a: "No. Commission is negotiated in writing at the listing appointment. We walk every cost at 9406 W Lake Mead Blvd, Suite 100. Call (702) 222-1964. Office/GBP line is (702) 500-1942.",
+        a: "No. Commission is negotiated in writing at the listing appointment. We walk every cost at 9406 W Lake Mead Blvd, Suite 100. Call (702) 500-1942.",
       },
     ],
   },
@@ -43,7 +43,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "How do we time the sale and the next ZIP from Suite 100?",
-        a: "We map the current home and the next street so both tours share 9406 W Lake Mead Blvd as the start. Contingent vs non-contingent is a numbers conversation, not a pep talk. Call (702) 222-1964.",
+        a: "We map the current home and the next street so both tours share 9406 W Lake Mead Blvd as the start. Contingent vs non-contingent is a numbers conversation, not a pep talk. Call (702) 500-1942.",
       },
       {
         q: "What equity range did this page last publish for 2015–2021 purchases?",
@@ -51,7 +51,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "Do we list blind and then shop, or see the next street first?",
-        a: "See the next street before you price the current one, or at least the same week. Two stops from this pin on tour days. Call (702) 222-1964.",
+        a: "See the next street before you price the current one, or at least the same week. Two stops from this pin on tour days. Call (702) 500-1942.",
       },
       {
         q: "Which named campuses do we map if the next house is Summerlin vs Henderson?",
@@ -64,7 +64,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "Can we list the larger home and preview 55+ the same afternoon?",
-        a: "Yes. Sun City Summerlin is 10–15 minutes from Suite 100. We can list the larger home and walk a rec campus the same day so you are not guessing at square footage you have not measured. Call (702) 222-1964.",
+        a: "Yes. Sun City Summerlin is 10–15 minutes from Suite 100. We can list the larger home and walk a rec campus the same day so you are not guessing at square footage you have not measured. Call (702) 500-1942.",
       },
       {
         q: "What net-equity range did this page last publish for a 4–5 bedroom to 55+ move?",
@@ -72,11 +72,11 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "How do we choose between Sun City Summerlin and a smaller resale with a yard?",
-        a: "HOA packet, rec-campus use, yard maintenance, and drive time from 9406 W Lake Mead Blvd. Age-restriction rules are reviewed at the desk before the tour. Call (702) 222-1964.",
+        a: "HOA packet, rec-campus use, yard maintenance, and drive time from 9406 W Lake Mead Blvd. Age-restriction rules are reviewed at the desk before the tour. Call (702) 500-1942.",
       },
       {
         q: "What occupancy rule do we review before a 55+ downsizing tour?",
-        a: "HOPA 80/20 vs all-residents-55+ (Solera). Guest-stay limits are in the HOA packet — we do not publish a one-size guest slogan. Call (702) 222-1964.",
+        a: "HOPA 80/20 vs all-residents-55+ (Solera). Guest-stay limits are in the HOA packet — we do not publish a one-size guest slogan. Call (702) 500-1942.",
       },
     ],
   },
@@ -85,11 +85,11 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "If the job starts in three weeks, where does the listing file open?",
-        a: "At Suite 100 the same day you call. We can list immediately, price to last month's closes, and manage lockbox access after you leave. This page last published 2–4 week urgent sales as possible, not promised. Call (702) 222-1964.",
+        a: "At Suite 100 the same day you call. We can list immediately, price to last month's closes, and manage lockbox access after you leave. This page last published 2–4 week urgent sales as possible, not promised. Call (702) 500-1942.",
       },
       {
         q: "Should the Las Vegas closing share a calendar with the next city?",
-        a: "Yes. Destination agents are briefed from this office so the sale and the next purchase share dates. Bring both contract drafts to 9406 W Lake Mead Blvd, Suite 100. Call (702) 222-1964.",
+        a: "Yes. Destination agents are briefed from this office so the sale and the next purchase share dates. Bring both contract drafts to 9406 W Lake Mead Blvd, Suite 100. Call (702) 500-1942.",
       },
       {
         q: "What did this page last publish about corporate buyouts vs open-market?",
@@ -97,7 +97,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "How are showings handled after you have already left Las Vegas?",
-        a: "Lockbox access, feedback, and offer presentation by video from Suite 100. Partially furnished often shows better than empty — we decide what to leave before you pack. Call (702) 222-1964.",
+        a: "Lockbox access, feedback, and offer presentation by video from Suite 100. Partially furnished often shows better than empty — we decide what to leave before you pack. Call (702) 500-1942.",
       },
     ],
   },
@@ -106,7 +106,7 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
     items: [
       {
         q: "Where are court dates and lockbox rules reviewed?",
-        a: "By appointment at 9406 W Lake Mead Blvd, Suite 100. Court dates, attorney contacts, and access rules are not a public-lobby conversation. Call (702) 222-1964 to book a private slot.",
+        a: "By appointment at 9406 W Lake Mead Blvd, Suite 100. Court dates, attorney contacts, and access rules are not a public-lobby conversation. Call (702) 500-1942 to book a private slot.",
       },
       {
         q: "What Nevada probate timing did this page last publish?",
@@ -114,11 +114,11 @@ export const sellerFaqs: Record<string, SellerFaqCopy> = {
       },
       {
         q: "What documents do we bring to the private appointment?",
-        a: "Letters testamentary or court orders, HOA contacts, and a preferred showing window. Do not email sensitive orders to a shared inbox without a heads-up call. Call (702) 222-1964.",
+        a: "Letters testamentary or court orders, HOA contacts, and a preferred showing window. Do not email sensitive orders to a shared inbox without a heads-up call. Call (702) 500-1942.",
       },
       {
         q: "How is listing price handled when parties disagree?",
-        a: "We write an objective CMA both sides can read. If disagreement persists, a shared-cost appraisal can settle it. Neutral process, documented access, written offers. Call (702) 222-1964.",
+        a: "We write an objective CMA both sides can read. If disagreement persists, a shared-cost appraisal can settle it. Neutral process, documented access, written offers. Call (702) 500-1942.",
       },
     ],
   },
