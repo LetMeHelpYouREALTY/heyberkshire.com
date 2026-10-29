@@ -351,9 +351,9 @@ jobs:
                 if (
                   content.includes('222-1964') ||
                   content.includes('7022221964') ||
-                  content.includes('702-500-1955') ||
-                  content.includes('7025001955') ||
-                  content.includes('(702) 500-1955') ||
+                  content.includes('702-222-1964') ||
+                  content.includes('7022221964') ||
+                  content.includes('(702) 222-1964') ||
                   content.includes('555-1234')
                 ) {
                   issues.push(`❌ **${file.filename}**: Contains a retired or placeholder phone number`);

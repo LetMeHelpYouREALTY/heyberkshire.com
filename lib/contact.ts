@@ -1,7 +1,7 @@
 /**
  * Single source of truth for NAP, phones, hours, maps, and social.
  * One line sitewide: (702) 500-1942 matches the Google Business Profile.
- * (702) 500-1955 is reserved for client emails and texts; never publish it here.
+ * (702) 222-1964 is reserved for client emails and texts; never publish it here.
  */
 
 /** Canonical production origin for heyberkshire (www, not apex). */
