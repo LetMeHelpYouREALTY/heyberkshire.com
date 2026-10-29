@@ -19,7 +19,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/green-valley",
   title: "Green Valley Real Estate | Henderson Real Estate",
   description:
-    "Find Green Valley homes with a local expert. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 500-1942.",
+    "Find Green Valley homes with a local expert. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 500-1955.",
   keywords: [
     "Berkshire Hathaway HomeServices Green Valley",
     "Green Valley homes for sale",
@@ -149,7 +149,7 @@ export default function GreenValleyPage() {
                 the subtle differences between Green Valley proper, Green Valley
                 Ranch, and Green Valley South. Each area is compared by tree
                 canopy age, golf-course adjacency, The District retail, and
-                commute minutes from Suite 100. Call (702) 500-1942.
+                commute minutes from Suite 100. Call (702) 500-1955.
               </p>
             </div>
           </section>

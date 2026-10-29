@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/investment-properties",
   title: "Las Vegas Investment Properties | Dr. Jan Duffy, REALTOR®",
   description:
-    "Invest in Las Vegas real estate with Dr. Jan Duffy. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1942.",
+    "Invest in Las Vegas real estate with Dr. Jan Duffy. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1955.",
   keywords: [
     "Las Vegas investment property",
     "Las Vegas rental property",
@@ -447,7 +447,7 @@ export default function InvestmentPropertiesPage() {
           {/* CTA */}
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Bring the APN and rent roll to Suite 100 — (702) 500-1942
+              Bring the APN and rent roll to Suite 100 — (702) 500-1955
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Get expert guidance on Las Vegas investment properties from Dr.

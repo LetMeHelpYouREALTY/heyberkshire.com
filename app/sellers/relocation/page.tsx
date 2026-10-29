@@ -24,7 +24,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/sellers/relocation",
   title: "Relocation Home Sales Las Vegas | Dr. Jan Duffy, REALTOR®",
   description:
-    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with agents nationwide. Call (702) 500-1942.",
+    "Leaving Las Vegas for a new opportunity? Dr. Jan Duffy helps relocating homeowners sell fast and coordinates with agents nationwide. Call (702) 500-1955.",
   keywords: [
     "relocation sale Las Vegas",
     "job relocation Las Vegas",
@@ -496,7 +496,7 @@ export default function RelocationPage() {
           {/* CTA */}
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Call (702) 500-1942 — listing window on this file, not a slogan
+              Call (702) 500-1955 — listing window on this file, not a slogan
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Let's create a relocation plan that works with your timeline. Dr.

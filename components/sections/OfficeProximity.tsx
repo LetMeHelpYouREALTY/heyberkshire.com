@@ -116,7 +116,7 @@ const byPath: Record<string, PlaceDrive> = {
   "/google-business": {
     place: "the Google Business Profile address",
     driveMinutes: "this is the Maps pin",
-    note: "Name, address, and office line (702) 500-1942 match the Google listing; call or text for a same-day reply.",
+    note: "Name, address, and office line (702) 500-1955 match the Google listing; call or text for a same-day reply.",
   },
   "/faq": {
     place: "a live Q&A",

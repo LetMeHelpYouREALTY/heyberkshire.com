@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/southern-highlands",
   title: "Southern Highlands Real Estate | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with a local expert. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 500-1942.",
+    "Find Southern Highlands homes with a local expert. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 500-1955.",
   keywords: [
     "Berkshire Hathaway HomeServices Southern Highlands",
     "Southern Highlands homes for sale",

@@ -26,19 +26,19 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "Where do I see local listing samples before I pick an agent?",
-        a: "At 9406 W Lake Mead Blvd, Suite 100. Photography, remarks, and who answers the phone are shown here. Call (702) 500-1942.",
+        a: "At 9406 W Lake Mead Blvd, Suite 100. Photography, remarks, and who answers the phone are shown here. Call (702) 500-1955.",
       },
       {
         q: "How long has Dr. Jan Duffy been in real estate?",
-        a: "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1942.",
+        a: "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1955.",
       },
       {
         q: "Which cities does this office actually tour from Lake Mead Blvd?",
-        a: "Las Vegas, Henderson, North Las Vegas, and Clark County streets we can time from Suite 100. Specialized pages exist for Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and Inspirada. Call (702) 500-1942.",
+        a: "Las Vegas, Henderson, North Las Vegas, and Clark County streets we can time from Suite 100. Specialized pages exist for Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and Inspirada. Call (702) 500-1955.",
       },
       {
         q: "Is commission posted as a higher rate on this site?",
-        a: "No. Commission is negotiated in writing at the appointment. We walk every cost at Suite 100. Call (702) 500-1942.",
+        a: "No. Commission is negotiated in writing at the appointment. We walk every cost at Suite 100. Call (702) 500-1955.",
       },
     ],
   },
@@ -48,11 +48,11 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "How long from offer acceptance to keys did this page last publish?",
-        a: "Typically 30–45 days. Cash can close in about 7–14 days when title is clean. Timeline still depends on financing, inspections, and contingencies. Call (702) 500-1942.",
+        a: "Typically 30–45 days. Cash can close in about 7–14 days when title is clean. Timeline still depends on financing, inspections, and contingencies. Call (702) 500-1955.",
       },
       {
         q: "Do I need a pre-approval before the first Suite 100 meeting?",
-        a: "A letter helps on competitive streets, but the first desk meeting can start without it. We introduce local lenders from this office. Call (702) 500-1942.",
+        a: "A letter helps on competitive streets, but the first desk meeting can start without it. We introduce local lenders from this office. Call (702) 500-1955.",
       },
       {
         q: "What down-payment types did this hub last publish?",
@@ -60,7 +60,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "Do I register Dr. Jan before walking a builder model?",
-        a: "Yes. Most Las Vegas and Henderson builders require your agent on the first visit. Start at Suite 100, then the model row. Call (702) 500-1942.",
+        a: "Yes. Most Las Vegas and Henderson builders require your agent on the first visit. Start at Suite 100, then the model row. Call (702) 500-1955.",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "Where is a listing CMA pulled before photography is booked?",
-        a: "At Suite 100, then we walk the house. Overpriced homes sit. We price to recent closes. Call (702) 500-1942.",
+        a: "At Suite 100, then we walk the house. Overpriced homes sit. We price to recent closes. Call (702) 500-1955.",
       },
       {
         q: "What January 2026 days-on-market figures did this hub last publish?",
@@ -78,7 +78,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "What listing prep does this desk actually assign?",
-        a: "A checklist per house: repairs, paint if comps need it, then professional photography. Staging is a tactic, not a slogan. Call (702) 500-1942.",
+        a: "A checklist per house: repairs, paint if comps need it, then professional photography. Staging is a tactic, not a slogan. Call (702) 500-1955.",
       },
       {
         q: "How is a listing marketed once photos are done?",
@@ -92,7 +92,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "Where are rent comps and HOA rental caps reviewed?",
-        a: "At Suite 100 before you fly in. HOA rental caps kill deals. Then we tour North Las Vegas, Henderson, or southwest ZIP clusters. Call (702) 500-1942.",
+        a: "At Suite 100 before you fly in. HOA rental caps kill deals. Then we tour North Las Vegas, Henderson, or southwest ZIP clusters. Call (702) 500-1955.",
       },
       {
         q: "What cash-on-cash range did this hub last publish?",
@@ -100,7 +100,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "Do you work 1031 identification windows from this office?",
-        a: "Yes. We work with qualified intermediaries and the 45-day identification window. Call (702) 500-1942.",
+        a: "Yes. We work with qualified intermediaries and the 45-day identification window. Call (702) 500-1955.",
       },
     ],
   },
@@ -110,7 +110,7 @@ export const faqHubCategories: FaqHubCategory[] = [
     items: [
       {
         q: "Can this office coordinate the origin-city sale with this office?",
-        a: "Yes. Origin and destination agents are briefed from Suite 100 so both contracts share a calendar. Call (702) 500-1942.",
+        a: "Yes. Origin and destination agents are briefed from Suite 100 so both contracts share a calendar. Call (702) 500-1955.",
       },
       {
         q: "Which named campuses do we time on Day 1 vs Day 2?",
@@ -131,8 +131,8 @@ export const faqHubCategories: FaqHubCategory[] = [
         a: "Dr. Jan Duffy, Las Vegas REALTOR®. Never Janet as the agent name.",
       },
       {
-        q: "Which number do I call vs the office/GBP line?",
-        a: "Call (702) 500-1942. Email homes@heyberkshire.com. Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        q: "Which number do I call?",
+        a: "Call (702) 500-1955. Email homes@heyberkshire.com. Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
       {
         q: "What closed-volume snapshot did this hub last publish?",

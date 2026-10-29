@@ -1,5 +1,5 @@
 Contact: mailto:security@heyberkshire.com
-Contact: tel:+1-702-500-1942
+Contact: tel:+1-702-500-1955
 Expires: 2027-02-13T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://www.heyberkshire.com/.well-known/security.txt
@@ -11,7 +11,7 @@ Acknowledgments: We appreciate responsible disclosure of security vulnerabilitie
 # 
 # If you've discovered a security vulnerability in this website,
 # please report it to us at security@heyberkshire.com or call
-# (702) 500-1942 during business hours.
+# (702) 500-1955 during business hours.
 #
 # We take security seriously and will respond within 48 hours.
 #

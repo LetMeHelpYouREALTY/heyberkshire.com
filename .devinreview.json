@@ -65,7 +65,7 @@
       {
         "name": "phone-number-check",
         "description": "Verify correct phone number is used",
-        "pattern": "702-222-1964|7022221964",
+        "pattern": "702-222-1964|7022221964|702-500-1942|7025001942",
         "severity": "error",
         "message": "Wrong phone number. Use (702) 500-1955 sitewide; 702-222-1964 is client email and text only."
       },

@@ -25,7 +25,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/contact",
   title: "Contact Dr. Jan Duffy | Las Vegas REALTOR®",
   description:
-    "Contact Dr. Jan Duffy. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
+    "Contact Dr. Jan Duffy. Schedule an appointment, get directions, or call (702) 500-1955. Las Vegas, Henderson, Summerlin real estate expert.",
   keywords: [
     "contact real estate agent Las Vegas",
     "Berkshire Hathaway contact",
@@ -41,7 +41,7 @@ const contactSchema = {
   mainEntity: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    telephone: "+17025001955",
     email: "homes@heyberkshire.com",
     address: {
       "@type": "PostalAddress",
@@ -243,7 +243,7 @@ export default function ContactPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Summerlin is 10–15 minutes. Henderson and Green Valley are 25–35.
-              Southern Highlands is 25–35 via I-15. Call (702) 500-1942. We will
+              Southern Highlands is 25–35 via I-15. Call (702) 500-1955. We will
               not tour twelve ZIPs in one afternoon.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

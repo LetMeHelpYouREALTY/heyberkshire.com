@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Las Vegas Real Estate Market Insights 2026 | Dr. Jan Duffy, REALTOR®",
   description:
-    "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 500-1942.",
+    "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 500-1955.",
   keywords: [
     "Las Vegas real estate trends 2026",
     "Las Vegas market forecast",
@@ -90,7 +90,7 @@ export default function MarketInsightsPage() {
               Apply this page to your ZIP at 9406 W Lake Mead Blvd
             </h2>
             <p className="text-xl text-purple-100 mb-8">
-              Bring the APN or a lender letter. Call (702) 500-1942. Dr. Jan
+              Bring the APN or a lender letter. Call (702) 500-1955. Dr. Jan
               Duffy will not invent a rate or a street price.
             </p>
             <CtaActions variant="onDark" />
