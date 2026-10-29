@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/about",
   title: "About Dr. Jan Duffy | Las Vegas REALTOR®",
   description:
-    "Meet Dr. Jan Duffy, your trusted agent. Licensed since 2008, $127M+ in Dr. Duffy Group career sales, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy, your trusted agent. Licensed since 2008 · 35 years in Las Vegas, $127M+ in Dr. Duffy Group career sales, Henderson & Summerlin specialist. Call (702) 500-1942.",
   keywords: [
     "Dr. Jan Duffy",
     "Berkshire Hathaway HomeServices agent",
@@ -113,9 +113,9 @@ export default function AboutPage() {
             </h1>
             <HeadingPhoto path="/about" />
             <p className="text-xl text-slate-600">
-              Dr. Jan Duffy has been licensed since 2008. Whether you're buying,
-              selling, investing, or relocating, you'll receive expert guidance
-              with integrity and professionalism.
+              Dr. Jan Duffy has been licensed since 2008 · 35 years in Las
+              Vegas. Whether you're buying, selling, investing, or relocating,
+              you'll receive expert guidance with integrity and professionalism.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Consultation" />
@@ -139,8 +139,9 @@ export default function AboutPage() {
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
                     When you choose to work with me, you're choosing trust,
-                    integrity, and excellence. I've been licensed since 2008,
-                    and I bring local expertise to every client I serve.
+                    integrity, and excellence. I've been licensed since 2008 ·
+                    35 years in Las Vegas, and I bring local expertise to every
+                    client I serve.
                   </p>
                   <p>
                     I've led the Dr. Duffy Group to $127M+ in career sales and

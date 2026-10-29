@@ -332,8 +332,8 @@ export default function BuyersPage() {
                   West-valley start, then the listing street
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has been licensed since 2008, with $127M+ in Dr. Duffy
-                  Group career sales from Suite 100
+                  Dr. Jan has been licensed since 2008 · 35 years in Las Vegas,
+                  with $127M+ in Dr. Duffy Group career sales from Suite 100
                 </p>
               </div>
               <div className="text-center">

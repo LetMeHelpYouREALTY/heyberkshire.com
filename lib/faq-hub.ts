@@ -30,7 +30,7 @@ export const faqHubCategories: FaqHubCategory[] = [
       },
       {
         q: "How long has Dr. Jan Duffy been in real estate?",
-        a: "Dr. Jan Duffy has been licensed since 2008. Call (702) 500-1942.",
+        a: "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1942.",
       },
       {
         q: "Which cities does this office actually tour from Lake Mead Blvd?",

@@ -47,8 +47,8 @@ export default function HomeValuationPage() {
 
             <p className="text-xl text-slate-600">
               Get a free, no-obligation home valuation from Dr. Jan Duffy.
-              Accurate pricing from a REALTOR® licensed since 2008, backed by
-              $127M+ in Dr. Duffy Group career sales.
+              Accurate pricing from a REALTOR® licensed since 2008 · 35 years
+              in Las Vegas, backed by $127M+ in Dr. Duffy Group career sales.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" bookLabel="Book a Valuation" />
@@ -98,8 +98,9 @@ export default function HomeValuationPage() {
                   or more—that's $45,000+ on a typical Las Vegas home. Dr. Jan
                   Duffy provides a comprehensive market analysis using current
                   MLS data, recent comparable sales, and her expertise as a
-                  REALTOR® licensed since 2008. The result? Accurate pricing
-                  that helps you sell faster and for more money.
+                  REALTOR® licensed since 2008 · 35 years in Las Vegas. The
+                  result? Accurate pricing that helps you sell faster and for
+                  more money.
                 </p>
                 <div className="space-y-3">
                   {[

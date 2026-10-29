@@ -266,7 +266,7 @@ export const leftoverBands: Record<string, LeftoverCopy[]> = {
         },
         {
           name: "Las Vegas REALTOR®",
-          note: "Dr. Jan Duffy, licensed since 2008. Showing access questions stay at this pin.",
+          note: "Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. Showing access questions stay at this pin.",
         },
       ],
     },
@@ -470,7 +470,7 @@ export const leftoverBands: Record<string, LeftoverCopy[]> = {
         },
         {
           name: "Las Vegas REALTOR®",
-          note: "Dr. Jan Duffy, licensed since 2008. Call (702) 500-1942.",
+          note: "Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. Call (702) 500-1942.",
         },
       ],
     },

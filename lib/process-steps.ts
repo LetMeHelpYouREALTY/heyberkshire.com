@@ -102,7 +102,7 @@ export const processSteps: Record<string, ProcessCopy[]> = {
       steps: [
         {
           title: "Brokerage line on every listing and buyer agreement",
-          body: "Dr. Jan Duffy, licensed since 2008. 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office/GBP (702) 500-1942.",
+          body: "Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Office/GBP (702) 500-1942.",
         },
         {
           title: "Written disclosure standards on every file",

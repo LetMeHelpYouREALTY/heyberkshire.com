@@ -215,7 +215,7 @@ export default function ServicesPage() {
               Contact Dr. Jan Duffy for a free consultation about any of our
               real estate services. Whether you're buying, selling, investing,
               or relocating, you'll receive expert guidance from a REALTOR®
-              licensed since 2008.
+              licensed since 2008 · 35 years in Las Vegas.
             </p>
             <CtaActions variant="onDark" />
           </section>
