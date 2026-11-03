@@ -20,7 +20,14 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
-import { realscout, nap, resolveSiteUrl } from "@/lib/contact";
+import {
+  realscout,
+  nap,
+  resolveSiteUrl,
+  normalizeHostname,
+} from "@/lib/contact";
+import { getMeasurementIds } from "@/lib/analytics";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = (await headers()).get("x-domain") || "";
@@ -64,6 +71,7 @@ export default async function RootLayout({
 }) {
   const domain = (await headers()).get("x-domain") || "";
   const siteUrl = resolveSiteUrl(domain);
+  const gaMeasurementIds = getMeasurementIds(domain);
   const siteSchemas = combineSchemas(
     generateLocalBusinessSchema(siteUrl),
     generateOrganizationSchema(siteUrl),
@@ -91,6 +99,12 @@ export default async function RootLayout({
         <MobileStickyCTA />
         <AIChatWidget />
         <Analytics />
+        {gaMeasurementIds.length > 0 && (
+          <GoogleAnalytics
+            measurementIds={gaMeasurementIds}
+            siteName={normalizeHostname(domain)}
+          />
+        )}
         <Script
           src={realscout.scriptSrc}
           type="module"

@@ -15,6 +15,7 @@ import { useState } from "react";
 import { Turnstile } from "@marsidev/react-turnstile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { LEAD_EVENTS, trackEvent } from "@/lib/analytics";
 
 export interface LeadCaptureFormProps {
   source?: string;
@@ -97,6 +98,10 @@ export function LeadCaptureForm({
       }
 
       setSuccess(true);
+      trackEvent(LEAD_EVENTS.generateLead, {
+        form_name: formType,
+        lead_source: source,
+      });
       setFormData({
         firstName: "",
         lastName: "",
