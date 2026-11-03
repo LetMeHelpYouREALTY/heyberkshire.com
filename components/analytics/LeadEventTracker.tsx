@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { LEAD_EVENTS, trackEvent } from "@/lib/analytics";
 
 /**
- * Document-level listeners, so every tel:/sms: link, RealScout widget, and
+ * Document-level listeners, so every tel:/sms:/mailto: link, Homebot link, RealScout widget, and
  * Calendly embed is tracked without touching each component.
  * RealScout widgets render in shadow DOM; clicks are composed, so the
  * widget host shows up in composedPath(). They count button clicks, not
@@ -27,6 +27,20 @@ export default function LeadEventTracker() {
       }
       if (href.startsWith("sms:")) {
         trackEvent(LEAD_EVENTS.textClick, {
+          link_url: href,
+          page_path: location.pathname,
+        });
+        return;
+      }
+      if (href.startsWith("mailto:")) {
+        trackEvent(LEAD_EVENTS.emailClick, {
+          link_url: href,
+          page_path: location.pathname,
+        });
+        return;
+      }
+      if (href.includes("homebot")) {
+        trackEvent(LEAD_EVENTS.homeValueRequest, {
           link_url: href,
           page_path: location.pathname,
         });
